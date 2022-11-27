@@ -3,9 +3,9 @@ site_name: Office-Sharing-Dokumentation
 site_author: Thomas
 site_description: Implementierung eines Prototypens
 repo_url: https://github.com/gz-bad-erzland-p2/Dokumentation
-repon_name: NextJS-Office-Sharing
+repo_name: NextJS-Office-Sharing
 
-# Copyrigth
+# Copyright
 copyright: Copyright &copy; 2022 Thomas
 
 theme:
