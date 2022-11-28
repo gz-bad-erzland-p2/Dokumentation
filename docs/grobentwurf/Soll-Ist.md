@@ -5,10 +5,10 @@ Die vorhandene Technik hat folgenden Umfang:
 
 - 8 x PCs mit Zubehör siehe 5.2 Produktblatt PCs 
 - Notebooks mit Zubehör siehe 5.3 Produktblatt Notebooks 
--	8 x Monitore mit Zubehör (Erweiterung auf 16) siehe 5.4Produktblatt Monitore 
--	8 x Mäuse siehe 5.5 Produktblatt Maus 
--	8 x Tastaturen siehe 5.6 Produktblatt Tastatur 
--	1 x Barebone mit Zubehör siehe 5.7 Produktblatt Backbone 
+- 8 x Monitore mit Zubehör (Erweiterung auf 16) siehe 5.4 Produktblatt Monitore 
+- 8 x Mäuse siehe 5.5 Produktblatt Maus 
+- 8 x Tastaturen siehe 5.6 Produktblatt Tastatur 
+- 1 x Barebone mit Zubehör siehe 5.7 Produktblatt Backbone 
 
 ## Soll
 Aktuell möchte die Gemeindeverwaltung ihr Zentrum im Rahmen der digitalen Transformation das wenig genutzte Internet-Café als kleines Schulungszentrum für ältere und jüngere Bürger mit einem Kursangebot durch externe ehrenamtliche Mitarbeiter umwidmen sowie um die Option des Officesharings zur Miete erweitern (siehe 5.1 Fachkonzept).  

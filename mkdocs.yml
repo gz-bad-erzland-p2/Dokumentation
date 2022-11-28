@@ -1,7 +1,9 @@
 # yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
+# See for further configuration options: https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/
+
 site_name: Office-Sharing-Dokumentation
 site_author: Thomas
-site_description: Implementierung eines Prototypens
+site_description: Implementierung eines Prototypes für die Office-Sharing-Plattform
 repo_url: https://github.com/gz-bad-erzland-p2/Dokumentation
 repo_name: NextJS-Office-Sharing
 
@@ -10,17 +12,89 @@ copyright: Copyright &copy; 2022 Thomas
 
 theme:
   name: material
-  
-# Page tree
-nav:
-    - Startseite: 'index.md'
-    - 'Installation':
-        - 'Production': 'Fisi/FiSi.md'
-    - 'Grobentwurft':
-        - 'USE-Case': 'grobentwurf/USE-CASE.md'
-        - 'Ist-Soll': 'grobentwurf/Soll-Ist.md'
-        
-        
+
+  # Don't include MkDocs' JavaScript
+  include_search_page: false
+  search_index_only: true
+
+  language: de
+  features:
+    - navigation.tabs
+    - navigation.tracking
+    - navigation.tabs.sticky
+    #    - toc.integrate
+    - navigation.top
+    - search.highlight
+    - search.suggest
+    - search.share
+#    - header.autohide
+
+  # Color scheme
+  palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      primary: blue
+      accent: deep purple
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue
+      accent: deep purple
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue
+      accent: deep purple
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+  # Custom Font
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+  # Custom Favicon
+  favicon: assets/img/logo.png
+
+  # Custom Logo (header left)
+  logo: assets/img/logo.png
+
+  # Icon for GitHub (header right)
+  icon:
+    logo: logo
+    repo: fontawesome/brands/github
+
+# Cookies and homepage link
+#extra:
+#  homepage: https://example.com
+#  consent:
+#    title: Cookie consent
+#    description: >-
+#      We use cookies to recognize your repeated visits and preferences, as well
+#      as to measure the effectiveness of our documentation and whether users
+#      find what they're searching for. With your consent, you're helping us to
+#      make our documentation better.
+
+# Extra CSS
+extra_css:
+  - assets/css/custom.css
+
+# Extra JavaScript
+extra_javascript:
+  - assets/js/custom.js
+
+# Overrides
+custom_dir: docs/assets/overrides
+
 # Extensions
 markdown_extensions:
   - admonition
