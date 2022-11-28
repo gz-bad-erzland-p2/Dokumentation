@@ -16,6 +16,8 @@ nav:
     - Startseite: 'index.md'
     - 'Installation':
         - 'Production': 'Fisi/FiSi.md'
+    - 'Grobentwurft':
+        - 'USE-Case': 'grobentwurf/USE-CASE.md'
         
         
 # Extensions
