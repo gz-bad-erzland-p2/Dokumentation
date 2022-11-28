@@ -1,7 +1,10 @@
-# Interne Hinweise zur Doku
-### [Link zum Next-JS Projekt](https://github.com/gz-bad-erzland-p2/NextJS-Office-Sharing)
+# Hinweise zur Doku
+!!! quote "Link zum NextJS Projekt"
+    https://github.com/gz-bad-erzland-p2/NextJS-Office-Sharing
 
-### [Link zur Doku](https://gz-bad-erzland-p2.github.io/Dokumentation/)
+!!! quote "Link zur Doku"
+    https://gz-bad-erzland-p2.github.io/Dokumentation/
+
 ## Was nutzen wir MkDocs und warum?
 Wir nutzen [MkDocs](https://www.mkdocs.org/) mit dem [Material Design](https://squidfunk.github.io/mkdocs-material/) zur Dokumentation, da dies einfach und übersichtlich strukturiert ist. Durch den modularisierten Aufbau können mehrere Teammitglieder gleichzeitig an der Doku arbeiten. Ein weiterer Vorteil von MkDocs ist, das es auf [Markdown](https://de.wikipedia.org/wiki/Markdown) basiert. Dadurch ist ein einfacher Anderungsverlauf sichtbar.
 
@@ -9,32 +12,59 @@ Wir nutzen [MkDocs](https://www.mkdocs.org/) mit dem [Material Design](https://s
 Die Dokumentation ist unter [dieser URL](https://gz-bad-erzland-p2.github.io/Dokumentation/) einsehbar. Ihr findet den Link ebenfalls oben rechts auf der Repo-Code-Seite in der Ecke.
 
 ## Wie kann ich die Dokumentation bearbeiten?
+
+## Optional: Installation von MkDocs auf Ubuntu
+
+`sudo apt install mkdocs`
+
+Gesamte MkDocs doku hier:  [mkdocs.org](https://www.mkdocs.org).
+
+**Dinge die dein Leben vereinfachen:**
+
+* `mkdocs serve` - Start the live-reloading docs server.
+* `mkdocs build` - Build the documentation site.
+* `mkdocs -h` - Print help message and exit.
+
 ### Namenskonventionen
 
 #### Datei- und Ordnernamen
 Alle Datei sowie Ordnernamen sind klein zu benennen.
 
-**Gutes Beispiel: `sool-ist.md`
-Schlechtes Beispiel: `Soll-Ist.md`**
+!!! success "Gutes Beispiel"
+    `sool-ist.md`
+
+!!! failure "Schlechtes Beispiel"
+    `Soll-Ist.md`
+
 
 Ein Ordner bündelt immer mehrere Dokumente zum Ordner benannten Thema.
 
 #### Datei- und ÜS-Namen
 Die Dateinamen sollten im groben Sinn mit der Hauptüberschrift in der Markdown Datei übereinstimmen.
 
-**Gutes Beispiel:**
-Name: `sool-ist.md`
-ÜS: `Ist Soll Analyse`
+!!! success "Gutes Beispiel"
+
+    Name: `sool-ist.md`
+
+    ÜS: `Ist Soll Analyse`
 
 
-**Schlechtes Beispiel:**
-Name: `sool-ist.md`
-ÜS: `Analyse zum Wasserfalldiagramm`
+!!! failure "Schlechtes Beispiel"
+    
+    Name: `sool-ist.md`
+    
+    ÜS: `Analyse zum Wasserfalldiagramm`
+
+??? tip "Hinweis zur Übersichtlichkeit"
+    Für eine besser Übersichtlichkeit können Dateinamen auch einen Prefix in Form eines Zahlenwertes haben. Dieser sollte jedoch nicht mehr als 2 Stellen haben.
+
 
 #### Dokumentaufbau
 Jedes Dokument muss zuerst eine Überschrift 1. Grades haben. Diese fast den Inhalt des Themas zusammen.
 
-Bitte beachtet und benutzt die integrierten Funktionen von Markdown zur Einbindung von Tabellen, Bildern, Links, Quellcode, Aufzählungen und Überschriften.
+!!! note "Bitte beachten"
+    Bitte beachtet und benutzt die integrierten Funktionen von Markdown zur Einbindung von Tabellen, Bildern, Links, Quellcode, Aufzählungen und Überschriften.
+    MkDocs erweitert den Funktionsumfang von Markdown um einige Funktionen. Diese sind [hier](https://squidfunk.github.io/mkdocs-material/reference/admonitions/) zu finden.
 
 ### Projekt auschecken
 Um das Projekt zu bearbeiten, müsst ihr `Git` installiert haben.
