@@ -18,6 +18,7 @@ nav:
         - 'Production': 'Fisi/FiSi.md'
     - 'Grobentwurft':
         - 'USE-Case': 'grobentwurf/USE-CASE.md'
+        - 'Ist-Soll': 'grobentwurf/Soll-Ist.md'
         
         
 # Extensions
