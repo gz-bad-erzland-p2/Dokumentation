@@ -18,4 +18,4 @@
 ### Recherche
 - Recherche1: Hardware Informationen einsehen
 
-![Kostenlose Fotos zum Thema Mann](https://cdn.pixabay.com/photo/2017/08/01/00/38/man-2562325_960_720.jpg)
+
