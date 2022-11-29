@@ -23,6 +23,8 @@
 
 ## Beispiel Installation für Debian
 
+**Das NextJS Projekt herunterladen: https://github.com/gz-bad-erzland-p2/NextJS-Office-Sharing**
+
 ### NodeJS
 
 ```bash
