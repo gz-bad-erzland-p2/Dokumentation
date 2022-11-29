@@ -5,13 +5,13 @@
 !!! quote "Link zur Doku"
     https://gz-bad-erzland-p2.github.io/Dokumentation/
 
-## Was nutzen wir MkDocs und warum?
+## Warum nutzen wir MkDocs?
 Wir nutzen [MkDocs](https://www.mkdocs.org/) mit dem [Material Design](https://squidfunk.github.io/mkdocs-material/) zur Dokumentation, da dies einfach und übersichtlich strukturiert ist. Durch den modularisierten Aufbau können mehrere Teammitglieder gleichzeitig an der Doku arbeiten. Ein weiterer Vorteil von MkDocs ist, das es auf [Markdown](https://de.wikipedia.org/wiki/Markdown) basiert. Dadurch ist ein einfacher Anderungsverlauf sichtbar.
 
 ## Wo ist die Dokumentation einsehbar?
 Die Dokumentation ist unter [dieser URL](https://gz-bad-erzland-p2.github.io/Dokumentation/) einsehbar. Ihr findet den Link ebenfalls oben rechts auf der Repo-Code-Seite in der Ecke.
 
-## Wie kann ich die Dokumentation bearbeiten?
+## Was ist alles zu beachetn?
 
 ## Optional: Installation von MkDocs auf Ubuntu
 
@@ -31,7 +31,7 @@ Gesamte MkDocs doku hier:  [mkdocs.org](https://www.mkdocs.org).
 Alle Datei sowie Ordnernamen sind klein zu benennen.
 
 !!! success "Gutes Beispiel"
-    `sool-ist.md`
+    `soll-ist.md`
 
 !!! failure "Schlechtes Beispiel"
     `Soll-Ist.md`
@@ -44,14 +44,14 @@ Die Dateinamen sollten im groben Sinn mit der Hauptüberschrift in der Markdown 
 
 !!! success "Gutes Beispiel"
 
-    Name: `sool-ist.md`
+    Name: `soll-ist.md`
 
     ÜS: `Ist Soll Analyse`
 
 
 !!! failure "Schlechtes Beispiel"
     
-    Name: `sool-ist.md`
+    Name: `soll-ist.md`
     
     ÜS: `Analyse zum Wasserfalldiagramm`
 
