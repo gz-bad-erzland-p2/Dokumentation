@@ -12,21 +12,19 @@ Dateinamen sind im `CamelCase` zu benennen. Dabei ist der erste Buchstabe groß 
     `soll-ist-analyse.md`
 
 !!! danger "ACHTUNG"
-Die Dateinamen müssen bei Komponenten immer das Wort `Component` enthalten.
+    Die Dateinamen müssen bei Komponenten immer das Wort `Component` enthalten.
 
 ### Ordner
 
 Ordner sind klein zu schreiben. Es werden keine Leerzeichen oder andere separatoren verwendet. Ein Ordner bündelt immer mehrere Dokumente zum benannten Thema.
 
 !!! success "Gutes Beispiel"
-    
-`api`
-    \- `wizard`
-        \- `db`
+    `api`
+        \- `wizard`
+            \- `db`
 
 !!! failure "Schlechtes Beispiel"
-    
-`api-wizard-db`
+    `api-wizard-db`
 
 ### Andere Namen
 
@@ -73,10 +71,10 @@ Bitte erstellt für jede Entwicklung einer Komponente einen eigenen Branch. Der 
 #### Merge/ Pull Request
 
 !!! danger "ACHTUNG"
-Es wird **nie** direkt in den `main`-Branch committed. Es wird immer ein Pull-Request erstellt und dieser muss von mindestens einem anderen Entwickler genehmigt werden. Danach kann die Änderung in den `main`-Branch gemerged werden.
+    Es wird **nie** direkt in den `main`-Branch committed. Es wird immer ein Pull-Request erstellt und dieser muss von mindestens einem anderen Entwickler genehmigt werden. Danach kann die Änderung in den `main`-Branch gemerged werden.
 
 !!! info "Hinweis"
-Eine Pull-Request ist eine Anfrage an einen anderen Entwickler, die Änderungen in den `main`-Branch zu mergen.
+    Eine Pull-Request ist eine Anfrage an einen anderen Entwickler, die Änderungen in den `main`-Branch zu mergen.
 
 ### Befehle
 
