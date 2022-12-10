@@ -59,13 +59,13 @@ Commit Messages sind bevorzugt in Englisch zu schreiben. Sie beinhalten eine kur
 
 #### Aufbau
 * `main` - Hauptbranch (Read-Only)
-* `nav-bar` - Branch in dem nur Änderungen an der Navigationsleiste gemacht und committed werden
+* `nav-bar` - Branch in dem nur Änderungen an der Navigationsleiste gemacht und committed werden (Beispiel)
 
 !!! danger "ACHTUNG"
-Branches sind im `kebab-case` zu benennen. Dabei sind alle Wörter klein zu schreiben und mit einem Bindestrich getrennt.
+    Branches sind im `kebab-case` zu benennen. Dabei sind alle Wörter klein zu schreiben und mit einem Bindestrich getrennt.
 
 !!! question "Wann wird ein neuer Branch erstellt?"
-Bitte erstellt für jede Entwicklung einer Komponente einen eigenen Branch. Der Branchname ist in `kevav-case` zu schreiben und enthält den Namen der Komponente. Der Branchname enthält den Namen der Komponente.
+    Bitte erstellt für jede Entwicklung einer Komponente einen eigenen Branch. Der Branchname ist in `kevav-case` zu schreiben und enthält den Namen der Komponente. Der Branchname enthält den Namen der Komponente.
 
 
 #### Merge/ Pull Request
