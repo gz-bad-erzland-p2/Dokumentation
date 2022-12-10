@@ -3,7 +3,7 @@
 ## Namensgebung
 ### Dateinamen
 
-Dateinamen sind im `CamelCase` zu benennen. Dabei ist der erste Buchstabe groß zu schreiben und alle weiteren Wörter im Namen sind mit einem Großbuchstaben zu beginnen.
+Dateinamen von Komponenten sind im `CamelCase` zu benennen. Dabei ist der erste Buchstabe groß zu schreiben und alle weiteren Wörter im Namen sind mit einem Großbuchstaben zu beginnen.
 
 !!! success "Gutes Beispiel"
     `SollIstAnalyse.md`
@@ -13,6 +13,8 @@ Dateinamen sind im `CamelCase` zu benennen. Dabei ist der erste Buchstabe groß 
 
 !!! danger "ACHTUNG"
     Die Dateinamen müssen bei Komponenten immer das Wort `Component` enthalten.
+
+Alle anderen Dateinamen innerhalb des `app` Ordners sind klein zu benennen. Es gelten die Konvention von NextJS für die Dateinamen.
 
 ### Ordner
 
