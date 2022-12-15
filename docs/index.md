@@ -2,4 +2,5 @@
 
 # Office-Sharing-Bad-Erzland
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+Die Gemeindeverwaltung von Bad Erzland möchte im Rahmen der gesellschaftlichen digitalen Transformation und damit verbundener neuer Arbeitsformen Officesharing zur Miete als Alternative für das Homeoffice an wöchentlichen Arbeitstagen von 7 Uhr bis 20 Uhr anbieten.
+Dafür wurde Sec-Net-IT als externer Dienstleister angeworben. Diese Dokumentation stellt alle Informationen von der Planung bis zur Implementation zur Verfügung.
