@@ -6,12 +6,12 @@
 
 ### AP Buchung
 - AP Buchung1: Wahl des Betriebssystems
-- AP Buchung2: Singel oder Multi Arbeitsplatz
-- AP Buchung3: Weitere Konfiguration Angeben
+- AP Buchung2: Single oder Multi Arbeitsplatz
+- AP Buchung3: weitere Konfiguration angeben
 -  AP Buchung4: Zeiträume anzeigen lassen
--  AP Buchung5: Zeitraum auswälen 
+-  AP Buchung5: Zeitraum auswählen 
 -  AP Buchung6: Kontaktdaten eingeben
-- AP Buchung7: Resservierung Bestätigen
+- AP Buchung7: Reservierung bestätigen
 -  AP Buchung8: Bestätigung erhalten
 -  AP Buchung9: Bestätigung drucken
 
