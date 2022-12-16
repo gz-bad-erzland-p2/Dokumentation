@@ -4,7 +4,7 @@ Die Buchung eines Arbeitsplatzes wird über einen Wizard durchgeführt.
 
 Dieser durchläuft mit dem Nutzer folgende Schritte:
   1. Zeitauswahl
-  2. Arbeitplatzkonfiguration
+  2. Arbeitsplatzkonfiguration
   3. Login
   4. Buchungsbestätigung
   
