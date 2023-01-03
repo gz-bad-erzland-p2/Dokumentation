@@ -9,3 +9,4 @@ Dieser durchläuft mit dem Nutzer folgende Schritte:
   4. Buchungsbestätigung
   
   Der Wizard soll dabei möglichst intuitiv bedienbar sein und es auch unerfahrenen Nutzern ermöglichen das Office-Sharing System zu nutzen.
+
