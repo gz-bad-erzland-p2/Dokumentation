@@ -7,4 +7,8 @@ folgende Themen wurden betrachtet:
   - Backupstrategie
   - Erreichbarkeit
   - Login
+  - SQL-Injections
 
+Dabei wurden die Hinweise des Bundesinstituts für Sicherheits beachtet.
+
+Sicherheitsrichtlinien BSI: https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Publikationen/Studien/WebSec/WebSec.pdf?__blob=publicationFile&v=1
