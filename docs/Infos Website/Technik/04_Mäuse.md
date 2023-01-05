@@ -1,6 +1,7 @@
 # Mäuse
 
 ![grafik](https://user-images.githubusercontent.com/44226321/210722385-c8b42fc9-e882-4f68-86a1-cdcfa90ab394.png)
+
 (Beispielbild)
 
 # Produktblatt zu den Mäusen
