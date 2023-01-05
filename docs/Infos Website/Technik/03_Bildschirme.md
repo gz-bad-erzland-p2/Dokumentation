@@ -1,6 +1,7 @@
 # Bildschirme 
 
 ![grafik](https://user-images.githubusercontent.com/44226321/210719818-6ef81070-3e39-44fd-b0b6-48fac13743d2.png)
+
 (Beispielbild)
 
 # Produktblatt zu den Bildschirmen:
