@@ -1,6 +1,7 @@
 # Tastaturen
 
 ![grafik](https://user-images.githubusercontent.com/44226321/210723339-7c503a7e-4011-4d60-8b02-419b943eefcb.png)
+
 (Beispielbild)
 
 # Produktblatt der Tastaturen:
