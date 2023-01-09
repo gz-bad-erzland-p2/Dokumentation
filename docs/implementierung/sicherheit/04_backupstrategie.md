@@ -10,4 +10,4 @@ Großvater, Vater, Sohn Prinzip:
 
 
 Diese kann, wenn durch den Kunden gwünscht, nachträglich realisiert werden. 
-Diese ist jedoch nicht Projektbestandteil.
+Es ist jedoch nicht Projektbestandteil.
