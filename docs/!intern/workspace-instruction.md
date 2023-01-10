@@ -7,3 +7,6 @@
 
 
 https://www.figma.com/file/A5B3B7TBqCzpDUkpVlvEI5/Untitled?node-id=2%3A15&t=kyYyLXwLs7iXFrln-1
+
+
+Fix for git: https://stackoverflow.com/a/30043334
