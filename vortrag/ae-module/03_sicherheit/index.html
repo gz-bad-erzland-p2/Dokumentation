@@ -1587,9 +1587,47 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Sicherheit
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Sicherheit
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#vom-bsi-definierte-datenverschlusselung" class="md-nav__link">
+    Vom BSI definierte Datenverschlüsselung
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#aes-256" class="md-nav__link">
+    AES-256
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1719,6 +1757,28 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#vom-bsi-definierte-datenverschlusselung" class="md-nav__link">
+    Vom BSI definierte Datenverschlüsselung
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#aes-256" class="md-nav__link">
+    AES-256
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1737,7 +1797,16 @@
 
 
 <h1 id="sicherheit">Sicherheit<a class="headerlink" href="#sicherheit" title="Permanent link">&para;</a></h1>
-<p>TODO: Passwortverschlüsselung für Anmeldung im Frontend</p>
+<h2 id="vom-bsi-definierte-datenverschlusselung">Vom BSI definierte Datenverschlüsselung<a class="headerlink" href="#vom-bsi-definierte-datenverschlusselung" title="Permanent link">&para;</a></h2>
+<p>Das <a href="https://www.bsi.bund.de">BSI</a> hat eine <a href="https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Publikationen/TechnischeRichtlinien/TR03116/BSI-TR-03116.pdf?__blob=publicationFile&amp;v=1">Empfehlung</a> herausgegeben, die die Datenverschlüsselung in Deutschland regelt. Diese Empfehlung ist für alle Behörden und Unternehmen verbindlich. Sie ist in der <a href="https://www.bsi.bund.de/DE/Themen/Grundschutz/GrundschutzKataloge/GrundschutzKataloge_node.html">BSI-Grundschutz-Kataloge</a> verankert.</p>
+<p>Eine dieser Empfehlung ist die Nutzung des Advanced Encryption Standard (AES). </p>
+<blockquote>
+<p>Bei diesem Verfahren handelt es sich um eine Kernkomponente vieler weitverbreiteter kryptographischer Lösungen. Der AES wurde in einem öffentlichen Prozess entwickelt und vor wie auch nach seiner Standardisierung von einer großen Anzahl von Experten auf mögliche kryptographische Schwächen untersucht. Stand der Forschung ist zur Zeit, dass nur in wesentlich abgeschwächten Versionen des AES signifikante kryptographische Probleme gefunden werden konnten.
+Quelle: <a href="https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Publikationen/TechnischeRichtlinien/TR03116/BSI-TR-03116.pdf?__blob=publicationFile&amp;v=1">BSI-TR-03116</a></p>
+</blockquote>
+<h2 id="aes-256">AES-256<a class="headerlink" href="#aes-256" title="Permanent link">&para;</a></h2>
+<p>Zur verschlüsselung des Passworts, wird genau dieser Algorithms verwendet. Durch die benutzten der Bibliothek <a href="LINK HIEREINFÜGEN">bcrypt</a> wird das Passwort mit einem zufälligen Salt verschlüsselt. Dieser Salt wird dann in der Datenbank gespeichert.</p>
+<p>Somit ist eine Verschlüsselung des Passworts gegeben.</p>
 
 
 
