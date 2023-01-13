@@ -1,6 +1,6 @@
 # Entwicklungsvorgehen
 
-Das Office-Sharing Buchungssystem der Sec-Net-IT für das Gemeindezentrum Bad Erzland wurd agil nach der Scrum Methode entwickelt.
+Das Office-Sharing Buchungssystem der Sec-Net-IT für das Gemeindezentrum Bad Erzland wurde agil nach der Scrum Methode entwickelt.
 
 ** Hinweis Vortragender Das Scrum Vorgehen sehen sie hier auf der Abbildung.
 
