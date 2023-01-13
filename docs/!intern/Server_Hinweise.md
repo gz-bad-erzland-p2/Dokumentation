@@ -18,18 +18,24 @@ Rechte: ![grafik](https://user-images.githubusercontent.com/44226321/211504807-8
 Auf der Maschine:
 
 Nutzername: root
+
 PW: 01219dd.
 
+
 Im Browser 192.168.98.10:444
+
 Nutzername: admin
+
 PW: 01219dd.
 
 # DNS-Server
 
 Nutzername: vagrant
+
 PW: vagrant
 
 # Webserver
 
 Nutzername: vagrant
+
 PW: vagrant
