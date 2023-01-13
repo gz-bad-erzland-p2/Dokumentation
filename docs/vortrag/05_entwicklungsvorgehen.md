@@ -8,8 +8,7 @@ Das Office-Sharing Buchungssystem der Sec-Net-IT für das Gemeindezentrum Bad Er
 
 Abbildung 1: Scrum
 
-Der Product Owner entspricht dem Gemeindemitarbeiter Herr Gutfried. Die unter User-Stories beschriebenen Funktionen fungieren als Backlog.
-Wir als Team von der Sec-Net-IT, haben einmal je Sprint, die Ziele festgelegt und als Tickets im Sprint Backlog abgelegt. Als Scrum Master fungierte unser Projektleiter Thomas. Am Ende jedes Tages haben alle Mitarbeiter ihren Vortschritt berichtet und besprochen. Am Ende jedes Sprints wurde ein Zwischenstand für den internen Review bereitgestellt.
+Der Product Owner entspricht dem Gemeindemitarbeiter Herr Gutfried. Die unter User-Storys beschriebenen Funktionen fungieren als Backlog. Wir als Team von der Sec-Net-IT, haben einmal je Sprint, die Ziele festgelegt und als Tickets im Sprint Backlog abgelegt. Als Scrum Master fungierte unser Projektleiter Thomas. Am Ende jedes Tages haben alle Mitarbeiter ihren Fortschritt berichtet und besprochen. Am Ende jedes Sprints wurde ein Zwischenstand für den internen Review bereitgestellt.
 
 TODO: 
 Fragen ob die Genauen Termine aus dem Pflichtenheft rein sollen
