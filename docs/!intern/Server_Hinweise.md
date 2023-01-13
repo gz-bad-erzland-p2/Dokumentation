@@ -15,14 +15,14 @@ Rechte: ![grafik](https://user-images.githubusercontent.com/44226321/211504807-8
 ![grafik](https://user-images.githubusercontent.com/44226321/211505736-ba5e582c-a310-425f-9c59-b216e6622cc1.png)
 
 # Firewall
-Auf der Maschine:
+--> Auf der Maschine:
 
 Nutzername: root
 
 PW: 01219dd.
 
 
-Im Browser 192.168.98.10:444
+--> Im Browser 192.168.98.10:444:
 
 Nutzername: admin
 
