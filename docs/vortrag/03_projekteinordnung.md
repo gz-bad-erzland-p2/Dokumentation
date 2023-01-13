@@ -1,6 +1,6 @@
 #Projekteinordnung
 
-![Prozesslandkarte_v1](https://user-images.githubusercontent.com/57149152/212294920-a3f39fbb-2f98-4c72-864b-642b5ec5e3af.PNG)
+![grafik](https://user-images.githubusercontent.com/57149152/212299388-21ab26b2-fc61-4605-bf70-61fc0cec2bf4.png)
 
 
 TODO: 
