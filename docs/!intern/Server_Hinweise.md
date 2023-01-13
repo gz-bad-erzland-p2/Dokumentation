@@ -39,3 +39,9 @@ PW: vagrant
 Nutzername: vagrant
 
 PW: vagrant
+
+# CA
+
+Passphrase: a1s2d3f4g5.!
+PEM pass phrase: a1s2d3f4g5.!
+common Name: itsecnet
