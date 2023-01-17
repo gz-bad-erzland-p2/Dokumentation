@@ -18,11 +18,11 @@ zu bewerten. Von einer Verwendung ist daher abzuraten.
 
 ## Blowfish
 
-Zur verschlüsselung des Passworts, wird der Blowfish Algorithmus verwendet. Durch die benutzten der Bibliothek [bcrypt](https://en.wikipedia.org/wiki/Bcrypt) wird das Passwort mit einem zufälligen Salt verschlüsselt. Das Verschlüsselte Passwort wird dann in Form eines Hashes in der Datenbank gespeichert.
+Zur Verschlüsselung des Passworts wird der Blowfish Algorithmus verwendet. Durch die Benutzten der Bibliothek [bcrypt](https://en.wikipedia.org/wiki/Bcrypt) wird das Passwort mit einem zufälligen Salt verschlüsselt. Das Verschlüsselte Passwort wird dann in Form eines Hashes in der Datenbank gespeichert.
 
-Somit ist eine Verschlüsselung des Passworts gegeben.
+Somit ist eine verschlüsselung des Passworts gegeben.
 
-Weitere Informationen zur Funktionsweise und der Sicherheit des Algorithmus finden Sie ihr [Wikipedia](https://en.wikipedia.org/wiki/Blowfish_(cipher)).
+Weitere Informationen zur Funktionsweise und der Sicherheit des Algorithmus finden Sie hier [Wikipedia](https://en.wikipedia.org/wiki/Blowfish_(cipher)).
 
 
 # RISIKOANALYSE HIER EINFÜGEN
