@@ -1,9 +1,9 @@
 # Firewall
 
-# Erstellen
+# Einzelnen Netzwerkadapter
 
-Vagrantfile:
+Schnittstellen:
 
 # Konfiguration
 
-Playbook:
+Firewall Regeln:
