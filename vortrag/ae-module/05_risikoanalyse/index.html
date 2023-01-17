@@ -1883,6 +1883,16 @@
 
 
 <h1 id="risikoanalyse">Risikoanalyse<a class="headerlink" href="#risikoanalyse" title="Permanent link">&para;</a></h1>
+<p>Um den Schutzbedarf zu beurteilen, wird eine Schwachstellenanalyse durchgeführt. Dazu erfolgt die
+Auswahl von Gefährdungsfaktoren zu höherer Gewalt, Fahrlässigkeit, Vorsatz, technischem Versagen
+oder organisatorischen Mängeln. Anschließend wird die Eintrittswahrscheinlichkeit zu den
+Gefährdungssituationen bestimmt sowie die Höhe des möglichen Schadens.</p>
+<div class="admonition note">
+<p class="admonition-title">Schwachstellen in einem IT-System</p>
+<pre class="mermaid"><code>graph LR
+  A[Benuzter] --&gt; B[Anwendungssystem];
+  B &lt;--&gt;|Datenübertragung| C[Backend];</code></pre>
+</div>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Eintrittswahrscheinlichkeit</label><label for="__tabbed_1_2">Schadenshöhe</label><label for="__tabbed_1_3">Risikokategorien</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -1935,16 +1945,16 @@ der Praxis werden sehr hohe Risiken selten akzeptiert.</dd>
 <th><strong>Eintrittswahrscheinlichkeit</strong></th>
 <th><strong>Schadenshöhe</strong></th>
 <th><strong>Risiko</strong></th>
-<th><strong>Schutzziele</strong></th>
+<th><strong>Schutzmaßnahmen</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Fehlbedinung</td>
+<td>Fehlbedienung</td>
 <td>selten</td>
 <td>begrenzt</td>
 <td>mittel</td>
-<td></td>
+<td>Onlinehilfe, UI-Lock</td>
 </tr>
 <tr>
 <td>Irrtum</td>
@@ -1954,7 +1964,7 @@ der Praxis werden sehr hohe Risiken selten akzeptiert.</dd>
 <td></td>
 </tr>
 <tr>
-<td>unsachgemäßge Behandlung</td>
+<td>unsachgemäße Behandlung</td>
 <td>selten</td>
 <td>begrenzt</td>
 <td>mittel</td>
@@ -2025,16 +2035,17 @@ der Praxis werden sehr hohe Risiken selten akzeptiert.</dd>
 </tr>
 </tbody>
 </table>
-<p>Risiko</p>
-<p>Eintritswahrshenlichkeit</p>
-<p>Auswirkung</p>
-<p>Maßnahmen</p>
-<p>Krankheitsuafall</p>
-<p>Hardwareausfall</p>
-<p>Softwareausfall</p>
-<p>Nutzer selber (Fahrlässigkeit)</p>
-<p>Funktionalität der IT-Systeme</p>
-<p>Verfolgbarkeit des Dienstes</p>
+<h1 id="schutzbedarfsanalyse">Schutzbedarfsanalyse<a class="headerlink" href="#schutzbedarfsanalyse" title="Permanent link">&para;</a></h1>
+<p>Zur Prävention von Risiken werden Sicherheitsmaßnahmen ergriffen. </p>
+<ul>
+<li>Durch Schulungen der Mitarbeiter werden die Risiken der Fehlbedingung und des Irrtums minimiert.</li>
+<li>Durch die gezwungene Verwendung von sicheren Passwörtern wird der Diebstahl von Daten verhindert.</li>
+<li>Durch die Bereitstellung einer Online-Hilfe, sowie eines Service-Teams wird die Fehlbedienung
+  minimiert.</li>
+</ul>
+<blockquote>
+<p>Durch Schulungen wird die größte Schwachstelle in einem IT-System minimiert.</p>
+</blockquote>
 
 
 
