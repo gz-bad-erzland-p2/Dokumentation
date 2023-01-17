@@ -4,5 +4,5 @@
 
 TODO: 
 Erklärung wir sind die Sec-Net-IT-Mitarbeiter und arbeiten am office Sharing(mündlich als Notiz für den Sprecher)
-Von Frau Riester absegnen lassen.
+
 Link OneDrive
