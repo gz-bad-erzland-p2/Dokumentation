@@ -25,4 +25,9 @@ Somit ist eine Verschlüsselung des Passworts gegeben.
 Weitere Informationen zur Funktionsweise und der Sicherheit des Algorithmus finden Sie ihr [Wikipedia](https://en.wikipedia.org/wiki/Blowfish_(cipher)).
 
 
-# RISIKOANALYSE HIER EINFÜGEN
+Zur weiteren Einschätzung des Sicherheitsrisikos ist die Risikoanalyse zu beachten.
+
+[Risikoanalyse :material-file-chart-outline:](/vortrag/ae-module/05_risikoanalyse/){ .md-button }
+
+[^1]: https://www.allianz-fuer-cybersicherheit.de/SharedDocs/Downloads/Webs/ACS/DE/BSI-CS/BSI-CS_069.pdf?__blob=publicationFile&v=1 (17.01.2023)
+[^2]: https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Publikationen/TechnischeRichtlinien/TR03116/BSI-TR-03116.pdf?__blob=publicationFile&v=1 (16.01.2023)
