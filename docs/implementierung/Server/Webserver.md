@@ -1,8 +1,9 @@
-# Webserver
+# DNS Server
 
-Konfiguration
+# Erstellen
 
 Vagrantfile:
 
-Playbook:
+# Konfiguration
 
+Playbook:
