@@ -61,16 +61,14 @@ Gefährdungssituationen bestimmt sowie die Höhe des möglichen Schadens.
 | **Gefährdung**          | **Eintrittswahrscheinlichkeit** | **Schadenshöhe**   | **Risiko** | **Schutzmaßnahmen**  |
 |-------------------------|---------------------------------|--------------------|------------|----------------------|
 | Fehlbedienung           | selten                          | begrenzt           | mittel     | Onlinehilfe, UI-Lock |
-| Irrtum                  | selten                          | begrenzt           | gering     |                      |
-| unsachgemäße Behandlung | selten                          | begrenzt           | mittel     |                      |
-|                         |                                 |                    |            |                      |
-| Einbruch, Diebstahl     | selten                          | Vernach-lässigbar  | gering     |                      |
-| Hacking                 | mittel                          | beträchtlich       | sehr hoch  |                      |
-| Spionage                | mittel                          | begrenzt           | gering     |                      |
-| Manipulation            | selten                          | beträchtlich       | hoch       |                      |
-| Sabotage                | selten                          | Existenz-bedrohend | sehr hoch  |                      |
-| Vandalismus             | selten                          | Vernach-lässigbar  | gering     |                      |
-|                         |                                 |                    |            |                      |
+| Irrtum                  | selten                          | begrenzt           | gering     | Onlinehilfe, UI-Lock |
+| unsachgemäße Behandlung | selten                          | begrenzt           | mittel     | Personaa vorort, Protokollierung der Geräte nutzung |
+| Einbruch, Diebstahl     | selten                          | Vernach-lässigbar  | gering     | Alamanalage, Kontrolle auf Vollständigkeit |
+| Hacking                 | mittel                          | beträchtlich       | sehr hoch  | verschlüsselte Passwortspeicherung, Kontrolle gegen SQL Injection  |
+| Spionage                | mittel                          | begrenzt           | gering     | Rollenverwaltung     |
+| Manipulation            | selten                          | beträchtlich       | hoch       | Kontrolle gegen SQL-Injection|
+| Sabotage                | selten                          | Existenz-bedrohend | sehr hoch  | Kontrolle gegen SQL-Injection                     |
+| Vandalismus             | selten                          | Vernach-lässigbar  | gering     | Alarmanalge                    |
 | Stromausfall            | selten                          | Vernach-lässigbar  | gering     |
 
 
