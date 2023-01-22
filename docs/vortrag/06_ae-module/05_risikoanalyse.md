@@ -69,16 +69,13 @@ Gefährdungssituationen bestimmt sowie die Höhe des möglichen Schadens.
 | Manipulation            | selten                          | beträchtlich       | hoch       | Kontrolle gegen SQL-Injection|
 | Sabotage                | selten                          | Existenz-bedrohend | sehr hoch  | Kontrolle gegen SQL-Injection                     |
 | Vandalismus             | selten                          | Vernach-lässigbar  | gering     | Alarmanalge                    |
-| Stromausfall            | selten                          | Vernach-lässigbar  | gering     |
+| Stromausfall            | selten                          | Vernach-lässigbar  | gering     | Notstromaggregat
 
 
 # Schutzbedarfsanalyse
 
 Zur Prävention von Risiken werden Sicherheitsmaßnahmen ergriffen. 
 
-- Durch Schulungen der Mitarbeiter werden die Risiken der Fehlbedingung und des Irrtums minimiert.
-- Durch die gezwungene Verwendung von sicheren Passwörtern wird der Diebstahl von Daten verhindert.
-- Durch die Bereitstellung einer Online-Hilfe, sowie eines Service-Teams wird die Fehlbedienung
-  minimiert.
+Wir minimieren die Risiken von Fehlbedingungen und menschlichen Fehlern durch regelmäßige Schulungen der Mitarbeiter. Durch die verpflichtende Verwendung von sicheren Passwörtern, verhindern wir erfolgreich den Diebstahl von Daten. Um Fehler bei der Bedienung zu vermeiden, stellen wir unseren Nutzern eine Online-Hilfe und ein Service-Team zur Verfügung.
 
 > Durch Schulungen wird die größte Schwachstelle in einem IT-System minimiert.
