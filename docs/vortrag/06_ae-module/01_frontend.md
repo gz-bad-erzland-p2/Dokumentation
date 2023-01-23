@@ -13,9 +13,9 @@ Wir haben unsere Planung in die Tat umgesetzt und einen ersten Entwurf in Figma 
 
 Nach der Erstellung des Entwurfs haben wir uns entschlossen, das Design noch einmal anzupassen, um es moderner und benutzerfreundlicher zu gestalten. Durch die Erhöhung der Kontraste haben wir das Design intuitiver und damit leichter zu verstehen und zu bedienen gemacht. 
 
-![form-version-2](https://user-images.githubusercontent.com/57149152/214051234-8d3b9029-72f8-4c10-bbed-54661f535b7f.png)
-
 ![form-version-2-2](https://user-images.githubusercontent.com/57149152/214051801-8b4c0534-e776-45e1-b186-642d9cfce27a.png)
+
+![form-version-2](https://user-images.githubusercontent.com/57149152/214051234-8d3b9029-72f8-4c10-bbed-54661f535b7f.png)
 
 # Entwicklung des Backends
 
