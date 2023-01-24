@@ -1281,6 +1281,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#ordner-files" class="md-nav__link">
+    Ordner files:
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2085,6 +2092,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#ordner-files" class="md-nav__link">
+    Ordner files:
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2316,6 +2330,15 @@ ansible_ssh_common_args=-oIdentityFile=playbooks/sshkeys/insecure_private_key
 <h2 id="ordner-sshkeys">Ordner sshkeys:<a class="headerlink" href="#ordner-sshkeys" title="Permanent link">&para;</a></h2>
 <p>enthält die einezelnen SSH-Keys um eine SSH Verbidnung mit dem Server aufzubauen</p>
 <p><img alt="grafik" src="https://user-images.githubusercontent.com/44226321/214228103-14840b9f-ae3d-43c1-b4c4-f801b753f831.png" /></p>
+<hr />
+<h2 id="ordner-files">Ordner files:<a class="headerlink" href="#ordner-files" title="Permanent link">&para;</a></h2>
+<p>Im Ordner <em>files</em> liegen Datein die in den playbooks verwendet und eingebunden werden.</p>
+<p>Bei jedem Server liegt hier für die Proxy Konfiguration die <em>evironment</em> Datei
+<div class="highlight"><pre><span></span><code>export http_proxy=http://10.254.5.100:3128
+export https_proxy=http://10.254.5.100:3128
+export no_proxy=localhost,.bsz-et.lan.dd-schulen.de
+</code></pre></div></p>
+<p>Für die einzelnen Server liegen hier noch spezifische andere Datein wie bspw. dnsmasq.conf etc...</p>
 
 
 
