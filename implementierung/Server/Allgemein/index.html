@@ -2129,30 +2129,30 @@ Diese liegen unter C:\Vagrant\CentOS9_xx (xx=Servername z.B. DB)</p>
 <p><img alt="grafik" src="https://user-images.githubusercontent.com/44226321/214226433-1f3112a2-c841-43e8-9988-cfcbdb62851c.png" /></p>
 <h3 id="datei-ssh-config">Datei ssh-config<a class="headerlink" href="#datei-ssh-config" title="Permanent link">&para;</a></h3>
 <p>Enthält alle nötigen Informationen um eine Verbindung mit dem Server mittels SSH herzustellen.
-<div class="highlight"><pre><span></span><code>Host centosxx
-  HostName 192.168.xx.xx
-  User vagrant
-  Port 22
-  UserKnownHostsFile /dev/null
-  StrictHostKeyChecking no
-  PasswordAuthentication no
-  IdentityFile playbooks/sshkeys/centosxx-key
-  IdentityFile playbooks/sshkeys/insecure_private_key
-  IdentitiesOnly yes
-  LogLevel FATAL
+<div class="highlight"><pre><span></span><code><span class="k">Host</span><span class="w"> </span><span class="s">centosxx</span>
+<span class="w">  </span><span class="s">HostName</span><span class="w"> </span><span class="mi">192</span><span class="s">.168.xx.xx</span>
+<span class="w">  </span><span class="s">User</span><span class="w"> </span><span class="s">vagrant</span>
+<span class="w">  </span><span class="s">Port</span><span class="w"> </span><span class="mi">22</span>
+<span class="w">  </span><span class="s">UserKnownHostsFile</span><span class="w"> </span><span class="s">/dev/null</span>
+<span class="w">  </span><span class="s">StrictHostKeyChecking</span><span class="w"> </span><span class="s">no</span>
+<span class="w">  </span><span class="s">PasswordAuthentication</span><span class="w"> </span><span class="s">no</span>
+<span class="w">  </span><span class="s">IdentityFile</span><span class="w"> </span><span class="s">playbooks/sshkeys/centosxx-key</span>
+<span class="w">  </span><span class="s">IdentityFile</span><span class="w"> </span><span class="s">playbooks/sshkeys/insecure_private_key</span>
+<span class="w">  </span><span class="s">IdentitiesOnly</span><span class="w"> </span><span class="s">yes</span>
+<span class="w">  </span><span class="s">LogLevel</span><span class="w"> </span><span class="s">FATAL</span>
 
-Host lnxhost-Internal
-  HostName 192.168.98.128
-  User vagrant
-  Port 22
-  UserKnownHostsFile /dev/null
-  StrictHostKeyChecking no
-  PasswordAuthentication no
-  IdentityFile c:/Vagrant/CentOS9-dns/.vagrant/machines/centos-dns/vmware_desktop/private_key
-  IdentityFile ~/vagrant/CentOS9-dns/.vagrant/machines/centos-dns/vmware_desktop/private_key
-  IdentityFile /CentOS9-dns/.vagrant/machines/centos-dns/vmware_desktop/private_key
-  IdentitiesOnly yes
-  LogLevel FATAL 
+<span class="s">Host</span><span class="w"> </span><span class="s">lnxhost-Internal</span>
+<span class="w">  </span><span class="s">HostName</span><span class="w"> </span><span class="mi">192</span><span class="s">.168.98.128</span>
+<span class="w">  </span><span class="s">User</span><span class="w"> </span><span class="s">vagrant</span>
+<span class="w">  </span><span class="s">Port</span><span class="w"> </span><span class="mi">22</span>
+<span class="w">  </span><span class="s">UserKnownHostsFile</span><span class="w"> </span><span class="s">/dev/null</span>
+<span class="w">  </span><span class="s">StrictHostKeyChecking</span><span class="w"> </span><span class="s">no</span>
+<span class="w">  </span><span class="s">PasswordAuthentication</span><span class="w"> </span><span class="s">no</span>
+<span class="w">  </span><span class="s">IdentityFile</span><span class="w"> </span><span class="s">c:/Vagrant/CentOS9-dns/.vagrant/machines/centos-dns/vmware_desktop/private_key</span>
+<span class="w">  </span><span class="s">IdentityFile</span><span class="w"> </span><span class="p">~</span><span class="sr">/vagrant/CentOS9-dns/.vagrant/machines/centos-dns/vmware_desktop/private_key</span>
+<span class="w">  </span><span class="s">IdentityFile</span><span class="w"> </span><span class="s">/CentOS9-dns/.vagrant/machines/centos-dns/vmware_desktop/private_key</span>
+<span class="w">  </span><span class="s">IdentitiesOnly</span><span class="w"> </span><span class="s">yes</span>
+<span class="w">  </span><span class="s">LogLevel</span><span class="w"> </span><span class="s">FATAL</span><span class="w"> </span>
 </code></pre></div></p>
 <h3 id="datei-vagrantfile">Datei vagrantfile<a class="headerlink" href="#datei-vagrantfile" title="Permanent link">&para;</a></h3>
 <p>Enthält alle Informationen die Vagrant benötigt um den Server mit den entsprechenden Spezifiaktionen automatisiert aufzusetzten.
@@ -2162,136 +2162,136 @@ Host lnxhost-Internal
 <p>Jeder Server erhält eine feste IP-Addresse mittels DCHP Reservierung.
 Dafür wird die Datei vmnetdhcp.conf in der vmware Konfiguration mitthilfe des replaceDHCPDconf.cmd Skrips überschrieben.</p>
 <h3 id="vmnetdhcpconf">vmnetdhcp.conf<a class="headerlink" href="#vmnetdhcpconf" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>#
-# Configuration file for VMware port of ISC 2.0 release running on
-# Windows.
-#
-# This file is generated by the VMware installation procedure; it
-# is edited each time you add or delete a VMware host-only network
-# adapter.
-#
-# We set domain-name-servers to make some clients happy
-# (dhclient as configued in SuSE, TurboLinux, etc.).
-# We also supply a domain name to make pump (Red Hat 6.x) happy.
-#
-allow unknown-clients;
-default-lease-time 1800;                # default is 30 minutes
-max-lease-time 7200;                    # default is 2 hours
+<div class="highlight"><pre><span></span><code><span class="c1">#</span>
+<span class="c1"># Configuration file for VMware port of ISC 2.0 release running on</span>
+<span class="c1"># Windows.</span>
+<span class="c1">#</span>
+<span class="c1"># This file is generated by the VMware installation procedure; it</span>
+<span class="c1"># is edited each time you add or delete a VMware host-only network</span>
+<span class="c1"># adapter.</span>
+<span class="c1">#</span>
+<span class="c1"># We set domain-name-servers to make some clients happy</span>
+<span class="c1"># (dhclient as configued in SuSE, TurboLinux, etc.).</span>
+<span class="c1"># We also supply a domain name to make pump (Red Hat 6.x) happy.</span>
+<span class="c1">#</span>
+allow<span class="w"> </span>unknown-clients<span class="p">;</span>
+default-lease-time<span class="w"> </span><span class="m">1800</span><span class="p">;</span><span class="w">                </span><span class="c1"># default is 30 minutes</span>
+max-lease-time<span class="w"> </span><span class="m">7200</span><span class="p">;</span><span class="w">                    </span><span class="c1"># default is 2 hours</span>
 
-# add your host reservations here
-host bszetlnx {
-    hardware ethernet 0a:50:56:3d:49:5e;
-    fixed-address 192.168.72.4;
-    option host-name &quot;bszetlnx&quot;;
-    # option domain-search &quot;bsz-et.lan.dd-schulen.de&quot;;
-}
+<span class="c1"># add your host reservations here</span>
+host<span class="w"> </span>bszetlnx<span class="w"> </span><span class="o">{</span>
+<span class="w">    </span>hardware<span class="w"> </span>ethernet<span class="w"> </span>0a:50:56:3d:49:5e<span class="p">;</span>
+<span class="w">    </span>fixed-address<span class="w"> </span><span class="m">192</span>.168.72.4<span class="p">;</span>
+<span class="w">    </span>option<span class="w"> </span>host-name<span class="w"> </span><span class="s2">&quot;bszetlnx&quot;</span><span class="p">;</span>
+<span class="w">    </span><span class="c1"># option domain-search &quot;bsz-et.lan.dd-schulen.de&quot;;</span>
+<span class="o">}</span>
 
-#DMZ
-host centoswebserver {
-    hardware ethernet 00:50:56:2a:c6:d7;
-    fixed-address 192.168.86.11;
-    option host-name &quot;centoswebserver&quot;;
-}
+<span class="c1">#DMZ</span>
+host<span class="w"> </span>centoswebserver<span class="w"> </span><span class="o">{</span>
+<span class="w">    </span>hardware<span class="w"> </span>ethernet<span class="w"> </span><span class="m">00</span>:50:56:2a:c6:d7<span class="p">;</span>
+<span class="w">    </span>fixed-address<span class="w"> </span><span class="m">192</span>.168.86.11<span class="p">;</span>
+<span class="w">    </span>option<span class="w"> </span>host-name<span class="w"> </span><span class="s2">&quot;centoswebserver&quot;</span><span class="p">;</span>
+<span class="o">}</span>
 
-#Intern
-host centosdns {
-    hardware ethernet 00:50:56:2a:c6:d8;
-    fixed-address 192.168.98.12;
-    option host-name &quot;centosdns&quot;;
-}
+<span class="c1">#Intern</span>
+host<span class="w"> </span>centosdns<span class="w"> </span><span class="o">{</span>
+<span class="w">    </span>hardware<span class="w"> </span>ethernet<span class="w"> </span><span class="m">00</span>:50:56:2a:c6:d8<span class="p">;</span>
+<span class="w">    </span>fixed-address<span class="w"> </span><span class="m">192</span>.168.98.12<span class="p">;</span>
+<span class="w">    </span>option<span class="w"> </span>host-name<span class="w"> </span><span class="s2">&quot;centosdns&quot;</span><span class="p">;</span>
+<span class="o">}</span>
 
-host centosca {
-    hardware ethernet 00:50:56:2a:c6:b3;
-    fixed-address 192.168.72.128;
-}
+host<span class="w"> </span>centosca<span class="w"> </span><span class="o">{</span>
+<span class="w">    </span>hardware<span class="w"> </span>ethernet<span class="w"> </span><span class="m">00</span>:50:56:2a:c6:b3<span class="p">;</span>
+<span class="w">    </span>fixed-address<span class="w"> </span><span class="m">192</span>.168.72.128<span class="p">;</span>
+<span class="o">}</span>
 
-host centosdb {
-    hardware ethernet 00:50:56:2a:c6:7b;
-    fixed-address 192.168.98.11;
-    option host-name &quot;centosdb&quot;;
-}
+host<span class="w"> </span>centosdb<span class="w"> </span><span class="o">{</span>
+<span class="w">    </span>hardware<span class="w"> </span>ethernet<span class="w"> </span><span class="m">00</span>:50:56:2a:c6:7b<span class="p">;</span>
+<span class="w">    </span>fixed-address<span class="w"> </span><span class="m">192</span>.168.98.11<span class="p">;</span>
+<span class="w">    </span>option<span class="w"> </span>host-name<span class="w"> </span><span class="s2">&quot;centosdb&quot;</span><span class="p">;</span>
+<span class="o">}</span>
 
-host centodhcp {
-    hardware ethernet 00:50:56:2a:c6:????????????????;
-    fixed-address 192.168.91.11;
-}
+host<span class="w"> </span>centodhcp<span class="w"> </span><span class="o">{</span>
+<span class="w">    </span>hardware<span class="w"> </span>ethernet<span class="w"> </span><span class="m">00</span>:50:56:2a:c6:????????????????<span class="p">;</span>
+<span class="w">    </span>fixed-address<span class="w"> </span><span class="m">192</span>.168.91.11<span class="p">;</span>
+<span class="o">}</span>
 
-# Virtual ethernet segment 8
-# Added at 02/07/22 11:55:42
-subnet 192.168.72.0 netmask 255.255.255.0 {
-range 192.168.72.128 192.168.72.254;            # default allows up to 125 VM&#39;s
-option broadcast-address 192.168.72.255;
-option domain-name-servers 192.168.72.2;
-option domain-name &quot;localdomain&quot;;
-option netbios-name-servers 192.168.72.2;
-option routers 192.168.72.2;
-default-lease-time 1800;
-max-lease-time 7200;
-}
-host VMnet8 {
-    hardware ethernet 00:50:56:C0:00:08;
-    fixed-address 192.168.72.1;
-    option domain-name-servers 0.0.0.0;
-    option domain-name &quot;&quot;;
-    option routers 0.0.0.0;
-}
-# End
-
-
-# Virtual ethernet segment 3
-# Added at 02/07/22 11:55:42
-subnet 192.168.91.0 netmask 255.255.255.0 {
-range 192.168.91.240 192.168.91.254;            # default allows up to 125 VM&#39;s
-option broadcast-address 192.168.91.255;
-option domain-name-servers 192.168.91.1;
-option domain-name &quot;localdomain&quot;;
-default-lease-time 1800;
-max-lease-time 7200;
-}
-host VMnet3 {
-    hardware ethernet 00:50:56:C0:00:03;
-    fixed-address 192.168.91.1;
-    option domain-name-servers 0.0.0.0;
-    option domain-name &quot;&quot;;
-}
-# End
+<span class="c1"># Virtual ethernet segment 8</span>
+<span class="c1"># Added at 02/07/22 11:55:42</span>
+subnet<span class="w"> </span><span class="m">192</span>.168.72.0<span class="w"> </span>netmask<span class="w"> </span><span class="m">255</span>.255.255.0<span class="w"> </span><span class="o">{</span>
+range<span class="w"> </span><span class="m">192</span>.168.72.128<span class="w"> </span><span class="m">192</span>.168.72.254<span class="p">;</span><span class="w">            </span><span class="c1"># default allows up to 125 VM&#39;s</span>
+option<span class="w"> </span>broadcast-address<span class="w"> </span><span class="m">192</span>.168.72.255<span class="p">;</span>
+option<span class="w"> </span>domain-name-servers<span class="w"> </span><span class="m">192</span>.168.72.2<span class="p">;</span>
+option<span class="w"> </span>domain-name<span class="w"> </span><span class="s2">&quot;localdomain&quot;</span><span class="p">;</span>
+option<span class="w"> </span>netbios-name-servers<span class="w"> </span><span class="m">192</span>.168.72.2<span class="p">;</span>
+option<span class="w"> </span>routers<span class="w"> </span><span class="m">192</span>.168.72.2<span class="p">;</span>
+default-lease-time<span class="w"> </span><span class="m">1800</span><span class="p">;</span>
+max-lease-time<span class="w"> </span><span class="m">7200</span><span class="p">;</span>
+<span class="o">}</span>
+host<span class="w"> </span>VMnet8<span class="w"> </span><span class="o">{</span>
+<span class="w">    </span>hardware<span class="w"> </span>ethernet<span class="w"> </span><span class="m">00</span>:50:56:C0:00:08<span class="p">;</span>
+<span class="w">    </span>fixed-address<span class="w"> </span><span class="m">192</span>.168.72.1<span class="p">;</span>
+<span class="w">    </span>option<span class="w"> </span>domain-name-servers<span class="w"> </span><span class="m">0</span>.0.0.0<span class="p">;</span>
+<span class="w">    </span>option<span class="w"> </span>domain-name<span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">;</span>
+<span class="w">    </span>option<span class="w"> </span>routers<span class="w"> </span><span class="m">0</span>.0.0.0<span class="p">;</span>
+<span class="o">}</span>
+<span class="c1"># End</span>
 
 
-# Virtual ethernet segment 2
-# Added at 11/29/22 10:17:53
-subnet 192.168.86.0 netmask 255.255.255.0 {
-range 192.168.86.128 192.168.86.254;            # default allows up to 125 VM&#39;s
-option broadcast-address 192.168.86.255;
-option domain-name-servers 192.168.86.1;
-option domain-name &quot;localdomain&quot;;
-default-lease-time 1800;
-max-lease-time 7200;
-}
-host VMnet2 {
-    hardware ethernet 00:50:56:C0:00:02;
-    fixed-address 192.168.86.1;
-    option domain-name-servers 0.0.0.0;
-    option domain-name &quot;&quot;;
-}
-# End
+<span class="c1"># Virtual ethernet segment 3</span>
+<span class="c1"># Added at 02/07/22 11:55:42</span>
+subnet<span class="w"> </span><span class="m">192</span>.168.91.0<span class="w"> </span>netmask<span class="w"> </span><span class="m">255</span>.255.255.0<span class="w"> </span><span class="o">{</span>
+range<span class="w"> </span><span class="m">192</span>.168.91.240<span class="w"> </span><span class="m">192</span>.168.91.254<span class="p">;</span><span class="w">            </span><span class="c1"># default allows up to 125 VM&#39;s</span>
+option<span class="w"> </span>broadcast-address<span class="w"> </span><span class="m">192</span>.168.91.255<span class="p">;</span>
+option<span class="w"> </span>domain-name-servers<span class="w"> </span><span class="m">192</span>.168.91.1<span class="p">;</span>
+option<span class="w"> </span>domain-name<span class="w"> </span><span class="s2">&quot;localdomain&quot;</span><span class="p">;</span>
+default-lease-time<span class="w"> </span><span class="m">1800</span><span class="p">;</span>
+max-lease-time<span class="w"> </span><span class="m">7200</span><span class="p">;</span>
+<span class="o">}</span>
+host<span class="w"> </span>VMnet3<span class="w"> </span><span class="o">{</span>
+<span class="w">    </span>hardware<span class="w"> </span>ethernet<span class="w"> </span><span class="m">00</span>:50:56:C0:00:03<span class="p">;</span>
+<span class="w">    </span>fixed-address<span class="w"> </span><span class="m">192</span>.168.91.1<span class="p">;</span>
+<span class="w">    </span>option<span class="w"> </span>domain-name-servers<span class="w"> </span><span class="m">0</span>.0.0.0<span class="p">;</span>
+<span class="w">    </span>option<span class="w"> </span>domain-name<span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">;</span>
+<span class="o">}</span>
+<span class="c1"># End</span>
 
-# Virtual ethernet segment 1
-# Added at 02/07/22 11:55:42
-subnet 192.168.98.0 netmask 255.255.255.0 {
-range 192.168.98.128 192.168.98.254;            # default allows up to 125 VM&#39;s
-option broadcast-address 192.168.98.255;
-option domain-name-servers 192.168.98.1;
-option domain-name &quot;localdomain&quot;;
-default-lease-time 1800;
-max-lease-time 7200;
-}
-host VMnet1 {
-    hardware ethernet 00:50:56:C0:00:01;
-    fixed-address 192.168.98.1;
-    option domain-name-servers 0.0.0.0;
-    option domain-name &quot;&quot;;
-}
-# End
+
+<span class="c1"># Virtual ethernet segment 2</span>
+<span class="c1"># Added at 11/29/22 10:17:53</span>
+subnet<span class="w"> </span><span class="m">192</span>.168.86.0<span class="w"> </span>netmask<span class="w"> </span><span class="m">255</span>.255.255.0<span class="w"> </span><span class="o">{</span>
+range<span class="w"> </span><span class="m">192</span>.168.86.128<span class="w"> </span><span class="m">192</span>.168.86.254<span class="p">;</span><span class="w">            </span><span class="c1"># default allows up to 125 VM&#39;s</span>
+option<span class="w"> </span>broadcast-address<span class="w"> </span><span class="m">192</span>.168.86.255<span class="p">;</span>
+option<span class="w"> </span>domain-name-servers<span class="w"> </span><span class="m">192</span>.168.86.1<span class="p">;</span>
+option<span class="w"> </span>domain-name<span class="w"> </span><span class="s2">&quot;localdomain&quot;</span><span class="p">;</span>
+default-lease-time<span class="w"> </span><span class="m">1800</span><span class="p">;</span>
+max-lease-time<span class="w"> </span><span class="m">7200</span><span class="p">;</span>
+<span class="o">}</span>
+host<span class="w"> </span>VMnet2<span class="w"> </span><span class="o">{</span>
+<span class="w">    </span>hardware<span class="w"> </span>ethernet<span class="w"> </span><span class="m">00</span>:50:56:C0:00:02<span class="p">;</span>
+<span class="w">    </span>fixed-address<span class="w"> </span><span class="m">192</span>.168.86.1<span class="p">;</span>
+<span class="w">    </span>option<span class="w"> </span>domain-name-servers<span class="w"> </span><span class="m">0</span>.0.0.0<span class="p">;</span>
+<span class="w">    </span>option<span class="w"> </span>domain-name<span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">;</span>
+<span class="o">}</span>
+<span class="c1"># End</span>
+
+<span class="c1"># Virtual ethernet segment 1</span>
+<span class="c1"># Added at 02/07/22 11:55:42</span>
+subnet<span class="w"> </span><span class="m">192</span>.168.98.0<span class="w"> </span>netmask<span class="w"> </span><span class="m">255</span>.255.255.0<span class="w"> </span><span class="o">{</span>
+range<span class="w"> </span><span class="m">192</span>.168.98.128<span class="w"> </span><span class="m">192</span>.168.98.254<span class="p">;</span><span class="w">            </span><span class="c1"># default allows up to 125 VM&#39;s</span>
+option<span class="w"> </span>broadcast-address<span class="w"> </span><span class="m">192</span>.168.98.255<span class="p">;</span>
+option<span class="w"> </span>domain-name-servers<span class="w"> </span><span class="m">192</span>.168.98.1<span class="p">;</span>
+option<span class="w"> </span>domain-name<span class="w"> </span><span class="s2">&quot;localdomain&quot;</span><span class="p">;</span>
+default-lease-time<span class="w"> </span><span class="m">1800</span><span class="p">;</span>
+max-lease-time<span class="w"> </span><span class="m">7200</span><span class="p">;</span>
+<span class="o">}</span>
+host<span class="w"> </span>VMnet1<span class="w"> </span><span class="o">{</span>
+<span class="w">    </span>hardware<span class="w"> </span>ethernet<span class="w"> </span><span class="m">00</span>:50:56:C0:00:01<span class="p">;</span>
+<span class="w">    </span>fixed-address<span class="w"> </span><span class="m">192</span>.168.98.1<span class="p">;</span>
+<span class="w">    </span>option<span class="w"> </span>domain-name-servers<span class="w"> </span><span class="m">0</span>.0.0.0<span class="p">;</span>
+<span class="w">    </span>option<span class="w"> </span>domain-name<span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">;</span>
+<span class="o">}</span>
+<span class="c1"># End</span>
 </code></pre></div>
 <hr />
 <h2 id="ordner-playbooks">Ordner playbooks:<a class="headerlink" href="#ordner-playbooks" title="Permanent link">&para;</a></h2>
@@ -2299,19 +2299,19 @@ host VMnet1 {
 <h2 id="erlauterung-der-einzelnen-datein">Erläuterung der einzelnen Datein:<a class="headerlink" href="#erlauterung-der-einzelnen-datein" title="Permanent link">&para;</a></h2>
 <h3 id="ansiblecfg">ansible.cfg:<a class="headerlink" href="#ansiblecfg" title="Permanent link">&para;</a></h3>
 <p>!!!ERKLÄRUNG!!!
-<div class="highlight"><pre><span></span><code># ansible configaration file.
+<div class="highlight"><pre><span></span><code><span class="c1"># ansible configaration file.</span>
 
-[defaults]
-inventory = hosts
-force_handlers = True
-host_key_checking = False
+<span class="k">[defaults]</span>
+<span class="s">inventory</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">hosts</span>
+<span class="s">force_handlers</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">True</span>
+<span class="s">host_key_checking</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">False</span>
 
-filter_version = &quot;1.0&quot;
-module_rejectlist = [ &quot;easy_install&quot; ]
+<span class="s">filter_version</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;1.0&quot;</span>
+<span class="s">module_rejectlist</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">[</span><span class="w"> </span><span class="s">&quot;easy_install&quot;</span><span class="w"> </span><span class="s">]</span>
 
-[ssh_connection]
-ssh_args = -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o CheckHostIP=no -o UpdateHostKeys=no -o LogLevel=quiet
-scp_if_ssh = True
+<span class="s">[ssh_connection]</span>
+<span class="s">ssh_args</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">-o</span><span class="w"> </span><span class="s">StrictHostKeyChecking=no</span><span class="w"> </span><span class="s">-o</span><span class="w"> </span><span class="s">UserKnownHostsFile=/dev/null</span><span class="w"> </span><span class="s">-o</span><span class="w"> </span><span class="s">CheckHostIP=no</span><span class="w"> </span><span class="s">-o</span><span class="w"> </span><span class="s">UpdateHostKeys=no</span><span class="w"> </span><span class="s">-o</span><span class="w"> </span><span class="s">LogLevel=quiet</span>
+<span class="s">scp_if_ssh</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">True</span>
 </code></pre></div></p>
 <h3 id="hosts">hosts:<a class="headerlink" href="#hosts" title="Permanent link">&para;</a></h3>
 <p>enthält die Hostnamen und IP Adressen des jeweiligen Servers
@@ -2334,9 +2334,9 @@ ansible_ssh_common_args=-oIdentityFile=playbooks/sshkeys/insecure_private_key
 <h2 id="ordner-files">Ordner files:<a class="headerlink" href="#ordner-files" title="Permanent link">&para;</a></h2>
 <p>Im Ordner <em>files</em> liegen Datein die in den playbooks verwendet und eingebunden werden.</p>
 <p>Bei jedem Server liegt hier für die Proxy Konfiguration die <em>evironment</em> Datei
-<div class="highlight"><pre><span></span><code>export http_proxy=http://10.254.5.100:3128
-export https_proxy=http://10.254.5.100:3128
-export no_proxy=localhost,.bsz-et.lan.dd-schulen.de
+<div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">http_proxy</span><span class="o">=</span>http://10.254.5.100:3128
+<span class="nb">export</span><span class="w"> </span><span class="nv">https_proxy</span><span class="o">=</span>http://10.254.5.100:3128
+<span class="nb">export</span><span class="w"> </span><span class="nv">no_proxy</span><span class="o">=</span>localhost,.bsz-et.lan.dd-schulen.de
 </code></pre></div></p>
 <p>Für die einzelnen Server liegen hier noch spezifische andere Datein wie bspw. dnsmasq.conf etc...</p>
 
