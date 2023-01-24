@@ -1,7 +1,8 @@
 # Allgemeines
 
 Jeder Server wird mittlhilfe der Orchestrierungssoftware Ansible erstellt.
-Als Schnitts
+Als Schnittsnitstelle zwischen VMware und Ansible wird die Software Vagrant verwendent.
+
 # Aufbau der Vagrant / Ansible Ordner/Datein
 
 Weiterhin wird jeder Server der mittels Vagrant und Ansible gestartet wird mit folgender Datei und Ordnerstruktur ausgerüstet.
