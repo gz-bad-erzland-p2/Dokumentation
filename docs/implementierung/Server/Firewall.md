@@ -1,5 +1,5 @@
 # Firewall
-
+Auf der Firewall läuft die freie Linux-Distribution IPFire, die als Router und Firewall fungiert.
 # Einzelnen Netzwerkadapter
 
 Schnittstellen:
