@@ -1,6 +1,6 @@
 # Allgemeines
 
-Jeder Server wird mittlhilfe der Orchestrierungssoftware Ansible erstellt.
+Jeder Server (außer die Firewall) wird mittlhilfe der Orchestrierungssoftware Ansible erstellt und ggf. konfiguriert.
 Als Schnittsnitstelle zwischen VMware und Ansible wird die Software Vagrant verwendent.
 
 # Aufbau der Vagrant / Ansible Ordner/Datein
