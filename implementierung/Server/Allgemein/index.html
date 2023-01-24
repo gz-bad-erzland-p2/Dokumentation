@@ -1883,8 +1883,42 @@
 
 
 <h1 id="allgemeines">Allgemeines<a class="headerlink" href="#allgemeines" title="Permanent link">&para;</a></h1>
-<p>DHCP Reservierung:</p>
-<p>Datei mit allen zusammengefassten Reservierungen</p>
+<p>Jeder Server wird mittlhilfe der Orchestrierungssoftware Ansible erstellt.
+Als Schnitts</p>
+<h1 id="aufbau-der-vagrant-ansible-ordnerdatein">Aufbau der Vagrant / Ansible Ordner/Datein<a class="headerlink" href="#aufbau-der-vagrant-ansible-ordnerdatein" title="Permanent link">&para;</a></h1>
+<p>Weiterhin wird jeder Server der mittels Vagrant und Ansible gestartet wird mit folgender Datei und Ordnerstruktur ausgerüstet.
+Diese liegen unter C:\Vagrant\CentOS9_xx (xx=Servername z.B. DB)</p>
+<p><img alt="grafik" src="https://user-images.githubusercontent.com/44226321/214226433-1f3112a2-c841-43e8-9988-cfcbdb62851c.png" /></p>
+<h2 id="datei-ssh-config">Datei ssh-config<a class="headerlink" href="#datei-ssh-config" title="Permanent link">&para;</a></h2>
+<p>Enthält alle nötigen Informationen um eine Verbindung mit dem Server mittels SSH herzustellen.</p>
+<p><img alt="grafik" src="https://user-images.githubusercontent.com/44226321/214228453-54d71da7-5e40-481a-9a40-5a046a2cd99e.png" /></p>
+<hr />
+<h2 id="datei-vagrantfile">Datei vagrantfile<a class="headerlink" href="#datei-vagrantfile" title="Permanent link">&para;</a></h2>
+<p>Enthält alle Informationen die Vagrant benötigt um den Server mit den entsprechenden Spezifiaktionen automatisiert aufzusetzten.
+&rarr; die einzelnen Vagrantfiles werden seperat vorgestellt</p>
+<hr />
+<h2 id="ordner-vmware">Ordner vmware:<a class="headerlink" href="#ordner-vmware" title="Permanent link">&para;</a></h2>
+<p>Jeder Server erhält eine feste IP-Addresse mittels DCHP Reservierung.
+Dafür wird die Datei vmnetdhcp.conf in der vmware Konfiguration mitthilfe des replaceDHCPDconf.cmd Skrips überschrieben.</p>
+<h2 id="vmnetdhcpconf">vmnetdhcp.conf<a class="headerlink" href="#vmnetdhcpconf" title="Permanent link">&para;</a></h2>
+<p><img alt="grafik" src="https://user-images.githubusercontent.com/44226321/214229399-473191a8-dfd6-404a-9d16-c85d10c9a7d5.png" />
+<img alt="grafik" src="https://user-images.githubusercontent.com/44226321/214229468-a734b8e7-c9ea-4729-856f-77a40ed694e4.png" /></p>
+<hr />
+<h2 id="ordner-playbooks">Ordner playbooks:<a class="headerlink" href="#ordner-playbooks" title="Permanent link">&para;</a></h2>
+<p><img alt="grafik" src="https://user-images.githubusercontent.com/44226321/214227756-7a79b81d-4ca0-4523-a590-6c7fa71c0ac2.png" /></p>
+<h2 id="erlauterung-der-einzelnen-datein">Erläuterung der einzelnen Datein:<a class="headerlink" href="#erlauterung-der-einzelnen-datein" title="Permanent link">&para;</a></h2>
+<h2 id="ansiblecfg">ansible.cfg:<a class="headerlink" href="#ansiblecfg" title="Permanent link">&para;</a></h2>
+<p>!!!ERKLÄRUNG!!!</p>
+<p><img alt="grafik" src="https://user-images.githubusercontent.com/44226321/214227026-4ffa34ce-3276-4181-a810-6df31ae1cd78.png" /></p>
+<h2 id="hosts">hosts:<a class="headerlink" href="#hosts" title="Permanent link">&para;</a></h2>
+<p>enthält die Hostnamen und IP Adressen des jeweiligen Servers</p>
+<p><img alt="grafik" src="https://user-images.githubusercontent.com/44226321/214227468-08882814-e487-4737-8928-1724f2560398.png" /></p>
+<h2 id="xxyml">xx.yml:<a class="headerlink" href="#xxyml" title="Permanent link">&para;</a></h2>
+<p>enthält das jeweilige Playbook für den Server -&gt; werden einzeln genauer vorgestellt</p>
+<hr />
+<h2 id="ordner-sshkeys">Ordner sshkeys:<a class="headerlink" href="#ordner-sshkeys" title="Permanent link">&para;</a></h2>
+<p>enthält die einezelnen SSH-Keys um eine SSH Verbidnung mit dem Server aufzubauen</p>
+<p><img alt="grafik" src="https://user-images.githubusercontent.com/44226321/214228103-14840b9f-ae3d-43c1-b4c4-f801b753f831.png" /></p>
 
 
 
