@@ -1,4 +1,8 @@
 # Allgemeines
+Überblick über alle Server:
+
+![Netzwerkplan_finalpng](https://user-images.githubusercontent.com/44226321/214246798-95457483-08bc-4875-947b-7af2355f5c04.png)
+
 
 Jeder Server (außer die Firewall) wird mittlhilfe der Orchestrierungssoftware Ansible erstellt und ggf. konfiguriert.
 Als Schnittsnitstelle zwischen VMware und Ansible wird die Software Vagrant verwendent.
