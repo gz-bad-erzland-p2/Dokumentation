@@ -1,3 +1,4 @@
+
 # Planung
 
 Wir haben uns in der Planungsphase gründlich mit den Informationen beschäftigt, die für den Buchungsprozess erforderlich sind. Dabei haben wir Schritte, die zusammengehören, zusammengefasst und in übersichtliche Abschnitte unterteilt, um die Bedienbarkeit zu optimieren. Auch das Zusammenspiel mit anderen Komponenten wie dem Login und der Registrierung haben wir dabei berücksichtigt.
@@ -23,6 +24,7 @@ Da das Design nun feststand, wussten wir, welche Komponenten das Backend zur Ver
 
 # Umsetzung des Designs
 
-Wir haben die reinen HTML-Ausgaben, die wir vom Backend erhalten haben, an unsere Designvorlage angepasst. Dabei haben sich einige Darstellungen noch einmal verschoben. [from-version-real]
+Wir haben die reinen HTML-Ausgaben, die wir vom Backend erhalten haben, an unsere Designvorlage angepasst. Dabei haben sich einige Darstellungen noch einmal verschoben.
 
-TODO: [from-version-real] von Jannik einfügen
+![form-real-version](https://raw.githubusercontent.com/gz-bad-erzland-p2/Dokumentation/master/docs/assets/img/osScreenNew.png)
+
