@@ -3,7 +3,24 @@
 # Einzelnen Netzwerkadapter
 
 Schnittstellen:
+![grafik](https://user-images.githubusercontent.com/44226321/214235061-958b0814-98f0-4932-ad29-de1805b198b4.png)
+___
+![grafik](https://user-images.githubusercontent.com/44226321/214235193-a2385c18-dd2f-4617-94fb-001dbd606b13.png)
+___
+![grafik](https://user-images.githubusercontent.com/44226321/214235267-2a707dde-9625-45a8-b093-b47f201a3bb0.png)
+___
+
+
+
+
+
 
 # Konfiguration
+Unter der IP-Adresse https://192.168.98.10:444/ ist das Webinterface der Firewall zu erreichen.
+Hier wurde die Konfiguration der Firewall vorgenommen.
+
+Firewall Optionen:
+
+![grafik](https://user-images.githubusercontent.com/44226321/214234670-908fe9c0-6581-42be-a7b1-e6066de2cdd4.png)
 
 Firewall Regeln:
