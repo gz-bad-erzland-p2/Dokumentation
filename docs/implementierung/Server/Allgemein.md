@@ -241,5 +241,17 @@ enthält die einezelnen SSH-Keys um eine SSH Verbidnung mit dem Server aufzubaue
 
 ![grafik](https://user-images.githubusercontent.com/44226321/214228103-14840b9f-ae3d-43c1-b4c4-f801b753f831.png)
 
+___
+## Ordner files:
 
+Im Ordner _files_ liegen Datein die in den playbooks verwendet und eingebunden werden.
+
+Bei jedem Server liegt hier für die Proxy Konfiguration die _evironmental_ Datei
+```
+export http_proxy=http://10.254.5.100:3128
+export https_proxy=http://10.254.5.100:3128
+export no_proxy=localhost,.bsz-et.lan.dd-schulen.de
+```
+
+Für die einzelnen Server liegen hier noch spezifische andere Datein wie bspw. dnsmasq.conf etc...
 
