@@ -17,7 +17,7 @@ Diese liegen unter C:\Vagrant\CentOS9_xx (xx=Servername z.B. DB)
 ### Datei ssh-config
 
 Enthält alle nötigen Informationen um eine Verbindung mit dem Server mittels SSH herzustellen.
-```
+```Nginx
 Host centosxx
   HostName 192.168.xx.xx
   User vagrant
@@ -56,7 +56,7 @@ Dafür wird die Datei vmnetdhcp.conf in der vmware Konfiguration mitthilfe des r
 
 ### vmnetdhcp.conf
  
-```
+```bash
 #
 # Configuration file for VMware port of ISC 2.0 release running on
 # Windows.
@@ -201,7 +201,7 @@ Erläuterung der einzelnen Datein:
 ### ansible.cfg: 
 
 !!!ERKLÄRUNG!!!
-```
+```Nginx
 # ansible configaration file.
 
 [defaults]
@@ -247,7 +247,7 @@ ___
 Im Ordner _files_ liegen Datein die in den playbooks verwendet und eingebunden werden.
 
 Bei jedem Server liegt hier für die Proxy Konfiguration die _evironment_ Datei
-```
+```bash
 export http_proxy=http://10.254.5.100:3128
 export https_proxy=http://10.254.5.100:3128
 export no_proxy=localhost,.bsz-et.lan.dd-schulen.de
