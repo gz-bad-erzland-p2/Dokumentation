@@ -3,6 +3,7 @@
 # Einzelnen Netzwerkadapter
 
 Schnittstellen:
+
 ![grafik](https://user-images.githubusercontent.com/44226321/214235061-958b0814-98f0-4932-ad29-de1805b198b4.png)
 ___
 ![grafik](https://user-images.githubusercontent.com/44226321/214235193-a2385c18-dd2f-4617-94fb-001dbd606b13.png)
