@@ -246,7 +246,7 @@ ___
 
 Im Ordner _files_ liegen Datein die in den playbooks verwendet und eingebunden werden.
 
-Bei jedem Server liegt hier für die Proxy Konfiguration die _evironmental_ Datei
+Bei jedem Server liegt hier für die Proxy Konfiguration die _evironment_ Datei
 ```
 export http_proxy=http://10.254.5.100:3128
 export https_proxy=http://10.254.5.100:3128
