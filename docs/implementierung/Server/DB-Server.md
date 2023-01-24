@@ -1,14 +1,12 @@
-# DB Server
+# Datenbank Server
 Auf dem Datenbankserver werden die Daten von den Nutzern der Buchungswebsite gespeichert und verwaltet.
+Als Datenbankverwaltungssystem wird MySQL verwendet.
 # Erstellen
 
 Vagrantfile:
 
 ![grafik](https://user-images.githubusercontent.com/44226321/214225289-2fdce1c7-03aa-4f8a-9166-c0b26c6fb0c7.png)
 
-MAC: 00:50:56:2a:c6:7b
-IP: 192.168.98.11 (durch DHCP Reservierung)
-Netzwerk: vmnet1 
 
 # Konfiguration
 
