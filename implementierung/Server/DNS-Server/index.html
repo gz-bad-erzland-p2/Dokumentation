@@ -1888,11 +1888,173 @@ In unserem Fall löst der DNS Server den Websiten Namen gz-bad-erzland-p2.de in 
 <p>Der Kunde sieht jedoch nur die URL und nicht die dahinterstehende IP-Adresse.</p>
 <h1 id="erstellen">Erstellen<a class="headerlink" href="#erstellen" title="Permanent link">&para;</a></h1>
 <p>Vagrantfile: </p>
-<p><img alt="grafik" src="https://user-images.githubusercontent.com/44226321/214230769-639cac93-2123-4504-ad37-42c1297618b2.png" /></p>
+<div class="highlight"><pre><span></span><code># -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure(&quot;2&quot;) do |config|
+
+  INVENTORY = &quot;playbooks/hosts&quot;
+  PLAYBOOK = &quot;playbooks/site.yml&quot;  
+
+  config.vm.define &quot;centosdns&quot;, primary: true do |config|  
+    config.vm.box_check_update = false   
+    config.vm.box = &quot;generic/centos9s&quot;
+    config.vm.boot_timeout = 1800
+    config.vm.communicator = :ssh
+    config.vm.guest = :linux
+
+    config.vm.synced_folder &#39;./&#39;, &#39;/vagrant&#39;, disabled: true
+
+    config.ssh.insert_key = false
+
+    # https://sanbarrow.com/vmx/vmx-network-advanced.html
+
+    [&quot;vmware_desktop&quot;].each do |provider|
+      config.vm.provider provider do |v|
+         v.allowlist_verified = :disable_warning
+         v.enable_vmrun_ip_lookup = true
+         v.unmount_default_hgfs = true
+         # v.whitelist_verified = true
+
+         # required by vmx network-settings on startup ??
+         v.gui = true
+
+         v.vmx[&quot;cpuid.coresPerSocket&quot;] = &quot;1&quot;
+         v.vmx[&quot;memsize&quot;] = &quot;2048&quot;
+         v.vmx[&quot;numvcpus&quot;] = &quot;2&quot;
+         v.vmx[&quot;floppy0.present&quot;] = &quot;false&quot;
+
+         # v.vmx[&quot;svga.autodetect&quot;] = &quot;false&quot;
+         # v.vmx[&quot;svga.maxWidth&quot;] = &quot;2560&quot;
+         # v.vmx[&quot;svga.maxHeight&quot;] = &quot;2048&quot;
+         # v.vmx[&quot;svga.vramSize&quot;] = &quot;20971520&quot;
+         # v.vmx[&quot;svga.numDisplays&quot;] = &quot;1&quot;
+
+         v.vmx[&quot;ethernet0.present&quot;] = &quot;true&quot;
+         v.vmx[&quot;ethernet0.connectionType&quot;] = &quot;custom&quot;
+         v.vmx[&quot;ethernet0.addressType&quot;] = &quot;static&quot;
+         v.vmx[&quot;ethernet0.address&quot;] = &quot;00:50:56:2a:c6:d8&quot;
+         v.vmx[&quot;ethernet0.vnet&quot;] = &quot;vmnet1&quot;
+         v.vmx[&quot;ethernet0.displayName&quot;] = &quot;VMnet1&quot;
+         v.vmx[&quot;ethernet0.virtualDev&quot;] = &quot;e1000&quot;
+         end
+      end
+    end  
+
+    # vagrant on linux system:
+    # manual [explicit] usage: vagrant provision
+    config.vm.provision &quot;ansible&quot; do |ansible|
+       ansible.playbook = PLAYBOOK
+       ansible.inventory_path = INVENTORY
+       ansible.skip_tags = [&quot;ping&quot;,&quot;pkgupgrade&quot;,&quot;test&quot;]
+       end
+
+    # manual [explicit] usage: vagrant provision --provision-with ping
+    config.vm.provision &quot;ping&quot;, type: &quot;ansible&quot;, run: &quot;never&quot; do |ansible|
+        ansible.playbook = PLAYBOOK
+        ansible.inventory_path = INVENTORY
+        ansible.tags = [&quot;ping&quot;]
+        end
+  end
+</code></pre></div>
 <h1 id="konfiguration">Konfiguration<a class="headerlink" href="#konfiguration" title="Permanent link">&para;</a></h1>
 <p>Playbook: dns.yml</p>
-<p><img alt="grafik" src="https://user-images.githubusercontent.com/44226321/214230902-7960adc1-2fcb-4df7-bcd4-a28f0a11a64b.png" />
-<img alt="grafik" src="https://user-images.githubusercontent.com/44226321/214230948-fb205366-3fd1-4062-af2a-95f5d54c460d.png" /></p>
+<div class="highlight"><pre><span></span><code>---
+- name: Setup DNS
+  hosts: centosdns
+  become: true
+
+  tasks:
+    - name: Set hostname to centosdns
+      become: true
+      ansible.builtin.hostname:
+        name: centosdns.localdomain
+        use: systemd
+
+    - name: &#39;Set keyboard layout to: de-nodeadkeys&#39;
+      become: true 
+      ansible.builtin.shell: 
+        cmd: |
+          if localectl status | grep -q &#39;VC Keymap: us&#39;; then 
+             sudo localectl set-keymap de-nodeadkeys ; fi
+
+    - name: Change timezone to Europe/Berlin
+      become: true 
+      community.general.timezone:
+        name: Europe/Berlin
+
+    - name: Add an Ethernet connection with static IP
+      community.general.nmcli:
+        conn_name: eth0
+        ifname: eth0
+        type: ethernet
+        ip4: 192.168.98.12/24
+        gw4: 192.168.98.10
+        dns4: 192.168.98.12
+        state: present
+
+    - name: Restart NetworkManager
+      become: true
+      ansible.builtin.service:
+        name: NetworkManager
+        state: restarted
+
+    - name: Check Proxy Settings
+      ansible.builtin.lineinfile:
+        path: /etc/environment
+        regexp: &#39;^export no_proxy&#39;
+        state: absent
+      check_mode: yes
+      failed_when: false
+      changed_when: false
+      register: proxy_check  
+      tags: proxy
+
+    - name: Set Proxy Settings if not configured
+      become: true
+      ansible.builtin.copy:
+        src: &quot;{{ playbook_dir }}/files/environment&quot;
+        dest: /etc/environment
+        force: true
+      when: not proxy_check.found
+      tags: proxy
+
+    - name: Upgrade all packages
+      ansible.builtin.dnf:
+        name: &quot;*&quot;
+        state: latest
+    - name: Install nano
+      ansible.builtin.dnf:
+        name: nano
+        state: latest
+
+    - name: Install dnsmasq
+      ansible.builtin.dnf:
+        name: dnsmasq
+        state: latest
+    - name: Enable dnsmasq
+      ansible.builtin.service:
+        name: dnsmasq
+        enabled: true
+        state: started
+    - name: Set dnsmasq.conf
+      become: true
+      ansible.builtin.copy:
+        src: &quot;{{ playbook_dir }}/files/dnsmasq.conf&quot;
+        dest: /etc/dnsmasq.conf
+        force: true
+    - name: Set hosts
+      become: true
+      ansible.builtin.copy:
+        src: &quot;{{ playbook_dir }}/files/hosts&quot;
+        dest: /etc/hosts
+        force: true
+    - name: Restart dnsmasq
+      become: true
+      ansible.builtin.service:
+        name: dnsmasq
+        state: restarted
+</code></pre></div>
 <h1 id="dns-eintrage">DNS Einträge<a class="headerlink" href="#dns-eintrage" title="Permanent link">&para;</a></h1>
 
 
