@@ -11,12 +11,9 @@ ___
 ___
 ![grafik](https://user-images.githubusercontent.com/44226321/214235395-432edfee-8d00-4ac7-9454-0e79f942703e.png)
 ___
-
-
-
-
-
-
+![grafik](https://user-images.githubusercontent.com/44226321/214235491-17bc1b71-8a21-4455-8c49-5bf9f29c6030.png)
+___
+![grafik](https://user-images.githubusercontent.com/44226321/214235543-122f6bf2-a061-40fc-9158-7740355dceb6.png)
 
 
 # Konfiguration
