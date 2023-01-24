@@ -9,6 +9,10 @@ ___
 ___
 ![grafik](https://user-images.githubusercontent.com/44226321/214235267-2a707dde-9625-45a8-b093-b47f201a3bb0.png)
 ___
+![grafik](https://user-images.githubusercontent.com/44226321/214235395-432edfee-8d00-4ac7-9454-0e79f942703e.png)
+___
+
+
 
 
 
