@@ -14,3 +14,5 @@ Die Hardware ist die physische Elektronik im Gemeindezentrum z.B. die Übertragu
 ![ISO-25010-Qualitaetskriterien-fuer-Software](https://user-images.githubusercontent.com/57149152/214249290-f8be5a93-f559-4e93-b987-ca380c2d430f.jpg)
 
 Abbildung 3: Qualitätskriterien für Software
+
+Wir haben uns auf folgende Kriterien besonders 
