@@ -1,6 +1,6 @@
 # DNS Server (Domain Name System)
-Der DNS-Server löst die Domain-Namen von bspw. Websiten in die entsprechende IP Adresse auf. 
-In unserem Fall löst der DNS Server den Websiten Namen gz-bad-erzland-p2.de in die IP Adresse des Webservers auf.
+Der DNS-Server löst die Domain-Namen von bspw. Webseiten in die entsprechende IP-Adresse auf. 
+In unserem Fall löst der DNS-Server den Webseiten Namen gz-bad-erzland-p2.de in die IP-Adresse des Webservers auf.
 
 Der Kunde sieht jedoch nur die URL und nicht die dahinterstehende IP-Adresse.
 # Erstellen
