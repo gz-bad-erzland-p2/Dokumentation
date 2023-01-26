@@ -5,3 +5,5 @@
 2. Abbildung: Schichtenmodell der Informatik: Skript_WissenschaftInformatikIGD19.docx, Seite 4, ©Rie
 
 3. Abbildung: Qualitätskriterien für Software: https://www.inztitut.de/blog/glossar/iso-25010/ (24.01.23)
+
+4. Abbildung: Sicherheit - Großvater-Vater-Sohn-Prinzip: https://www.iww.de/pp/praxisfuehrung/it-sicherheit-die-sichere-alternative-zur-cloud-datensicherung-nach-dem-grossvater-vater-sohn-prinzip-f122115

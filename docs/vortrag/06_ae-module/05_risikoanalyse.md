@@ -61,26 +61,21 @@ Gefährdungssituationen bestimmt sowie die Höhe des möglichen Schadens.
 | **Gefährdung**          | **Eintrittswahrscheinlichkeit** | **Schadenshöhe**   | **Risiko** | **Schutzmaßnahmen**  |
 |-------------------------|---------------------------------|--------------------|------------|----------------------|
 | Fehlbedienung           | selten                          | begrenzt           | mittel     | Onlinehilfe, UI-Lock |
-| Irrtum                  | selten                          | begrenzt           | gering     |                      |
-| unsachgemäße Behandlung | selten                          | begrenzt           | mittel     |                      |
-|                         |                                 |                    |            |                      |
-| Einbruch, Diebstahl     | selten                          | Vernach-lässigbar  | gering     |                      |
-| Hacking                 | mittel                          | beträchtlich       | sehr hoch  |                      |
-| Spionage                | mittel                          | begrenzt           | gering     |                      |
-| Manipulation            | selten                          | beträchtlich       | hoch       |                      |
-| Sabotage                | selten                          | Existenz-bedrohend | sehr hoch  |                      |
-| Vandalismus             | selten                          | Vernach-lässigbar  | gering     |                      |
-|                         |                                 |                    |            |                      |
-| Stromausfall            | selten                          | Vernach-lässigbar  | gering     |
+| Irrtum                  | selten                          | begrenzt           | gering     | Onlinehilfe, UI-Lock |
+| unsachgemäße Behandlung | selten                          | begrenzt           | mittel     | Personaa vorort, Protokollierung der Geräte nutzung |
+| Einbruch, Diebstahl     | selten                          | Vernach-lässigbar  | gering     | Alamanalage, Kontrolle auf Vollständigkeit |
+| Hacking                 | mittel                          | beträchtlich       | sehr hoch  | verschlüsselte Passwortspeicherung, Kontrolle gegen SQL Injection  |
+| Spionage                | mittel                          | begrenzt           | gering     | Rollenverwaltung     |
+| Manipulation            | selten                          | beträchtlich       | hoch       | Kontrolle gegen SQL-Injection|
+| Sabotage                | selten                          | Existenz-bedrohend | sehr hoch  | Kontrolle gegen SQL-Injection                     |
+| Vandalismus             | selten                          | Vernach-lässigbar  | gering     | Alarmanalge                    |
+| Stromausfall            | selten                          | Vernach-lässigbar  | gering     | Notstromaggregat
 
 
 # Schutzbedarfsanalyse
 
 Zur Prävention von Risiken werden Sicherheitsmaßnahmen ergriffen. 
 
-- Durch Schulungen der Mitarbeiter werden die Risiken der Fehlbedingung und des Irrtums minimiert.
-- Durch die gezwungene Verwendung von sicheren Passwörtern wird der Diebstahl von Daten verhindert.
-- Durch die Bereitstellung einer Online-Hilfe, sowie eines Service-Teams wird die Fehlbedienung
-  minimiert.
+Wir minimieren die Risiken von Fehlbedingungen und menschlichen Fehlern durch regelmäßige Schulungen der Mitarbeiter. Durch die verpflichtende Verwendung von sicheren Passwörtern, verhindern wir erfolgreich den Diebstahl von Daten. Um Fehler bei der Bedienung zu vermeiden, stellen wir unseren Nutzern eine Online-Hilfe und ein Service-Team zur Verfügung.
 
 > Durch Schulungen wird die größte Schwachstelle in einem IT-System minimiert.
