@@ -4,19 +4,19 @@
 ![Netzwerkplan_finalpng](https://user-images.githubusercontent.com/44226321/214246798-95457483-08bc-4875-947b-7af2355f5c04.png)
 
 
-Jeder Server (außer die Firewall) wird mittlhilfe der Orchestrierungssoftware Ansible erstellt und ggf. konfiguriert.
-Als Schnittsnitstelle zwischen VMware und Ansible wird die Software Vagrant verwendent.
+Jeder Server (außer die Firewall) wird mitlhilfe der Orchestrierungssoftware Ansible erstellt und ggf. konfiguriert.
+Als Schnittstelle zwischen VMware und Ansible wird die Software Vagrant verwendet.
 
-## Aufbau der Vagrant / Ansible Ordner/Datein
+## Aufbau der Vagrant / Ansible Ordner/Dateien
 
-Weiterhin wird jeder Server der mittels Vagrant und Ansible gestartet wird mit folgender Datei und Ordnerstruktur ausgerüstet.
-Diese liegen unter C:\Vagrant\CentOS9_xx (xx=Servername z.B. DB)
+Weiterhin wird jeder Server der mittels Vagrant und Ansible gestartet wird, mit folgender Datei und Ordnerstruktur ausgerüstet.
+Diese liegen unter C:\Vagrant\CentOS9_xx (xx=Servername z. B. DB)
 
 ![grafik](https://user-images.githubusercontent.com/44226321/214226433-1f3112a2-c841-43e8-9988-cfcbdb62851c.png)
 
 ### Datei ssh-config
 
-Enthält alle nötigen Informationen um eine Verbindung mit dem Server mittels SSH herzustellen.
+Die ssh-config enthält alle nötigen Informationen, um eine Verbindung mit dem Server mittels SSH herzustellen.
 ```Nginx
 Host centosxx
   HostName 192.168.xx.xx
@@ -46,13 +46,13 @@ Host lnxhost-Internal
 
 ### Datei vagrantfile
 
-Enthält alle Informationen die Vagrant benötigt um den Server mit den entsprechenden Spezifiaktionen automatisiert aufzusetzten.
---> die einzelnen Vagrantfiles werden seperat vorgestellt
+Das vagrantfile nthält alle Informationen, die Vagrant benötigt um den Server mit den entsprechenden Spezifikationen automatisiert aufzusetzen.
+--> die einzelnen vagrantfiles werden separat vorgestellt
 ___
 ## Ordner vmware:
 
-Jeder Server erhält eine feste IP-Addresse mittels DCHP Reservierung.
-Dafür wird die Datei vmnetdhcp.conf in der vmware Konfiguration mitthilfe des replaceDHCPDconf.cmd Skrips überschrieben.
+Jeder Server erhält eine feste IP-Adresse mittels DCHP Reservierung.
+Dafür wird die Datei vmnetdhcp.conf in der vmware Konfiguration mithilfe des replaceDHCPconf.cmd Skripts überschrieben.
 
 ### vmnetdhcp.conf
  
@@ -196,13 +196,14 @@ ___
 ![grafik](https://user-images.githubusercontent.com/44226321/214227756-7a79b81d-4ca0-4523-a590-6c7fa71c0ac2.png)
 
 
-Erläuterung der einzelnen Datein: 
+Erläuterung der einzelnen Dateien: 
 ---
 ### ansible.cfg: 
 
-!!!ERKLÄRUNG!!!
+= Konfiguration die Ansible benötigt
+
 ```Nginx
-# ansible configaration file.
+# ansible configuration file.
 
 [defaults]
 inventory = hosts
@@ -219,7 +220,7 @@ scp_if_ssh = True
 
 ### hosts: 
 
-enthält die Hostnamen und IP Adressen des jeweiligen Servers
+enthält die Hostnamen und IP-Adressen der jeweiligen Servers
 ```
 [centOS]
 centosdb			ansible_host=192.168.98.11
@@ -237,14 +238,14 @@ enthält das jeweilige Playbook für den Server -> werden einzeln genauer vorges
 ___
 ## Ordner sshkeys:
 
-enthält die einezelnen SSH-Keys um eine SSH Verbidnung mit dem Server aufzubauen
+enthält die einzelnen SSH-Keys, um eine SSH Verbidnung mit dem Server aufzubauen
 
 ![grafik](https://user-images.githubusercontent.com/44226321/214228103-14840b9f-ae3d-43c1-b4c4-f801b753f831.png)
 
 ___
 ## Ordner files:
 
-Im Ordner _files_ liegen Datein die in den playbooks verwendet und eingebunden werden.
+Im Ordner _files_ liegen Dateien die in den playbooks verwendet und eingebunden werden.
 
 Bei jedem Server liegt hier für die Proxy Konfiguration die _evironment_ Datei
 ```bash
@@ -253,5 +254,5 @@ export https_proxy=http://10.254.5.100:3128
 export no_proxy=localhost,.bsz-et.lan.dd-schulen.de
 ```
 
-Für die einzelnen Server liegen hier noch spezifische andere Datein wie bspw. dnsmasq.conf etc...
+Für die einzelnen Server liegen hier noch spezifische andere Dateien wie bspw. dnsmasq.conf etc ...
 
