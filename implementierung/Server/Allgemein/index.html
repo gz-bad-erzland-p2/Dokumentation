@@ -1187,11 +1187,11 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#aufbau-der-vagrant-ansible-ordnerdatein" class="md-nav__link">
-    Aufbau der Vagrant / Ansible Ordner/Datein
+  <a href="#aufbau-der-vagrant-ansible-ordnerdateien" class="md-nav__link">
+    Aufbau der Vagrant / Ansible Ordner/Dateien
   </a>
   
-    <nav class="md-nav" aria-label="Aufbau der Vagrant / Ansible Ordner/Datein">
+    <nav class="md-nav" aria-label="Aufbau der Vagrant / Ansible Ordner/Dateien">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1241,11 +1241,11 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#erlauterung-der-einzelnen-datein" class="md-nav__link">
-    Erläuterung der einzelnen Datein:
+  <a href="#erlauterung-der-einzelnen-dateien" class="md-nav__link">
+    Erläuterung der einzelnen Dateien:
   </a>
   
-    <nav class="md-nav" aria-label="Erläuterung der einzelnen Datein:">
+    <nav class="md-nav" aria-label="Erläuterung der einzelnen Dateien:">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -2012,11 +2012,11 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#aufbau-der-vagrant-ansible-ordnerdatein" class="md-nav__link">
-    Aufbau der Vagrant / Ansible Ordner/Datein
+  <a href="#aufbau-der-vagrant-ansible-ordnerdateien" class="md-nav__link">
+    Aufbau der Vagrant / Ansible Ordner/Dateien
   </a>
   
-    <nav class="md-nav" aria-label="Aufbau der Vagrant / Ansible Ordner/Datein">
+    <nav class="md-nav" aria-label="Aufbau der Vagrant / Ansible Ordner/Dateien">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -2066,11 +2066,11 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#erlauterung-der-einzelnen-datein" class="md-nav__link">
-    Erläuterung der einzelnen Datein:
+  <a href="#erlauterung-der-einzelnen-dateien" class="md-nav__link">
+    Erläuterung der einzelnen Dateien:
   </a>
   
-    <nav class="md-nav" aria-label="Erläuterung der einzelnen Datein:">
+    <nav class="md-nav" aria-label="Erläuterung der einzelnen Dateien:">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -2135,14 +2135,14 @@
 <h1 id="allgemeines">Allgemeines<a class="headerlink" href="#allgemeines" title="Permanent link">&para;</a></h1>
 <p><strong>Überblick über alle Server:</strong></p>
 <p><img alt="Netzwerkplan_finalpng" src="https://user-images.githubusercontent.com/44226321/214246798-95457483-08bc-4875-947b-7af2355f5c04.png" /></p>
-<p>Jeder Server (außer die Firewall) wird mittlhilfe der Orchestrierungssoftware Ansible erstellt und ggf. konfiguriert.
-Als Schnittsnitstelle zwischen VMware und Ansible wird die Software Vagrant verwendent.</p>
-<h2 id="aufbau-der-vagrant-ansible-ordnerdatein">Aufbau der Vagrant / Ansible Ordner/Datein<a class="headerlink" href="#aufbau-der-vagrant-ansible-ordnerdatein" title="Permanent link">&para;</a></h2>
-<p>Weiterhin wird jeder Server der mittels Vagrant und Ansible gestartet wird mit folgender Datei und Ordnerstruktur ausgerüstet.
-Diese liegen unter C:\Vagrant\CentOS9_xx (xx=Servername z.B. DB)</p>
+<p>Jeder Server (außer die Firewall) wird mitlhilfe der Orchestrierungssoftware Ansible erstellt und ggf. konfiguriert.
+Als Schnittstelle zwischen VMware und Ansible wird die Software Vagrant verwendet.</p>
+<h2 id="aufbau-der-vagrant-ansible-ordnerdateien">Aufbau der Vagrant / Ansible Ordner/Dateien<a class="headerlink" href="#aufbau-der-vagrant-ansible-ordnerdateien" title="Permanent link">&para;</a></h2>
+<p>Weiterhin wird jeder Server der mittels Vagrant und Ansible gestartet wird, mit folgender Datei und Ordnerstruktur ausgerüstet.
+Diese liegen unter C:\Vagrant\CentOS9_xx (xx=Servername z. B. DB)</p>
 <p><img alt="grafik" src="https://user-images.githubusercontent.com/44226321/214226433-1f3112a2-c841-43e8-9988-cfcbdb62851c.png" /></p>
 <h3 id="datei-ssh-config">Datei ssh-config<a class="headerlink" href="#datei-ssh-config" title="Permanent link">&para;</a></h3>
-<p>Enthält alle nötigen Informationen um eine Verbindung mit dem Server mittels SSH herzustellen.
+<p>Die ssh-config enthält alle nötigen Informationen, um eine Verbindung mit dem Server mittels SSH herzustellen.
 <div class="highlight"><pre><span></span><code><span class="k">Host</span><span class="w"> </span><span class="s">centosxx</span>
 <span class="w">  </span><span class="s">HostName</span><span class="w"> </span><span class="mi">192</span><span class="s">.168.xx.xx</span>
 <span class="w">  </span><span class="s">User</span><span class="w"> </span><span class="s">vagrant</span>
@@ -2169,12 +2169,12 @@ Diese liegen unter C:\Vagrant\CentOS9_xx (xx=Servername z.B. DB)</p>
 <span class="w">  </span><span class="s">LogLevel</span><span class="w"> </span><span class="s">FATAL</span><span class="w"> </span>
 </code></pre></div></p>
 <h3 id="datei-vagrantfile">Datei vagrantfile<a class="headerlink" href="#datei-vagrantfile" title="Permanent link">&para;</a></h3>
-<p>Enthält alle Informationen die Vagrant benötigt um den Server mit den entsprechenden Spezifiaktionen automatisiert aufzusetzten.
-&rarr; die einzelnen Vagrantfiles werden seperat vorgestellt</p>
+<p>Das vagrantfile nthält alle Informationen, die Vagrant benötigt um den Server mit den entsprechenden Spezifikationen automatisiert aufzusetzen.
+&rarr; die einzelnen vagrantfiles werden separat vorgestellt</p>
 <hr />
 <h2 id="ordner-vmware">Ordner vmware:<a class="headerlink" href="#ordner-vmware" title="Permanent link">&para;</a></h2>
-<p>Jeder Server erhält eine feste IP-Addresse mittels DCHP Reservierung.
-Dafür wird die Datei vmnetdhcp.conf in der vmware Konfiguration mitthilfe des replaceDHCPDconf.cmd Skrips überschrieben.</p>
+<p>Jeder Server erhält eine feste IP-Adresse mittels DCHP Reservierung.
+Dafür wird die Datei vmnetdhcp.conf in der vmware Konfiguration mithilfe des replaceDHCPconf.cmd Skripts überschrieben.</p>
 <h3 id="vmnetdhcpconf">vmnetdhcp.conf<a class="headerlink" href="#vmnetdhcpconf" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code><span class="c1">#</span>
 <span class="c1"># Configuration file for VMware port of ISC 2.0 release running on</span>
@@ -2310,10 +2310,10 @@ host<span class="w"> </span>VMnet1<span class="w"> </span><span class="o">{</spa
 <hr />
 <h2 id="ordner-playbooks">Ordner playbooks:<a class="headerlink" href="#ordner-playbooks" title="Permanent link">&para;</a></h2>
 <p><img alt="grafik" src="https://user-images.githubusercontent.com/44226321/214227756-7a79b81d-4ca0-4523-a590-6c7fa71c0ac2.png" /></p>
-<h2 id="erlauterung-der-einzelnen-datein">Erläuterung der einzelnen Datein:<a class="headerlink" href="#erlauterung-der-einzelnen-datein" title="Permanent link">&para;</a></h2>
+<h2 id="erlauterung-der-einzelnen-dateien">Erläuterung der einzelnen Dateien:<a class="headerlink" href="#erlauterung-der-einzelnen-dateien" title="Permanent link">&para;</a></h2>
 <h3 id="ansiblecfg">ansible.cfg:<a class="headerlink" href="#ansiblecfg" title="Permanent link">&para;</a></h3>
-<p>!!!ERKLÄRUNG!!!
-<div class="highlight"><pre><span></span><code><span class="c1"># ansible configaration file.</span>
+<p>= Konfiguration die Ansible benötigt</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># ansible configuration file.</span>
 
 <span class="k">[defaults]</span>
 <span class="s">inventory</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">hosts</span>
@@ -2326,9 +2326,9 @@ host<span class="w"> </span>VMnet1<span class="w"> </span><span class="o">{</spa
 <span class="s">[ssh_connection]</span>
 <span class="s">ssh_args</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">-o</span><span class="w"> </span><span class="s">StrictHostKeyChecking=no</span><span class="w"> </span><span class="s">-o</span><span class="w"> </span><span class="s">UserKnownHostsFile=/dev/null</span><span class="w"> </span><span class="s">-o</span><span class="w"> </span><span class="s">CheckHostIP=no</span><span class="w"> </span><span class="s">-o</span><span class="w"> </span><span class="s">UpdateHostKeys=no</span><span class="w"> </span><span class="s">-o</span><span class="w"> </span><span class="s">LogLevel=quiet</span>
 <span class="s">scp_if_ssh</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">True</span>
-</code></pre></div></p>
+</code></pre></div>
 <h3 id="hosts">hosts:<a class="headerlink" href="#hosts" title="Permanent link">&para;</a></h3>
-<p>enthält die Hostnamen und IP Adressen des jeweiligen Servers
+<p>enthält die Hostnamen und IP-Adressen der jeweiligen Servers
 <div class="highlight"><pre><span></span><code>[centOS]
 centosdb            ansible_host=192.168.98.11
 
@@ -2342,17 +2342,17 @@ ansible_ssh_common_args=-oIdentityFile=playbooks/sshkeys/insecure_private_key
 <p>enthält das jeweilige Playbook für den Server -&gt; werden einzeln genauer vorgestellt</p>
 <hr />
 <h2 id="ordner-sshkeys">Ordner sshkeys:<a class="headerlink" href="#ordner-sshkeys" title="Permanent link">&para;</a></h2>
-<p>enthält die einezelnen SSH-Keys um eine SSH Verbidnung mit dem Server aufzubauen</p>
+<p>enthält die einzelnen SSH-Keys, um eine SSH Verbidnung mit dem Server aufzubauen</p>
 <p><img alt="grafik" src="https://user-images.githubusercontent.com/44226321/214228103-14840b9f-ae3d-43c1-b4c4-f801b753f831.png" /></p>
 <hr />
 <h2 id="ordner-files">Ordner files:<a class="headerlink" href="#ordner-files" title="Permanent link">&para;</a></h2>
-<p>Im Ordner <em>files</em> liegen Datein die in den playbooks verwendet und eingebunden werden.</p>
+<p>Im Ordner <em>files</em> liegen Dateien die in den playbooks verwendet und eingebunden werden.</p>
 <p>Bei jedem Server liegt hier für die Proxy Konfiguration die <em>evironment</em> Datei
 <div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">http_proxy</span><span class="o">=</span>http://10.254.5.100:3128
 <span class="nb">export</span><span class="w"> </span><span class="nv">https_proxy</span><span class="o">=</span>http://10.254.5.100:3128
 <span class="nb">export</span><span class="w"> </span><span class="nv">no_proxy</span><span class="o">=</span>localhost,.bsz-et.lan.dd-schulen.de
 </code></pre></div></p>
-<p>Für die einzelnen Server liegen hier noch spezifische andere Datein wie bspw. dnsmasq.conf etc...</p>
+<p>Für die einzelnen Server liegen hier noch spezifische andere Dateien wie bspw. dnsmasq.conf etc ...</p>
 
 
 
