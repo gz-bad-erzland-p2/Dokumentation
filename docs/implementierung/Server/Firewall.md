@@ -21,7 +21,7 @@ ___
 Unter der IP-Adresse https://192.168.98.10:444/ ist das Webinterface der Firewall zu erreichen.
 Hier wurde die Konfiguration der Firewall vorgenommen.
 
-Firewall Optionen:
+**Firewall Optionen:**
 
 ![grafik](https://user-images.githubusercontent.com/44226321/214234670-908fe9c0-6581-42be-a7b1-e6066de2cdd4.png)
 
@@ -29,6 +29,6 @@ Generell werden alle Aufragen von außen (also aus dem roten Netz) in die andere
 Andersherum dürfen alle Netze Anfragen ins rote Netz senden und diese werden zugelassen
 So kann der Zugriff genau gesteuert werden
 
-Firewall Regeln:
+**Firewall Regeln:**
 
 Anfragen aus allen Netzen 
