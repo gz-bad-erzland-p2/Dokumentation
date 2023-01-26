@@ -2,7 +2,7 @@
 
 Derzeit existiert keine Backupstrategien.
 
-Durch die ItSecNet GmbH wird folgende Backupstrategie empfohlen:
+Durch die Profi-SecNetIT GmbH wird folgende Backupstrategie empfohlen:
 
 Großvater, Vater, Sohn Prinzip:
 
