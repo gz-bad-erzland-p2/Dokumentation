@@ -15,4 +15,22 @@ Die Hardware ist die physische Elektronik im Gemeindezentrum z.B. die Übertragu
 
 Abbildung 3: Qualitätskriterien für Software
 
-Wir haben uns auf folgende Kriterien besonders 
+Unter Betrachtung der Anforderungen des Gemeindezentrums Bad Erzland wurden folgenden Qualitätskriterien besondere Priorität eingeräumt.
+
+1. Usability
+Die Office-Sharing Website muss für die Bürger einfach nutzbar sein, damit das Angebot auch für technisch weniger affine Menschen zur Verfügung steht.
+Dafür wurde die Oberfläche so designed das sie besonders intuitiv zu benutzen ist. Weiterhin steht für die Bürger eine Hilfefunktion zur Verfügung, die alle Schritte einer Arbeitsplatzbuchung erklärt.
+
+2. einfache Wartbarkeit
+
+
+3. Verlässlichkeit
+
+
+5. Sicherheit
+Da Gemeindezentren für Hackerangriffe besonders gefährdete ziele sind wurde auf Sicherheit besonders geachtet. 
+Besonders vorgestellt wurden:
+- AE Sicherheit
+- SI Sicherheit
+
+TODO: Verlässlichkeit
