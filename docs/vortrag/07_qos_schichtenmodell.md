@@ -22,7 +22,7 @@ Die Office-Sharing Website muss für die Bürger einfach nutzbar sein, damit das
 Dafür wurde die Oberfläche so designed das sie besonders intuitiv zu benutzen ist. Weiterhin steht für die Bürger eine Hilfefunktion zur Verfügung, die alle Schritte einer Arbeitsplatzbuchung erklärt.
 
 2. einfache Wartbarkeit
-
+Um den Wartungsaufwand für die Software möglichst gering zu halten wurde die Software unter Beachtung des [Clean-Code-Prinzips](https://t2informatik.de/wissen-kompakt/clean-code/) entwickelt
 
 3. Verlässlichkeit
 
@@ -30,7 +30,7 @@ Dafür wurde die Oberfläche so designed das sie besonders intuitiv zu benutzen 
 5. Sicherheit
 Da Gemeindezentren für Hackerangriffe besonders gefährdete ziele sind wurde auf Sicherheit besonders geachtet. 
 Besonders vorgestellt wurden:
-- AE Sicherheit
-- SI Sicherheit
+- [AE Sicherheit](https://gz-bad-erzland-p2.github.io/Dokumentation/vortrag/06_ae-module/03_sicherheit/)
+- [SI Sicherheit](https://gz-bad-erzland-p2.github.io/Dokumentation/vortrag/09_si-module/03_sicherheit/)
 
-TODO: Verlässlichkeit
+TODO: Verlässlichkeit, Links überprüfen
