@@ -1,5 +1,6 @@
 # Zertifikatsserver - CA (certifcation authority)
-
+> Ein SSL Server Zertifikat ist die Basis für eine Verschlüsselung einer Webseite durch den Betreiber. Es dient nicht allein der Kommunikation, sondern 
+ gewährleistet ebenfalls eine sichere Authentifizierung einer Webseite. Dadurch verhindert es sowohl ein unbefugtes Mitschneiden von Informationen wie auch das Vortäuschen einer falschen Identität - ein häufiges Vorgehen bei den sogenannten Phishing-Attacken. Für den Besucher einer Webseite ändert ein SSL Server Zertifikat nichts, schafft aber eine hohe Sicherheit. (Quelle 1)
 # Erstellen
 
 Vagrantfile: 
@@ -115,4 +116,8 @@ bQymZXyXrZsTMhmC6EKOYDM4E9emjw==
     Wechseln Sie dann links auf das Menü „Datenschutz & Sicherheit“ und scrollen Sie auf dieser Seite nach ganz unten.
     Hier finden Sie den Abschnitt „Zertifikate“. Klicken Sie auf den Button „Zertifikate anzeigen“.
     Klicken Sie unten auf „Importieren…“ und navigieren zu Ihrer Zertifikatsdatei.
-    Anschließend wird der Eintrag in Firefox aufgenommen. 
+    Anschließend wird der Eintrag in Firefox aufgenommen. (Quelle 2)
+
+1. Quelle: https://www.hosttest.de/artikel/was-ist-ein-ssl-server-1427.html, 26.01.2023
+
+2. Quelle: https://www.computerbild.de/artikel/cb-Tipps-Internet-Firefox-Zertifikat-importieren-31486861.html, 26.01.2023
