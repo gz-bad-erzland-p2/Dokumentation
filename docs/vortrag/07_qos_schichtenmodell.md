@@ -17,20 +17,17 @@ Abbildung 3: Qualitätskriterien für Software
 
 Unter Betrachtung der Anforderungen des Gemeindezentrums Bad Erzland wurden folgenden Qualitätskriterien besondere Priorität eingeräumt.
 
-1. Usability
+1. Usability:
 Die Office-Sharing Website muss für die Bürger einfach nutzbar sein, damit das Angebot auch für technisch weniger affine Menschen zur Verfügung steht.
-Dafür wurde die Oberfläche so designed das sie besonders intuitiv zu benutzen ist. Weiterhin steht für die Bürger eine Hilfefunktion zur Verfügung, die alle Schritte einer Arbeitsplatzbuchung erklärt.
+Dafür wurde die Oberfläche so designed das sie besonders intuitiv zu benutzen ist. Weiterhin steht für die Bürger eine Hilfefunktion zur Verfügung, die alle Schritte einer Arbeitsplatzbuchung erklärt. Diese Schritte konnten wir eine optimale Usability gewährleisten.
 
-2. einfache Wartbarkeit
-Um den Wartungsaufwand für die Software möglichst gering zu halten wurde die Software unter Beachtung des [Clean-Code-Prinzips](https://t2informatik.de/wissen-kompakt/clean-code/) entwickelt
+2. Einfache Wartbarkeit:
+Um den Wartungsaufwand für die Software möglichst gering zu halten wurde die Software unter Beachtung des [Clean-Code-Prinzips](https://t2informatik.de/wissen-kompakt/clean-code/) entwickelt. Dadurch konnten wir eine gute Lesbarkeit des Codes gewährleisten. Durch eine Automatisierung der Server wurde die Wartbarkeit weiterhin verbessert. Zusammenfassend konnten wir die einfache Wartbarkeit voll umsetzen.
 
-3. Verlässlichkeit
-
-
-5. Sicherheit
-Da Gemeindezentren für Hackerangriffe besonders gefährdete ziele sind wurde auf Sicherheit besonders geachtet. 
+3. Sicherheit
+Da Gemeindezentren wie andere Öffentliche Einrichtungen für Hackerangriffe besonders gefährdete Ziele sind wurde auf Sicherheit besonders geachtet. 
 Besonders vorgestellt wurden:
 - [AE Sicherheit](https://gz-bad-erzland-p2.github.io/Dokumentation/vortrag/06_ae-module/03_sicherheit/)
 - [SI Sicherheit](https://gz-bad-erzland-p2.github.io/Dokumentation/vortrag/09_si-module/03_sicherheit/)
 
-TODO: Verlässlichkeit, Links überprüfen
+TODO: Links überprüfen
