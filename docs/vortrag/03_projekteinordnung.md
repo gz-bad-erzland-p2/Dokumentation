@@ -6,5 +6,3 @@ OneDrive: https://1drv.ms/u/s!Av91Eg2cE4ZlyFpjZmivmsR11CDw?e=2HYpND
 
 TODO: 
 Erklärung wir sind die Profi-SecNetIT-Mitarbeiter und arbeiten am office Sharing(mündlich als Notiz für den Sprecher)
-
-Link OneDrive
