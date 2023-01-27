@@ -107,7 +107,7 @@ host centosdb {
 }
 
 host centodhcp {
-	hardware ethernet 00:50:56:2a:c6:????????????????;
+	hardware ethernet 00:50:56:2a:c6:d9;
 	fixed-address 192.168.91.11;
 }
 
