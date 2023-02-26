@@ -26,4 +26,5 @@ Eine Schwierigkeit die dem Projektaufbau als Schul- und Wirtschaftsprojekt gesch
     unter Angabe von persönlichen Daten erfolgen (HGB). 
     Diese werden zum Zweck der Buchung gespeichert. Es erfolgt eine stundengenaue Abrechnung der Mietzeit. 
     Der Nutzer muss die AGBs und Datenschutzrichtlinien des Gemeindezentrums akzeptieren.[^1]
-    [^1]: 6.2.6.5. Anforderung Website (Pflichtenheft)
+    
+[^1]: 6.2.6.5. Anforderung Website (Pflichtenheft)
