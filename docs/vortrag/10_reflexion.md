@@ -14,4 +14,6 @@ Den Systemintegratoren ist der Einstieg in die Projektumsetzung schwer gefallen.
 Eine Schwierigkeit die dem Projektaufbau als Schul- und Wirtschaftsprojekt geschuldet war ist die schwierige Immersion und die dadurch teilweise unklaren Anforderungen.
 
 ## TODO: Inhaltliche Reflexion
-Haben wir die gestellten Ziele erreicht?
+
+!!! abstract 
+Arbeitsmodule
