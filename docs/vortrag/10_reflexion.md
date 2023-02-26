@@ -16,7 +16,6 @@ Eine Schwierigkeit die dem Projektaufbau als Schul- und Wirtschaftsprojekt gesch
 ## TODO: Inhaltliche Reflexion
 
 !!! abstract "Arbeitsmodule"
-
     Der Buchungsdienst soll über einen Link auf der Gemeindeseite erreichbar sein. 
     Das Logo der Gemeinde soll auf der Mietwebseite erscheinen (Cooperate Design). 
     Die Website soll von jedem beliebigen Endgerät (mobil und Desktop) aufrufbar sein.
