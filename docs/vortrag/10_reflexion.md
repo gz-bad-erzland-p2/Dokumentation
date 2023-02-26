@@ -29,5 +29,14 @@ Zielstellungen an die zu erstellende Website aus dem Pflichtenheft:
     Diese werden zum Zweck der Buchung gespeichert. Es erfolgt eine stundengenaue Abrechnung der Mietzeit. 
     Der Nutzer muss die AGBs und Datenschutzrichtlinien des Gemeindezentrums akzeptieren.[^1]
     
-[^1]: 
-    6.2.6.5. Anforderung Website (Pflichtenheft)
+Zusammenfassung
+- [x] Coorporate Design
+- [x] Begleitende Online Hilfe
+- [x] Dokumentation zu Hardwarespezifkiationen inkl. Schnittstellen
+- [ ] Dokumentation zu Softwarespezifikationen
+- [x] Registrations-/Anmeldevorgang
+- [ ] Anmeldedatenspeicherung
+- [x] Stundengenaue Abrechnung der Mietzeit
+- [x] Bestätigung AGB´s und Datenschutzrichtlinien
+    
+[^1]: 6.2.6.5. Anforderung Website (Pflichtenheft)
