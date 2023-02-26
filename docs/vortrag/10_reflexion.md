@@ -15,6 +15,8 @@ Eine Schwierigkeit die dem Projektaufbau als Schul- und Wirtschaftsprojekt gesch
 
 ## TODO: Inhaltliche Reflexion
 
+Zielstellungen an die zu erstellende Website aus dem Pflichtenheft:
+
     Der Buchungsdienst soll über einen Link auf der Gemeindeseite erreichbar sein. 
     Das Logo der Gemeinde soll auf der Mietwebseite erscheinen (Cooperate Design). 
     Die Website soll von jedem beliebigen Endgerät (mobil und Desktop) aufrufbar sein.
@@ -27,4 +29,5 @@ Eine Schwierigkeit die dem Projektaufbau als Schul- und Wirtschaftsprojekt gesch
     Diese werden zum Zweck der Buchung gespeichert. Es erfolgt eine stundengenaue Abrechnung der Mietzeit. 
     Der Nutzer muss die AGBs und Datenschutzrichtlinien des Gemeindezentrums akzeptieren.[^1]
     
-[^1]: 6.2.6.5. Anforderung Website (Pflichtenheft)
+[^1]: 
+    6.2.6.5. Anforderung Website (Pflichtenheft)
