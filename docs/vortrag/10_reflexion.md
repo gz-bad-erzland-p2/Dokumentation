@@ -23,3 +23,5 @@ Eine Schwierigkeit die dem Projektaufbau als Schul- und Wirtschaftsprojekt gesch
     Die Website und die Mietkonditionen können anonym besucht und eingesehen werden. 
     Für einen Mietvorgang muss eine Registrierung oder Anmeldung (mit vorangegangen Registrierung) unter Angabe von persönlichen Daten erfolgen (HGB). Diese werden zum       Zweck der Buchung gespeichert. Es erfolgt eine stundengenaue Abrechnung der Mietzeit. 
     Der Nutzer muss die AGBs und Datenschutzrichtlinien des Gemeindezentrums akzeptieren. 
+
+Test
