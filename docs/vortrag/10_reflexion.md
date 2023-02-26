@@ -14,4 +14,29 @@ Den Systemintegratoren ist der Einstieg in die Projektumsetzung schwer gefallen.
 Eine Schwierigkeit die dem Projektaufbau als Schul- und Wirtschaftsprojekt geschuldet war ist die schwierige Immersion und die dadurch teilweise unklaren Anforderungen.
 
 ## TODO: Inhaltliche Reflexion
-Haben wir die gestellten Ziele erreicht?
+
+Zielstellungen an die zu erstellende Website aus dem Pflichtenheft:
+
+    Der Buchungsdienst soll über einen Link auf der Gemeindeseite erreichbar sein. 
+    Das Logo der Gemeinde soll auf der Mietwebseite erscheinen (Cooperate Design). 
+    Die Website soll von jedem beliebigen Endgerät (mobil und Desktop) aufrufbar sein.
+    Die Reservierung durch die Interessenten ist mit einer Online-Hilfe zu begleiten. 
+    In dieser werden sowohl die vorhandenen Hard- als auch Softwarespezifikationen benannt. 
+    Alle verfügbaren Schnittstellen am Arbeitsplatz sind anzugeben und sind erläutert. 
+    Die Website und die Mietkonditionen können anonym besucht und eingesehen werden. 
+    Für einen Mietvorgang muss eine Registrierung oder Anmeldung (mit vorangegangen Registrierung) 
+    unter Angabe von persönlichen Daten erfolgen (HGB). 
+    Diese werden zum Zweck der Buchung gespeichert. Es erfolgt eine stundengenaue Abrechnung der Mietzeit. 
+    Der Nutzer muss die AGBs und Datenschutzrichtlinien des Gemeindezentrums akzeptieren.[^1]
+    
+Zusammenfassung
+- [x] Coorporate Design
+- [x] Begleitende Online Hilfe
+- [x] Dokumentation zu Hardwarespezifkiationen inkl. Schnittstellen
+- [ ] Dokumentation zu Softwarespezifikationen
+- [x] Registrations-/Anmeldevorgang
+- [ ] Anmeldedatenspeicherung
+- [x] Stundengenaue Abrechnung der Mietzeit
+- [x] Bestätigung AGB´s und Datenschutzrichtlinien
+    
+[^1]: 6.2.6.5. Anforderung Website (Pflichtenheft)
