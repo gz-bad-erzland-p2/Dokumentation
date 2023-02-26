@@ -14,44 +14,28 @@ Der Product Owner entspricht dem Gemeindemitarbeiter Herr Gutfried. Die unter [U
 
 | Sprint Nr. | Sprint-Dauer       | Release-Datum          | Beschreibung                                                                                                                                                                                                                                                              |
 | ---------- | ------------------ | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1          | 05.12 - 09.12.2022 | 09.12.2022             | ·        Verlinkung von Webseite auf Office-Sharing 
-
-·        Grundlegende Navigation vorhanden 
-
-·        UI-Design in Figma fertig 
-
-·        Webserver aufsetzen und konfigurieren                                                                                    |
-| 2          | 12.12 - 16.12.2022 | 16.12.2022             | ·        Struktur des Buchungsvorgangs grundlegend implementiert 
-
-·        Auswahl und Eingabe des Arbeitsplatzes inkl. Betriebssystems, Softwarekonfiguration und Persönliche Daten 
-
-·        Firewall aufsetzen und konfigurieren 
-
-·        Webserver fertig stellen |
-| 3          | 03.01 - 06.01.2023 | 06.01.2023             | ·        Auswahl des Buchungszeitraums zu entsprechenden Plätzen 
-
-·        Passwort Verschlüsselung 
-
-·        DNS-Server aufsetzen und konfigurieren 
-
-·        Firewall fertigstellen                                                                                  |
-| 4          | 09.01 - 13.01.2023 | 13.01.2023             | ·        Speichern der Daten in Datenbank 
-
-·        Buchungsbestätigung in Form von einer druckbaren PDF 
-
-·        E-Mail-Bestätigung der Buchung 
-
-·        Datenbankserver aufsetzen und konfigurieren 
-
-·        Zertifikatsserver aufsetzen und konfigurieren       |
-| 5          | 16.01 - 20.01.2023 | 20.01.2023             | ·        Prototyp auf Produktionssystem einspielen und testen 
-
-·        Testen des Zusammenspiels der einzelnen Server 
-
-·        Funktionstest                                                                                                                          |
-| 6          | 23.01 - 24.01.2023 | Endprodukt: 24.01.2023 | ·        Präsentation vorbereiten 
-
-·        Letze Fehler beheben      
+| 1          | 05.12 - 09.12.2022 | 09.12.2022             | Verlinkung von Webseite auf Office-Sharing
+|            |                    |                        | Grundlegende Navigation vorhanden 
+|            |                    |                        | UI-Design in Figma fertig 
+|            |                    |                        | Webserver aufsetzen und konfigurieren                                                                     
+| 2          | 12.12 - 16.12.2022 | 16.12.2022             | Struktur des Buchungsvorgangs grundlegend implementiert 
+|            |                    |                        | Auswahl und Eingabe des Arbeitsplatzes inkl. Betriebssystems, Softwarekonfiguration und Persönliche Daten 
+|            |                    |                        | Firewall aufsetzen und konfigurieren 
+|            |                    |                        | Webserver fertig stellen
+| 3          | 03.01 - 06.01.2023 | 06.01.2023             | Auswahl des Buchungszeitraums zu entsprechenden Plätzen 
+|            |                    |                        | Passwort Verschlüsselung 
+|            |                    |                        | DNS-Server aufsetzen und konfigurieren 
+|            |                    |                        | Firewall fertigstellen                                                                                  
+| 4          | 09.01 - 13.01.2023 | 13.01.2023             | Speichern der Daten in Datenbank 
+|            |                    |                        | Buchungsbestätigung in Form von einer druckbaren PDF 
+|            |                    |                        | E-Mail-Bestätigung der Buchung 
+|            |                    |                        | Datenbankserver aufsetzen und konfigurieren 
+|            |                    |                        | Zertifikatsserver aufsetzen und konfigurieren       
+| 5          | 16.01 - 20.01.2023 | 20.01.2023             | Prototyp auf Produktionssystem einspielen und testen 
+|            |                    |                        | Testen des Zusammenspiels der einzelnen Server 
+|            |                    |                        | Funktionstest                                                                                            
+| 6          | 23.01 - 24.01.2023 | Endprodukt: 24.01.2023 | Präsentation vorbereiten 
+|            |                    |                        | Letze Fehler beheben      
 
 TODO: 
 Links auf aktualität überprüfen
