@@ -1,6 +1,6 @@
 # Begrüßung
 
-Es wird Zeit für die Digitalisierung!
+:fontawesome-solid-circle-exclamation: Es wird Zeit für die Digitalisierung!
 
 Im Auftrag des Gemeindezentrums Bad Erzland hat unsere Firma Profi-SecNetIT GmbH den Auftrag erhalten ein Office-Sharing System zu entwerfen und in Betrieb zu nehmen.
 

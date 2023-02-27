@@ -2,13 +2,13 @@
 # See for further configuration options: https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/
 
 site_name: Office-Sharing-Dokumentation
-site_author: Thomas
-site_description: Implementierung eines Prototypes für die Office-Sharing-Plattform
+site_author: Cora, Jannik, Pascal, Julius, Thomas
+site_description: Projektdokumentation zur implementierung eines Prototypes für die Office-Sharing-Plattform.
 repo_url: https://github.com/gz-bad-erzland-p2/Dokumentation
 repo_name: NextJS-Office-Sharing
 
 # Copyright
-copyright: Copyright &copy; 2022 Thomas
+copyright: Copyright &copy; 2023 SecNetIT GmbH
 
 theme:
   name: material
@@ -75,7 +75,7 @@ theme:
 extra:
   homepage: https://example.com
   consent:
-    title: Cookie information
+    title: Cookie Informationen
     description: >-
       Wir verwenden Cookies auch, um Ihre wiederholten Besuche und Präferenzen zu erkennen
       um die Wirksamkeit unserer Dokumentation zu messen und ob Benutzer
@@ -126,3 +126,9 @@ markdown_extensions:
   - pymdownx.tabbed:
       alternate_style: true
   - md_in_html
+
+#nav:
+#  - Vortrag:
+#       - Begrüßung: vortrag/01_begrüßung.md
+#       - "AE Module":
+#           - "AE Modul 1": vortrag/06_ae-module/01_frontend.md

@@ -4,7 +4,7 @@ Die Supportseite bietet dem Nutzer alle Informationen die benötigt werden, um s
 Es werden Anleitungen für alle Schritte des Buchungsprozesses bereitgestellt sowie häufige Fragen beantwortet. Weiterhin werden hier die Kontaktoptionen mit
 Sec-Net-IT und dem Gemeindezentrum Bad Erzland aufgeführt.
 
-Die Supportseite ist im entsprechenden Reiter im Header zu finden.
+Die Supportseite ist im entsprechenden Reiter in der Navigation zu finden.
 
 
 !!! info "Hinweis"

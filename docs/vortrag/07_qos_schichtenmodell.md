@@ -2,18 +2,18 @@
 
 ![grafik](https://user-images.githubusercontent.com/57149152/213377687-3fe6ed9d-2d6b-4ae2-841d-c4a00703aed3.png)
 
-Abbildung 2: Schichtenmodell der Informatik
+Abbildung 1: Schichtenmodell der Informatik
 
 Die von der Sec-Net-IT entwickelte Office-Sharing-Website fungiert als Orgware des Gesamtsystems.
 Die Mitarbeiter der Sec-Net-IT sowie die Bürger und Nutzer stellen die Menware dar.
 Zur Software zählt das entwickelte Programm selber und die digitale Infrastruktur der Server die es bereitstellen.
 Die Hardware ist die physische Elektronik im Gemeindezentrum z.B. die Übertragungsdienste oder das Endsystem.
 
-# Umgesetzte Qualitätsmerkmale
+## Umgesetzte Qualitätsmerkmale
 
 ![ISO-25010-Qualitaetskriterien-fuer-Software](https://user-images.githubusercontent.com/57149152/214249290-f8be5a93-f559-4e93-b987-ca380c2d430f.jpg)
 
-Abbildung 3: Qualitätskriterien für Software
+Abbildung 2: Qualitätskriterien für Software
 
 Unter Betrachtung der Anforderungen des Gemeindezentrums Bad Erzland wurden folgenden Qualitätskriterien besondere Priorität eingeräumt.
 
@@ -27,7 +27,11 @@ Um den Wartungsaufwand für die Software möglichst gering zu halten wurde die S
 3. Sicherheit
 Da Gemeindezentren wie andere Öffentliche Einrichtungen für Hackerangriffe besonders gefährdete Ziele sind wurde auf Sicherheit besonders geachtet. 
 Besonders vorgestellt wurden:
-- [AE Sicherheit](https://gz-bad-erzland-p2.github.io/Dokumentation/vortrag/06_ae-module/03_sicherheit/)
-- [SI Sicherheit](https://gz-bad-erzland-p2.github.io/Dokumentation/vortrag/09_si-module/03_sicherheit/)
+- [AE Sicherheit](/vortrag/06_ae-module/03_sicherheit/)
+- [SI Sicherheit](/vortrag/09_si-module/03_sicherheit/)
+
+[^1]: Schichtenmodell der Informatik: Skript_WissenschaftInformatikIGD19.docx, Seite 4, ©Rie (27.02.2023)
+[^2]: Qualitätskriterien für Software: https://www.inztitut.de/blog/glossar/iso-25010/ (24.01.23)
+[^3]: https://t2informatik.de/wissen-kompakt/clean-code/ (27.02.2023)
 
 TODO: Links überprüfen
