@@ -31,6 +31,7 @@ Zielstellungen an die zu erstellende Website aus dem Pflichtenheft:
     (siehe Pflichtenheft 6.2.6.5. Anforderung Website)
     
 Zusammenfassung:
+
 - [x] Coorporate Design
 - [x] Begleitende Online Hilfe
 - [x] Dokumentation zu Hardwarespezifkiationen inkl. Schnittstellen
