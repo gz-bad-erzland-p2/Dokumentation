@@ -1,21 +1,28 @@
 # User Stories
+
+Im nachfolgenden Abschnitt werden die User Stories für das Projekt aufgelistet. 
+
+!!! question "Weitere Informationen"
+    Weitere Informationen zur Umsetzung der User Stories finden Sie unter dem Reiter [Anleitungen & Informationen](/Anleitungen%20%26%20Informationen/Bedinungsanleitungen/Anmledung/).
+
 ### Supportanfrage
  - Supportanfrage1: Supportseite aufrufen
  - Supportanfrage2: FAQ lesen
  - Supportanfrage3: Support anrufen
 
 ### AP Buchung
-- AP Buchung1: Wahl des Betriebssystems
-- AP Buchung2: Single oder Multi Arbeitsplatz
-- AP Buchung3: weitere Konfiguration angeben
--  AP Buchung4: Zeiträume anzeigen lassen
--  AP Buchung5: Zeitraum auswählen 
--  AP Buchung6: Kontaktdaten eingeben
-- AP Buchung7: Reservierung bestätigen
--  AP Buchung8: Bestätigung erhalten
--  AP Buchung9: Bestätigung drucken
+- AP Buchung1: Einzel- oder Doppelarbeitsplatz
+- AP Buchung2: Wahl der Hardware
+- AP Buchung3: Wahl des Betriebssystems
+- AP Buchung4: Weitere Konfiguration angeben
+- AP Buchung5: Einweisung durch einen Mitarbeiter
+- AP Buchung6: Zeiträume anzeigen lassen
+- AP Buchung7: Zeitraum auswählen 
+- AP Buchung8: Kontaktdaten eingeben
+- AP Buchung9: Reservierung bestätigen
+- AP Buchung10: Bestätigung drucken
+- AP Buchung11: Bestätigung erhalten
 
 ### Recherche
 - Recherche1: Hardware Informationen einsehen
-
 
