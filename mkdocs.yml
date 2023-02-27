@@ -22,12 +22,10 @@ theme:
     - navigation.tabs
     - navigation.tracking
     - navigation.tabs.sticky
-    #    - toc.integrate
     - navigation.top
     - search.highlight
     - search.suggest
     - search.share
-#    - header.autohide
 
   # Color scheme
   palette:
