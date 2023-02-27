@@ -13,7 +13,7 @@ Den Systemintegratoren ist der Einstieg in die Projektumsetzung schwer gefallen.
 
 Eine Schwierigkeit die dem Projektaufbau als Schul- und Wirtschaftsprojekt geschuldet war ist die schwierige Immersion und die dadurch teilweise unklaren Anforderungen.
 
-## TODO: Inhaltliche Reflexion
+## Inhaltliche Reflexion
 
 Zielstellungen an die zu erstellende Website aus dem Pflichtenheft:
 
@@ -27,9 +27,10 @@ Zielstellungen an die zu erstellende Website aus dem Pflichtenheft:
     Für einen Mietvorgang muss eine Registrierung oder Anmeldung (mit vorangegangen Registrierung) 
     unter Angabe von persönlichen Daten erfolgen (HGB). 
     Diese werden zum Zweck der Buchung gespeichert. Es erfolgt eine stundengenaue Abrechnung der Mietzeit. 
-    Der Nutzer muss die AGBs und Datenschutzrichtlinien des Gemeindezentrums akzeptieren.[^1]
+    Der Nutzer muss die AGBs und Datenschutzrichtlinien des Gemeindezentrums akzeptieren.
+    (siehe Pflichtenheft 6.2.6.5. Anforderung Website)
     
-Zusammenfassung
+Zusammenfassung:
 - [x] Coorporate Design
 - [x] Begleitende Online Hilfe
 - [x] Dokumentation zu Hardwarespezifkiationen inkl. Schnittstellen
@@ -38,5 +39,6 @@ Zusammenfassung
 - [ ] Anmeldedatenspeicherung
 - [x] Stundengenaue Abrechnung der Mietzeit
 - [x] Bestätigung AGB´s und Datenschutzrichtlinien
-    
-[^1]: 6.2.6.5. Anforderung Website (Pflichtenheft)
+
+Weitere Inhalte:
+- Mehr Maschienen konnten automatisiert werden als mindestens vorausgesetzt
