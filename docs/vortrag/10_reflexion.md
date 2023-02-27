@@ -30,6 +30,7 @@ Zielstellungen an die zu erstellende Website aus dem Pflichtenheft:
     Der Nutzer muss die AGBs und Datenschutzrichtlinien des Gemeindezentrums akzeptieren.[^1]
     
 Zusammenfassung
+
 - [x] Coorporate Design
 - [x] Begleitende Online Hilfe
 - [x] Dokumentation zu Hardwarespezifkiationen inkl. Schnittstellen
