@@ -4,12 +4,12 @@
 ![Netzwerkplan_finalpng](https://user-images.githubusercontent.com/44226321/214246798-95457483-08bc-4875-947b-7af2355f5c04.png)
 
 
-Jeder Server (außer die Firewall) wird mitlhilfe der Orchestrierungssoftware Ansible erstellt und ggf. konfiguriert.
+Jeder Server (außer die Firewall) wird mithilfe der Orchestrierungssoftware Ansible erstellt und ggf. konfiguriert.
 Als Schnittstelle zwischen VMware und Ansible wird die Software Vagrant verwendet.
 
 ## Aufbau der Vagrant / Ansible Ordner/Dateien
 
-Weiterhin wird jeder Server der mittels Vagrant und Ansible gestartet wird, mit folgender Datei und Ordnerstruktur ausgerüstet.
+Weiterhin wird jeder Server, der mittels Vagrant und Ansible gestartet wird, mit folgender Datei und Ordnerstruktur ausgerüstet.
 Diese liegen unter C:\Vagrant\CentOS9_xx (xx=Servername z. B. DB)
 
 ![grafik](https://user-images.githubusercontent.com/44226321/214226433-1f3112a2-c841-43e8-9988-cfcbdb62851c.png)
@@ -46,7 +46,7 @@ Host lnxhost-Internal
 
 ### Datei vagrantfile
 
-Das vagrantfile nthält alle Informationen, die Vagrant benötigt um den Server mit den entsprechenden Spezifikationen automatisiert aufzusetzen.
+Das vagrantfile enthält alle Informationen, die Vagrant benötigt, um den Server mit den entsprechenden Spezifikationen automatisiert aufzusetzen.
 --> die einzelnen vagrantfiles werden separat vorgestellt
 ___
 ## Ordner vmware:
