@@ -182,3 +182,6 @@ Playbook: dns.yml
 ```
 
 # DNS Einträge
+
+
+(Quelle 1: https://www.xovi.de/was-ist-ein-dns-server/, 27.02.2023)
