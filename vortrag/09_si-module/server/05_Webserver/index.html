@@ -2157,18 +2157,16 @@ Vagrant.configure(&quot;2&quot;) do |config|
         path: /home/vagrant/Test-App
         state: directory
         mode: &#39;0755&#39;
- ```
-**git.yml:**
-</code></pre></div></p>
-<hr />
-<ul>
-<li>name: Setup Webserver
+</code></pre></div>
+<strong>git.yml:</strong></p>
+<div class="highlight"><pre><span></span><code>---
+- name: Setup Webserver
   hosts: centoswebserver
-  become: true</li>
-</ul>
-<p>tasks:
+  become: true
+
+  tasks:
     - name: Git clone
-      shell: git clone <a href="https://github.com/gz-bad-erzland-p2/NextJS-Office-Sharing">https://github.com/gz-bad-erzland-p2/NextJS-Office-Sharing</a>
+      shell: git clone https://github.com/gz-bad-erzland-p2/NextJS-Office-Sharing
       args:
         chdir: /var/www/
     - name: NPM Install
@@ -2183,7 +2181,7 @@ Vagrant.configure(&quot;2&quot;) do |config|
       shell: npm run start
       args:
         chdir: /var/www/NextJS-Office-Sharing
-```</p>
+</code></pre></div>
 <p>(Quelle 1: <a href="https://de.wikipedia.org/wiki/Webserver">https://de.wikipedia.org/wiki/Webserver</a>, 27.02.2023)</p>
 
 
