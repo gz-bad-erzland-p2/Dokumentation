@@ -35,7 +35,7 @@ Zusammenfassung:
 - [x] Coorporate Design
 - [x] Begleitende Online Hilfe
 - [x] Dokumentation zu Hardwarespezifkiationen inkl. Schnittstellen
-- [ ] Dokumentation zu Softwarespezifikationen
+- [x] Dokumentation zu Softwarespezifikationen
 - [x] Registrations-/Anmeldevorgang
 - [ ] Anmeldedatenspeicherung
 - [x] Stundengenaue Abrechnung der Mietzeit
