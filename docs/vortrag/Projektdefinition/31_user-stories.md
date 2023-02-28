@@ -7,10 +7,10 @@ Im nachfolgenden Abschnitt werden die User Stories für das Projekt aufgelistet.
 
 ### Supportanfrage
  - Supportanfrage1: Supportseite aufrufen
- - Supportanfrage2: FAQ lesen
- - Supportanfrage3: Support anrufen
+ - Supportanfrage2: Dokumentation einsehen
+ - Supportanfrage3: Support kontaktieren
 
-### AP Buchung
+### Arbeitsplatz Buchung
 - AP Buchung1: Einzel- oder Doppelarbeitsplatz
 - AP Buchung2: Wahl der Hardware
 - AP Buchung3: Wahl des Betriebssystems

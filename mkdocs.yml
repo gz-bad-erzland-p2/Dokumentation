@@ -84,6 +84,7 @@ extra:
 
 plugins:
   - glightbox
+  - search
 
 # Extensions
 markdown_extensions:
@@ -152,19 +153,19 @@ nav:
       - 'Einleitung': 'vortrag/01_Einleitung.md'
       - 'Projektdefinition':
           - 'vortrag/Projektdefinition/00_projekteinordnung.md'
-          - 'vortrag/Projektdefinition/01_nutzerwertanalyse.md'
           - 'vortrag/Projektdefinition/05_entwicklungsvorgehen.md'
+          - 'vortrag/Projektdefinition/01_nutzerwertanalyse.md'
           - 'vortrag/Projektdefinition/30_soll-ist.md'
           - 'vortrag/Projektdefinition/31_user-stories.md'
+          - 'Einordnung Schichtenmodell': 'vortrag/Projektdefinition/07_qos_schichtenmodell.md'#
           - 'vortrag/Projektdefinition/08_architekturbeschreibung.md'
           - 'vortrag/Projektdefinition/40_zeitplan.md'
-          - 'vortrag/Projektdefinition/50_download.md'
+          - 'Demos des Produktes': 'vortrag/Projektdefinition/50_download.md'
           - 'Protokolle':
               - 'vortrag/Projektdefinition/protokolle/01_ergebnisprotokoll.md'
               - 'vortrag/Projektdefinition/protokolle/03_pflichtenheft.md'
               - 'vortrag/Projektdefinition/protokolle/02_lastenheft.md'
       - 'vortrag/04_demonstration-user-stories.md'
-      - 'vortrag/07_qos_schichtenmodell.md'#
       - 'AE-Module':
           - 'vortrag/06_ae-module/01_frontend.md'
           - 'vortrag/06_ae-module/02_backend.md'
