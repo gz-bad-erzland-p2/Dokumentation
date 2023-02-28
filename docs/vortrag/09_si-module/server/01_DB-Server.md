@@ -1,4 +1,6 @@
 # Datenbank Server
+>Als Datenbankserver werden Rechner bezeichnet, auf denen Datenbanksysteme abgelegt werden, dabei stellt der Server Datenverwaltungsdienste bereit, die von anderen Rechnern aus genutzt werden können. (Quelle 1)
+
 Auf dem Datenbankserver werden die Daten von den Nutzern der Buchungswebsite gespeichert und verwaltet.
 Als Datenbankverwaltungssystem wird MySQL verwendet.
 # Erstellen
@@ -225,3 +227,4 @@ Playbook: db.yml
 
    ```
 
+(Quelle 1: https://de.wikipedia.org/wiki/Datenbankserver, 27.02.2023)
