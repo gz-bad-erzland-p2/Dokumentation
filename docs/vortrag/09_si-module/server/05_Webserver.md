@@ -1,5 +1,5 @@
 # Webserver
-
+>Ein Webserver ist ein Server, der Dokumente an Clients wie z. B. Webbrowser überträgt. (Quelle 1)
 # Erstellen
 
 Vagrantfile:
@@ -254,3 +254,5 @@ Playbooks:
       args:
         chdir: /var/www/NextJS-Office-Sharing
 ```
+
+(Quelle 1: https://de.wikipedia.org/wiki/Webserver, 27.02.2023)
