@@ -172,9 +172,6 @@ nav:
               - 'vortrag/Projektdefinition/protokolle/02_lastenheft.md'
       - 'vortrag/04_demonstration-user-stories.md'
       - 'AE-Module':
-          - 'Analyse':
-          - 'Planung':        
-          - 'Implimentierung ':
           - 'vortrag/06_ae-module/01_frontend.md'
           - 'vortrag/06_ae-module/02_backend.md'
           - 'vortrag/06_ae-module/03_sicherheit.md'
