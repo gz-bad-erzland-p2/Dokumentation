@@ -13,17 +13,17 @@
       
       
       
-        <link rel="prev" href="../GliederungVortrag/">
+        <link rel="prev" href="../../vortrag/09_si-module/server/06_Zertifikatsserver/">
       
       
-        <link rel="next" href="../deploy-instruction/">
+        <link rel="next" href="../Server_Hinweise/">
       
       <link rel="icon" href="../../assets/img/logo.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.15">
     
     
       
-        <title>Serverhinweise - Office-Sharing-Dokumentation</title>
+        <title>Gliederung Vortrag - Office-Sharing-Dokumentation</title>
       
     
     
@@ -75,7 +75,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#serverhinweise" class="md-skip">
+        <a href="#gliederung-vortrag" class="md-skip">
           Zum Inhalt
         </a>
       
@@ -109,7 +109,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Serverhinweise
+              Gliederung Vortrag
             
           </span>
         </div>
@@ -291,7 +291,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../GliederungVortrag/" class="md-tabs__link md-tabs__link--active">
+      <a href="./" class="md-tabs__link md-tabs__link--active">
         {Interne Informationen}
       </a>
     </li>
@@ -1812,20 +1812,6 @@
               
   
   
-  
-    <li class="md-nav__item">
-      <a href="../GliederungVortrag/" class="md-nav__link">
-        Gliederung Vortrag
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
     
   
   
@@ -1838,9 +1824,23 @@
       
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Serverhinweise
+        Gliederung Vortrag
       </a>
       
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Server_Hinweise/" class="md-nav__link">
+        Serverhinweise
+      </a>
     </li>
   
 
@@ -1944,34 +1944,65 @@
   
 
 
-<h1 id="serverhinweise">Serverhinweise<a class="headerlink" href="#serverhinweise" title="Permanent link">&para;</a></h1>
-<h1 id="datenbank">Datenbank<a class="headerlink" href="#datenbank" title="Permanent link">&para;</a></h1>
-<p>Anmeldung am Server: vagrant;vagrant</p>
-<p>Anmeldung am DB-Server mit mysql -u root -p </p>
-<p>login_user: 'root'</p>
-<p>login_password: 'TNpasswd00.' </p>
-<p>Datenbank Name: nextjs_prisma</p>
-<p>DB Nutzer
-name: nextjs</p>
-<p>password: TNpasswd00.</p>
-<p>Rechte: 'nextjs_prisma.*:ALL,GRANT'</p>
-<h1 id="firewall">Firewall<a class="headerlink" href="#firewall" title="Permanent link">&para;</a></h1>
-<p>&rarr; Auf der Maschine:</p>
-<p>Nutzername: root</p>
-<p>PW: 01219dd.</p>
-<p>&rarr; Im Browser 192.168.98.10:444:</p>
-<p>Nutzername: admin</p>
-<p>PW: 01219dd.</p>
-<h1 id="dns-server">DNS-Server<a class="headerlink" href="#dns-server" title="Permanent link">&para;</a></h1>
-<p>Nutzername: vagrant</p>
-<p>PW: vagrant</p>
-<h1 id="webserver">Webserver<a class="headerlink" href="#webserver" title="Permanent link">&para;</a></h1>
-<p>Nutzername: vagrant</p>
-<p>PW: vagrant</p>
-<h1 id="ca">CA<a class="headerlink" href="#ca" title="Permanent link">&para;</a></h1>
-<p>Passphrase: a1s2d3f4g5.!
-PEM pass phrase: a1s2d3f4g5.!
-common Name: itsecnet</p>
+<h1 id="gliederung-vortrag">Gliederung Vortrag<a class="headerlink" href="#gliederung-vortrag" title="Permanent link">&para;</a></h1>
+<ul>
+<li>Gliederung mit Ansage Der Sprechanteile  vereinen mit Mitarbeiter vorstellung wer AE (Front Back)</li>
+<li>Auftrag .... Auftrag Bei begrüßung ändern</li>
+<li>Entwicklung des Backends -&gt; entfernen</li>
+</ul>
+<p>Beginn
+    - Begrüßung
+    - Projektauftrag
+    - Mitarbeiteranteile &amp; Gliederung </p>
+<p>Auftragsdefinierung
+    - Prozesslandkarte
+    - User-Stories</p>
+<p>Demonstration User-Stories</p>
+<p>Projekt definierung
+    - Projektstrukturplan
+    - Entwicklungsvorgehen
+    - Gant Diagramm
+    - Einordnung ins Schichtenmodell
+    - Architekturbeschreibung des Gesamtsystems</p>
+<p>Anwendungsentwickler
+    Analyse
+        - USE-CASE Diagramm ()
+        - Nutzerwertanalyse
+        - Risikoanalyse 
+        - Schutzbedarfsanalyse (Pascal)
+        - Umzusetzende Qualitätsmerkmale (Julius)
+    Planung
+        - Fachkonzeptmodellierung  AE (THOMAS)
+            - Auswahl der Programmiersprache und Frameworks (basierend auf Analyse)
+        - (Frontend) Prototypen im Bereich des UX bzw. UI Design mit Figma erstellen (Jannik Pascal)
+            - Frontend
+            - Erster Entwurf
+            - Entwurfsüberarbeitung
+            - Responsiv UI Design
+        - (Backend) (Thomas)
+            - ERD Diagramm / ORM Datenbank
+            - Sichre Kommunikaion RestAPI
+    Implimentierung 
+        - (Frontend) (Jannik Pascal)
+            - Implimentierung des Designs (ohne Funktionalität)
+        - (Backend) (Thomas)
+            - Funktionen erstellen und einbinden
+            - Migration der Datenbank
+System Intigratoren (Cora, Richard)
+    Analyse
+        - Was wird Benötigt?
+    Planung
+        - Fachkonzeptmodellierung SI
+        - Dienstkonzeption 
+        - Netzwerkplan
+    Implimentierung
+        - Alles andere</p>
+<p>Reflexion (Thomas)
+    - Wissens- und Kompetenzzuwachs
+    - Inhaltliche Reflexion
+Schlusswort (Pascal)
+    - Fragen 
+    - Danke</p>
 
 
 
