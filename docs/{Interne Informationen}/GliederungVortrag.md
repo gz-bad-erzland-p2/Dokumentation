@@ -23,6 +23,7 @@
 	- Ist-Soll Analyse
 	- Einordnung ins Schichtenmodell (Theo)
 	- Architekturbeschreibung des Gesamtsystems (Wer kennt sich da aus)
+	- Auswahl der Programmiersprache und Frameworks (basierend auf Nutzerwertanalyse) (Thomas)
 	- Projektstrukturplan (Theo)
 	- Entwicklungsvorgehen (Theo)
 	- Demos des Produktes 
@@ -37,7 +38,7 @@
 		- Umzusetzende Qualitätsmerkmale (Julius)
 	Planung
 		- Fachkonzeptmodellierung  AE
-			- Auswahl der Programmiersprache und Frameworks (basierend auf Analyse)(Thomas)
+			
 		- (Frontend) Prototypen im Bereich des UX bzw. UI Design mit Figma erstellen
 			- Frontend (Pascal)
 			- Erster Entwurf (Jannik)
