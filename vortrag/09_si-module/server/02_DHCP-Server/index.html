@@ -453,7 +453,7 @@
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../../06_ae-module/09_planung/">
-        09 planung
+        Planung
       </a>
 </li>
 </ul>
@@ -505,9 +505,31 @@
 </li>
 <li class="md-nav__item md-nav__item--active">
 <input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+          DHCP Server für das blaue Netz
+          <span class="md-nav__icon md-icon"></span>
+</label>
 <a class="md-nav__link md-nav__link--active" href="./">
         DHCP Server für das blaue Netz
       </a>
+<nav aria-label="Inhaltsverzeichnis" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#erstellen">
+    Erstellen
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#konfiguration">
+    Konfiguration
+  </a>
+</li>
+</ul>
+</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../03_DNS-Server/">
@@ -632,6 +654,22 @@
 <div class="md-sidebar__scrollwrap">
 <div class="md-sidebar__inner">
 <nav aria-label="Inhaltsverzeichnis" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#erstellen">
+    Erstellen
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#konfiguration">
+    Konfiguration
+  </a>
+</li>
+</ul>
 </nav>
 </div>
 </div>
@@ -639,12 +677,13 @@
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
 <h1 id="dhcp-server-fur-das-blaue-netz">DHCP Server für das blaue Netz<a class="headerlink" href="#dhcp-server-fur-das-blaue-netz" title="Permanent link">¶</a></h1>
-<blockquote>
-<p>Der DHCP-Server verwaltet einen Pool von IP-Adressen und leaset eine Adresse [und weitere Konfigurationsdaten] an jeden DHCP-fähigen Client, wenn er im Netzwerk gestartet wird. (Quelle 1)</p>
-</blockquote>
-<h1 id="erstellen">Erstellen<a class="headerlink" href="#erstellen" title="Permanent link">¶</a></h1>
+<div class="admonition info">
+<p class="admonition-title">Überblick</p>
+<p><span class="biggerFont">Der DHCP-Server verwaltet einen Pool von IP-Adressen und leaset eine Adresse [und weitere Konfigurationsdaten] an jeden DHCP-fähigen Client, wenn er im Netzwerk gestartet wird. (Quelle 1)</span></p>
+</div>
+<h2 id="erstellen">Erstellen<a class="headerlink" href="#erstellen" title="Permanent link">¶</a></h2>
 <p>Vagrantfile:</p>
-<h1 id="konfiguration">Konfiguration<a class="headerlink" href="#konfiguration" title="Permanent link">¶</a></h1>
+<h2 id="konfiguration">Konfiguration<a class="headerlink" href="#konfiguration" title="Permanent link">¶</a></h2>
 <p>Playbook:</p>
 <p>(Quelle 1: <a href="https://learn.microsoft.com/de-de/windows-server/networking/technologies/dhcp/dhcp-top">https://learn.microsoft.com/de-de/windows-server/networking/technologies/dhcp/dhcp-top</a>, 27.02.2023)</p>
 </article>

@@ -453,7 +453,7 @@
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../../06_ae-module/09_planung/">
-        09 planung
+        Planung
       </a>
 </li>
 </ul>
@@ -515,9 +515,54 @@
 </li>
 <li class="md-nav__item md-nav__item--active">
 <input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+          Firewall
+          <span class="md-nav__icon md-icon"></span>
+</label>
 <a class="md-nav__link md-nav__link--active" href="./">
         Firewall
       </a>
+<nav aria-label="Inhaltsverzeichnis" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#einzelnen-netzwerkadapter">
+    Einzelnen Netzwerkadapter
+  </a>
+<nav aria-label="Einzelnen Netzwerkadapter" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#schnittstellen">
+    Schnittstellen
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#konfiguration">
+    Konfiguration
+  </a>
+<nav aria-label="Konfiguration" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#firewall-optionen">
+    Firewall Optionen
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#firewall-regeln">
+    Firewall Regeln
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../05_Webserver/">
@@ -632,6 +677,45 @@
 <div class="md-sidebar__scrollwrap">
 <div class="md-sidebar__inner">
 <nav aria-label="Inhaltsverzeichnis" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#einzelnen-netzwerkadapter">
+    Einzelnen Netzwerkadapter
+  </a>
+<nav aria-label="Einzelnen Netzwerkadapter" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#schnittstellen">
+    Schnittstellen
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#konfiguration">
+    Konfiguration
+  </a>
+<nav aria-label="Konfiguration" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#firewall-optionen">
+    Firewall Optionen
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#firewall-regeln">
+    Firewall Regeln
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
 </nav>
 </div>
 </div>
@@ -639,12 +723,13 @@
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
 <h1 id="firewall">Firewall<a class="headerlink" href="#firewall" title="Permanent link">¶</a></h1>
-<blockquote>
-<p>Eine Firewall ist ein Sicherungssystem, das ein Rechnernetz oder einen einzelnen Computer vor unerwünschten Netzwerkzugriffen schützt. (Quelle 1)</p>
+<div class="admonition info">
+<p class="admonition-title">Überblick</p>
+<p><span class="biggerFont">Eine Firewall ist ein Sicherungssystem, das ein Rechnernetz oder einen einzelnen Computer vor unerwünschten Netzwerkzugriffen schützt. (Quelle 1)</span></p>
+</div>
 <p>Auf unserer Firewall läuft die freie Linux-Distribution IPFire, die als Router und Firewall fungiert.</p>
-</blockquote>
-<h1 id="einzelnen-netzwerkadapter">Einzelnen Netzwerkadapter<a class="headerlink" href="#einzelnen-netzwerkadapter" title="Permanent link">¶</a></h1>
-<p>Schnittstellen:</p>
+<h2 id="einzelnen-netzwerkadapter">Einzelnen Netzwerkadapter<a class="headerlink" href="#einzelnen-netzwerkadapter" title="Permanent link">¶</a></h2>
+<h3 id="schnittstellen">Schnittstellen<a class="headerlink" href="#schnittstellen" title="Permanent link">¶</a></h3>
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="https://user-images.githubusercontent.com/44226321/214235061-958b0814-98f0-4932-ad29-de1805b198b4.png"><img alt="grafik" src="https://user-images.githubusercontent.com/44226321/214235061-958b0814-98f0-4932-ad29-de1805b198b4.png"/></a></p>
 <hr/>
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="https://user-images.githubusercontent.com/44226321/214235193-a2385c18-dd2f-4617-94fb-001dbd606b13.png"><img alt="grafik" src="https://user-images.githubusercontent.com/44226321/214235193-a2385c18-dd2f-4617-94fb-001dbd606b13.png"/></a></p>
@@ -656,17 +741,24 @@
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="https://user-images.githubusercontent.com/44226321/214235491-17bc1b71-8a21-4455-8c49-5bf9f29c6030.png"><img alt="grafik" src="https://user-images.githubusercontent.com/44226321/214235491-17bc1b71-8a21-4455-8c49-5bf9f29c6030.png"/></a></p>
 <hr/>
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="https://user-images.githubusercontent.com/44226321/214235543-122f6bf2-a061-40fc-9158-7740355dceb6.png"><img alt="grafik" src="https://user-images.githubusercontent.com/44226321/214235543-122f6bf2-a061-40fc-9158-7740355dceb6.png"/></a></p>
-<h1 id="konfiguration">Konfiguration<a class="headerlink" href="#konfiguration" title="Permanent link">¶</a></h1>
+<h2 id="konfiguration">Konfiguration<a class="headerlink" href="#konfiguration" title="Permanent link">¶</a></h2>
 <p>Unter der IP-Adresse <a href="https://192.168.98.10:444/">https://192.168.98.10:444/</a> ist das Webinterface der Firewall zu erreichen.
 Hier wurde die Konfiguration der Firewall vorgenommen.</p>
-<p><strong>Firewall Optionen:</strong></p>
+<h4 id="firewall-optionen">Firewall Optionen<a class="headerlink" href="#firewall-optionen" title="Permanent link">¶</a></h4>
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="https://user-images.githubusercontent.com/44226321/214234670-908fe9c0-6581-42be-a7b1-e6066de2cdd4.png"><img alt="grafik" src="https://user-images.githubusercontent.com/44226321/214234670-908fe9c0-6581-42be-a7b1-e6066de2cdd4.png"/></a></p>
 <p>Generell werden alle Aufragen von außen (also aus dem roten Netz) in die anderen Netze durch die Firewall verworfen. 
 Andersherum dürfen alle Netze Anfragen ins rote Netz senden und diese werden zugelassen
 So kann der Zugriff genau gesteuert werden</p>
-<p><strong>Firewall Regeln:</strong></p>
+<h4 id="firewall-regeln">Firewall Regeln<a class="headerlink" href="#firewall-regeln" title="Permanent link">¶</a></h4>
 <p>Anfragen aus allen Netzen </p>
-<p>(Quelle 1: <a href="https://de.wikipedia.org/wiki/Firewall">https://de.wikipedia.org/wiki/Firewall</a>, 27.2.2023)</p>
+<div class="footnote">
+<hr/>
+<ol>
+<li id="fn:1">
+<p>(Quelle 1: <a href="https://de.wikipedia.org/wiki/Firewall">https://de.wikipedia.org/wiki/Firewall</a>, 27.2.2023) <a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">↩</a></p>
+</li>
+</ol>
+</div>
 </article>
 </div>
 </div>

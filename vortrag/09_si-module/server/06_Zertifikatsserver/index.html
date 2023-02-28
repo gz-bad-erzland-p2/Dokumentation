@@ -37,7 +37,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#zertifikatsserver-ca-certifcation-authority">
+<a class="md-skip" href="#zertifikatsserver-ca-certification-authority">
           Zum Inhalt
         </a>
 </div>
@@ -453,7 +453,7 @@
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../../06_ae-module/09_planung/">
-        09 planung
+        Planung
       </a>
 </li>
 </ul>
@@ -525,9 +525,50 @@
 </li>
 <li class="md-nav__item md-nav__item--active">
 <input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+          Zertifikatsserver
+          <span class="md-nav__icon md-icon"></span>
+</label>
 <a class="md-nav__link md-nav__link--active" href="./">
         Zertifikatsserver
       </a>
+<nav aria-label="Inhaltsverzeichnis" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#erstellen">
+    Erstellen
+  </a>
+<nav aria-label="Erstellen" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#vagrantfile">
+    Vagrantfile
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#konfiguration">
+    Konfiguration
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#erstellen-des-zertifikats">
+    Erstellen des Zertifikats
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#importieren-des-zertifikates-in-firefox">
+    Importieren des Zertifikates in Firefox
+  </a>
+</li>
+</ul>
+</nav>
 </li>
 </ul>
 </nav>
@@ -632,19 +673,58 @@
 <div class="md-sidebar__scrollwrap">
 <div class="md-sidebar__inner">
 <nav aria-label="Inhaltsverzeichnis" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#erstellen">
+    Erstellen
+  </a>
+<nav aria-label="Erstellen" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#vagrantfile">
+    Vagrantfile
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#konfiguration">
+    Konfiguration
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#erstellen-des-zertifikats">
+    Erstellen des Zertifikats
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#importieren-des-zertifikates-in-firefox">
+    Importieren des Zertifikates in Firefox
+  </a>
+</li>
+</ul>
 </nav>
 </div>
 </div>
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1 id="zertifikatsserver-ca-certifcation-authority">Zertifikatsserver - CA (certifcation authority)<a class="headerlink" href="#zertifikatsserver-ca-certifcation-authority" title="Permanent link">¶</a></h1>
-<blockquote>
-<p>Ein SSL Server Zertifikat ist die Basis für eine Verschlüsselung einer Webseite durch den Betreiber. Es dient nicht allein der Kommunikation, sondern 
- gewährleistet ebenfalls eine sichere Authentifizierung einer Webseite. Dadurch verhindert es sowohl ein unbefugtes Mitschneiden von Informationen wie auch das Vortäuschen einer falschen Identität - ein häufiges Vorgehen bei den sogenannten Phishing-Attacken. Für den Besucher einer Webseite ändert ein SSL Server Zertifikat nichts, schafft aber eine hohe Sicherheit. (Quelle 1)</p>
-</blockquote>
-<h1 id="erstellen">Erstellen<a class="headerlink" href="#erstellen" title="Permanent link">¶</a></h1>
-<p>Vagrantfile: </p>
+<h1 id="zertifikatsserver-ca-certification-authority">Zertifikatsserver - CA (certification authority)<a class="headerlink" href="#zertifikatsserver-ca-certification-authority" title="Permanent link">¶</a></h1>
+<div class="admonition info">
+<p class="admonition-title">Überblick</p>
+<p><span class="biggerFont">Ein SSL Server Zertifikat ist die Basis für eine Verschlüsselung einer Webseite durch den
+  Betreiber. Es dient nicht allein der Kommunikation, sondern gewährleistet ebenfalls eine sichere Authentifizierung einer
+  Webseite. Dadurch verhindert es sowohl ein unbefugtes Mitschneiden von Informationen wie auch das Vortäuschen einer
+  falschen Identität - ein häufiges Vorgehen bei den sogenannten Phishing-Attacken. Für den Besucher einer Webseite ändert
+  ein SSL Server Zertifikat nichts, schafft aber eine hohe Sicherheit. (Quelle 1) </span></p>
+</div>
+<h2 id="erstellen">Erstellen<a class="headerlink" href="#erstellen" title="Permanent link">¶</a></h2>
+<h3 id="vagrantfile">Vagrantfile<a class="headerlink" href="#vagrantfile" title="Permanent link">¶</a></h3>
 <div class="highlight"><pre><span></span><code># -*- mode: ruby -*-
 # vi: set ft=ruby :
 
@@ -716,9 +796,9 @@ Vagrant.configure("2") do |config|
         end
   end
 </code></pre></div>
-<h1 id="konfiguration">Konfiguration<a class="headerlink" href="#konfiguration" title="Permanent link">¶</a></h1>
+<h2 id="konfiguration">Konfiguration<a class="headerlink" href="#konfiguration" title="Permanent link">¶</a></h2>
 <p>(<a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-and-configure-a-certificate-authority-ca-on-centos-8-de">https://www.digitalocean.com/community/tutorials/how-to-set-up-and-configure-a-certificate-authority-ca-on-centos-8-de</a>)</p>
-<h1 id="erstellen-des-zertifikats">Erstellen des Zertifikats<a class="headerlink" href="#erstellen-des-zertifikats" title="Permanent link">¶</a></h1>
+<h2 id="erstellen-des-zertifikats">Erstellen des Zertifikats<a class="headerlink" href="#erstellen-des-zertifikats" title="Permanent link">¶</a></h2>
 <p>ca.crt Zertifikat:</p>
 <div class="highlight"><pre><span></span><code>-----BEGIN CERTIFICATE-----
 MIIDQjCCAiqgAwIBAgIUVw4ELjTqCR8iRmDTeuF300oVOgUwDQYJKoZIhvcNAQEL
@@ -741,7 +821,7 @@ v6Srp2HoC20BBvHUXk1RoJteh3KBz1YOMVWQCqSB5FiFtUWBm6IHJCXYBGFw7zO6
 bQymZXyXrZsTMhmC6EKOYDM4E9emjw==
 -----END CERTIFICATE-----
 </code></pre></div>
-<h1 id="importieren-des-zertifikates-in-firefox">Importieren des Zertifikates in Firefox<a class="headerlink" href="#importieren-des-zertifikates-in-firefox" title="Permanent link">¶</a></h1>
+<h2 id="importieren-des-zertifikates-in-firefox">Importieren des Zertifikates in Firefox<a class="headerlink" href="#importieren-des-zertifikates-in-firefox" title="Permanent link">¶</a></h2>
 <div class="highlight"><pre><span></span><code>Stellen Sie sicher, dass das Zertifikat, das Sie in Firefox importieren wollen, auf Ihrem Rechner gespeichert ist.
 Starten Sie Firefox und klicken Sie dann oben rechts auf die Schaltfläche, um das Menü zu öffnen.
 Wählen Sie den Eintrag „Einstellungen“ aus.
@@ -750,14 +830,17 @@ Hier finden Sie den Abschnitt „Zertifikate“. Klicken Sie auf den Button „Z
 Klicken Sie unten auf „Importieren…“ und navigieren zu Ihrer Zertifikatsdatei.
 Anschließend wird der Eintrag in Firefox aufgenommen. (Quelle 2)
 </code></pre></div>
+<div class="footnote">
+<hr/>
 <ol>
-<li>
-<p>Quelle: <a href="https://www.hosttest.de/artikel/was-ist-ein-ssl-server-1427.html">https://www.hosttest.de/artikel/was-ist-ein-ssl-server-1427.html</a>, 26.01.2023</p>
+<li id="fn:1">
+<p><a href="https://www.hosttest.de/artikel/was-ist-ein-ssl-server-1427.html">https://www.hosttest.de/artikel/was-ist-ein-ssl-server-1427.html</a> (26.01.2023) <a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">↩</a></p>
 </li>
-<li>
-<p>Quelle: <a href="https://www.computerbild.de/artikel/cb-Tipps-Internet-Firefox-Zertifikat-importieren-31486861.html">https://www.computerbild.de/artikel/cb-Tipps-Internet-Firefox-Zertifikat-importieren-31486861.html</a>, 26.01.2023</p>
+<li id="fn:2">
+<p><a href="https://www.computerbild.de/artikel/cb-Tipps-Internet-Firefox-Zertifikat-importieren-31486861.html">https://www.computerbild.de/artikel/cb-Tipps-Internet-Firefox-Zertifikat-importieren-31486861.html</a> (26.01.2023) <a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">↩</a></p>
 </li>
 </ol>
+</div>
 </article>
 </div>
 </div>
