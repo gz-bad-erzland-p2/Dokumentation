@@ -1,7 +1,8 @@
 
-# Planung
+# Frontend
 
 Wir haben uns in der Planungsphase gründlich mit den Informationen beschäftigt, die für den Buchungsprozess erforderlich sind. Dabei haben wir Schritte, die zusammengehören, zusammengefasst und in übersichtliche Abschnitte unterteilt, um die Bedienbarkeit zu optimieren. Auch das Zusammenspiel mit anderen Komponenten wie dem Login und der Registrierung haben wir dabei berücksichtigt.
+
 
 # Erster Entwurf
 
