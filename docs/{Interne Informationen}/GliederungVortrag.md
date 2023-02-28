@@ -1,77 +1,71 @@
 # Gliederung Vortrag
 
-```
-- Gliederung mit Ansage Der Sprechanteile  vereinen mit Mitarbeiter vorstellung wer AE (Front Back)
-- Auftrag .... Auftrag Bei begrüßung ändern
-- Entwicklung des Backends -> entfernen
 
-
-
-
-
+----------------------------------------------------
 Beginn
-	- Begrüßung
-	- Projektauftrag
-	- Mitarbeiteranteile & Gliederung 
+	- Begrüßung & Projektauftrag (Cora -> erster Eindruck zählt, sorry Theo)
+	- Mitarbeiteranteile & Gliederung (Theo)
 
-
+----------------------------------------------------
 Auftragsdefinierung
-	- Prozesslandkarte
-	- User-Stories
+	- Prozesslandkarte (Theo)
+	- User-Stories (Jannik)
 
-
+----------------------------------------------------
 Demonstration User-Stories
 
-
+----------------------------------------------------
 Projekt definierung
-	- Projektstrukturplan
-	- Entwicklungsvorgehen
-	- Gant Diagramm
-	- Einordnung ins Schichtenmodell
-	- Architekturbeschreibung des Gesamtsystems
+	- Projektstrukturplan (Theo)
+	- Entwicklungsvorgehen (Thomas)
+	- Einordnung ins Schichtenmodell (Theo)
+	- Architekturbeschreibung des Gesamtsystems (Wer kennt sich da aus)
 
-
+----------------------------------------------------
 Anwendungsentwickler
 	Analyse
-		- USE-CASE Diagramm ()
-		- Nutzerwertanalyse
-		- Risikoanalyse 
+		- USE-CASE Diagramm (Jannik)
+		- Nutzerwertanalyse (Thomas)
+		- Risikoanalyse (Pascal)
 		- Schutzbedarfsanalyse (Pascal)
 		- Umzusetzende Qualitätsmerkmale (Julius)
 	Planung
-		- Fachkonzeptmodellierung  AE (THOMAS)
-			- Auswahl der Programmiersprache und Frameworks (basierend auf Analyse)
-		- (Frontend) Prototypen im Bereich des UX bzw. UI Design mit Figma erstellen (Jannik Pascal)
-			- Frontend
-			- Erster Entwurf
-			- Entwurfsüberarbeitung
-			- Responsiv UI Design
-		- (Backend) (Thomas)
-			- ERD Diagramm / ORM Datenbank
-			- Sichre Kommunikaion RestAPI
+		- Fachkonzeptmodellierung  AE
+			- Auswahl der Programmiersprache und Frameworks (basierend auf Analyse)(Thomas)
+		- (Frontend) Prototypen im Bereich des UX bzw. UI Design mit Figma erstellen
+			- Frontend (Pascal)
+			- Erster Entwurf (Jannik)
+			- Entwurfsüberarbeitung (Pascal)
+			- Responsiv UI Design (Jannik)
+		- (Backend)
+			- ERD Diagramm / ORM Datenbank (Thomas)
+			- Sichre Kommunikaion RestAPI (Thomas)
 	Implimentierung 
-		- (Frontend) (Jannik Pascal)
-			- Implimentierung des Designs (ohne Funktionalität)
-		- (Backend) (Thomas)
-			- Funktionen erstellen und einbinden
-			- Migration der Datenbank
-System Intigratoren (Cora, Richard)
+		- Frontend
+			- Implimentierung des Designs (ohne Funktionalität) (Jannik Pascal)
+		- Backend
+			- Funktionen erstellen und einbinden (Thomas)
+			- Migration der Datenbank (Thomas)
+			
+----------------------------------------------------			
+System Intigratoren 
 	Analyse
-		- Was wird Benötigt?
+		- Was wird Benötigt? (Cora, Richard)
 	Planung
-		- Fachkonzeptmodellierung SI
-		- Dienstkonzeption 
-		- Netzwerkplan
+		- Fachkonzeptmodellierung SI (Cora, Richard)
+		- Dienstkonzeption (Cora, Richard)
+		- Netzwerkplan (Cora, Richard)
 	Implimentierung
-		- Alles andere
+		- Alles andere (Cora, Richard)
 
-Reflexion (Thomas)
-	- Wissens- und Kompetenzzuwachs
-	- Inhaltliche Reflexion
-Schlusswort (Pascal)
-	- Fragen 
-	- Danke
+----------------------------------------------------
+Reflexion
+	- Wissens- und Kompetenzzuwachs (Thomas)
+	- Inhaltliche Reflexion (Thomas)
+Schlusswort
+	- Fragen (Theo)
+	- Danke (Theo)
 	
-```
+
 	
 	
