@@ -70,7 +70,7 @@ B <-->|Datenübertragung| C[Backend];
 |-------------------------|---------------------------------|--------------------|------------|----------------------|
 | Fehlbedienung           | selten                          | begrenzt           | mittel     | Onlinehilfe, UI-Lock |
 | Irrtum                  | selten                          | begrenzt           | gering     | Onlinehilfe, UI-Lock |
-| unsachgemäße Behandlung | selten                          | begrenzt           | mittel     | Personaa vorort, Protokollierung der Geräte nutzung |
+| unsachgemäße Behandlung | selten                          | begrenzt           | mittel     | Personal vor Ort, Protokollierung der Gerätenutzung |
 | Einbruch, Diebstahl     | selten                          | Vernach-lässigbar  | gering     | Alamanalage, Kontrolle auf Vollständigkeit |
 | Hacking                 | mittel                          | beträchtlich       | sehr hoch  | verschlüsselte Passwortspeicherung, Kontrolle gegen SQL Injection  |
 | Spionage                | mittel                          | begrenzt           | gering     | Rollenverwaltung     |
