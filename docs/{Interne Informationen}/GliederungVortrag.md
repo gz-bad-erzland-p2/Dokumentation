@@ -5,12 +5,12 @@
 
 
 ----------------------------------------------------
-1 Beginn
+1 Einleitung
 	- Begrüßung & Projektauftrag (Cora -> erster Eindruck zählt, sorry Theo)
 	- Mitarbeiteranteile & Gliederung (Theo)
 
 ----------------------------------------------------
-2 Auftragsdefinierung
+2 Auftrag
 	- Prozesslandkarte (Theo)
 	- User-Stories (Jannik)
 
@@ -18,17 +18,17 @@
 3 Demonstration User-Stories
 
 ----------------------------------------------------
-4 Projekt definierung
+4 Projektdefinition
 	- Projektstrukturplan (Theo)
-	- Entwicklungsvorgehen (Thomas)
+	- Entwicklungsvorgehen (Theo)
 	- Einordnung ins Schichtenmodell (Theo)
 	- Architekturbeschreibung des Gesamtsystems (Wer kennt sich da aus)
+	- Nutzerwertanalyse (Thomas)
 
 ----------------------------------------------------
 5 Anwendungsentwickler
 	Analyse
 		- USE-CASE Diagramm (Jannik)
-		- Nutzerwertanalyse (Thomas)
 		- Risikoanalyse (Pascal)
 		- Schutzbedarfsanalyse (Pascal)
 		- Umzusetzende Qualitätsmerkmale (Julius)
