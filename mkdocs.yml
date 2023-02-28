@@ -154,12 +154,14 @@ nav:
           - 'Software': 'Anleitungen & Informationen/Installationen/Software.md'
   - 'Projektpräsentation':
       - 'Einleitung': 'vortrag/01_Einleitung.md'
+      - 'Auftrag':
+          - 'vortrag/Auftrag/00_projekteinordnung.md'
+          - 'vortrag/Auftrag/31_user-stories.md'
       - 'Projektdefinition':
-          - 'vortrag/Projektdefinition/00_projekteinordnung.md'
+          - 'vortrag/Projektdefinition/00_Projektstrukturplan.md'
           - 'vortrag/Projektdefinition/05_entwicklungsvorgehen.md'
           - 'vortrag/Projektdefinition/01_nutzerwertanalyse.md'
           - 'vortrag/Projektdefinition/30_soll-ist.md'
-          - 'vortrag/Projektdefinition/31_user-stories.md'
           - 'Einordnung Schichtenmodell': 'vortrag/Projektdefinition/07_qos_schichtenmodell.md'
           - 'vortrag/Projektdefinition/08_architekturbeschreibung.md'
           - 'vortrag/Projektdefinition/40_zeitplan.md'
