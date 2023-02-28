@@ -14,52 +14,46 @@ Gefährdungssituationen bestimmt sowie die Höhe des möglichen Schadens.
     ```
 
 === "Eintrittswahrscheinlichkeit"
-   
-   `selten`
+    `selten`
     : Ereignis könnte nach heutigem Kenntnisstand höchstens alle 5 Jahre eintreten.
-   
-   `mittel`
+    `mittel`
     : Ereignis tritt einmal alle fünf Jahre bis einmal im Jahr ein.
-   
-   `häufig`
+    `häufig`
     : Ereignis tritt einmal im Jahr bis einmal pro Monat ein
-   
-   `sehr häufig`
+    `sehr häufig`
     : Ereignis tritt mehrmals im Monat ein.
 
 === "Schadenshöhe"
-       
-   `vernachlässigbar`
+    `vernachlässigbar`
     : Die Schadensauswirkungen sind gering und können vernachlässigt werden.
-   
-   `begrenzt`
+    
+    `begrenzt`
     : Die Schadensauswirkungen sind begrenzt und überschaubar
     beträchtlich: Die Schadensauswirkungen können erheblich sein.
-   
-   `existenzbedrohend`
+    
+    `existenzbedrohend`
     : Die Schadensauswirkungen können ein existenziell bedrohliches,
     katastrophales Ausmaß erreichen.
 
 === "Risikokategorien"
-   
-   `gering`
+
+    `gering`
     : Die bereits umgesetzten oder zumindest im Sicherheitskonzept vorgesehenen
     Sicherheitsmaßnahmen bieten einen ausreichenden Schutz. In der Praxis ist es üblich, geringe
     Risiken zu akzeptieren und die Gefährdung dennoch zu beobachten.
-   
-   `mittel`
+    
+    `mittel`
     : Die bereits umgesetzten oder zumindest im Sicherheitskonzept vorgesehenen
     Sicherheitsmaßnahmen reichen möglicherweise nicht aus.
-   
-   `hoch`
+    
+    `hoch`
     : Die bereits umgesetzten oder zumindest im Sicherheitskonzept vorgesehenen
     Sicherheitsmaßnahmen bieten keinen ausreichenden Schutz vor der jeweiligen Gefährdung.
-   
-   `sehr häufig`
+    
+    `sehr hoch`
     : Die bereits umgesetzten oder zumindest im Sicherheitskonzept vorgesehenen
     Sicherheitsmaßnahmen bieten keinen ausreichenden Schutz vor der jeweiligen Gefährdung. In
     der Praxis werden sehr hohe Risiken selten akzeptiert.
-   
 
 
 | **Gefährdung**          | **Eintrittswahrscheinlichkeit** | **Schadenshöhe**   | **Risiko** | **Schutzmaßnahmen**  |
