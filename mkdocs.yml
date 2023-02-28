@@ -82,6 +82,9 @@ extra:
       finden, wonach sie suchen. Mit Ihrer Zustimmung helfen Sie uns dabei
       unsere Dokumentation verbessern.
 
+# Extra CSS
+extra_css:
+  - assets/css/extra.css
 plugins:
   - glightbox
   - search
@@ -157,7 +160,7 @@ nav:
           - 'vortrag/Projektdefinition/01_nutzerwertanalyse.md'
           - 'vortrag/Projektdefinition/30_soll-ist.md'
           - 'vortrag/Projektdefinition/31_user-stories.md'
-          - 'Einordnung Schichtenmodell': 'vortrag/Projektdefinition/07_qos_schichtenmodell.md'#
+          - 'Einordnung Schichtenmodell': 'vortrag/Projektdefinition/07_qos_schichtenmodell.md'
           - 'vortrag/Projektdefinition/08_architekturbeschreibung.md'
           - 'vortrag/Projektdefinition/40_zeitplan.md'
           - 'Demos des Produktes': 'vortrag/Projektdefinition/50_download.md'
@@ -172,6 +175,7 @@ nav:
           - 'vortrag/06_ae-module/03_sicherheit.md'
           - 'vortrag/06_ae-module/04_responsive-design.md'
           - 'vortrag/06_ae-module/05_risikoanalyse.md'
+          - 'vortrag/06_ae-module/09_planung.md'
       - 'SI-Module':
           - 'vortrag/09_si-module/01_dienstkonzeption.md'
           - 'vortrag/09_si-module/02_automatisierung.md'
@@ -179,10 +183,10 @@ nav:
               - 'vortrag/09_si-module/server/00_Allgemein.md'
               - 'vortrag/09_si-module/server/01_DB-Server.md'
               - 'vortrag/09_si-module/server/02_DHCP-Server.md'
+              - 'DNS Server': 'vortrag/09_si-module/server/03_DNS-Server.md'
               - 'vortrag/09_si-module/server/04_Firewall.md'
               - 'vortrag/09_si-module/server/05_Webserver.md'
               - 'Zertifikatsserver': 'vortrag/09_si-module/server/06_Zertifikatsserver.md'
-              - 'DNS Server': 'vortrag/09_si-module/server/03_DNS-Server.md'
           - 'Sicherheit':
               - 'vortrag/09_si-module/Sicherheit/01_server-sicherheit.md'
               - 'vortrag/09_si-module/Sicherheit/02_backupstrategie.md'
