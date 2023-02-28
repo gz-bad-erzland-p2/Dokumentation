@@ -7,6 +7,8 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <meta content="Projektdokumentation zur implementierung eines Prototypes für die Office-Sharing-Plattform." name="description"/>
 <meta content="Cora, Jannik, Pascal, Julius, Thomas" name="author"/>
+<link href="../05_risikoanalyse/" rel="prev"/>
+<link href="../../09_si-module/01_dienstkonzeption/" rel="next"/>
 <link href="../../../assets/img/logo.png" rel="icon"/>
 <meta content="mkdocs-1.4.2, mkdocs-material-9.0.15" name="generator"/>
 <title>09 planung - Office-Sharing-Dokumentation</title>
@@ -15,6 +17,7 @@
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
 <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<link href="../../../assets/css/extra.css" rel="stylesheet"/>
 <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
 <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
             html.glightbox-open { overflow: initial; height: 100%; }
@@ -137,7 +140,7 @@
       </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link" href="../../01_Einleitung/">
+<a class="md-tabs__link md-tabs__link--active" href="../../01_Einleitung/">
         Projektpräsentation
       </a>
 </li>
@@ -299,13 +302,13 @@
 </ul>
 </nav>
 </li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_3" type="checkbox"/>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_3" type="checkbox"/>
 <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
           Projektpräsentation
           <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-expanded="false" aria-labelledby="__nav_3_label" class="md-nav" data-md-level="1">
+<nav aria-expanded="true" aria-labelledby="__nav_3_label" class="md-nav" data-md-level="1">
 <label class="md-nav__title" for="__nav_3">
 <span class="md-nav__icon md-icon"></span>
           Projektpräsentation
@@ -411,13 +414,13 @@
         Demonstration User-Stories
       </a>
 </li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_3_4" type="checkbox"/>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_3_4" type="checkbox"/>
 <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
           AE-Module
           <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-expanded="false" aria-labelledby="__nav_3_4_label" class="md-nav" data-md-level="2">
+<nav aria-expanded="true" aria-labelledby="__nav_3_4_label" class="md-nav" data-md-level="2">
 <label class="md-nav__title" for="__nav_3_4">
 <span class="md-nav__icon md-icon"></span>
           AE-Module
@@ -447,6 +450,34 @@
 <a class="md-nav__link" href="../05_risikoanalyse/">
         Risikoanalyse
       </a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+          09 planung
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+        09 planung
+      </a>
+<nav aria-label="Inhaltsverzeichnis" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#use-case-diagramm">
+    USE-CASE Diagramm
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#erd-diagramm">
+    ERD Diagramm
+  </a>
+</li>
+</ul>
+</nav>
 </li>
 </ul>
 </nav>
@@ -501,6 +532,11 @@
       </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="../../09_si-module/server/03_DNS-Server/">
+        DNS Server
+      </a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="../../09_si-module/server/04_Firewall/">
         Firewall
       </a>
@@ -513,11 +549,6 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../09_si-module/server/06_Zertifikatsserver/">
         Zertifikatsserver
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../09_si-module/server/03_DNS-Server/">
-        DNS Server
       </a>
 </li>
 </ul>
