@@ -2013,12 +2013,10 @@ Vagrant.configure(&quot;2&quot;) do |config|
 </code></pre></div>
 <h1 id="konfiguration">Konfiguration<a class="headerlink" href="#konfiguration" title="Permanent link">&para;</a></h1>
 <p>Playbook: db.yml</p>
-<p>```</p>
-<ul>
-<li>name: Setup DB
+<p>```
+- name: Setup DB
   hosts: centosdb
-  become: true</li>
-</ul>
+  become: true</p>
 <p>tasks:
     - name: Set hostname to centosdb
       become: true
