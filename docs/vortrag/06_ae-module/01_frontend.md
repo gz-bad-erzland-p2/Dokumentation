@@ -19,9 +19,6 @@ Nach der Erstellung des Entwurfs haben wir uns entschlossen, das Design noch ein
 
 ![form-version-2](https://user-images.githubusercontent.com/57149152/214051234-8d3b9029-72f8-4c10-bbed-54661f535b7f.png)
 
-## Entwicklung des Backends
-
-Da das Design nun feststand, wussten wir, welche Komponenten das Backend zur Verfügung stellen musste. Wir haben eine Liste mit allen erforderlichen Schritten an unsere Backend-Entwickler übergeben, die diese dann umgesetzt haben.
 
 ## Umsetzung des Designs
 
