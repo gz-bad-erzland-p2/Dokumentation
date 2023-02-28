@@ -3,7 +3,7 @@
 
 :fontawesome-solid-circle-exclamation: Es wird Zeit für die Digitalisierung!
 
-Im Auftrag des Gemeindezentrums Bad Erzland hat unsere Firma Profi-SecNetIT GmbH den Auftrag erhalten ein Office-Sharing System zu entwerfen und in Betrieb zu nehmen.
+Im Zuge der Digitalisierung des Gemeindezentrums Bad Erzland hat unsere Firma Profi-SecNetIT GmbH den Auftrag erhalten ein Office-Sharing System zu entwerfen und in Betrieb zu nehmen.
 
 > * „Die Gemeindeverwaltung von Bad Erzland möchte im Rahmen der gesellschaftlichen digitalen Transformation und damit verbundener neuer Arbeitsformen Officesharing zur Miete als Alternative für das Homeoffice [...] anbieten.“(Fachkonzept Z.1ff)
 
