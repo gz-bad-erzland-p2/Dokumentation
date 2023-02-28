@@ -17,29 +17,30 @@ Eine Schwierigkeit die dem Projektaufbau als Schul- und Wirtschaftsprojekt gesch
 
 Zielstellungen an die zu erstellende Website aus dem Pflichtenheft:
 
-    Der Buchungsdienst soll über einen Link auf der Gemeindeseite erreichbar sein. 
-    Das Logo der Gemeinde soll auf der Mietwebseite erscheinen (Cooperate Design). 
-    Die Website soll von jedem beliebigen Endgerät (mobil und Desktop) aufrufbar sein.
-    Die Reservierung durch die Interessenten ist mit einer Online-Hilfe zu begleiten. 
-    In dieser werden sowohl die vorhandenen Hard- als auch Softwarespezifikationen benannt. 
-    Alle verfügbaren Schnittstellen am Arbeitsplatz sind anzugeben und sind erläutert. 
-    Die Website und die Mietkonditionen können anonym besucht und eingesehen werden. 
-    Für einen Mietvorgang muss eine Registrierung oder Anmeldung (mit vorangegangen Registrierung) 
-    unter Angabe von persönlichen Daten erfolgen (HGB). 
-    Diese werden zum Zweck der Buchung gespeichert. Es erfolgt eine stundengenaue Abrechnung der Mietzeit. 
-    Der Nutzer muss die AGBs und Datenschutzrichtlinien des Gemeindezentrums akzeptieren.
-    (siehe Pflichtenheft 6.2.6.5. Anforderung Website)
+> Der Buchungsdienst soll über einen Link auf der Gemeindeseite erreichbar sein. 
+Das Logo der Gemeinde soll auf der Mietwebseite erscheinen (Cooperate Design). 
+Die Website soll von jedem beliebigen Endgerät (mobil und Desktop) aufrufbar sein.
+Die Reservierung durch die Interessenten ist mit einer Online-Hilfe zu begleiten. 
+In dieser werden sowohl die vorhandenen Hard- als auch Softwarespezifikationen benannt. 
+Alle verfügbaren Schnittstellen am Arbeitsplatz sind anzugeben und sind erläutert. 
+Die Website und die Mietkonditionen können anonym besucht und eingesehen werden. 
+Für einen Mietvorgang muss eine Registrierung oder Anmeldung (mit vorangegangen Registrierung) 
+unter Angabe von persönlichen Daten erfolgen (HGB). 
+Diese werden zum Zweck der Buchung gespeichert. Es erfolgt eine stundengenaue Abrechnung der Mietzeit. 
+Der Nutzer muss die AGBs und Datenschutzrichtlinien des Gemeindezentrums akzeptieren.
+(siehe Pflichtenheft 6.2.6.5. Anforderung Website)
     
 Zusammenfassung:
 
-- [x] Coorporate Design
+- [x] Corporate Design
 - [x] Begleitende Online Hilfe
-- [x] Dokumentation zu Hardwarespezifkiationen inkl. Schnittstellen
+- [x] Dokumentation zu Hardwarespezifikationen inkl. Schnittstellen
 - [x] Dokumentation zu Softwarespezifikationen
-- [x] Registrations-/Anmeldevorgang
-- [ ] Anmeldedatenspeicherung
+- [x] Registrierungsvorgang innerhalb des Buchungsprozesses
+- [ ] Registrierungsvorgang außerhalb des Buchungsprozesses
+- [ ] Anmeldevorgang innerhalb und außerhalb des Buchungsprozesses
 - [x] Stundengenaue Abrechnung der Mietzeit
-- [x] Bestätigung AGB´s und Datenschutzrichtlinien
+- [x] Bestätigung der Datenschutzrichtlinien
 
 Weitere Inhalte:
 - Mehr Maschinen konnten automatisiert werden als mindestens vorausgesetzt

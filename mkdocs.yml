@@ -82,6 +82,9 @@ extra:
       finden, wonach sie suchen. Mit Ihrer Zustimmung helfen Sie uns dabei
       unsere Dokumentation verbessern.
 
+plugins:
+  - glightbox
+
 # Extensions
 markdown_extensions:
   - admonition
@@ -127,8 +130,68 @@ markdown_extensions:
       alternate_style: true
   - md_in_html
 
-#nav:
-#  - Vortrag:
-#       - Begrüßung: vortrag/01_begrüßung.md
-#       - "AE Module":
-#           - "AE Modul 1": vortrag/06_ae-module/01_frontend.md
+nav:
+  - Startseite: 'index.md'
+  - 'Anleitungen & Informationen':
+      - 'Bedienungsanleitungen':
+          - 'Anmeldung': 'Anleitungen & Informationen/Bedinungsanleitungen/Anmledung.md'
+          - 'Arbeitsplatzbuchung': 'Anleitungen & Informationen/Bedinungsanleitungen/Arbeitsplatzbuchung.md'
+          - 'Hardwareübersicht': 'Anleitungen & Informationen/Bedinungsanleitungen/Hardwareübersicht.md'
+          - 'Registrierung': 'Anleitungen & Informationen/Bedinungsanleitungen/Registrierung.md'
+      - 'Hardware':
+          - 'PC': 'Anleitungen & Informationen/Hardware/01_PC.md'
+          - 'Laptop': 'Anleitungen & Informationen/Hardware/02_Notebooks.md'
+          - 'Barebone': 'Anleitungen & Informationen/Hardware/03_Barebone.md'
+          - 'Monitor': 'Anleitungen & Informationen/Hardware/04_Monitor.md'
+          - 'Maus': 'Anleitungen & Informationen/Hardware/05_Maus.md'
+          - 'Tastatur': 'Anleitungen & Informationen/Hardware/06_Tastatur.md'
+      - 'Installationen':
+          - 'Betriebssysteme': 'Anleitungen & Informationen/Installationen/Betriebssysteme.md'
+          - 'Software': 'Anleitungen & Informationen/Installationen/Software.md'
+  - 'Projektpräsentation':
+      - 'Einleitung': 'vortrag/01_Einleitung.md'
+      - 'Projektdefinition':
+          - 'vortrag/Projektdefinition/00_projekteinordnung.md'
+          - 'vortrag/Projektdefinition/01_nutzerwertanalyse.md'
+          - 'vortrag/Projektdefinition/05_entwicklungsvorgehen.md'
+          - 'vortrag/Projektdefinition/30_soll-ist.md'
+          - 'vortrag/Projektdefinition/31_user-stories.md'
+          - 'vortrag/Projektdefinition/08_architekturbeschreibung.md'
+          - 'vortrag/Projektdefinition/40_zeitplan.md'
+          - 'vortrag/Projektdefinition/50_download.md'
+          - 'Protokolle':
+              - 'vortrag/Projektdefinition/protokolle/01_ergebnisprotokoll.md'
+              - 'vortrag/Projektdefinition/protokolle/03_pflichtenheft.md'
+              - 'vortrag/Projektdefinition/protokolle/02_lastenheft.md'
+      - 'vortrag/04_demonstration-user-stories.md'
+      - 'vortrag/07_qos_schichtenmodell.md'#
+      - 'AE-Module':
+          - 'vortrag/06_ae-module/01_frontend.md'
+          - 'vortrag/06_ae-module/02_backend.md'
+          - 'vortrag/06_ae-module/03_sicherheit.md'
+          - 'vortrag/06_ae-module/04_responsive-design.md'
+          - 'vortrag/06_ae-module/05_risikoanalyse.md'
+      - 'SI-Module':
+          - 'vortrag/09_si-module/01_dienstkonzeption.md'
+          - 'vortrag/09_si-module/02_automatisierung.md'
+          - 'Server':
+              - 'vortrag/09_si-module/server/00_Allgemein.md'
+              - 'vortrag/09_si-module/server/01_DB-Server.md'
+              - 'vortrag/09_si-module/server/02_DHCP-Server.md'
+              - 'vortrag/09_si-module/server/04_Firewall.md'
+              - 'vortrag/09_si-module/server/05_Webserver.md'
+              - 'Zertifikatsserver': 'vortrag/09_si-module/server/06_Zertifikatsserver.md'
+              - 'DNS Server': 'vortrag/09_si-module/server/03_DNS-Server.md'
+          - 'Sicherheit':
+              - 'vortrag/09_si-module/Sicherheit/01_server-sicherheit.md'
+              - 'vortrag/09_si-module/Sicherheit/02_backupstrategie.md'
+              - 'vortrag/09_si-module/Sicherheit/03_erreichbarkeit.md'
+      - 'vortrag/10_reflexion.md'
+      - 'vortrag/11_fragen.md'
+  - 'Interne Infos':
+      - '{Interne Informationen}/GliederungVortrag.md'
+      - '{Interne Informationen}/deploy-instruction.md'
+      - '{Interne Informationen}/doku-instructions.md'
+      - '{Interne Informationen}/how-to-develop.md'
+      - '{Interne Informationen}/Server_Hinweise.md'
+      - '{Interne Informationen}/workspace-instruction.md'
