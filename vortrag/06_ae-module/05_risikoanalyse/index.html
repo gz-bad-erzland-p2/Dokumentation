@@ -7,19 +7,19 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <meta content="Projektdokumentation zur implementierung eines Prototypes für die Office-Sharing-Plattform." name="description"/>
 <meta content="Cora, Jannik, Pascal, Julius, Thomas" name="author"/>
-<link href="../Frontend/" rel="prev"/>
-<link href="../../../09_si-module/01_dienstkonzeption/" rel="next"/>
-<link href="../../../../assets/img/logo.png" rel="icon"/>
+<link href="../04_responsive-design/" rel="prev"/>
+<link href="../09_planung/" rel="next"/>
+<link href="../../../assets/img/logo.png" rel="icon"/>
 <meta content="mkdocs-1.4.2, mkdocs-material-9.0.15" name="generator"/>
-<title>Backend - Office-Sharing-Dokumentation</title>
-<link href="../../../../assets/stylesheets/main.113286f1.min.css" rel="stylesheet"/>
-<link href="../../../../assets/stylesheets/palette.a0c5b2b5.min.css" rel="stylesheet"/>
+<title>Risikoanalyse - Office-Sharing-Dokumentation</title>
+<link href="../../../assets/stylesheets/main.113286f1.min.css" rel="stylesheet"/>
+<link href="../../../assets/stylesheets/palette.a0c5b2b5.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
 <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
-<link href="../../../../assets/css/extra.css" rel="stylesheet"/>
-<script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
-<link href="../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+<link href="../../../assets/css/extra.css" rel="stylesheet"/>
+<script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+<link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
             html.glightbox-open { overflow: initial; height: 100%; }
             .gslide-title { margin-top: 0px; user-select: text; }
             .gslide-desc { color: #666; user-select: text; }
@@ -30,14 +30,14 @@
                 body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
                 body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
                 body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
-                </style><script src="../../../../assets/javascripts/glightbox.min.js"></script></head>
+                </style><script src="../../../assets/javascripts/glightbox.min.js"></script></head>
 <body data-md-color-accent="teal" data-md-color-primary="teal" data-md-color-scheme="default" dir="ltr">
 <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
 <input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#backend">
+<a class="md-skip" href="#risikoanalyse">
           Zum Inhalt
         </a>
 </div>
@@ -46,7 +46,7 @@
 <header class="md-header md-header--lifted" data-md-component="header">
 <nav aria-label="Kopfzeile" class="md-header__inner md-grid">
 <a aria-label="Office-Sharing-Dokumentation" class="md-header__button md-logo" data-md-component="logo" href="https://example.com" title="Office-Sharing-Dokumentation">
-<img alt="logo" src="../../../../assets/img/logo.png"/>
+<img alt="logo" src="../../../assets/img/logo.png"/>
 </a>
 <label class="md-header__button md-icon" for="__drawer">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
@@ -61,7 +61,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              Backend
+              Risikoanalyse
             
           </span>
 </div>
@@ -130,22 +130,22 @@
 <div class="md-grid">
 <ul class="md-tabs__list">
 <li class="md-tabs__item">
-<a class="md-tabs__link" href="../../../..">
+<a class="md-tabs__link" href="../../..">
       Startseite
     </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link" href="../../../../Anleitungen%20%26%20Informationen/Bedinungsanleitungen/Anmledung/">
+<a class="md-tabs__link" href="../../../Anleitungen%20%26%20Informationen/Bedinungsanleitungen/Anmledung/">
         Anleitungen &amp; Informationen
       </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link md-tabs__link--active" href="../../../01_Einleitung/">
+<a class="md-tabs__link md-tabs__link--active" href="../../01_Einleitung/">
         Projektpräsentation
       </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link" href="../../../../%7BInterne%20Informationen%7D/GliederungVortrag/">
+<a class="md-tabs__link" href="../../../%7BInterne%20Informationen%7D/GliederungVortrag/">
         Interne Infos
       </a>
 </li>
@@ -162,7 +162,7 @@
 <nav aria-label="Navigation" class="md-nav md-nav--primary md-nav--lifted" data-md-level="0">
 <label class="md-nav__title" for="__drawer">
 <a aria-label="Office-Sharing-Dokumentation" class="md-nav__button md-logo" data-md-component="logo" href="https://example.com" title="Office-Sharing-Dokumentation">
-<img alt="logo" src="../../../../assets/img/logo.png"/>
+<img alt="logo" src="../../../assets/img/logo.png"/>
 </a>
     Office-Sharing-Dokumentation
   </label>
@@ -178,7 +178,7 @@
 </div>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../..">
+<a class="md-nav__link" href="../../..">
         Startseite
       </a>
 </li>
@@ -207,22 +207,22 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../Anleitungen%20%26%20Informationen/Bedinungsanleitungen/Anmledung/">
+<a class="md-nav__link" href="../../../Anleitungen%20%26%20Informationen/Bedinungsanleitungen/Anmledung/">
         Anmeldung
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../Anleitungen%20%26%20Informationen/Bedinungsanleitungen/Arbeitsplatzbuchung/">
+<a class="md-nav__link" href="../../../Anleitungen%20%26%20Informationen/Bedinungsanleitungen/Arbeitsplatzbuchung/">
         Arbeitsplatzbuchung
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../Anleitungen%20%26%20Informationen/Bedinungsanleitungen/Hardware%C3%BCbersicht/">
+<a class="md-nav__link" href="../../../Anleitungen%20%26%20Informationen/Bedinungsanleitungen/Hardware%C3%BCbersicht/">
         Hardwareübersicht
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../Anleitungen%20%26%20Informationen/Bedinungsanleitungen/Registrierung/">
+<a class="md-nav__link" href="../../../Anleitungen%20%26%20Informationen/Bedinungsanleitungen/Registrierung/">
         Registrierung
       </a>
 </li>
@@ -242,32 +242,32 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../Anleitungen%20%26%20Informationen/Hardware/01_PC/">
+<a class="md-nav__link" href="../../../Anleitungen%20%26%20Informationen/Hardware/01_PC/">
         PC
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../Anleitungen%20%26%20Informationen/Hardware/02_Notebooks/">
+<a class="md-nav__link" href="../../../Anleitungen%20%26%20Informationen/Hardware/02_Notebooks/">
         Laptop
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../Anleitungen%20%26%20Informationen/Hardware/03_Barebone/">
+<a class="md-nav__link" href="../../../Anleitungen%20%26%20Informationen/Hardware/03_Barebone/">
         Barebone
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../Anleitungen%20%26%20Informationen/Hardware/04_Monitor/">
+<a class="md-nav__link" href="../../../Anleitungen%20%26%20Informationen/Hardware/04_Monitor/">
         Monitor
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../Anleitungen%20%26%20Informationen/Hardware/05_Maus/">
+<a class="md-nav__link" href="../../../Anleitungen%20%26%20Informationen/Hardware/05_Maus/">
         Maus
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../Anleitungen%20%26%20Informationen/Hardware/06_Tastatur/">
+<a class="md-nav__link" href="../../../Anleitungen%20%26%20Informationen/Hardware/06_Tastatur/">
         Tastatur
       </a>
 </li>
@@ -287,12 +287,12 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../Anleitungen%20%26%20Informationen/Installationen/Betriebssysteme/">
+<a class="md-nav__link" href="../../../Anleitungen%20%26%20Informationen/Installationen/Betriebssysteme/">
         Betriebssysteme
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../Anleitungen%20%26%20Informationen/Installationen/Software/">
+<a class="md-nav__link" href="../../../Anleitungen%20%26%20Informationen/Installationen/Software/">
         Software
       </a>
 </li>
@@ -315,7 +315,7 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../01_Einleitung/">
+<a class="md-nav__link" href="../../01_Einleitung/">
         Einleitung
       </a>
 </li>
@@ -332,12 +332,12 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Auftrag/00_projekteinordnung/">
+<a class="md-nav__link" href="../../Auftrag/00_projekteinordnung/">
         Projekteinordnung
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Auftrag/31_user-stories/">
+<a class="md-nav__link" href="../../Auftrag/31_user-stories/">
         User Stories
       </a>
 </li>
@@ -357,42 +357,42 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Projektdefinition/00_Projektstrukturplan/">
+<a class="md-nav__link" href="../../Projektdefinition/00_Projektstrukturplan/">
         Projektstrukturplan
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Projektdefinition/05_entwicklungsvorgehen/">
+<a class="md-nav__link" href="../../Projektdefinition/05_entwicklungsvorgehen/">
         Entwicklungsvorgehen
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Projektdefinition/01_nutzerwertanalyse/">
+<a class="md-nav__link" href="../../Projektdefinition/01_nutzerwertanalyse/">
         Nutzerwertanalyse
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Projektdefinition/30_soll-ist/">
+<a class="md-nav__link" href="../../Projektdefinition/30_soll-ist/">
         Ist-Soll Analyse
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Projektdefinition/07_qos_schichtenmodell/">
+<a class="md-nav__link" href="../../Projektdefinition/07_qos_schichtenmodell/">
         Einordnung Schichtenmodell
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Projektdefinition/08_architekturbeschreibung/">
+<a class="md-nav__link" href="../../Projektdefinition/08_architekturbeschreibung/">
         Architekturbeschreibung &amp; Fachkonzeptmodellierung
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Projektdefinition/40_zeitplan/">
+<a class="md-nav__link" href="../../Projektdefinition/40_zeitplan/">
         Gant-Diagramm
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Projektdefinition/50_download/">
+<a class="md-nav__link" href="../../Projektdefinition/50_download/">
         Demos des Produktes
       </a>
 </li>
@@ -409,17 +409,17 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Projektdefinition/protokolle/01_ergebnisprotokoll/">
+<a class="md-nav__link" href="../../Projektdefinition/protokolle/01_ergebnisprotokoll/">
         Ergebnisprotokoll
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Projektdefinition/protokolle/03_pflichtenheft/">
+<a class="md-nav__link" href="../../Projektdefinition/protokolle/03_pflichtenheft/">
         Pflichtenheft
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Projektdefinition/protokolle/02_lastenheft/">
+<a class="md-nav__link" href="../../Projektdefinition/protokolle/02_lastenheft/">
         Lastenheft
       </a>
 </li>
@@ -430,7 +430,7 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../04_demonstration-user-stories/">
+<a class="md-nav__link" href="../../04_demonstration-user-stories/">
         Demonstration User-Stories
       </a>
 </li>
@@ -446,118 +446,36 @@
           AE-Module
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_3_5_1" type="checkbox"/>
-<label class="md-nav__link" for="__nav_3_5_1" id="__nav_3_5_1_label" tabindex="0">
-          Analyse
-          <span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-expanded="false" aria-labelledby="__nav_3_5_1_label" class="md-nav" data-md-level="3">
-<label class="md-nav__title" for="__nav_3_5_1">
-<span class="md-nav__icon md-icon"></span>
-          Analyse
-        </label>
-<ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../Analyse/USE-CASE/">
-        USE-CASE Diagramm
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../Analyse/05_risikoanalyse/">
-        Risikoanalyse
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../Analyse/Schutzbedarfsanalyse/">
-        Schutzbedarfsanalyse
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../Analyse/qualitaetsmerkmale/">
-        Umgesetzte Qualitätsmerkmale
-      </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_3_5_2" type="checkbox"/>
-<label class="md-nav__link" for="__nav_3_5_2" id="__nav_3_5_2_label" tabindex="0">
-          Planung
-          <span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-expanded="false" aria-labelledby="__nav_3_5_2_label" class="md-nav" data-md-level="3">
-<label class="md-nav__title" for="__nav_3_5_2">
-<span class="md-nav__icon md-icon"></span>
-          Planung
-        </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../Planung/Fachkonzeptmodellierung/">
-        Auswahl der Programmiersprache und Frameworks
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../Planung/Frontend/">
+<a class="md-nav__link" href="../01_frontend/">
         Frontend
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../Planung/Backend/">
+<a class="md-nav__link" href="../02_backend/">
         Backend
       </a>
 </li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--active md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" id="__nav_3_5_3" type="checkbox"/>
-<label class="md-nav__link" for="__nav_3_5_3" id="__nav_3_5_3_label" tabindex="0">
-          Implimentierung 
-          <span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-expanded="true" aria-labelledby="__nav_3_5_3_label" class="md-nav" data-md-level="3">
-<label class="md-nav__title" for="__nav_3_5_3">
-<span class="md-nav__icon md-icon"></span>
-          Implimentierung 
-        </label>
-<ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../Frontend/">
-        Frontend
+<a class="md-nav__link" href="../03_sicherheit/">
+        Sicherheit
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../04_responsive-design/">
+        Responsive UI-Design
       </a>
 </li>
 <li class="md-nav__item md-nav__item--active">
 <input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
-<label class="md-nav__link md-nav__link--active" for="__toc">
-          Backend
-          <span class="md-nav__icon md-icon"></span>
-</label>
 <a class="md-nav__link md-nav__link--active" href="./">
-        Backend
+        Risikoanalyse
       </a>
-<nav aria-label="Inhaltsverzeichnis" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
-<span class="md-nav__icon md-icon"></span>
-      Inhaltsverzeichnis
-    </label>
-<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#funktionen-erstellen-und-einbinden-thomas">
-    Funktionen erstellen und einbinden (Thomas)
-  </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#migration-der-datenbank-thomas">
-    Migration der Datenbank (Thomas)
-  </a>
-</li>
-</ul>
-</nav>
-</li>
-</ul>
-</nav>
+<a class="md-nav__link" href="../09_planung/">
+        Planung
+      </a>
 </li>
 </ul>
 </nav>
@@ -575,12 +493,12 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../09_si-module/01_dienstkonzeption/">
+<a class="md-nav__link" href="../../09_si-module/01_dienstkonzeption/">
         Dienstkonzeption
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../09_si-module/02_automatisierung/">
+<a class="md-nav__link" href="../../09_si-module/02_automatisierung/">
         Automatisierung
       </a>
 </li>
@@ -597,37 +515,37 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../09_si-module/server/00_Allgemein/">
+<a class="md-nav__link" href="../../09_si-module/server/00_Allgemein/">
         Serverüberblick
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../09_si-module/server/01_DB-Server/">
+<a class="md-nav__link" href="../../09_si-module/server/01_DB-Server/">
         Datenbank Server
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../09_si-module/server/02_DHCP-Server/">
+<a class="md-nav__link" href="../../09_si-module/server/02_DHCP-Server/">
         DHCP Server für das blaue Netz
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../09_si-module/server/03_DNS-Server/">
+<a class="md-nav__link" href="../../09_si-module/server/03_DNS-Server/">
         DNS Server
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../09_si-module/server/04_Firewall/">
+<a class="md-nav__link" href="../../09_si-module/server/04_Firewall/">
         Firewall
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../09_si-module/server/05_Webserver/">
+<a class="md-nav__link" href="../../09_si-module/server/05_Webserver/">
         Webserver
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../09_si-module/server/06_Zertifikatsserver/">
+<a class="md-nav__link" href="../../09_si-module/server/06_Zertifikatsserver/">
         Zertifikatsserver
       </a>
 </li>
@@ -647,17 +565,17 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../09_si-module/Sicherheit/01_server-sicherheit/">
+<a class="md-nav__link" href="../../09_si-module/Sicherheit/01_server-sicherheit/">
         Sicherheit der Server
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../09_si-module/Sicherheit/02_backupstrategie/">
+<a class="md-nav__link" href="../../09_si-module/Sicherheit/02_backupstrategie/">
         Backupstrategie
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../09_si-module/Sicherheit/03_erreichbarkeit/">
+<a class="md-nav__link" href="../../09_si-module/Sicherheit/03_erreichbarkeit/">
         Erreichbarkeit
       </a>
 </li>
@@ -668,12 +586,12 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../10_reflexion/">
+<a class="md-nav__link" href="../../10_reflexion/">
         Reflexion
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../11_fragen/">
+<a class="md-nav__link" href="../../11_fragen/">
         Fragen
       </a>
 </li>
@@ -693,32 +611,32 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../%7BInterne%20Informationen%7D/GliederungVortrag/">
+<a class="md-nav__link" href="../../../%7BInterne%20Informationen%7D/GliederungVortrag/">
         GliederungVortrag
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../%7BInterne%20Informationen%7D/deploy-instruction/">
+<a class="md-nav__link" href="../../../%7BInterne%20Informationen%7D/deploy-instruction/">
         Hinweise zur NRE
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../%7BInterne%20Informationen%7D/doku-instructions/">
+<a class="md-nav__link" href="../../../%7BInterne%20Informationen%7D/doku-instructions/">
         Hinweise zur Doku
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../%7BInterne%20Informationen%7D/how-to-develop/">
+<a class="md-nav__link" href="../../../%7BInterne%20Informationen%7D/how-to-develop/">
         Entwicklungskonventionen
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../%7BInterne%20Informationen%7D/Server_Hinweise/">
+<a class="md-nav__link" href="../../../%7BInterne%20Informationen%7D/Server_Hinweise/">
         Serverhinweise
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../%7BInterne%20Informationen%7D/workspace-instruction/">
+<a class="md-nav__link" href="../../../%7BInterne%20Informationen%7D/workspace-instruction/">
         Hinweise zum einrichten des Workspaces
       </a>
 </li>
@@ -734,31 +652,157 @@
 <div class="md-sidebar__scrollwrap">
 <div class="md-sidebar__inner">
 <nav aria-label="Inhaltsverzeichnis" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
-<span class="md-nav__icon md-icon"></span>
-      Inhaltsverzeichnis
-    </label>
-<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#funktionen-erstellen-und-einbinden-thomas">
-    Funktionen erstellen und einbinden (Thomas)
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#migration-der-datenbank-thomas">
-    Migration der Datenbank (Thomas)
-  </a>
-</li>
-</ul>
 </nav>
 </div>
 </div>
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1 id="backend">Backend<a class="headerlink" href="#backend" title="Permanent link">¶</a></h1>
-<h2 id="funktionen-erstellen-und-einbinden-thomas">Funktionen erstellen und einbinden (Thomas)<a class="headerlink" href="#funktionen-erstellen-und-einbinden-thomas" title="Permanent link">¶</a></h2>
-<h2 id="migration-der-datenbank-thomas">Migration der Datenbank (Thomas)<a class="headerlink" href="#migration-der-datenbank-thomas" title="Permanent link">¶</a></h2>
+<h1 id="risikoanalyse">Risikoanalyse<a class="headerlink" href="#risikoanalyse" title="Permanent link">¶</a></h1>
+<p>Um den Schutzbedarf zu beurteilen, wird eine Schwachstellenanalyse durchgeführt. Dazu erfolgt die
+Auswahl von Gefährdungsfaktoren zu höherer Gewalt, Fahrlässigkeit, Vorsatz, technischem Versagen
+oder organisatorischen Mängeln. Anschließend wird die Eintrittswahrscheinlichkeit zu den
+Gefährdungssituationen bestimmt sowie die Höhe des möglichen Schadens.</p>
+<div class="admonition note">
+<p class="admonition-title">Schwachstellen in einem IT-System</p>
+<pre class="mermaid"><code>graph LR
+  A[Benuzter] --&gt; B[Anwendungssystem];
+  B &lt;--&gt;|Datenübertragung| C[Backend];</code></pre>
+</div>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio"><input id="__tabbed_1_2" name="__tabbed_1" type="radio"><input id="__tabbed_1_3" name="__tabbed_1" type="radio"><div class="tabbed-labels"><label for="__tabbed_1_1">Eintrittswahrscheinlichkeit</label><label for="__tabbed_1_2">Schadenshöhe</label><label for="__tabbed_1_3">Risikokategorien</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<dl>
+<dt><code>selten</code></dt>
+<dd>Ereignis könnte nach heutigem Kenntnisstand höchstens alle 5 Jahre eintreten.</dd>
+<dt><code>mittel</code></dt>
+<dd>Ereignis tritt einmal alle fünf Jahre bis einmal im Jahr ein.</dd>
+<dt><code>häufig</code></dt>
+<dd>Ereignis tritt einmal im Jahr bis einmal pro Monat ein
+sehr häufig: Ereignis tritt mehrmals im Monat ein.</dd>
+</dl>
+</div>
+<div class="tabbed-block">
+<dl>
+<dt><code>vernachlässigbar</code></dt>
+<dd>Die Schadensauswirkungen sind gering und können vernachlässigt werden.</dd>
+<dt><code>begrenzt</code></dt>
+<dd>Die Schadensauswirkungen sind begrenzt und überschaubar
+beträchtlich: Die Schadensauswirkungen können erheblich sein.</dd>
+<dt><code>existenzbedrohend</code></dt>
+<dd>Die Schadensauswirkungen können ein existenziell bedrohliches,
+katastrophales Ausmaß erreichen.</dd>
+</dl>
+</div>
+<div class="tabbed-block">
+<dl>
+<dt><code>gering</code></dt>
+<dd>Die bereits umgesetzten oder zumindest im Sicherheitskonzept vorgesehenen
+Sicherheitsmaßnahmen bieten einen ausreichenden Schutz. In der Praxis ist es üblich, geringe
+Risiken zu akzeptieren und die Gefährdung dennoch zu beobachten.</dd>
+<dt><code>mittel</code></dt>
+<dd>Die bereits umgesetzten oder zumindest im Sicherheitskonzept vorgesehenen
+Sicherheitsmaßnahmen reichen möglicherweise nicht aus.</dd>
+<dt><code>hoch</code></dt>
+<dd>Die bereits umgesetzten oder zumindest im Sicherheitskonzept vorgesehenen
+Sicherheitsmaßnahmen bieten keinen ausreichenden Schutz vor der jeweiligen Gefährdung.</dd>
+<dt><code>sehr hoch</code></dt>
+<dd>Die bereits umgesetzten oder zumindest im Sicherheitskonzept vorgesehenen
+Sicherheitsmaßnahmen bieten keinen ausreichenden Schutz vor der jeweiligen Gefährdung. In
+der Praxis werden sehr hohe Risiken selten akzeptiert.</dd>
+</dl>
+</div>
+</div>
+</input></input></input></div>
+<table>
+<thead>
+<tr>
+<th><strong>Gefährdung</strong></th>
+<th><strong>Eintrittswahrscheinlichkeit</strong></th>
+<th><strong>Schadenshöhe</strong></th>
+<th><strong>Risiko</strong></th>
+<th><strong>Schutzmaßnahmen</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fehlbedienung</td>
+<td>selten</td>
+<td>begrenzt</td>
+<td>mittel</td>
+<td>Onlinehilfe, UI-Lock</td>
+</tr>
+<tr>
+<td>Irrtum</td>
+<td>selten</td>
+<td>begrenzt</td>
+<td>gering</td>
+<td>Onlinehilfe, UI-Lock</td>
+</tr>
+<tr>
+<td>unsachgemäße Behandlung</td>
+<td>selten</td>
+<td>begrenzt</td>
+<td>mittel</td>
+<td>Personaa vorort, Protokollierung der Geräte nutzung</td>
+</tr>
+<tr>
+<td>Einbruch, Diebstahl</td>
+<td>selten</td>
+<td>Vernach-lässigbar</td>
+<td>gering</td>
+<td>Alamanalage, Kontrolle auf Vollständigkeit</td>
+</tr>
+<tr>
+<td>Hacking</td>
+<td>mittel</td>
+<td>beträchtlich</td>
+<td>sehr hoch</td>
+<td>verschlüsselte Passwortspeicherung, Kontrolle gegen SQL Injection</td>
+</tr>
+<tr>
+<td>Spionage</td>
+<td>mittel</td>
+<td>begrenzt</td>
+<td>gering</td>
+<td>Rollenverwaltung</td>
+</tr>
+<tr>
+<td>Manipulation</td>
+<td>selten</td>
+<td>beträchtlich</td>
+<td>hoch</td>
+<td>Kontrolle gegen SQL-Injection</td>
+</tr>
+<tr>
+<td>Sabotage</td>
+<td>selten</td>
+<td>Existenz-bedrohend</td>
+<td>sehr hoch</td>
+<td>Kontrolle gegen SQL-Injection</td>
+</tr>
+<tr>
+<td>Vandalismus</td>
+<td>selten</td>
+<td>Vernach-lässigbar</td>
+<td>gering</td>
+<td>Alarmanalge</td>
+</tr>
+<tr>
+<td>Stromausfall</td>
+<td>selten</td>
+<td>Vernach-lässigbar</td>
+<td>gering</td>
+<td>Notstromaggregat</td>
+</tr>
+</tbody>
+</table>
+<h1 id="schutzbedarfsanalyse">Schutzbedarfsanalyse<a class="headerlink" href="#schutzbedarfsanalyse" title="Permanent link">¶</a></h1>
+<p>Zur Prävention von Risiken werden Sicherheitsmaßnahmen ergriffen. </p>
+<p>Wir minimieren die Risiken von Fehlbedingungen und menschlichen Fehlern durch regelmäßige Schulungen der Mitarbeiter. Durch die verpflichtende Verwendung von sicheren Passwörtern, verhindern wir erfolgreich den Diebstahl von Daten. Um Fehler bei der Bedienung zu vermeiden, stellen wir unseren Nutzern eine Online-Hilfe und ein Service-Team zur Verfügung.</p>
+<blockquote>
+<p>Durch Schulungen wird die größte Schwachstelle in einem IT-System minimiert.</p>
+</blockquote>
 </article>
 </div>
 </div>
@@ -814,7 +858,7 @@
 </aside>
 </div>
 <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout(function(){document.querySelector("[data-md-component=consent]").hidden=!1},250);var action,form=document.forms.consent;for(action of["submit","reset"])form.addEventListener(action,function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map(function(e){return[e,!0]}))),location.hash="",location.reload()})</script>
-<script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.tabs", "navigation.tracking", "navigation.tabs.sticky", "navigation.top", "search.highlight", "search.suggest", "search.share"], "search": "../../../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "In Zwischenablage kopiert", "clipboard.copy": "In Zwischenablage kopieren", "search.result.more.one": "1 weiteres Suchergebnis auf dieser Seite", "search.result.more.other": "# weitere Suchergebnisse auf dieser Seite", "search.result.none": "Keine Suchergebnisse", "search.result.one": "1 Suchergebnis", "search.result.other": "# Suchergebnisse", "search.result.placeholder": "Suchbegriff eingeben", "search.result.term.missing": "Es fehlt", "select.version": "Version ausw\u00e4hlen"}}</script>
-<script src="../../../../assets/javascripts/bundle.2a6f1dda.min.js"></script>
+<script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.tracking", "navigation.tabs.sticky", "navigation.top", "search.highlight", "search.suggest", "search.share"], "search": "../../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "In Zwischenablage kopiert", "clipboard.copy": "In Zwischenablage kopieren", "search.result.more.one": "1 weiteres Suchergebnis auf dieser Seite", "search.result.more.other": "# weitere Suchergebnisse auf dieser Seite", "search.result.none": "Keine Suchergebnisse", "search.result.one": "1 Suchergebnis", "search.result.other": "# Suchergebnisse", "search.result.placeholder": "Suchbegriff eingeben", "search.result.term.missing": "Es fehlt", "select.version": "Version ausw\u00e4hlen"}}</script>
+<script src="../../../assets/javascripts/bundle.2a6f1dda.min.js"></script>
 <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
 </html>
