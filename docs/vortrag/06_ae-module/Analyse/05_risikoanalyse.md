@@ -17,13 +17,17 @@ Gefährdungssituationen bestimmt sowie die Höhe des möglichen Schadens.
     `selten`
     : Ereignis könnte nach heutigem Kenntnisstand höchstens alle 5 Jahre eintreten.
     
+    
     `mittel`
     : Ereignis tritt einmal alle fünf Jahre bis einmal im Jahr ein.
     
     
     `häufig`
     : Ereignis tritt einmal im Jahr bis einmal pro Monat ein
-    sehr häufig: Ereignis tritt mehrmals im Monat ein.
+    
+    
+    `sehr häufig`
+    : Ereignis tritt mehrmals im Monat ein.
 
 === "Schadenshöhe"
     `vernachlässigbar`
