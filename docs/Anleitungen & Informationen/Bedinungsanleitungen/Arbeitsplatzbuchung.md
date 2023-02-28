@@ -1,7 +1,7 @@
 # Arbeitsplatz Buchen
 
 !!! tip "Download der Anleitung"
-      [Link zum Download der Anleitung](../../../../assets/Support-Anleitungen/Arbeitsplatzbuchung.pdf)
+      [Link zum Download der Anleitung](https://raw.githubusercontent.com/gz-bad-erzland-p2/Dokumentation/master/docs/assets/Support-Anleitungen/Arbeitsplatzbuchung.pdf)
 
 
 ### 1. [Wir beginnen auf der Startseite.](https://next-js-office-sharing-derech1e.vercel.app/)

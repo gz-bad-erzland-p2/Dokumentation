@@ -1,7 +1,7 @@
 # Registrierung
 
 !!! tip "Download der Anleitung"
-        [Link zum Download der Anleitung](../../../../assets/Support-Anleitungen/Registrieren.pdf)
+        [Link zum Download der Anleitung](https://raw.githubusercontent.com/gz-bad-erzland-p2/Dokumentation/master/docs/assets/Support-Anleitungen/Registrieren.pdf)
 
 ### 1. Öffnen Sie das Menü oben rechts und klicken Sie auf "Registrieren".
 ![Step 1 screenshot](https://images.tango.us/workflows/c482c676-b72d-43d5-8224-7fef821a72e8/steps/d32db22c-6202-4761-acce-c9fb68f4fcc2/828b0286-a34a-4ea0-b0c9-6bea87bc0dff.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&blend-align=bottom&blend-mode=normal&blend-x=800)

@@ -1,7 +1,7 @@
 # Support Kontaktieren
 
 !!! tip "Download der Anleitung"
-        [Link zum Download der Anleitung](../../../../assets/Support-Anleitungen/Support.pdf)
+        [Link zum Download der Anleitung](https://raw.githubusercontent.com/gz-bad-erzland-p2/Dokumentation/master/docs/assets/Support-Anleitungen/Support.pdf)
 
 ### 1. Klicken Sie auf "Support", um zur Supportseite zu gelangen.
 ![Step 1 screenshot](https://images.tango.us/workflows/af2c12be-6129-464a-aa71-ce03ed253fa0/steps/43bab823-85f9-41dc-8e95-e8175032cd17/7a6cace8-a258-47c0-bf63-010b3f2612d2.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&blend-align=bottom&blend-mode=normal)

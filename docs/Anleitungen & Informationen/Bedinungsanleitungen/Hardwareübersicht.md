@@ -1,7 +1,7 @@
 # Hardwareübersicht
 
 !!! tip "Download der Anleitung"
-        [Link zum Download der Anleitung](../../../../assets/Support-Anleitungen/Hardware-Übersicht.pdf)
+        [Link zum Download der Anleitung](https://raw.githubusercontent.com/gz-bad-erzland-p2/Dokumentation/master/docs/assets/Support-Anleitungen/Hardware-%C3%9Cbersicht.pdf)
 
 ### 1. Klicken Sie in dem Menü auf "Hardware" um zur Hardwareübersicht zu gelangen.
 ![Step 1 screenshot](https://images.tango.us/workflows/dd4203ca-02f0-4c8d-830e-52feffc2a87a/steps/35f1914c-2366-40d2-9a81-94fdb572bb25/aad40aad-a28e-44f9-9ef9-8434918983c7.png?crop=focalpoint&fit=crop&fp-x=0.5000&fp-y=0.5000&w=1200&blend-align=bottom&blend-mode=normal&blend-x=800)

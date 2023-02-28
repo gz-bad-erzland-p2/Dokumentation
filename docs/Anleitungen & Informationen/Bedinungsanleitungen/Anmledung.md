@@ -1,7 +1,7 @@
 # Anmeldung
 
 !!! tip "Download der Anleitung"
-     [Link zum Download der Anleitung](../../../../assets/Support-Anleitungen/Anmeldung.pdf)
+     [Link zum Download der Anleitung](https://github.com/gz-bad-erzland-p2/Dokumentation/raw/master/docs/assets/Support-Anleitungen/Arbeitsplatzbuchung.pdf)
 
 
 ### 1. Klicken Sie im Menü auf "Anmelden", um zur Anmeldeseite zu gelangen.
