@@ -2013,146 +2013,146 @@ Vagrant.configure(&quot;2&quot;) do |config|
 </code></pre></div>
 <h1 id="konfiguration">Konfiguration<a class="headerlink" href="#konfiguration" title="Permanent link">&para;</a></h1>
 <p>Playbook: db.yml</p>
-<p>```
-- name: Setup DB
+<div class="highlight"><pre><span></span><code>- name: Setup DB
   hosts: centosdb
-  become: true</p>
-<p>tasks:
+  become: true
+
+  tasks:
     - name: Set hostname to centosdb
       become: true
       ansible.builtin.hostname:
         name: centosdb.localdomain
-        use: systemd</p>
-<div class="highlight"><pre><span></span><code>- name: &#39;Set keyboard layout to: de-nodeadkeys&#39;
-  become: true 
-  ansible.builtin.shell: 
-    cmd: |
-      if localectl status | grep -q &#39;VC Keymap: us&#39;; then 
-         sudo localectl set-keymap de-nodeadkeys ; fi
+        use: systemd
 
-- name: Change timezone to Europe/Berlin
-  become: true 
-  community.general.timezone:
-    name: Europe/Berlin
+    - name: &#39;Set keyboard layout to: de-nodeadkeys&#39;
+      become: true 
+      ansible.builtin.shell: 
+        cmd: |
+          if localectl status | grep -q &#39;VC Keymap: us&#39;; then 
+             sudo localectl set-keymap de-nodeadkeys ; fi
 
-
-- name: Check Proxy Settings
-  ansible.builtin.lineinfile:
-    path: /etc/environment
-    regexp: &#39;^export no_proxy&#39;
-    state: absent
-  check_mode: yes
-  failed_when: false
-  changed_when: false
-  register: proxy_check  
-  tags: proxy
-
-- name: Set Proxy Settings if not configured
-  become: true
-  ansible.builtin.copy:
-    src: &quot;{{ playbook_dir }}/files/environment&quot;
-    dest: /etc/environment
-    force: true
-  when: not proxy_check.found
-  tags: proxy
-
-- name: Add an Ethernet connection with static IP
-  community.general.nmcli:
-    conn_name: eth0
-    ifname: eth0
-    type: ethernet
-    ip4: 192.168.98.11/24
-    gw4: 192.168.98.10
-    dns4: 192.168.98.12
-    state: present
-
-- name: Restart NetworkManager
-  become: true
-  ansible.builtin.service:
-    name: NetworkManager
-    state: restarted
-
-- name: Open firewall port 3306 TCP
-  ansible.posix.firewalld:
-    port: 3306/tcp
-    permanent: yes
-    state: enabled
-- name: Reload Firewalld
-  systemd:
-    name: firewalld
-    state: reloaded
-
-- name: Upgrade all packages
-  ansible.builtin.dnf:
-    name: &quot;*&quot;
-    state: latest
-- name: Install nano
-  ansible.builtin.dnf:
-    name: nano
-    state: latest
-
-- name: Install DB
-  ansible.builtin.dnf:
-    name: mysql-server
-    state: latest
-
-- name: Starten DB
-  ansible.builtin.service:
-    name: mysqld
-    state: started
-    enabled: true
-
-- name: Install MySQL client on CentOS 8
-  ansible.builtin.dnf:
-    name: mysql
-    state: present
-- name: Make sure mysqld service is running
-  ansible.builtin.service:
-    name: mysqld
-    state: started
-    enabled: True
-
-- name: Install python3-PyMySQL library
-  ansible.builtin.dnf:
-    name: python3-PyMySQL
-    state: present
-
-- name: Set MySQL root Password
-  mysql_user:
-    login_host: &#39;localhost&#39;
-    login_user: &#39;root&#39;
-    login_password: &#39;&#39;
-    name: &#39;root&#39;
-    password: &#39;TNpasswd00.&#39;
-    state: present
-
-- name: Create a new database with name &#39;nextjs_prisma&#39;  
-  community.mysql.mysql_db:
-    name: nextjs_prisma
-    state: present
-    login_user: &#39;root&#39;
-    login_password: &#39;TNpasswd00.&#39;
+    - name: Change timezone to Europe/Berlin
+      become: true 
+      community.general.timezone:
+        name: Europe/Berlin
 
 
-- name: Removes all anonymous user accounts
-  community.mysql.mysql_user:
-    name: &#39;&#39;
-    host_all: yes
-    state: absent
-    login_user: &#39;root&#39;
-    login_password: &#39;TNpasswd00.&#39;
+    - name: Check Proxy Settings
+      ansible.builtin.lineinfile:
+        path: /etc/environment
+        regexp: &#39;^export no_proxy&#39;
+        state: absent
+      check_mode: yes
+      failed_when: false
+      changed_when: false
+      register: proxy_check  
+      tags: proxy
 
-- name: Create database user with name &#39;nextjs&#39; and password &#39;TNpasswd00&#39; with all database privileges on nextjs_prisma
-  community.mysql.mysql_user:
-    name: nextjs
-    password: TNpasswd00.
-    host: &#39;%&#39;
-    priv: &#39;nextjs_prisma.*:ALL,GRANT&#39;
-    state: present
-    login_user: &#39;root&#39;
-    login_password: &#39;TNpasswd00.&#39;
+    - name: Set Proxy Settings if not configured
+      become: true
+      ansible.builtin.copy:
+        src: &quot;{{ playbook_dir }}/files/environment&quot;
+        dest: /etc/environment
+        force: true
+      when: not proxy_check.found
+      tags: proxy
+
+    - name: Add an Ethernet connection with static IP
+      community.general.nmcli:
+        conn_name: eth0
+        ifname: eth0
+        type: ethernet
+        ip4: 192.168.98.11/24
+        gw4: 192.168.98.10
+        dns4: 192.168.98.12
+        state: present 
+
+    - name: Restart NetworkManager
+      become: true
+      ansible.builtin.service:
+        name: NetworkManager
+        state: restarted
+
+    - name: Open firewall port 3306 TCP
+      ansible.posix.firewalld:
+        port: 3306/tcp
+        permanent: yes
+        state: enabled
+    - name: Reload Firewalld
+      systemd:
+        name: firewalld
+        state: reloaded        
+
+    - name: Upgrade all packages
+      ansible.builtin.dnf:
+        name: &quot;*&quot;
+        state: latest
+    - name: Install nano
+      ansible.builtin.dnf:
+        name: nano
+        state: latest
+
+    - name: Install DB
+      ansible.builtin.dnf:
+        name: mysql-server
+        state: latest
+
+    - name: Starten DB
+      ansible.builtin.service:
+        name: mysqld
+        state: started
+        enabled: true    
+
+    - name: Install MySQL client on CentOS 8
+      ansible.builtin.dnf:
+        name: mysql
+        state: present
+    - name: Make sure mysqld service is running
+      ansible.builtin.service:
+        name: mysqld
+        state: started
+        enabled: True
+
+    - name: Install python3-PyMySQL library
+      ansible.builtin.dnf:
+        name: python3-PyMySQL
+        state: present
+
+    - name: Set MySQL root Password
+      mysql_user:
+        login_host: &#39;localhost&#39;
+        login_user: &#39;root&#39;
+        login_password: &#39;&#39;
+        name: &#39;root&#39;
+        password: &#39;TNpasswd00.&#39;
+        state: present
+
+    - name: Create a new database with name &#39;nextjs_prisma&#39;  
+      community.mysql.mysql_db:
+        name: nextjs_prisma
+        state: present
+        login_user: &#39;root&#39;
+        login_password: &#39;TNpasswd00.&#39;          
+
+
+    - name: Removes all anonymous user accounts
+      community.mysql.mysql_user:
+        name: &#39;&#39;
+        host_all: yes
+        state: absent
+        login_user: &#39;root&#39;
+        login_password: &#39;TNpasswd00.&#39;
+
+    - name: Create database user with name &#39;nextjs&#39; and password &#39;TNpasswd00&#39; with all database privileges on nextjs_prisma
+      community.mysql.mysql_user:
+        name: nextjs
+        password: TNpasswd00.
+        host: &#39;%&#39;
+        priv: &#39;nextjs_prisma.*:ALL,GRANT&#39;
+        state: present
+        login_user: &#39;root&#39;
+        login_password: &#39;TNpasswd00.&#39;
 </code></pre></div>
-<p>```</p>
 <p>(Quelle 1: <a href="https://de.wikipedia.org/wiki/Datenbankserver">https://de.wikipedia.org/wiki/Datenbankserver</a>, 27.02.2023)</p>
 
 
