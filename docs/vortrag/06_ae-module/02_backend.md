@@ -2,7 +2,7 @@
 
 ## ERD Diagramm
 
-![Image title](https://github.com/gz-bad-erzland-p2/Dokumentation/blob/master/docs/assets/img/ERD.png?raw=true)
+![Image title](../../assets/svg/ERDDatenbankPage_v2.svg)
 
 # Version 2 (Final)
 ![](../../assets/svg/prisma-erd.svg)
