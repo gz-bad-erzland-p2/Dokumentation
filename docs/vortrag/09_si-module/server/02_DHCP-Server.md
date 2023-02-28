@@ -1,11 +1,13 @@
 # DHCP Server für das blaue Netz
->Der DHCP-Server verwaltet einen Pool von IP-Adressen und leaset eine Adresse [und weitere Konfigurationsdaten] an jeden DHCP-fähigen Client, wenn er im Netzwerk gestartet wird. (Quelle 1)
 
-# Erstellen
+!!! info "Überblick"
+    <span class="biggerFont">Der DHCP-Server verwaltet einen Pool von IP-Adressen und leaset eine Adresse [und weitere Konfigurationsdaten] an jeden DHCP-fähigen Client, wenn er im Netzwerk gestartet wird. (Quelle 1)</span>
+
+## Erstellen
 
 Vagrantfile:
 
-# Konfiguration
+## Konfiguration
 
 Playbook:
 

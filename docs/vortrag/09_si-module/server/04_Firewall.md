@@ -1,10 +1,11 @@
 # Firewall
->Eine Firewall ist ein Sicherungssystem, das ein Rechnernetz oder einen einzelnen Computer vor unerwünschten Netzwerkzugriffen schützt. (Quelle 1)
->
-Auf unserer Firewall läuft die freie Linux-Distribution IPFire, die als Router und Firewall fungiert.
-# Einzelnen Netzwerkadapter
+!!! info "Überblick"
+    <span class="biggerFont">Eine Firewall ist ein Sicherungssystem, das ein Rechnernetz oder einen einzelnen Computer vor unerwünschten Netzwerkzugriffen schützt. (Quelle 1)</span>
 
-Schnittstellen:
+Auf unserer Firewall läuft die freie Linux-Distribution IPFire, die als Router und Firewall fungiert.
+## Einzelnen Netzwerkadapter
+
+### Schnittstellen
 
 ![grafik](https://user-images.githubusercontent.com/44226321/214235061-958b0814-98f0-4932-ad29-de1805b198b4.png)
 ___
@@ -19,11 +20,11 @@ ___
 ![grafik](https://user-images.githubusercontent.com/44226321/214235543-122f6bf2-a061-40fc-9158-7740355dceb6.png)
 
 
-# Konfiguration
+## Konfiguration
 Unter der IP-Adresse https://192.168.98.10:444/ ist das Webinterface der Firewall zu erreichen.
 Hier wurde die Konfiguration der Firewall vorgenommen.
 
-**Firewall Optionen:**
+#### Firewall Optionen
 
 ![grafik](https://user-images.githubusercontent.com/44226321/214234670-908fe9c0-6581-42be-a7b1-e6066de2cdd4.png)
 
@@ -31,8 +32,8 @@ Generell werden alle Aufragen von außen (also aus dem roten Netz) in die andere
 Andersherum dürfen alle Netze Anfragen ins rote Netz senden und diese werden zugelassen
 So kann der Zugriff genau gesteuert werden
 
-**Firewall Regeln:**
+#### Firewall Regeln
 
 Anfragen aus allen Netzen 
 
-(Quelle 1: https://de.wikipedia.org/wiki/Firewall, 27.2.2023)
+[^1]: (Quelle 1: https://de.wikipedia.org/wiki/Firewall, 27.2.2023)

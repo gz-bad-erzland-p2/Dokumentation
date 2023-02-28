@@ -5,15 +5,15 @@
 
 Jeder Server (außer die Firewall) wird mithilfe der Orchestrierungssoftware Ansible erstellt und ggf. konfiguriert.
 Als Schnittstelle zwischen VMware und Ansible wird die Software Vagrant verwendet.
-# Serveraufbau
-## Aufbau der Vagrant / Ansible Ordner/Dateien
+## Serveraufbau
+### Aufbau der Vagrant / Ansible Ordner/Dateien
 
 Weiterhin wird jeder Server, der mittels Vagrant und Ansible gestartet wird, mit folgender Datei und Ordnerstruktur ausgerüstet.
 Diese liegen unter C:\Vagrant\CentOS9_xx (xx=Servername z. B. DB)
 
 ![grafik](https://user-images.githubusercontent.com/44226321/214226433-1f3112a2-c841-43e8-9988-cfcbdb62851c.png)
 
-### Datei ssh-config
+#### Datei ssh-config
 
 Die ssh-config enthält alle nötigen Informationen, um eine Verbindung mit dem Server mittels SSH herzustellen.
 ```Nginx
@@ -43,17 +43,17 @@ Host lnxhost-Internal
   LogLevel FATAL 
 ```
 
-### Datei vagrantfile
+#### Datei vagrantfile
 
 Das vagrantfile enthält alle Informationen, die Vagrant benötigt, um den Server mit den entsprechenden Spezifikationen automatisiert aufzusetzen.
 --> die einzelnen vagrantfiles werden separat vorgestellt
 ___
-## Ordner vmware:
+### Ordner vmware
 
 Jeder Server erhält eine feste IP-Adresse mittels DCHP Reservierung.
 Dafür wird die Datei vmnetdhcp.conf in der vmware Konfiguration mithilfe des replaceDHCPconf.cmd Skripts überschrieben.
 
-### vmnetdhcp.conf
+#### vmnetdhcp.conf
  
 ```bash
 #
@@ -189,7 +189,7 @@ host VMnet1 {
 ```
 ___
 
-## Ordner playbooks:
+### Ordner playbooks:
 
 
 ![grafik](https://user-images.githubusercontent.com/44226321/214227756-7a79b81d-4ca0-4523-a590-6c7fa71c0ac2.png)
@@ -197,7 +197,7 @@ ___
 
 Erläuterung der einzelnen Dateien: 
 ---
-### ansible.cfg: 
+#### ansible.cfg
 
 = Konfiguration die Ansible benötigt
 
@@ -217,7 +217,7 @@ ssh_args = -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o CheckH
 scp_if_ssh = True
 ```
 
-### hosts: 
+#### hosts
 
 enthält die Hostnamen und IP-Adressen der jeweiligen Servers
 ```
@@ -231,18 +231,18 @@ ansible_ssh_private_key_file=playbooks/sshkeys/centosdb-key
 ansible_ssh_common_args=-oIdentityFile=playbooks/sshkeys/insecure_private_key
 ```
 
-### xx.yml: 
+#### xx.yml
 
 enthält das jeweilige Playbook für den Server -> werden einzeln genauer vorgestellt
 ___
-## Ordner sshkeys:
+### Ordner ssh-keys
 
 enthält die einzelnen SSH-Keys, um eine SSH Verbidnung mit dem Server aufzubauen
 
 ![grafik](https://user-images.githubusercontent.com/44226321/214228103-14840b9f-ae3d-43c1-b4c4-f801b753f831.png)
 
 ___
-## Ordner files:
+### Ordner files
 
 Im Ordner _files_ liegen Dateien die in den playbooks verwendet und eingebunden werden.
 

@@ -1,12 +1,14 @@
-# DNS Server (Domain Name System)
->DNS Server bzw. Nameserver sind Server, die einer URL die richtige IP zuweisen können oder einer IP die richtige URL. (Quelle 1)
+# DNS-Server (Domain Name System)
+
+!!! info "Überblick"
+    <span class="biggerFont">DNS Server bzw. Nameserver sind Server, die einer URL die richtige IP zuweisen können oder einer IP die richtige URL. (Quelle 1)</span>
 
 In unserem Fall löst der DNS-Server den Webseiten URL https://gz-bad-erzland-p2.de in die IP-Adresse des Webservers (192.168.86.11) auf.
 
 Der Kunde sieht jedoch nur die URL und nicht die dahinterstehende IP-Adresse.
-# Erstellen
+## Erstellen
 
-Vagrantfile: 
+### Vagrantfile 
 
 ```
 # -*- mode: ruby -*-
@@ -79,9 +81,9 @@ Vagrant.configure("2") do |config|
   end
 ```
 
-# Konfiguration
+## Konfiguration
 
-Playbook: dns.yml
+### Playbook: dns.yml
 
 ```
 ---
@@ -181,7 +183,7 @@ Playbook: dns.yml
         state: restarted
 ```
 
-# DNS Einträge
+## DNS Einträge
 
 
 (Quelle 1: https://www.xovi.de/was-ist-ein-dns-server/, 27.02.2023)

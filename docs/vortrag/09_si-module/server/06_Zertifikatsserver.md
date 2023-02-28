@@ -1,9 +1,15 @@
-# Zertifikatsserver - CA (certifcation authority)
-> Ein SSL Server Zertifikat ist die Basis für eine Verschlüsselung einer Webseite durch den Betreiber. Es dient nicht allein der Kommunikation, sondern 
- gewährleistet ebenfalls eine sichere Authentifizierung einer Webseite. Dadurch verhindert es sowohl ein unbefugtes Mitschneiden von Informationen wie auch das Vortäuschen einer falschen Identität - ein häufiges Vorgehen bei den sogenannten Phishing-Attacken. Für den Besucher einer Webseite ändert ein SSL Server Zertifikat nichts, schafft aber eine hohe Sicherheit. (Quelle 1)
-# Erstellen
+# Zertifikatsserver - CA (certification authority)
 
-Vagrantfile: 
+!!! info "Überblick"
+      <span class="biggerFont">Ein SSL Server Zertifikat ist die Basis für eine Verschlüsselung einer Webseite durch den
+      Betreiber. Es dient nicht allein der Kommunikation, sondern gewährleistet ebenfalls eine sichere Authentifizierung einer
+      Webseite. Dadurch verhindert es sowohl ein unbefugtes Mitschneiden von Informationen wie auch das Vortäuschen einer
+      falschen Identität - ein häufiges Vorgehen bei den sogenannten Phishing-Attacken. Für den Besucher einer Webseite ändert
+      ein SSL Server Zertifikat nichts, schafft aber eine hohe Sicherheit. (Quelle 1) </span>
+
+## Erstellen
+
+### Vagrantfile
 
 ```
 # -*- mode: ruby -*-
@@ -78,11 +84,11 @@ Vagrant.configure("2") do |config|
   end
 ```
 
-# Konfiguration
-
+## Konfiguration
 
 (https://www.digitalocean.com/community/tutorials/how-to-set-up-and-configure-a-certificate-authority-ca-on-centos-8-de)
-# Erstellen des Zertifikats
+
+## Erstellen des Zertifikats
 
 ca.crt Zertifikat:
 
@@ -109,7 +115,8 @@ bQymZXyXrZsTMhmC6EKOYDM4E9emjw==
 -----END CERTIFICATE-----
 ```
 
-# Importieren des Zertifikates in Firefox 
+## Importieren des Zertifikates in Firefox
+
     Stellen Sie sicher, dass das Zertifikat, das Sie in Firefox importieren wollen, auf Ihrem Rechner gespeichert ist.
     Starten Sie Firefox und klicken Sie dann oben rechts auf die Schaltfläche, um das Menü zu öffnen.
     Wählen Sie den Eintrag „Einstellungen“ aus.
@@ -118,6 +125,6 @@ bQymZXyXrZsTMhmC6EKOYDM4E9emjw==
     Klicken Sie unten auf „Importieren…“ und navigieren zu Ihrer Zertifikatsdatei.
     Anschließend wird der Eintrag in Firefox aufgenommen. (Quelle 2)
 
-1. Quelle: https://www.hosttest.de/artikel/was-ist-ein-ssl-server-1427.html, 26.01.2023
+[^1]: https://www.hosttest.de/artikel/was-ist-ein-ssl-server-1427.html (26.01.2023)
 
-2. Quelle: https://www.computerbild.de/artikel/cb-Tipps-Internet-Firefox-Zertifikat-importieren-31486861.html, 26.01.2023
+[^2]: https://www.computerbild.de/artikel/cb-Tipps-Internet-Firefox-Zertifikat-importieren-31486861.html (26.01.2023)

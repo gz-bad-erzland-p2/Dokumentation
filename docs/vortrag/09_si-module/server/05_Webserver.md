@@ -1,8 +1,10 @@
 # Webserver
->Ein Webserver ist ein Server, der Dokumente an Clients wie z. B. Webbrowser überträgt. (Quelle 1)
-# Erstellen
+!!! info "Überblick"
+    <span class="biggerFont">Ein Webserver ist ein Server, der Dokumente an Clients wie z. B. Webbrowser überträgt. (Quelle 1)</span>
 
-Vagrantfile:
+## Erstellen
+
+### Vagrantfile
 
 ```
 # -*- mode: ruby -*-
@@ -74,9 +76,9 @@ Vagrant.configure("2") do |config|
         end
   end
 ```
-# Konfiguration
+## Konfiguration
 
-Playbooks: 
+### Playbooks 
 
 **webserver.yml**
 
@@ -211,7 +213,7 @@ Playbooks:
         chdir: /var/www/NextJS-Office-Sharing
 ```
 
-**react.yml:**
+#### react.yml
 ```
 ---
 - name: Setup React App
@@ -230,7 +232,7 @@ Playbooks:
         mode: '0755'
 ```
 
-**git.yml:**
+#### git.yml
 
 ```
 ---
@@ -257,4 +259,4 @@ Playbooks:
         chdir: /var/www/NextJS-Office-Sharing
 ```
 
-(Quelle 1: https://de.wikipedia.org/wiki/Webserver, 27.02.2023)
+[^1]: (Quelle 1: https://de.wikipedia.org/wiki/Webserver, 27.02.2023)
