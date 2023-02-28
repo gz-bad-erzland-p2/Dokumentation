@@ -224,6 +224,6 @@ Playbook: db.yml
         login_user: 'root'
         login_password: 'TNpasswd00.'
 
-   ```
+```
 
 (Quelle 1: https://de.wikipedia.org/wiki/Datenbankserver, 27.02.2023)
