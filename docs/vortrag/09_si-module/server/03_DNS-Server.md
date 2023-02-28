@@ -1,6 +1,7 @@
 # DNS Server (Domain Name System)
-Der DNS-Server löst die Domain-Namen von bspw. Webseiten in die entsprechende IP-Adresse auf. 
-In unserem Fall löst der DNS-Server den Webseiten Namen gz-bad-erzland-p2.de in die IP-Adresse des Webservers auf.
+>DNS Server bzw. Nameserver sind Server, die einer URL die richtige IP zuweisen können oder einer IP die richtige URL. (Quelle 1)
+
+In unserem Fall löst der DNS-Server den Webseiten URL https://gz-bad-erzland-p2.de in die IP-Adresse des Webservers (192.168.86.11) auf.
 
 Der Kunde sieht jedoch nur die URL und nicht die dahinterstehende IP-Adresse.
 # Erstellen
