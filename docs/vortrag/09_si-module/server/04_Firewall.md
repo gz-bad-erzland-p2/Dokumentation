@@ -1,4 +1,5 @@
 # Firewall
+>Eine Firewall ist ein Sicherungssystem, das ein Rechnernetz oder einen einzelnen Computer vor unerwünschten Netzwerkzugriffen schützt. (Quelle 1)
 Auf der Firewall läuft die freie Linux-Distribution IPFire, die als Router und Firewall fungiert.
 # Einzelnen Netzwerkadapter
 
@@ -32,3 +33,5 @@ So kann der Zugriff genau gesteuert werden
 **Firewall Regeln:**
 
 Anfragen aus allen Netzen 
+
+(Quelle 1: https://de.wikipedia.org/wiki/Firewall, 27.2.2023)
