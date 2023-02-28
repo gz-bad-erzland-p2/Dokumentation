@@ -8,7 +8,7 @@
 - Umzusetzende Qualitätsmerkmale (Julius)
 
 ## Planung
-- Fachkonzeptmodellierung  AE
+- Fachkonzeptmodellierung AE
     - Auswahl der Programmiersprache und Frameworks (basierend auf Analyse)(Thomas)
 
 ### Frontend
@@ -24,7 +24,8 @@
 
 ## Implementierung
 ### Frontend
-- Implimentierung des Designs (ohne Funktionalität) (Jannik Pascal)
+- Implementierung des Designs (ohne Funktionalität) (Jannik Pascal)
+
 ### Backend
 - Funktionen erstellen und einbinden (Thomas)
 - Migration der Datenbank (Thomas)

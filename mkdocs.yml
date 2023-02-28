@@ -178,6 +178,7 @@ nav:
           - 'vortrag/06_ae-module/02_backend.md'
           - 'vortrag/06_ae-module/03_sicherheit.md'
       - 'SI-Module':
+          - 'vortrag/09_si-module/Überblick.md'
           - 'vortrag/09_si-module/01_dienstkonzeption.md'
           - 'vortrag/09_si-module/02_automatisierung.md'
           - 'Server':
