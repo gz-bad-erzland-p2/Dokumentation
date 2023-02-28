@@ -173,14 +173,17 @@ nav:
       - 'vortrag/04_demonstration-user-stories.md'
       - 'AE-Module':
           - 'Analyse':
-          - 'Planung':        
+              - 'vortrag/06_ae-module/Analyse/USE-CASE.md'
+              - 'vortrag/06_ae-module/Analyse/05_risikoanalyse.md'
+              - 'vortrag/06_ae-module/Analyse/Schutzbedarfsanalyse.md'
+              - 'vortrag/06_ae-module/Analyse/qualitaetsmerkmale.md'
+          - 'Planung':     
+              - 'vortrag/06_ae-module/Planung/Fachkonzeptmodellierung.md'
+              - 'vortrag/06_ae-module/Planung/Frontend.md'
+              - 'vortrag/06_ae-module/Planung/Backend.md'
           - 'Implimentierung ':
-          - 'vortrag/06_ae-module/01_frontend.md'
-          - 'vortrag/06_ae-module/02_backend.md'
-          - 'vortrag/06_ae-module/03_sicherheit.md'
-          - 'vortrag/06_ae-module/04_responsive-design.md'
-          - 'vortrag/06_ae-module/05_risikoanalyse.md'
-          - 'vortrag/06_ae-module/09_planung.md'
+              - 'vortrag/06_ae-module/Implimentierung/Frontend.md'
+              - 'vortrag/06_ae-module/Implimentierung/Backend.md'
       - 'SI-Module':
           - 'vortrag/09_si-module/01_dienstkonzeption.md'
           - 'vortrag/09_si-module/02_automatisierung.md'
