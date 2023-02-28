@@ -72,27 +72,27 @@
 
 
 ----------------------------------------------------
-Beginn
+1 Beginn
 	- Begrüßung & Projektauftrag (Cora -> erster Eindruck zählt, sorry Theo)
 	- Mitarbeiteranteile & Gliederung (Theo)
 
 ----------------------------------------------------
-Auftragsdefinierung
+2 Auftragsdefinierung
 	- Prozesslandkarte (Theo)
 	- User-Stories (Jannik)
 
 ----------------------------------------------------
-Demonstration User-Stories
+3 Demonstration User-Stories
 
 ----------------------------------------------------
-Projekt definierung
+4 Projekt definierung
 	- Projektstrukturplan (Theo)
 	- Entwicklungsvorgehen (Thomas)
 	- Einordnung ins Schichtenmodell (Theo)
 	- Architekturbeschreibung des Gesamtsystems (Wer kennt sich da aus)
 
 ----------------------------------------------------
-Anwendungsentwickler
+5 Anwendungsentwickler
 	Analyse
 		- USE-CASE Diagramm (Jannik)
 		- Nutzerwertanalyse (Thomas)
@@ -118,7 +118,7 @@ Anwendungsentwickler
 			- Migration der Datenbank (Thomas)
 			
 ----------------------------------------------------			
-System Intigratoren 
+6 System Intigratoren 
 	Analyse
 		- Was wird Benötigt? (Cora, Richard)
 	Planung
@@ -129,10 +129,10 @@ System Intigratoren
 		- Alles andere (Cora, Richard)
 
 ----------------------------------------------------
-Reflexion
+7 Reflexion
 	- Wissens- und Kompetenzzuwachs (Thomas)
 	- Inhaltliche Reflexion (Thomas)
-Schlusswort
+8 Schlusswort
 	- Fragen (Theo)
 	- Danke (Theo)
 	
