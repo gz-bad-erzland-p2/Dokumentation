@@ -157,6 +157,7 @@ nav:
       - 'Auftrag':
           - 'vortrag/Auftrag/00_projekteinordnung.md'
           - 'vortrag/Auftrag/31_user-stories.md'
+      - 'vortrag/04_demonstration-user-stories.md'
       - 'Projektdefinition':
           - 'vortrag/Projektdefinition/00_Projektstrukturplan.md'
           - 'vortrag/Projektdefinition/05_entwicklungsvorgehen.md'
@@ -164,20 +165,18 @@ nav:
           - 'vortrag/Projektdefinition/30_soll-ist.md'
           - 'Einordnung Schichtenmodell': 'vortrag/Projektdefinition/07_qos_schichtenmodell.md'
           - 'vortrag/Projektdefinition/08_architekturbeschreibung.md'
-          - 'vortrag/Projektdefinition/40_zeitplan.md'
+#          - 'vortrag/Projektdefinition/40_zeitplan.md'
           - 'Demos des Produktes': 'vortrag/Projektdefinition/50_download.md'
           - 'Protokolle':
               - 'vortrag/Projektdefinition/protokolle/01_ergebnisprotokoll.md'
               - 'vortrag/Projektdefinition/protokolle/03_pflichtenheft.md'
               - 'vortrag/Projektdefinition/protokolle/02_lastenheft.md'
-      - 'vortrag/04_demonstration-user-stories.md'
       - 'AE-Module':
+          - 'vortrag/06_ae-module/Überblick.md'
+          - 'vortrag/06_ae-module/00_Analyse.md'
           - 'vortrag/06_ae-module/01_frontend.md'
           - 'vortrag/06_ae-module/02_backend.md'
           - 'vortrag/06_ae-module/03_sicherheit.md'
-          - 'vortrag/06_ae-module/04_responsive-design.md'
-          - 'vortrag/06_ae-module/05_risikoanalyse.md'
-          - 'vortrag/06_ae-module/09_planung.md'
       - 'SI-Module':
           - 'vortrag/09_si-module/01_dienstkonzeption.md'
           - 'vortrag/09_si-module/02_automatisierung.md'
