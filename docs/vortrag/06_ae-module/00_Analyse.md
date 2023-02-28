@@ -66,19 +66,18 @@ B <-->|Datenübertragung| C[Backend];
     der Praxis werden sehr hohe Risiken selten akzeptiert.
 
 
-| **Gefährdung**          | **Eintrittswahrscheinlichkeit** | **Schadenshöhe**   | **Risiko** | **Schutzmaßnahmen**  |
-|-------------------------|---------------------------------|--------------------|------------|----------------------|
-| Fehlbedienung           | selten                          | begrenzt           | mittel     | Onlinehilfe, UI-Lock |
-| Irrtum                  | selten                          | begrenzt           | gering     | Onlinehilfe, UI-Lock |
-| unsachgemäße Behandlung | selten                          | begrenzt           | mittel     | Personal vor Ort, Protokollierung der Gerätenutzung |
-| Einbruch, Diebstahl     | selten                          | Vernach-lässigbar  | gering     | Alamanalage, Kontrolle auf Vollständigkeit |
-| Hacking                 | mittel                          | beträchtlich       | sehr hoch  | verschlüsselte Passwortspeicherung, Kontrolle gegen SQL Injection  |
-| Spionage                | mittel                          | begrenzt           | gering     | Rollenverwaltung     |
-| Manipulation            | selten                          | beträchtlich       | hoch       | Kontrolle gegen SQL-Injection|
-| Sabotage                | selten                          | Existenz-bedrohend | sehr hoch  | Kontrolle gegen SQL-Injection                     |
-| Vandalismus             | selten                          | Vernach-lässigbar  | gering     | Alarmanalge                    |
-| Stromausfall            | selten                          | Vernach-lässigbar  | gering     | Notstromaggregat
-
+| **Gefährdung**          | **Eintrittswahrscheinlichkeit** | **Schadenshöhe**   | **Risiko** | **Schutzmaßnahmen**                                               |
+|-------------------------|---------------------------------|--------------------|------------|-------------------------------------------------------------------|
+| Fehlbedienung           | selten                          | begrenzt           | mittel     | Onlinehilfe, UI-Lock                                              |
+| Irrtum                  | selten                          | begrenzt           | gering     | Onlinehilfe, UI-Lock                                              |
+| unsachgemäße Behandlung | selten                          | begrenzt           | mittel     | Personal vor Ort, Protokollierung der Gerätenutzung               |
+| Einbruch, Diebstahl     | selten                          | Vernach-lässigbar  | gering     | Alarmanlage, Kontrolle auf Vollständigkeit                       |
+| Hacking                 | mittel                          | beträchtlich       | sehr hoch  | verschlüsselte Passwortspeicherung, Kontrolle gegen SQL Injection |
+| Spionage                | mittel                          | begrenzt           | gering     | Rollenverwaltung                                                  |
+| Manipulation            | selten                          | beträchtlich       | hoch       | Kontrolle gegen SQL-Injection                                     |
+| Sabotage                | selten                          | Existenz-bedrohend | sehr hoch  | Kontrolle gegen SQL-Injection                                     |
+| Vandalismus             | selten                          | Vernach-lässigbar  | gering     | Alarmanlage                                                       |
+| Stromausfall            | selten                          | Vernach-lässigbar  | gering     | Notstromaggregat                                                  |
 
 ## Schutzbedarfsanalyse
 
