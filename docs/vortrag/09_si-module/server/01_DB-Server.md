@@ -82,7 +82,7 @@ Vagrant.configure("2") do |config|
 Playbook: db.yml
 
 ```
----
+
 - name: Setup DB
   hosts: centosdb
   become: true
