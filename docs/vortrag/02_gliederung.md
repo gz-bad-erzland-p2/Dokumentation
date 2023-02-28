@@ -3,8 +3,8 @@
 TODO: wer spricht was
 
 1. Projekteinordnung in die Prozesslandkarte
-2. Entwicklungsvorgehen
-3. Showcase User-Stories
+2. Showcase User-Stories
+3. Entwicklungsvorgehen 
 4. AE-Module
 5. Einordnung ins Schichtenmodell
 6. Architekturbeschreibung
