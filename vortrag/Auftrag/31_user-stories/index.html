@@ -7,19 +7,19 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <meta content="Projektdokumentation zur implementierung eines Prototypes für die Office-Sharing-Plattform." name="description"/>
 <meta content="Cora, Jannik, Pascal, Julius, Thomas" name="author"/>
-<link href="../02_DHCP-Server/" rel="prev"/>
-<link href="../04_Firewall/" rel="next"/>
-<link href="../../../../assets/img/logo.png" rel="icon"/>
+<link href="../00_projekteinordnung/" rel="prev"/>
+<link href="../../Projektdefinition/00_Projektstrukturplan/" rel="next"/>
+<link href="../../../assets/img/logo.png" rel="icon"/>
 <meta content="mkdocs-1.4.2, mkdocs-material-9.0.15" name="generator"/>
-<title>DNS Server - Office-Sharing-Dokumentation</title>
-<link href="../../../../assets/stylesheets/main.113286f1.min.css" rel="stylesheet"/>
-<link href="../../../../assets/stylesheets/palette.a0c5b2b5.min.css" rel="stylesheet"/>
+<title>User Stories - Office-Sharing-Dokumentation</title>
+<link href="../../../assets/stylesheets/main.113286f1.min.css" rel="stylesheet"/>
+<link href="../../../assets/stylesheets/palette.a0c5b2b5.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
 <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
-<link href="../../../../assets/css/extra.css" rel="stylesheet"/>
-<script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
-<link href="../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+<link href="../../../assets/css/extra.css" rel="stylesheet"/>
+<script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+<link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
             html.glightbox-open { overflow: initial; height: 100%; }
             .gslide-title { margin-top: 0px; user-select: text; }
             .gslide-desc { color: #666; user-select: text; }
@@ -30,14 +30,14 @@
                 body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
                 body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
                 body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
-                </style><script src="../../../../assets/javascripts/glightbox.min.js"></script></head>
+                </style><script src="../../../assets/javascripts/glightbox.min.js"></script></head>
 <body data-md-color-accent="teal" data-md-color-primary="teal" data-md-color-scheme="default" dir="ltr">
 <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
 <input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#dns-server-domain-name-system">
+<a class="md-skip" href="#user-stories">
           Zum Inhalt
         </a>
 </div>
@@ -46,7 +46,7 @@
 <header class="md-header md-header--lifted" data-md-component="header">
 <nav aria-label="Kopfzeile" class="md-header__inner md-grid">
 <a aria-label="Office-Sharing-Dokumentation" class="md-header__button md-logo" data-md-component="logo" href="https://example.com" title="Office-Sharing-Dokumentation">
-<img alt="logo" src="../../../../assets/img/logo.png"/>
+<img alt="logo" src="../../../assets/img/logo.png"/>
 </a>
 <label class="md-header__button md-icon" for="__drawer">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
@@ -61,7 +61,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              DNS Server
+              User Stories
             
           </span>
 </div>
@@ -130,22 +130,22 @@
 <div class="md-grid">
 <ul class="md-tabs__list">
 <li class="md-tabs__item">
-<a class="md-tabs__link" href="../../../..">
+<a class="md-tabs__link" href="../../..">
       Startseite
     </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link" href="../../../../Anleitungen%20%26%20Informationen/Bedinungsanleitungen/Anmledung/">
+<a class="md-tabs__link" href="../../../Anleitungen%20%26%20Informationen/Bedinungsanleitungen/Anmledung/">
         Anleitungen &amp; Informationen
       </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link md-tabs__link--active" href="../../../01_Einleitung/">
+<a class="md-tabs__link md-tabs__link--active" href="../../01_Einleitung/">
         Projektpräsentation
       </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link" href="../../../../%7BInterne%20Informationen%7D/GliederungVortrag/">
+<a class="md-tabs__link" href="../../../%7BInterne%20Informationen%7D/GliederungVortrag/">
         Interne Infos
       </a>
 </li>
@@ -162,7 +162,7 @@
 <nav aria-label="Navigation" class="md-nav md-nav--primary md-nav--lifted" data-md-level="0">
 <label class="md-nav__title" for="__drawer">
 <a aria-label="Office-Sharing-Dokumentation" class="md-nav__button md-logo" data-md-component="logo" href="https://example.com" title="Office-Sharing-Dokumentation">
-<img alt="logo" src="../../../../assets/img/logo.png"/>
+<img alt="logo" src="../../../assets/img/logo.png"/>
 </a>
     Office-Sharing-Dokumentation
   </label>
@@ -178,7 +178,7 @@
 </div>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../..">
+<a class="md-nav__link" href="../../..">
         Startseite
       </a>
 </li>
@@ -207,22 +207,22 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../Anleitungen%20%26%20Informationen/Bedinungsanleitungen/Anmledung/">
+<a class="md-nav__link" href="../../../Anleitungen%20%26%20Informationen/Bedinungsanleitungen/Anmledung/">
         Anmeldung
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../Anleitungen%20%26%20Informationen/Bedinungsanleitungen/Arbeitsplatzbuchung/">
+<a class="md-nav__link" href="../../../Anleitungen%20%26%20Informationen/Bedinungsanleitungen/Arbeitsplatzbuchung/">
         Arbeitsplatzbuchung
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../Anleitungen%20%26%20Informationen/Bedinungsanleitungen/Hardware%C3%BCbersicht/">
+<a class="md-nav__link" href="../../../Anleitungen%20%26%20Informationen/Bedinungsanleitungen/Hardware%C3%BCbersicht/">
         Hardwareübersicht
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../Anleitungen%20%26%20Informationen/Bedinungsanleitungen/Registrierung/">
+<a class="md-nav__link" href="../../../Anleitungen%20%26%20Informationen/Bedinungsanleitungen/Registrierung/">
         Registrierung
       </a>
 </li>
@@ -242,32 +242,32 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../Anleitungen%20%26%20Informationen/Hardware/01_PC/">
+<a class="md-nav__link" href="../../../Anleitungen%20%26%20Informationen/Hardware/01_PC/">
         PC
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../Anleitungen%20%26%20Informationen/Hardware/02_Notebooks/">
+<a class="md-nav__link" href="../../../Anleitungen%20%26%20Informationen/Hardware/02_Notebooks/">
         Laptop
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../Anleitungen%20%26%20Informationen/Hardware/03_Barebone/">
+<a class="md-nav__link" href="../../../Anleitungen%20%26%20Informationen/Hardware/03_Barebone/">
         Barebone
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../Anleitungen%20%26%20Informationen/Hardware/04_Monitor/">
+<a class="md-nav__link" href="../../../Anleitungen%20%26%20Informationen/Hardware/04_Monitor/">
         Monitor
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../Anleitungen%20%26%20Informationen/Hardware/05_Maus/">
+<a class="md-nav__link" href="../../../Anleitungen%20%26%20Informationen/Hardware/05_Maus/">
         Maus
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../Anleitungen%20%26%20Informationen/Hardware/06_Tastatur/">
+<a class="md-nav__link" href="../../../Anleitungen%20%26%20Informationen/Hardware/06_Tastatur/">
         Tastatur
       </a>
 </li>
@@ -287,12 +287,12 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../Anleitungen%20%26%20Informationen/Installationen/Betriebssysteme/">
+<a class="md-nav__link" href="../../../Anleitungen%20%26%20Informationen/Installationen/Betriebssysteme/">
         Betriebssysteme
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../Anleitungen%20%26%20Informationen/Installationen/Software/">
+<a class="md-nav__link" href="../../../Anleitungen%20%26%20Informationen/Installationen/Software/">
         Software
       </a>
 </li>
@@ -315,31 +315,59 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../01_Einleitung/">
+<a class="md-nav__link" href="../../01_Einleitung/">
         Einleitung
       </a>
 </li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_3_2" type="checkbox"/>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_3_2" type="checkbox"/>
 <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
           Auftrag
           <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-expanded="false" aria-labelledby="__nav_3_2_label" class="md-nav" data-md-level="2">
+<nav aria-expanded="true" aria-labelledby="__nav_3_2_label" class="md-nav" data-md-level="2">
 <label class="md-nav__title" for="__nav_3_2">
 <span class="md-nav__icon md-icon"></span>
           Auftrag
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Auftrag/00_projekteinordnung/">
+<a class="md-nav__link" href="../00_projekteinordnung/">
         Projekteinordnung
       </a>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../Auftrag/31_user-stories/">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+          User Stories
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
         User Stories
       </a>
+<nav aria-label="Inhaltsverzeichnis" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#supportanfrage">
+    Supportanfrage
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#arbeitsplatz-buchung">
+    Arbeitsplatz Buchung
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#recherche">
+    Recherche
+  </a>
+</li>
+</ul>
+</nav>
 </li>
 </ul>
 </nav>
@@ -357,42 +385,42 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Projektdefinition/00_Projektstrukturplan/">
+<a class="md-nav__link" href="../../Projektdefinition/00_Projektstrukturplan/">
         Projektstrukturplan
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Projektdefinition/05_entwicklungsvorgehen/">
+<a class="md-nav__link" href="../../Projektdefinition/05_entwicklungsvorgehen/">
         Entwicklungsvorgehen
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Projektdefinition/01_nutzerwertanalyse/">
+<a class="md-nav__link" href="../../Projektdefinition/01_nutzerwertanalyse/">
         Nutzerwertanalyse
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Projektdefinition/30_soll-ist/">
+<a class="md-nav__link" href="../../Projektdefinition/30_soll-ist/">
         Ist-Soll Analyse
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Projektdefinition/07_qos_schichtenmodell/">
+<a class="md-nav__link" href="../../Projektdefinition/07_qos_schichtenmodell/">
         Einordnung Schichtenmodell
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Projektdefinition/08_architekturbeschreibung/">
+<a class="md-nav__link" href="../../Projektdefinition/08_architekturbeschreibung/">
         Architekturbeschreibung &amp; Fachkonzeptmodellierung
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Projektdefinition/40_zeitplan/">
+<a class="md-nav__link" href="../../Projektdefinition/40_zeitplan/">
         Gant-Diagramm
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Projektdefinition/50_download/">
+<a class="md-nav__link" href="../../Projektdefinition/50_download/">
         Demos des Produktes
       </a>
 </li>
@@ -409,17 +437,17 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Projektdefinition/protokolle/01_ergebnisprotokoll/">
+<a class="md-nav__link" href="../../Projektdefinition/protokolle/01_ergebnisprotokoll/">
         Ergebnisprotokoll
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Projektdefinition/protokolle/03_pflichtenheft/">
+<a class="md-nav__link" href="../../Projektdefinition/protokolle/03_pflichtenheft/">
         Pflichtenheft
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Projektdefinition/protokolle/02_lastenheft/">
+<a class="md-nav__link" href="../../Projektdefinition/protokolle/02_lastenheft/">
         Lastenheft
       </a>
 </li>
@@ -430,7 +458,7 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../04_demonstration-user-stories/">
+<a class="md-nav__link" href="../../04_demonstration-user-stories/">
         Demonstration User-Stories
       </a>
 </li>
@@ -447,150 +475,104 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../06_ae-module/01_frontend/">
+<a class="md-nav__link" href="../../06_ae-module/01_frontend/">
         Frontend
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../06_ae-module/02_backend/">
+<a class="md-nav__link" href="../../06_ae-module/02_backend/">
         Backend
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../06_ae-module/03_sicherheit/">
+<a class="md-nav__link" href="../../06_ae-module/03_sicherheit/">
         Sicherheit
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../06_ae-module/04_responsive-design/">
+<a class="md-nav__link" href="../../06_ae-module/04_responsive-design/">
         Responsive UI-Design
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../06_ae-module/05_risikoanalyse/">
+<a class="md-nav__link" href="../../06_ae-module/05_risikoanalyse/">
         Risikoanalyse
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../06_ae-module/09_planung/">
+<a class="md-nav__link" href="../../06_ae-module/09_planung/">
         Planung
       </a>
 </li>
 </ul>
 </nav>
 </li>
-<li class="md-nav__item md-nav__item--active md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" id="__nav_3_6" type="checkbox"/>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_6" type="checkbox"/>
 <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
           SI-Module
           <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-expanded="true" aria-labelledby="__nav_3_6_label" class="md-nav" data-md-level="2">
+<nav aria-expanded="false" aria-labelledby="__nav_3_6_label" class="md-nav" data-md-level="2">
 <label class="md-nav__title" for="__nav_3_6">
 <span class="md-nav__icon md-icon"></span>
           SI-Module
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../01_dienstkonzeption/">
+<a class="md-nav__link" href="../../09_si-module/01_dienstkonzeption/">
         Dienstkonzeption
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../02_automatisierung/">
+<a class="md-nav__link" href="../../09_si-module/02_automatisierung/">
         Automatisierung
       </a>
 </li>
-<li class="md-nav__item md-nav__item--active md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" id="__nav_3_6_3" type="checkbox"/>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_6_3" type="checkbox"/>
 <label class="md-nav__link" for="__nav_3_6_3" id="__nav_3_6_3_label" tabindex="0">
           Server
           <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-expanded="true" aria-labelledby="__nav_3_6_3_label" class="md-nav" data-md-level="3">
+<nav aria-expanded="false" aria-labelledby="__nav_3_6_3_label" class="md-nav" data-md-level="3">
 <label class="md-nav__title" for="__nav_3_6_3">
 <span class="md-nav__icon md-icon"></span>
           Server
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../00_Allgemein/">
+<a class="md-nav__link" href="../../09_si-module/server/00_Allgemein/">
         Serverüberblick
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../01_DB-Server/">
+<a class="md-nav__link" href="../../09_si-module/server/01_DB-Server/">
         Datenbank Server
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../02_DHCP-Server/">
+<a class="md-nav__link" href="../../09_si-module/server/02_DHCP-Server/">
         DHCP Server für das blaue Netz
       </a>
 </li>
-<li class="md-nav__item md-nav__item--active">
-<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
-<label class="md-nav__link md-nav__link--active" for="__toc">
-          DNS Server
-          <span class="md-nav__icon md-icon"></span>
-</label>
-<a class="md-nav__link md-nav__link--active" href="./">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../09_si-module/server/03_DNS-Server/">
         DNS Server
       </a>
-<nav aria-label="Inhaltsverzeichnis" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
-<span class="md-nav__icon md-icon"></span>
-      Inhaltsverzeichnis
-    </label>
-<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#erstellen">
-    Erstellen
-  </a>
-<nav aria-label="Erstellen" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#vagrantfile">
-    Vagrantfile
-  </a>
-</li>
-</ul>
-</nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#konfiguration">
-    Konfiguration
-  </a>
-<nav aria-label="Konfiguration" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#playbook-dnsyml">
-    Playbook: dns.yml
-  </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#dns-eintrage">
-    DNS Einträge
-  </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../04_Firewall/">
+<a class="md-nav__link" href="../../09_si-module/server/04_Firewall/">
         Firewall
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../05_Webserver/">
+<a class="md-nav__link" href="../../09_si-module/server/05_Webserver/">
         Webserver
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../06_Zertifikatsserver/">
+<a class="md-nav__link" href="../../09_si-module/server/06_Zertifikatsserver/">
         Zertifikatsserver
       </a>
 </li>
@@ -610,17 +592,17 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../Sicherheit/01_server-sicherheit/">
+<a class="md-nav__link" href="../../09_si-module/Sicherheit/01_server-sicherheit/">
         Sicherheit der Server
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../Sicherheit/02_backupstrategie/">
+<a class="md-nav__link" href="../../09_si-module/Sicherheit/02_backupstrategie/">
         Backupstrategie
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../Sicherheit/03_erreichbarkeit/">
+<a class="md-nav__link" href="../../09_si-module/Sicherheit/03_erreichbarkeit/">
         Erreichbarkeit
       </a>
 </li>
@@ -631,12 +613,12 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../10_reflexion/">
+<a class="md-nav__link" href="../../10_reflexion/">
         Reflexion
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../11_fragen/">
+<a class="md-nav__link" href="../../11_fragen/">
         Fragen
       </a>
 </li>
@@ -656,32 +638,32 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../%7BInterne%20Informationen%7D/GliederungVortrag/">
+<a class="md-nav__link" href="../../../%7BInterne%20Informationen%7D/GliederungVortrag/">
         GliederungVortrag
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../%7BInterne%20Informationen%7D/deploy-instruction/">
+<a class="md-nav__link" href="../../../%7BInterne%20Informationen%7D/deploy-instruction/">
         Hinweise zur NRE
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../%7BInterne%20Informationen%7D/doku-instructions/">
+<a class="md-nav__link" href="../../../%7BInterne%20Informationen%7D/doku-instructions/">
         Hinweise zur Doku
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../%7BInterne%20Informationen%7D/how-to-develop/">
+<a class="md-nav__link" href="../../../%7BInterne%20Informationen%7D/how-to-develop/">
         Entwicklungskonventionen
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../%7BInterne%20Informationen%7D/Server_Hinweise/">
+<a class="md-nav__link" href="../../../%7BInterne%20Informationen%7D/Server_Hinweise/">
         Serverhinweise
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../../%7BInterne%20Informationen%7D/workspace-instruction/">
+<a class="md-nav__link" href="../../../%7BInterne%20Informationen%7D/workspace-instruction/">
         Hinweise zum einrichten des Workspaces
       </a>
 </li>
@@ -703,36 +685,18 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#erstellen">
-    Erstellen
-  </a>
-<nav aria-label="Erstellen" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#vagrantfile">
-    Vagrantfile
+<a class="md-nav__link" href="#supportanfrage">
+    Supportanfrage
   </a>
 </li>
-</ul>
-</nav>
-</li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#konfiguration">
-    Konfiguration
-  </a>
-<nav aria-label="Konfiguration" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#playbook-dnsyml">
-    Playbook: dns.yml
+<a class="md-nav__link" href="#arbeitsplatz-buchung">
+    Arbeitsplatz Buchung
   </a>
 </li>
-</ul>
-</nav>
-</li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#dns-eintrage">
-    DNS Einträge
+<a class="md-nav__link" href="#recherche">
+    Recherche
   </a>
 </li>
 </ul>
@@ -742,184 +706,36 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1 id="dns-server-domain-name-system">DNS-Server (Domain Name System)<a class="headerlink" href="#dns-server-domain-name-system" title="Permanent link">¶</a></h1>
-<div class="admonition info">
-<p class="admonition-title">Überblick</p>
-<p><span class="biggerFont">DNS Server bzw. Nameserver sind Server, die einer URL die richtige IP zuweisen können oder einer IP die richtige URL. (Quelle 1)</span></p>
+<h1 id="user-stories">User Stories<a class="headerlink" href="#user-stories" title="Permanent link">¶</a></h1>
+<p>Im nachfolgenden Abschnitt werden die User Stories für das Projekt aufgelistet. </p>
+<div class="admonition question">
+<p class="admonition-title">Weitere Informationen</p>
+<p>Weitere Informationen zur Umsetzung der User Stories finden Sie unter dem Reiter <a href="/Anleitungen%20%26%20Informationen/Bedinungsanleitungen/Anmledung/">Anleitungen &amp; Informationen</a>.</p>
 </div>
-<p>In unserem Fall löst der DNS-Server den Webseiten URL <a href="https://gz-bad-erzland-p2.de">https://gz-bad-erzland-p2.de</a> in die IP-Adresse des Webservers (192.168.86.11) auf.</p>
-<p>Der Kunde sieht jedoch nur die URL und nicht die dahinterstehende IP-Adresse.</p>
-<h2 id="erstellen">Erstellen<a class="headerlink" href="#erstellen" title="Permanent link">¶</a></h2>
-<h3 id="vagrantfile">Vagrantfile<a class="headerlink" href="#vagrantfile" title="Permanent link">¶</a></h3>
-<div class="highlight"><pre><span></span><code># -*- mode: ruby -*-
-# vi: set ft=ruby :
-
-Vagrant.configure("2") do |config|
-
-  INVENTORY = "playbooks/hosts"
-  PLAYBOOK = "playbooks/site.yml"  
-
-  config.vm.define "centosdns", primary: true do |config|  
-    config.vm.box_check_update = false   
-    config.vm.box = "generic/centos9s"
-    config.vm.boot_timeout = 1800
-    config.vm.communicator = :ssh
-    config.vm.guest = :linux
-
-    config.vm.synced_folder './', '/vagrant', disabled: true
-
-    config.ssh.insert_key = false
-
-    # https://sanbarrow.com/vmx/vmx-network-advanced.html
-
-    ["vmware_desktop"].each do |provider|
-      config.vm.provider provider do |v|
-         v.allowlist_verified = :disable_warning
-         v.enable_vmrun_ip_lookup = true
-         v.unmount_default_hgfs = true
-         # v.whitelist_verified = true
-
-         # required by vmx network-settings on startup ??
-         v.gui = true
-
-         v.vmx["cpuid.coresPerSocket"] = "1"
-         v.vmx["memsize"] = "2048"
-         v.vmx["numvcpus"] = "2"
-         v.vmx["floppy0.present"] = "false"
-
-         # v.vmx["svga.autodetect"] = "false"
-         # v.vmx["svga.maxWidth"] = "2560"
-         # v.vmx["svga.maxHeight"] = "2048"
-         # v.vmx["svga.vramSize"] = "20971520"
-         # v.vmx["svga.numDisplays"] = "1"
-
-         v.vmx["ethernet0.present"] = "true"
-         v.vmx["ethernet0.connectionType"] = "custom"
-         v.vmx["ethernet0.addressType"] = "static"
-         v.vmx["ethernet0.address"] = "00:50:56:2a:c6:d8"
-         v.vmx["ethernet0.vnet"] = "vmnet1"
-         v.vmx["ethernet0.displayName"] = "VMnet1"
-         v.vmx["ethernet0.virtualDev"] = "e1000"
-         end
-      end
-    end  
-
-    # vagrant on linux system:
-    # manual [explicit] usage: vagrant provision
-    config.vm.provision "ansible" do |ansible|
-       ansible.playbook = PLAYBOOK
-       ansible.inventory_path = INVENTORY
-       ansible.skip_tags = ["ping","pkgupgrade","test"]
-       end
-
-    # manual [explicit] usage: vagrant provision --provision-with ping
-    config.vm.provision "ping", type: "ansible", run: "never" do |ansible|
-        ansible.playbook = PLAYBOOK
-        ansible.inventory_path = INVENTORY
-        ansible.tags = ["ping"]
-        end
-  end
-</code></pre></div>
-<h2 id="konfiguration">Konfiguration<a class="headerlink" href="#konfiguration" title="Permanent link">¶</a></h2>
-<h3 id="playbook-dnsyml">Playbook: dns.yml<a class="headerlink" href="#playbook-dnsyml" title="Permanent link">¶</a></h3>
-<div class="highlight"><pre><span></span><code>---
-- name: Setup DNS
-  hosts: centosdns
-  become: true
-
-  tasks:
-    - name: Set hostname to centosdns
-      become: true
-      ansible.builtin.hostname:
-        name: centosdns.localdomain
-        use: systemd
-
-    - name: 'Set keyboard layout to: de-nodeadkeys'
-      become: true 
-      ansible.builtin.shell: 
-        cmd: |
-          if localectl status | grep -q 'VC Keymap: us'; then 
-             sudo localectl set-keymap de-nodeadkeys ; fi
-
-    - name: Change timezone to Europe/Berlin
-      become: true 
-      community.general.timezone:
-        name: Europe/Berlin
-
-    - name: Add an Ethernet connection with static IP
-      community.general.nmcli:
-        conn_name: eth0
-        ifname: eth0
-        type: ethernet
-        ip4: 192.168.98.12/24
-        gw4: 192.168.98.10
-        dns4: 192.168.98.12
-        state: present
-
-    - name: Restart NetworkManager
-      become: true
-      ansible.builtin.service:
-        name: NetworkManager
-        state: restarted
-
-    - name: Check Proxy Settings
-      ansible.builtin.lineinfile:
-        path: /etc/environment
-        regexp: '^export no_proxy'
-        state: absent
-      check_mode: yes
-      failed_when: false
-      changed_when: false
-      register: proxy_check  
-      tags: proxy
-
-    - name: Set Proxy Settings if not configured
-      become: true
-      ansible.builtin.copy:
-        src: "{{ playbook_dir }}/files/environment"
-        dest: /etc/environment
-        force: true
-      when: not proxy_check.found
-      tags: proxy
-
-    - name: Upgrade all packages
-      ansible.builtin.dnf:
-        name: "*"
-        state: latest
-    - name: Install nano
-      ansible.builtin.dnf:
-        name: nano
-        state: latest
-
-    - name: Install dnsmasq
-      ansible.builtin.dnf:
-        name: dnsmasq
-        state: latest
-    - name: Enable dnsmasq
-      ansible.builtin.service:
-        name: dnsmasq
-        enabled: true
-        state: started
-    - name: Set dnsmasq.conf
-      become: true
-      ansible.builtin.copy:
-        src: "{{ playbook_dir }}/files/dnsmasq.conf"
-        dest: /etc/dnsmasq.conf
-        force: true
-    - name: Set hosts
-      become: true
-      ansible.builtin.copy:
-        src: "{{ playbook_dir }}/files/hosts"
-        dest: /etc/hosts
-        force: true
-    - name: Restart dnsmasq
-      become: true
-      ansible.builtin.service:
-        name: dnsmasq
-        state: restarted
-</code></pre></div>
-<h2 id="dns-eintrage">DNS Einträge<a class="headerlink" href="#dns-eintrage" title="Permanent link">¶</a></h2>
-<p>(Quelle 1: <a href="https://www.xovi.de/was-ist-ein-dns-server/">https://www.xovi.de/was-ist-ein-dns-server/</a>, 27.02.2023)</p>
+<h3 id="supportanfrage">Supportanfrage<a class="headerlink" href="#supportanfrage" title="Permanent link">¶</a></h3>
+<ul>
+<li>Supportanfrage1: Supportseite aufrufen</li>
+<li>Supportanfrage2: Dokumentation einsehen</li>
+<li>Supportanfrage3: Support kontaktieren</li>
+</ul>
+<h3 id="arbeitsplatz-buchung">Arbeitsplatz Buchung<a class="headerlink" href="#arbeitsplatz-buchung" title="Permanent link">¶</a></h3>
+<ul>
+<li>AP Buchung1: Einzel- oder Doppelarbeitsplatz</li>
+<li>AP Buchung2: Wahl der Hardware</li>
+<li>AP Buchung3: Wahl des Betriebssystems</li>
+<li>AP Buchung4: Weitere Konfiguration angeben</li>
+<li>AP Buchung5: Einweisung durch einen Mitarbeiter</li>
+<li>AP Buchung6: Zeiträume anzeigen lassen</li>
+<li>AP Buchung7: Zeitraum auswählen </li>
+<li>AP Buchung8: Kontaktdaten eingeben</li>
+<li>AP Buchung9: Reservierung bestätigen</li>
+<li>AP Buchung10: Bestätigung drucken</li>
+<li>AP Buchung11: Bestätigung erhalten</li>
+</ul>
+<h3 id="recherche">Recherche<a class="headerlink" href="#recherche" title="Permanent link">¶</a></h3>
+<ul>
+<li>Recherche1: Hardware Informationen einsehen</li>
+</ul>
 </article>
 </div>
 </div>
@@ -975,7 +791,7 @@ Vagrant.configure("2") do |config|
 </aside>
 </div>
 <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout(function(){document.querySelector("[data-md-component=consent]").hidden=!1},250);var action,form=document.forms.consent;for(action of["submit","reset"])form.addEventListener(action,function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map(function(e){return[e,!0]}))),location.hash="",location.reload()})</script>
-<script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.tabs", "navigation.tracking", "navigation.tabs.sticky", "navigation.top", "search.highlight", "search.suggest", "search.share"], "search": "../../../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "In Zwischenablage kopiert", "clipboard.copy": "In Zwischenablage kopieren", "search.result.more.one": "1 weiteres Suchergebnis auf dieser Seite", "search.result.more.other": "# weitere Suchergebnisse auf dieser Seite", "search.result.none": "Keine Suchergebnisse", "search.result.one": "1 Suchergebnis", "search.result.other": "# Suchergebnisse", "search.result.placeholder": "Suchbegriff eingeben", "search.result.term.missing": "Es fehlt", "select.version": "Version ausw\u00e4hlen"}}</script>
-<script src="../../../../assets/javascripts/bundle.2a6f1dda.min.js"></script>
+<script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.tracking", "navigation.tabs.sticky", "navigation.top", "search.highlight", "search.suggest", "search.share"], "search": "../../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "In Zwischenablage kopiert", "clipboard.copy": "In Zwischenablage kopieren", "search.result.more.one": "1 weiteres Suchergebnis auf dieser Seite", "search.result.more.other": "# weitere Suchergebnisse auf dieser Seite", "search.result.none": "Keine Suchergebnisse", "search.result.one": "1 Suchergebnis", "search.result.other": "# Suchergebnisse", "search.result.placeholder": "Suchbegriff eingeben", "search.result.term.missing": "Es fehlt", "select.version": "Version ausw\u00e4hlen"}}</script>
+<script src="../../../assets/javascripts/bundle.2a6f1dda.min.js"></script>
 <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
 </html>
