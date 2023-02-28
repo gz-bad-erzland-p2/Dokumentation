@@ -8,4 +8,4 @@ Die Supportseite ist im entsprechenden Reiter in der Navigation zu finden.
 
 
 !!! info "Hinweis"
-    Eine Anleitung wie sie die Supportseite erreichen, finden Sie [hier](/Anleitungen%20%26%20Informationen/Bedinungsanleitungen/Support/#support-kontaktieren).
+    Eine Anleitung wie sie die Supportseite erreichen, finden Sie [hier](../../../Anleitungen%20%26%20Informationen/Bedinungsanleitungen/Support/#support-kontaktieren).

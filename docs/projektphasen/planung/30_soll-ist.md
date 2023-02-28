@@ -11,9 +11,9 @@ Der Kunde soll dauerhaft die Möglichkeit auf Internen Support haben. Jenem soll
 Das Gemeindezentrum Bad Erzland in Sachsen dient als Sitz der Gemeindeverwaltung sowie als Versammlungsort für die Bürger. Die Bürofläche, die für das Officesharing genutzt werden soll, befindet sich im Erdgeschoss und verfügt bereits über eine DSL-Anbindung. Die Hardware der Arbeitsplätze ist bereits gegeben. Es stehen Server zur Verfügung, auf den dem die Website gehostet wird inkl. Datenbank und Firewall. 
 Die vorhandene Technik hat folgenden Umfang: 
 
-- 8 x PCs mit Zubehör [(siehe Produktblatt PC)](/Anleitungen%20%26%20Informationen/Hardware/01_PC/#produktblatt)
-- 8 x Laptops mit Zubehör [(siehe Produktblatt Laptop)](/Anleitungen%20%26%20Informationen/Hardware/02_Notebooks/#produktblatt)
-- 8 x Monitore mit Zubehör (Erweiterung auf 16) [(siehe Produktblatt Monitor)](/Anleitungen%20%26%20Informationen/Hardware/04_Monitor/#produktblatt)
-- 8 x Mäuse [(siehe Produktblatt Maus)](/Anleitungen%20%26%20Informationen/Hardware/05_Maus/#produktblatt)
-- 8 x Tastaturen [(siehe Produktblatt Tastatur)](/Anleitungen%20%26%20Informationen/Hardware/06_Tastatur/#produktblatt)
-- 1 x Barebone mit Zubehör [(siehe Produktblatt Backbone)](/Anleitungen%20%26%20Informationen/Hardware/03_Barebone/#produktblatt)
+- 8 x PCs mit Zubehör [(siehe Produktblatt PC)](../../../Anleitungen%20%26%20Informationen/Hardware/01_PC/#produktblatt)
+- 8 x Laptops mit Zubehör [(siehe Produktblatt Laptop)](../../../Anleitungen%20%26%20Informationen/Hardware/02_Notebooks/#produktblatt)
+- 8 x Monitore mit Zubehör (Erweiterung auf 16) [(siehe Produktblatt Monitor)](../../../Anleitungen%20%26%20Informationen/Hardware/04_Monitor/#produktblatt)
+- 8 x Mäuse [(siehe Produktblatt Maus)](../../../Anleitungen%20%26%20Informationen/Hardware/05_Maus/#produktblatt)
+- 8 x Tastaturen [(siehe Produktblatt Tastatur)](../../../Anleitungen%20%26%20Informationen/Hardware/06_Tastatur/#produktblatt)
+- 1 x Barebone mit Zubehör [(siehe Produktblatt Backbone)](../../../Anleitungen%20%26%20Informationen/Hardware/03_Barebone/#produktblatt)

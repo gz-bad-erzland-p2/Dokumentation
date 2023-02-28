@@ -2,7 +2,7 @@
 
 
 # Version 2 (Final)
-![](/assets/svg/prisma-erd.svg)
+![](../../assets/svg/prisma-erd.svg)
 
 # Version 1
 ![Image title](https://github.com/gz-bad-erzland-p2/Dokumentation/blob/master/docs/assets/img/ERD.png?raw=true)
