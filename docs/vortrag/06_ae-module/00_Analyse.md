@@ -2,7 +2,7 @@
 
 ## USE-CASE Diagramm
 
-Aus den vorhandenen Anforderungen und Userstorys haben wir ein Use-Case Diagramm erstellt.
+Zu Begin der Analyse haben wir ein basierend auf den Userstorys, ein USE-Case-Diagramm erstellt, es dient dazu die Funktion des Systems genauer zu identifizieren und zu verstehen. Es bildet somit die Grundlage für die Entwicklung. Große Relevanz hatte es in der folgenden Entwurfsphase, in welcher wir uns bei der Planung darauf beziehen konnten und es zur Überprüfung nutzen konnte,  ob alle Funktionen umgesetzt wurden.
 ![USE-CASE](https://github.com/gz-bad-erzland-p2/Dokumentation/raw/master/docs/assets/svg/UseCase_v3.svg)
 
 
