@@ -541,11 +541,6 @@
 <nav aria-label="Aufbau der Vagrant / Ansible Ordner/Dateien" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#datei-ssh-config">
-    Datei ssh-config
-  </a>
-</li>
-<li class="md-nav__item">
 <a class="md-nav__link" href="#datei-vagrantfile">
     Datei vagrantfile
   </a>
@@ -582,8 +577,18 @@
 <nav aria-label="Erläuterung der einzelnen Dateien:" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#ansiblecfg">
-    ansible.cfg
+<a class="md-nav__link" href="#datei-ansiblecfg">
+    Datei ansible.cfg
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#datei-ssh-config">
+    Datei ssh-config
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#ordner-ssh-keys">
+    Ordner ssh-keys
   </a>
 </li>
 <li class="md-nav__item">
@@ -594,11 +599,6 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#xxyml">
     xx.yml
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#ordner-ssh-keys">
-    Ordner ssh-keys
   </a>
 </li>
 <li class="md-nav__item">
@@ -763,11 +763,6 @@
 <nav aria-label="Aufbau der Vagrant / Ansible Ordner/Dateien" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#datei-ssh-config">
-    Datei ssh-config
-  </a>
-</li>
-<li class="md-nav__item">
 <a class="md-nav__link" href="#datei-vagrantfile">
     Datei vagrantfile
   </a>
@@ -804,8 +799,18 @@
 <nav aria-label="Erläuterung der einzelnen Dateien:" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#ansiblecfg">
-    ansible.cfg
+<a class="md-nav__link" href="#datei-ansiblecfg">
+    Datei ansible.cfg
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#datei-ssh-config">
+    Datei ssh-config
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#ordner-ssh-keys">
+    Ordner ssh-keys
   </a>
 </li>
 <li class="md-nav__item">
@@ -816,11 +821,6 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#xxyml">
     xx.yml
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#ordner-ssh-keys">
-    Ordner ssh-keys
   </a>
 </li>
 <li class="md-nav__item">
@@ -844,40 +844,12 @@
 Als Schnittstelle zwischen VMware und Ansible wird die Software Vagrant verwendet.</p>
 <h2 id="serveraufbau">Serveraufbau<a class="headerlink" href="#serveraufbau" title="Permanent link">¶</a></h2>
 <h3 id="aufbau-der-vagrant-ansible-ordnerdateien">Aufbau der Vagrant / Ansible Ordner/Dateien<a class="headerlink" href="#aufbau-der-vagrant-ansible-ordnerdateien" title="Permanent link">¶</a></h3>
-<p>Weiterhin wird jeder Server, der mittels Vagrant und Ansible gestartet wird, mit folgender Datei und Ordnerstruktur ausgerüstet.
+<p>Weiterhin wird jeder Server, der mittels Vagrant und Ansible gestartet wird, mit folgenden Datei ausgerüstet.
 Diese liegen unter C:\Vagrant\CentOS9_xx (xx=Servername z. B. DB)</p>
-<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="https://user-images.githubusercontent.com/44226321/214226433-1f3112a2-c841-43e8-9988-cfcbdb62851c.png"><img alt="grafik" src="https://user-images.githubusercontent.com/44226321/214226433-1f3112a2-c841-43e8-9988-cfcbdb62851c.png"/></a></p>
-<h4 id="datei-ssh-config">Datei ssh-config<a class="headerlink" href="#datei-ssh-config" title="Permanent link">¶</a></h4>
-<p>Die ssh-config enthält alle nötigen Informationen, um eine Verbindung mit dem Server mittels SSH herzustellen.
-<div class="highlight"><pre><span></span><code><span class="k">Host</span><span class="w"> </span><span class="s">centosxx</span>
-<span class="w">  </span><span class="s">HostName</span><span class="w"> </span><span class="mi">192</span><span class="s">.168.xx.xx</span>
-<span class="w">  </span><span class="s">User</span><span class="w"> </span><span class="s">vagrant</span>
-<span class="w">  </span><span class="s">Port</span><span class="w"> </span><span class="mi">22</span>
-<span class="w">  </span><span class="s">UserKnownHostsFile</span><span class="w"> </span><span class="s">/dev/null</span>
-<span class="w">  </span><span class="s">StrictHostKeyChecking</span><span class="w"> </span><span class="s">no</span>
-<span class="w">  </span><span class="s">PasswordAuthentication</span><span class="w"> </span><span class="s">no</span>
-<span class="w">  </span><span class="s">IdentityFile</span><span class="w"> </span><span class="s">playbooks/sshkeys/centosxx-key</span>
-<span class="w">  </span><span class="s">IdentityFile</span><span class="w"> </span><span class="s">playbooks/sshkeys/insecure_private_key</span>
-<span class="w">  </span><span class="s">IdentitiesOnly</span><span class="w"> </span><span class="s">yes</span>
-<span class="w">  </span><span class="s">LogLevel</span><span class="w"> </span><span class="s">FATAL</span>
-
-<span class="s">Host</span><span class="w"> </span><span class="s">lnxhost-Internal</span>
-<span class="w">  </span><span class="s">HostName</span><span class="w"> </span><span class="mi">192</span><span class="s">.168.98.128</span>
-<span class="w">  </span><span class="s">User</span><span class="w"> </span><span class="s">vagrant</span>
-<span class="w">  </span><span class="s">Port</span><span class="w"> </span><span class="mi">22</span>
-<span class="w">  </span><span class="s">UserKnownHostsFile</span><span class="w"> </span><span class="s">/dev/null</span>
-<span class="w">  </span><span class="s">StrictHostKeyChecking</span><span class="w"> </span><span class="s">no</span>
-<span class="w">  </span><span class="s">PasswordAuthentication</span><span class="w"> </span><span class="s">no</span>
-<span class="w">  </span><span class="s">IdentityFile</span><span class="w"> </span><span class="s">c:/Vagrant/CentOS9-dns/.vagrant/machines/centos-dns/vmware_desktop/private_key</span>
-<span class="w">  </span><span class="s">IdentityFile</span><span class="w"> </span><span class="p">~</span><span class="sr">/vagrant/CentOS9-dns/.vagrant/machines/centos-dns/vmware_desktop/private_key</span>
-<span class="w">  </span><span class="s">IdentityFile</span><span class="w"> </span><span class="s">/CentOS9-dns/.vagrant/machines/centos-dns/vmware_desktop/private_key</span>
-<span class="w">  </span><span class="s">IdentitiesOnly</span><span class="w"> </span><span class="s">yes</span>
-<span class="w">  </span><span class="s">LogLevel</span><span class="w"> </span><span class="s">FATAL</span><span class="w"> </span>
-</code></pre></div></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="https://user-images.githubusercontent.com/44226321/222233496-1e061936-f36f-45a5-b613-45c5669145c6.png"><img alt="image" src="https://user-images.githubusercontent.com/44226321/222233496-1e061936-f36f-45a5-b613-45c5669145c6.png"/></a></p>
 <h4 id="datei-vagrantfile">Datei vagrantfile<a class="headerlink" href="#datei-vagrantfile" title="Permanent link">¶</a></h4>
 <p>Das vagrantfile enthält alle Informationen, die Vagrant benötigt, um den Server mit den entsprechenden Spezifikationen automatisiert aufzusetzen.
 → die einzelnen vagrantfiles werden separat vorgestellt</p>
-<hr/>
 <h3 id="ordner-vmware">Ordner vmware<a class="headerlink" href="#ordner-vmware" title="Permanent link">¶</a></h3>
 <p>Jeder Server erhält eine feste IP-Adresse mittels DCHP Reservierung.
 Dafür wird die Datei vmnetdhcp.conf in der vmware Konfiguration mithilfe des replaceDHCPconf.cmd Skripts überschrieben.</p>
@@ -1015,44 +987,121 @@ host<span class="w"> </span>VMnet1<span class="w"> </span><span class="o">{</spa
 </code></pre></div>
 <hr/>
 <h3 id="ordner-playbooks">Ordner playbooks:<a class="headerlink" href="#ordner-playbooks" title="Permanent link">¶</a></h3>
-<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="https://user-images.githubusercontent.com/44226321/214227756-7a79b81d-4ca0-4523-a590-6c7fa71c0ac2.png"><img alt="grafik" src="https://user-images.githubusercontent.com/44226321/214227756-7a79b81d-4ca0-4523-a590-6c7fa71c0ac2.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="https://user-images.githubusercontent.com/44226321/222234540-9f5bbf6a-6485-4797-80d7-e88f843fd668.png"><img alt="image" src="https://user-images.githubusercontent.com/44226321/222234540-9f5bbf6a-6485-4797-80d7-e88f843fd668.png"/></a></p>
+<hr/>
 <h2 id="erlauterung-der-einzelnen-dateien">Erläuterung der einzelnen Dateien:<a class="headerlink" href="#erlauterung-der-einzelnen-dateien" title="Permanent link">¶</a></h2>
-<h4 id="ansiblecfg">ansible.cfg<a class="headerlink" href="#ansiblecfg" title="Permanent link">¶</a></h4>
-<p>= Konfiguration die Ansible benötigt</p>
-<div class="highlight"><pre><span></span><code><span class="c1"># ansible configuration file.</span>
+<h4 id="datei-ansiblecfg">Datei ansible.cfg<a class="headerlink" href="#datei-ansiblecfg" title="Permanent link">¶</a></h4>
+<p>enthält die Konfiguration für Ansible (wird nicht von uns verändert)
+<div class="highlight"><pre><span></span><code># ansible configaration file.
 
-<span class="k">[defaults]</span>
-<span class="s">inventory</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">hosts</span>
-<span class="s">force_handlers</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">True</span>
-<span class="s">host_key_checking</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">False</span>
+[defaults]
+inventory = hosts
+force_handlers = True
+host_key_checking = False
 
-<span class="s">filter_version</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">"1.0"</span>
-<span class="s">module_rejectlist</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">[</span><span class="w"> </span><span class="s">"easy_install"</span><span class="w"> </span><span class="s">]</span>
+filter_version = "1.0"
+module_rejectlist = [ "easy_install" ]
 
-<span class="s">[ssh_connection]</span>
-<span class="s">ssh_args</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">-o</span><span class="w"> </span><span class="s">StrictHostKeyChecking=no</span><span class="w"> </span><span class="s">-o</span><span class="w"> </span><span class="s">UserKnownHostsFile=/dev/null</span><span class="w"> </span><span class="s">-o</span><span class="w"> </span><span class="s">CheckHostIP=no</span><span class="w"> </span><span class="s">-o</span><span class="w"> </span><span class="s">UpdateHostKeys=no</span><span class="w"> </span><span class="s">-o</span><span class="w"> </span><span class="s">LogLevel=quiet</span>
-<span class="s">scp_if_ssh</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">True</span>
-</code></pre></div>
+[ssh_connection]
+ssh_args = -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o CheckHostIP=no -o UpdateHostKeys=no -o LogLevel=quiet
+scp_if_ssh = True
+</code></pre></div></p>
+<h4 id="datei-ssh-config">Datei ssh-config<a class="headerlink" href="#datei-ssh-config" title="Permanent link">¶</a></h4>
+<p>Die ssh-config enthält alle nötigen Informationen, um eine Verbindung mit dem Server mittels SSH herzustellen.
+<div class="highlight"><pre><span></span><code>Host centoswebserver
+  HostName 192.168.86.11
+  User vagrant
+  Port 22
+  UserKnownHostsFile /dev/null
+  StrictHostKeyChecking no
+  PasswordAuthentication no
+  IdentityFile sshkeys/centoswebserver-key
+  IdentityFile sshkeys/insecure_private_key
+  IdentitiesOnly yes
+  LogLevel FATAL
+
+Host centosdns
+  HostName 192.168.98.12
+  User vagrant
+  Port 22
+  UserKnownHostsFile /dev/null
+  StrictHostKeyChecking no
+  PasswordAuthentication no
+  IdentityFile sshkeys/centosdns-key
+  IdentityFile sshkeys/insecure_private_key
+  IdentitiesOnly yes
+  LogLevel FATAL
+
+Host centosdhcp
+  HostName 192.168.91.11
+  User vagrant
+  Port 22
+  UserKnownHostsFile /dev/null
+  StrictHostKeyChecking no
+  PasswordAuthentication no
+  IdentityFile sshkeys/centosdhcp-key
+  IdentityFile sshkeys/insecure_private_key
+  IdentitiesOnly yes
+  LogLevel FATAL
+
+Host centosdb
+  HostName 192.168.98.11
+  User vagrant
+  Port 22
+  UserKnownHostsFile /dev/null
+  StrictHostKeyChecking no
+  PasswordAuthentication no
+  IdentityFile sshkeys/centosdb-key
+  IdentityFile sshkeys/insecure_private_key
+  IdentitiesOnly yes
+  LogLevel FATAL
+</code></pre></div></p>
+<h4 id="ordner-ssh-keys">Ordner ssh-keys<a class="headerlink" href="#ordner-ssh-keys" title="Permanent link">¶</a></h4>
+<p>enthält die einzelnen SSH-Key-Paare, um eine SSH Verbidnung mit dem Server aufzubauen</p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="https://user-images.githubusercontent.com/44226321/222235244-d8f2ed6c-7c6f-4d7e-be7e-bbe563677f2e.png"><img alt="image" src="https://user-images.githubusercontent.com/44226321/222235244-d8f2ed6c-7c6f-4d7e-be7e-bbe563677f2e.png"/></a></p>
 <h4 id="hosts">hosts<a class="headerlink" href="#hosts" title="Permanent link">¶</a></h4>
 <p>enthält die Hostnamen und IP-Adressen der jeweiligen Servers
-<div class="highlight"><pre><span></span><code>[centOS]
-centosdb            ansible_host=192.168.98.11
+<div class="highlight"><pre><span></span><code>[groupcentosdns]
+centosdns           ansible_host=192.168.98.12 
 
-[centOS:vars]
+[groupcentosdns:vars]
 ansible_port=22
 ansible_user=vagrant
-ansible_ssh_private_key_file=playbooks/sshkeys/centosdb-key
-ansible_ssh_common_args=-oIdentityFile=playbooks/sshkeys/insecure_private_key
+ansible_ssh_private_key_file=sshkeys/centosdns-key
+ansible_ssh_common_args=-oIdentityFile=sshkeys/insecure_private_key
+
+[groupcentosdb]
+centosdb            ansible_host=192.168.98.11
+
+[groupcentosdb:vars]
+ansible_port=22
+ansible_user=vagrant
+ansible_ssh_private_key_file=sshkeys/centosdb-key
+ansible_ssh_common_args=-oIdentityFile=sshkeys/insecure_private_key
+
+[groupcentosdhcp]
+centosdhcp          ansible_host=192.168.91.11 
+
+[groupcentosdhcp:vars]
+ansible_port=22
+ansible_user=vagrant
+ansible_ssh_private_key_file=sshkeys/centosdhcp-key
+ansible_ssh_common_args=-oIdentityFile=sshkeys/insecure_private_key
+
+[groupcentoswebserver]
+centoswebserver         ansible_host=192.168.86.11 
+
+[groupcentoswebserver:vars]
+ansible_port=22
+ansible_user=vagrant
+ansible_ssh_private_key_file=sshkeys/centoswebserver-key
+ansible_ssh_common_args=-oIdentityFile=sshkeys/insecure_private_key
 </code></pre></div></p>
 <h4 id="xxyml">xx.yml<a class="headerlink" href="#xxyml" title="Permanent link">¶</a></h4>
 <p>enthält das jeweilige Playbook für den Server -&gt; werden einzeln genauer vorgestellt</p>
-<hr/>
-<h3 id="ordner-ssh-keys">Ordner ssh-keys<a class="headerlink" href="#ordner-ssh-keys" title="Permanent link">¶</a></h3>
-<p>enthält die einzelnen SSH-Keys, um eine SSH Verbidnung mit dem Server aufzubauen</p>
-<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="https://user-images.githubusercontent.com/44226321/214228103-14840b9f-ae3d-43c1-b4c4-f801b753f831.png"><img alt="grafik" src="https://user-images.githubusercontent.com/44226321/214228103-14840b9f-ae3d-43c1-b4c4-f801b753f831.png"/></a></p>
-<hr/>
-<h3 id="ordner-files">Ordner files<a class="headerlink" href="#ordner-files" title="Permanent link">¶</a></h3>
+<h4 id="ordner-files">Ordner files<a class="headerlink" href="#ordner-files" title="Permanent link">¶</a></h4>
 <p>Im Ordner <em>files</em> liegen Dateien die in den playbooks verwendet und eingebunden werden.</p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="https://user-images.githubusercontent.com/44226321/222235739-ce814a85-c8af-4667-80af-37600ccf66ae.png"><img alt="image" src="https://user-images.githubusercontent.com/44226321/222235739-ce814a85-c8af-4667-80af-37600ccf66ae.png"/></a></p>
 <p>Bei jedem Server liegt hier für die Proxy Konfiguration die <em>evironment</em> Datei
 <div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">http_proxy</span><span class="o">=</span>http://10.254.5.100:3128
 <span class="nb">export</span><span class="w"> </span><span class="nv">https_proxy</span><span class="o">=</span>http://10.254.5.100:3128
