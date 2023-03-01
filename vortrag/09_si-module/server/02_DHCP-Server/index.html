@@ -544,8 +544,66 @@
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#konfiguration">
-    Konfiguration
+<a class="md-nav__link" href="#-mode-ruby-vi-set-ftruby-vagrantconfigure2-do-config-inventory-playbookshosts-playbook-playbookssiteyml-configvmdefine-centosdhcp-primary-true-do-config-configvmbox_check_update-false-configvmbox-genericcentos9s-configvmboot_timeout-1800-configvmcommunicator-ssh-configvmguest-linux-configvmsynced_folder-vagrant-disabled-true-configsshinsert_key-false-httpssanbarrowcomvmxvmx-network-advancedhtml-vmware_desktopeach-do-provider-configvmprovider-provider-do-v-vallowlist_verified-disable_warning-venable_vmrun_ip_lookup-true-vunmount_default_hgfs-true-vwhitelist_verified-true-required-by-vmx-network-settings-on-startup-vgui-true-vvmxcpuidcorespersocket-1-vvmxmemsize-2048-vvmxnumvcpus-2-vvmxfloppy0present-false-vvmxsvgaautodetect-false-vvmxsvgamaxwidth-2560-vvmxsvgamaxheight-2048-vvmxsvgavramsize-20971520-vvmxsvganumdisplays-1-vvmxethernet0present-true-vvmxethernet0connectiontype-custom-vvmxethernet0addresstype-static-vvmxethernet0address-0050562ac6d9-vvmxethernet0vnet-vmnet3-vvmxethernet0displayname-vmnet3-vvmxethernet0virtualdev-e1000-end-end-end-end-konfiguration-playbook">
+    # -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure("2") do |config|
+
+  INVENTORY = "playbooks/hosts"
+  PLAYBOOK = "playbooks/site.yml"  
+
+  config.vm.define "centosdhcp", primary: true do |config|  
+    config.vm.box_check_update = false   
+    config.vm.box = "generic/centos9s"
+    config.vm.boot_timeout = 1800
+    config.vm.communicator = :ssh
+    config.vm.guest = :linux
+
+    config.vm.synced_folder './', '/vagrant', disabled: true
+
+    config.ssh.insert_key = false
+
+    # https://sanbarrow.com/vmx/vmx-network-advanced.html
+
+    ["vmware_desktop"].each do |provider|
+      config.vm.provider provider do |v|
+         v.allowlist_verified = :disable_warning
+         v.enable_vmrun_ip_lookup = true
+         v.unmount_default_hgfs = true
+         # v.whitelist_verified = true
+
+         # required by vmx network-settings on startup ??
+         v.gui = true
+
+         v.vmx["cpuid.coresPerSocket"] = "1"
+         v.vmx["memsize"] = "2048"
+         v.vmx["numvcpus"] = "2"
+         v.vmx["floppy0.present"] = "false"
+
+         # v.vmx["svga.autodetect"] = "false"
+         # v.vmx["svga.maxWidth"] = "2560"
+         # v.vmx["svga.maxHeight"] = "2048"
+         # v.vmx["svga.vramSize"] = "20971520"
+         # v.vmx["svga.numDisplays"] = "1"
+
+         v.vmx["ethernet0.present"] = "true"
+         v.vmx["ethernet0.connectionType"] = "custom"
+         v.vmx["ethernet0.addressType"] = "static"
+         v.vmx["ethernet0.address"] = "00:50:56:2a:c6:d9"
+         v.vmx["ethernet0.vnet"] = "vmnet3"
+         v.vmx["ethernet0.displayName"] = "VMnet3"
+         v.vmx["ethernet0.virtualDev"] = "e1000"
+         end
+      end
+    end  
+  end
+  ```
+
+## Konfiguration
+
+Playbook:
+
   </a>
 </li>
 </ul>
@@ -685,8 +743,66 @@
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#konfiguration">
-    Konfiguration
+<a class="md-nav__link" href="#-mode-ruby-vi-set-ftruby-vagrantconfigure2-do-config-inventory-playbookshosts-playbook-playbookssiteyml-configvmdefine-centosdhcp-primary-true-do-config-configvmbox_check_update-false-configvmbox-genericcentos9s-configvmboot_timeout-1800-configvmcommunicator-ssh-configvmguest-linux-configvmsynced_folder-vagrant-disabled-true-configsshinsert_key-false-httpssanbarrowcomvmxvmx-network-advancedhtml-vmware_desktopeach-do-provider-configvmprovider-provider-do-v-vallowlist_verified-disable_warning-venable_vmrun_ip_lookup-true-vunmount_default_hgfs-true-vwhitelist_verified-true-required-by-vmx-network-settings-on-startup-vgui-true-vvmxcpuidcorespersocket-1-vvmxmemsize-2048-vvmxnumvcpus-2-vvmxfloppy0present-false-vvmxsvgaautodetect-false-vvmxsvgamaxwidth-2560-vvmxsvgamaxheight-2048-vvmxsvgavramsize-20971520-vvmxsvganumdisplays-1-vvmxethernet0present-true-vvmxethernet0connectiontype-custom-vvmxethernet0addresstype-static-vvmxethernet0address-0050562ac6d9-vvmxethernet0vnet-vmnet3-vvmxethernet0displayname-vmnet3-vvmxethernet0virtualdev-e1000-end-end-end-end-konfiguration-playbook">
+    # -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure("2") do |config|
+
+  INVENTORY = "playbooks/hosts"
+  PLAYBOOK = "playbooks/site.yml"  
+
+  config.vm.define "centosdhcp", primary: true do |config|  
+    config.vm.box_check_update = false   
+    config.vm.box = "generic/centos9s"
+    config.vm.boot_timeout = 1800
+    config.vm.communicator = :ssh
+    config.vm.guest = :linux
+
+    config.vm.synced_folder './', '/vagrant', disabled: true
+
+    config.ssh.insert_key = false
+
+    # https://sanbarrow.com/vmx/vmx-network-advanced.html
+
+    ["vmware_desktop"].each do |provider|
+      config.vm.provider provider do |v|
+         v.allowlist_verified = :disable_warning
+         v.enable_vmrun_ip_lookup = true
+         v.unmount_default_hgfs = true
+         # v.whitelist_verified = true
+
+         # required by vmx network-settings on startup ??
+         v.gui = true
+
+         v.vmx["cpuid.coresPerSocket"] = "1"
+         v.vmx["memsize"] = "2048"
+         v.vmx["numvcpus"] = "2"
+         v.vmx["floppy0.present"] = "false"
+
+         # v.vmx["svga.autodetect"] = "false"
+         # v.vmx["svga.maxWidth"] = "2560"
+         # v.vmx["svga.maxHeight"] = "2048"
+         # v.vmx["svga.vramSize"] = "20971520"
+         # v.vmx["svga.numDisplays"] = "1"
+
+         v.vmx["ethernet0.present"] = "true"
+         v.vmx["ethernet0.connectionType"] = "custom"
+         v.vmx["ethernet0.addressType"] = "static"
+         v.vmx["ethernet0.address"] = "00:50:56:2a:c6:d9"
+         v.vmx["ethernet0.vnet"] = "vmnet3"
+         v.vmx["ethernet0.displayName"] = "VMnet3"
+         v.vmx["ethernet0.virtualDev"] = "e1000"
+         end
+      end
+    end  
+  end
+  ```
+
+## Konfiguration
+
+Playbook:
+
   </a>
 </li>
 </ul>
@@ -703,8 +819,127 @@
 </div>
 <h2 id="erstellen">Erstellen<a class="headerlink" href="#erstellen" title="Permanent link">¶</a></h2>
 <p>Vagrantfile:</p>
-<h2 id="konfiguration">Konfiguration<a class="headerlink" href="#konfiguration" title="Permanent link">¶</a></h2>
-<p>Playbook:</p>
+<h2 id="-mode-ruby-vi-set-ftruby-vagrantconfigure2-do-config-inventory-playbookshosts-playbook-playbookssiteyml-configvmdefine-centosdhcp-primary-true-do-config-configvmbox_check_update-false-configvmbox-genericcentos9s-configvmboot_timeout-1800-configvmcommunicator-ssh-configvmguest-linux-configvmsynced_folder-vagrant-disabled-true-configsshinsert_key-false-httpssanbarrowcomvmxvmx-network-advancedhtml-vmware_desktopeach-do-provider-configvmprovider-provider-do-v-vallowlist_verified-disable_warning-venable_vmrun_ip_lookup-true-vunmount_default_hgfs-true-vwhitelist_verified-true-required-by-vmx-network-settings-on-startup-vgui-true-vvmxcpuidcorespersocket-1-vvmxmemsize-2048-vvmxnumvcpus-2-vvmxfloppy0present-false-vvmxsvgaautodetect-false-vvmxsvgamaxwidth-2560-vvmxsvgamaxheight-2048-vvmxsvgavramsize-20971520-vvmxsvganumdisplays-1-vvmxethernet0present-true-vvmxethernet0connectiontype-custom-vvmxethernet0addresstype-static-vvmxethernet0address-0050562ac6d9-vvmxethernet0vnet-vmnet3-vvmxethernet0displayname-vmnet3-vvmxethernet0virtualdev-e1000-end-end-end-end-konfiguration-playbook"><div class="highlight"><pre><span></span><code># -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure("2") do |config|
+
+  INVENTORY = "playbooks/hosts"
+  PLAYBOOK = "playbooks/site.yml"  
+
+  config.vm.define "centosdhcp", primary: true do |config|  
+    config.vm.box_check_update = false   
+    config.vm.box = "generic/centos9s"
+    config.vm.boot_timeout = 1800
+    config.vm.communicator = :ssh
+    config.vm.guest = :linux
+
+    config.vm.synced_folder './', '/vagrant', disabled: true
+
+    config.ssh.insert_key = false
+
+    # https://sanbarrow.com/vmx/vmx-network-advanced.html
+
+    ["vmware_desktop"].each do |provider|
+      config.vm.provider provider do |v|
+         v.allowlist_verified = :disable_warning
+         v.enable_vmrun_ip_lookup = true
+         v.unmount_default_hgfs = true
+         # v.whitelist_verified = true
+
+         # required by vmx network-settings on startup ??
+         v.gui = true
+
+         v.vmx["cpuid.coresPerSocket"] = "1"
+         v.vmx["memsize"] = "2048"
+         v.vmx["numvcpus"] = "2"
+         v.vmx["floppy0.present"] = "false"
+
+         # v.vmx["svga.autodetect"] = "false"
+         # v.vmx["svga.maxWidth"] = "2560"
+         # v.vmx["svga.maxHeight"] = "2048"
+         # v.vmx["svga.vramSize"] = "20971520"
+         # v.vmx["svga.numDisplays"] = "1"
+
+         v.vmx["ethernet0.present"] = "true"
+         v.vmx["ethernet0.connectionType"] = "custom"
+         v.vmx["ethernet0.addressType"] = "static"
+         v.vmx["ethernet0.address"] = "00:50:56:2a:c6:d9"
+         v.vmx["ethernet0.vnet"] = "vmnet3"
+         v.vmx["ethernet0.displayName"] = "VMnet3"
+         v.vmx["ethernet0.virtualDev"] = "e1000"
+         end
+      end
+    end  
+  end
+  ```
+
+## Konfiguration
+
+Playbook:
+</code></pre></div><a class="headerlink" href="#-mode-ruby-vi-set-ftruby-vagrantconfigure2-do-config-inventory-playbookshosts-playbook-playbookssiteyml-configvmdefine-centosdhcp-primary-true-do-config-configvmbox_check_update-false-configvmbox-genericcentos9s-configvmboot_timeout-1800-configvmcommunicator-ssh-configvmguest-linux-configvmsynced_folder-vagrant-disabled-true-configsshinsert_key-false-httpssanbarrowcomvmxvmx-network-advancedhtml-vmware_desktopeach-do-provider-configvmprovider-provider-do-v-vallowlist_verified-disable_warning-venable_vmrun_ip_lookup-true-vunmount_default_hgfs-true-vwhitelist_verified-true-required-by-vmx-network-settings-on-startup-vgui-true-vvmxcpuidcorespersocket-1-vvmxmemsize-2048-vvmxnumvcpus-2-vvmxfloppy0present-false-vvmxsvgaautodetect-false-vvmxsvgamaxwidth-2560-vvmxsvgamaxheight-2048-vvmxsvgavramsize-20971520-vvmxsvganumdisplays-1-vvmxethernet0present-true-vvmxethernet0connectiontype-custom-vvmxethernet0addresstype-static-vvmxethernet0address-0050562ac6d9-vvmxethernet0vnet-vmnet3-vvmxethernet0displayname-vmnet3-vvmxethernet0virtualdev-e1000-end-end-end-end-konfiguration-playbook" title="Permanent link">¶</a></h2>
+<ul>
+<li>name: Setup DHCP
+  hosts: centosdhcp
+  become: true</li>
+</ul>
+<p>tasks:</p>
+<h1 id="vm-hostname">VM Hostname<a class="headerlink" href="#vm-hostname" title="Permanent link">¶</a></h1>
+<div class="highlight"><pre><span></span><code>- name: Set hostname to centosdhcp
+  become: true
+  ansible.builtin.hostname:
+    name: centosdhcp.localdomain
+    use: systemd
+</code></pre></div>
+<h1 id="ip-configuration">IP Configuration<a class="headerlink" href="#ip-configuration" title="Permanent link">¶</a></h1>
+<div class="highlight"><pre><span></span><code>- name: Add an Ethernet connection with static IP
+  community.general.nmcli:
+    conn_name: eth0
+    ifname: eth0
+    type: ethernet
+    ip4: 192.168.91.11/24
+    gw4: 192.168.91.10
+    dns4: 192.168.91.10
+    state: present 
+- name: Restart NetworkManager
+  become: true
+  ansible.builtin.service:
+    name: NetworkManager
+    state: restarted
+</code></pre></div>
+<h1 id="install-packages">Install Packages<a class="headerlink" href="#install-packages" title="Permanent link">¶</a></h1>
+<div class="highlight"><pre><span></span><code>- name: Upgrade all packages
+  ansible.builtin.dnf:
+    name: "*"
+    state: latest
+- name: Install nano
+  ansible.builtin.dnf:
+    name: nano
+    state: latest
+- name: Install dhcp-server
+  ansible.builtin.dnf:
+    name: dhcp-server
+    state: latest
+</code></pre></div>
+<h1 id="dhcp-server">DHCP Server<a class="headerlink" href="#dhcp-server" title="Permanent link">¶</a></h1>
+<div class="highlight"><pre><span></span><code>- name: Set dhcpd.conf
+  become: true
+  ansible.builtin.copy:
+    src: "{{ playbook_dir }}/files/dhcpd.conf"
+    dest: /etc/dhcp/dhcpd.conf
+    force: true     
+- name: Enable dhcp-server
+  ansible.builtin.service:
+    name: dhcpd
+    enabled: true
+    state: started    
+- name: Restart dhcp-server
+  ansible.builtin.service:
+    name: dhcpd
+    enabled: true
+    state: restarted
+</code></pre></div>
+<p>```</p>
 <p>(Quelle 1: <a href="https://learn.microsoft.com/de-de/windows-server/networking/technologies/dhcp/dhcp-top">https://learn.microsoft.com/de-de/windows-server/networking/technologies/dhcp/dhcp-top</a>, 27.02.2023)</p>
 </article>
 </div>
