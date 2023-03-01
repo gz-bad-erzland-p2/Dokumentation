@@ -528,6 +528,43 @@
 <a class="md-nav__link" href="#rest-api">
     REST-API
   </a>
+<nav aria-label="REST-API" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#payload-request-body">
+    Payload / Request Body
+  </a>
+<nav aria-label="Payload / Request Body" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#beispiel-json">
+    Beispiel JSON
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#http-methoden">
+    HTTP-Methoden
+  </a>
+<nav aria-label="HTTP-Methoden" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#post">
+    POST
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#http-statuscodes">
+    HTTP-Statuscodes
+  </a>
+</li>
+</ul>
+</nav>
 </li>
 </ul>
 </nav>
@@ -774,6 +811,43 @@
 <a class="md-nav__link" href="#rest-api">
     REST-API
   </a>
+<nav aria-label="REST-API" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#payload-request-body">
+    Payload / Request Body
+  </a>
+<nav aria-label="Payload / Request Body" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#beispiel-json">
+    Beispiel JSON
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#http-methoden">
+    HTTP-Methoden
+  </a>
+<nav aria-label="HTTP-Methoden" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#post">
+    POST
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#http-statuscodes">
+    HTTP-Statuscodes
+  </a>
+</li>
+</ul>
+</nav>
 </li>
 </ul>
 </nav>
@@ -882,7 +956,69 @@ Des Weiteren muss, basierend auf dem ERD Diagramm ein Schema zur Migration der D
 <span class="err">}</span>
 </code></pre></div>
 <h2 id="rest-api">REST-API<a class="headerlink" href="#rest-api" title="Permanent link">¶</a></h2>
-<p>Für die Kommunikation zwischen dem Frontend und dem Backend verwenden wir eine REST-API. Die REST-API wird mit dem Framework <a href="https://nestjs.com/">NestJS</a> erstellt.</p>
+<p>Für die Kommunikation zwischen dem Frontend und dem Backend verwenden wir eine REST-API. Die REST-API wird ebenfalls durch das Framework <a href="https://nestjs.com/">NestJS</a> erstellt.</p>
+<h3 id="payload-request-body">Payload / Request Body<a class="headerlink" href="#payload-request-body" title="Permanent link">¶</a></h3>
+<p>Die Daten werden in einem JSON-Format übertragen. Das JSON-Format ist ein textbasiertes Format, das leicht von Menschen gelesen und geschrieben werden kann.</p>
+<h4 id="beispiel-json">Beispiel JSON<a class="headerlink" href="#beispiel-json" title="Permanent link">¶</a></h4>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Max"</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">"surname"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Mustermann"</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"test@test.de"</span><span class="p">,</span>
+<span class="w">  </span><span class="err">...</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="http-methoden">HTTP-Methoden<a class="headerlink" href="#http-methoden" title="Permanent link">¶</a></h3>
+<p>Die HTTP-Methoden werden verwendet, um die Aktionen zu beschreiben, die auf den Ressourcen ausgeführt werden sollen. </p>
+<p>HTTP-Methoden:</p>
+<ul>
+<li>GET</li>
+<li>POST</li>
+<li>PUT</li>
+<li>PATCH</li>
+<li>DELETE</li>
+</ul>
+<h4 id="post">POST<a class="headerlink" href="#post" title="Permanent link">¶</a></h4>
+<p>POST wird verwendet, um eine neue Ressource zu erstellen. Die Ressource wird in der Datenbank gespeichert.</p>
+<p>Endpunkt zum Speichern der Daten: <code>/api/reservation</code></p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">response</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">fetch</span><span class="p">(</span><span class="s1">'/api/reserveration'</span><span class="p">,</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">body</span><span class="o">:</span><span class="w"> </span><span class="kt">JSON.stringify</span><span class="p">({</span>
+<span class="w">        </span><span class="nx">name</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">surname</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">email</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">password</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">street</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">streetNumber</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">zipCode</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">city</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">startDate</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">endDate</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">operatingSystem</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">operatingSystem2</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">uuid</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">hardware</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">hardware2</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">briefing</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">gender</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">specification</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">totalHours</span><span class="o">:</span><span class="w"> </span><span class="kt">calculateTotalHours</span><span class="p">(</span><span class="nx">startDate</span><span class="p">,</span><span class="w"> </span><span class="nx">endDate</span><span class="p">),</span>
+<span class="w">        </span><span class="nx">totalCosts</span><span class="o">:</span><span class="w"> </span><span class="kt">calculateTotalHours</span><span class="p">(</span><span class="nx">startDate</span><span class="p">,</span><span class="w"> </span><span class="nx">endDate</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nx">PRICE_PER_HOUR</span><span class="p">,</span>
+<span class="w">    </span><span class="p">}),</span>
+<span class="w">    </span><span class="nx">method</span><span class="o">:</span><span class="w"> </span><span class="s1">'POST'</span><span class="p">,</span>
+<span class="w">    </span><span class="nx">headers</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="s1">'Content-Type'</span><span class="o">:</span><span class="w"> </span><span class="s1">'application/json'</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">});</span>
+</code></pre></div>
+<h3 id="http-statuscodes">HTTP-Statuscodes<a class="headerlink" href="#http-statuscodes" title="Permanent link">¶</a></h3>
+<p>Durch HTTP-Statuscodes kann der Client erkennen, ob die Anfrage erfolgreich war oder nicht.</p>
+<p>HTTP-Statuscodes:</p>
+<ul>
+<li>200: OK</li>
+<li>201: Created</li>
+<li>400: Bad Request</li>
+<li>500: Internal Server Error</li>
+</ul>
+<p>Wenn das Speichern der Daten in der Datenbank erfolgreich war, wird ein HTTP-Statuscode 201 zurückgegeben und das Frontend kann fortfahren.</p>
 </article>
 </div>
 </div>

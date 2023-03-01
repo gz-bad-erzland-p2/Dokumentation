@@ -545,10 +545,10 @@
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#sicherheit-headers">
-    Sicherheit Headers
+<a class="md-nav__link" href="#security-headers">
+    Security Headers
   </a>
-<nav aria-label="Sicherheit Headers" class="md-nav">
+<nav aria-label="Security Headers" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
 <a class="md-nav__link" href="#x-xss-protection">
@@ -567,6 +567,11 @@
 </li>
 </ul>
 </nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#automatisierte-sicherheitsprufung-aktualisierung-von-3rd-party-bibliotheken">
+    Automatisierte Sicherheitsprüfung/ Aktualisierung von 3rd Party Bibliotheken
+  </a>
 </li>
 </ul>
 </nav>
@@ -820,10 +825,10 @@
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#sicherheit-headers">
-    Sicherheit Headers
+<a class="md-nav__link" href="#security-headers">
+    Security Headers
   </a>
-<nav aria-label="Sicherheit Headers" class="md-nav">
+<nav aria-label="Security Headers" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
 <a class="md-nav__link" href="#x-xss-protection">
@@ -842,6 +847,11 @@
 </li>
 </ul>
 </nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#automatisierte-sicherheitsprufung-aktualisierung-von-3rd-party-bibliotheken">
+    Automatisierte Sicherheitsprüfung/ Aktualisierung von 3rd Party Bibliotheken
+  </a>
 </li>
 </ul>
 </nav>
@@ -939,7 +949,7 @@ Weiterhin werden Benutzereingaben zur Laufzeit validiert, bevor sie in Abfragen 
 <span class="w">    </span><span class="p">},</span>
 <span class="p">});</span>
 </code></pre></div>
-<h2 id="sicherheit-headers">Sicherheit Headers<a class="headerlink" href="#sicherheit-headers" title="Permanent link">¶</a></h2>
+<h2 id="security-headers">Security Headers<a class="headerlink" href="#security-headers" title="Permanent link">¶</a></h2>
 <h3 id="x-xss-protection">X-XSS-Protection<a class="headerlink" href="#x-xss-protection" title="Permanent link">¶</a></h3>
 <p>Dies Header blockiert bei Verdacht auf Cross-Site-Scripting (XSS) die Ausführung des Scripts.</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
@@ -969,6 +979,14 @@ Weiterhin werden Benutzereingaben zur Laufzeit validiert, bevor sie in Abfragen 
 <span class="p">}</span>
 </code></pre></div>
 <p>Alle von <a href="https://nextjs.org/docs/advanced-features/security-headers">NextJS</a> empfohlen Header wurden zum Schutz der Webseite implementiert.</p>
+<h2 id="automatisierte-sicherheitsprufung-aktualisierung-von-3rd-party-bibliotheken">Automatisierte Sicherheitsprüfung/ Aktualisierung von 3<sup>rd</sup> Party Bibliotheken<a class="headerlink" href="#automatisierte-sicherheitsprufung-aktualisierung-von-3rd-party-bibliotheken" title="Permanent link">¶</a></h2>
+<p>Durch die Verwendung von Dependabot werden automatisch Sicherheitsupdates für 3<sup>rd</sup> Party Bibliotheken durchgeführt. Dependabot überprüft täglich die verwendeten Bibliotheken auf Sicherheitslücken und erstellt automatisch Pull Requests, wenn neue Versionen verfügbar sind. Dadurch wird die Sicherheit von 3<sup>rd</sup> Party Bibliotheken gewährleistet.</p>
+<p>Dependabot erstellt automatisch ein Rating für die Schwere der Sicherheitslücke. Je nach Priorität werden empfehlungen für die Sicherheitslücke gegeben.</p>
+<p>Beispiel für eine Meldung von Dependabot:</p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../../../assets/img/select-multiple-alerts.webp"><img alt="Dependabot" src="../../../assets/img/select-multiple-alerts.webp"/></a></p>
+<p>Quelle: Github<sup id="fnref:5"><a class="footnote-ref" href="#fn:5">5</a></sup><sup id="fnref:6"><a class="footnote-ref" href="#fn:6">6</a></sup></p>
+<p>Dependabot ist ein Service von GitHub. Weitere Informationen finden Sie hier:</p>
+<p><a class="md-button" href="https://docs.github.com/en/code-security/dependabot/dependabot-alerts/about-dependabot-alerts">Dependabot <span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"></path></svg></span></a></p>
 <div class="footnote">
 <hr/>
 <ol>
@@ -976,7 +994,19 @@ Weiterhin werden Benutzereingaben zur Laufzeit validiert, bevor sie in Abfragen 
 <p><a href="https://www.allianz-fuer-cybersicherheit.de/SharedDocs/Downloads/Webs/ACS/DE/BSI-CS/BSI-CS_069.pdf?__blob=publicationFile&amp;v=1">https://www.allianz-fuer-cybersicherheit.de/SharedDocs/Downloads/Webs/ACS/DE/BSI-CS/BSI-CS_069.pdf?__blob=publicationFile&amp;v=1</a> (17.01.2023) <a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">↩</a></p>
 </li>
 <li id="fn:2">
-<p><a href="https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Publikationen/TechnischeRichtlinien/TR03116/BSI-TR-03116.pdf?__blob=publicationFile&amp;v=1">https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Publikationen/TechnischeRichtlinien/TR03116/BSI-TR-03116.pdf?__blob=publicationFile&amp;v=1</a> (16.01.2023) <a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">↩</a></p>
+<p><a href="https://en.wikipedia.org/wiki/Bcrypt">https://en.wikipedia.org/wiki/Bcrypt</a> (17.01.2023) <a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">↩</a></p>
+</li>
+<li id="fn:3">
+<p><a href="https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Publikationen/TechnischeRichtlinien/TR03116/BSI-TR-03116.pdf?__blob=publicationFile&amp;v=1">https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Publikationen/TechnischeRichtlinien/TR03116/BSI-TR-03116.pdf?__blob=publicationFile&amp;v=1</a> (16.01.2023) <a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">↩</a></p>
+</li>
+<li id="fn:4">
+<p><a href="https://nextjs.org/docs/advanced-features/security-headers">https://nextjs.org/docs/advanced-features/security-headers</a> (01.03.2023) <a class="footnote-backref" href="#fnref:4" title="Jump back to footnote 4 in the text">↩</a></p>
+</li>
+<li id="fn:5">
+<p><a href="https://docs.github.com/assets/cb-41817/mw-1000/images/help/graphs/select-multiple-alerts.webp">https://docs.github.com/assets/cb-41817/mw-1000/images/help/graphs/select-multiple-alerts.webp</a> (17.01.2023) <a class="footnote-backref" href="#fnref:5" title="Jump back to footnote 5 in the text">↩</a></p>
+</li>
+<li id="fn:6">
+<p><a href="https://docs.github.com/en/code-security/dependabot/dependabot-alerts/viewing-and-updating-dependabot-alerts">https://docs.github.com/en/code-security/dependabot/dependabot-alerts/viewing-and-updating-dependabot-alerts</a> (17.01.2023) <a class="footnote-backref" href="#fnref:6" title="Jump back to footnote 6 in the text">↩</a></p>
 </li>
 </ol>
 </div>
