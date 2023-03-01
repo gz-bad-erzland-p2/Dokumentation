@@ -1,5 +1,6 @@
 # User Stories
 
+Um die Umsetzung unserer Ziele sicherzustellen, haben wir basierend auf den Anforderungen, Userstorys erstellt. Diese helfen bei der Entwicklung eine benutzerfreundliche und intuitive Website zu entwickeln.
 Im nachfolgenden Abschnitt werden die User Stories für das Projekt aufgelistet. 
 
 !!! question "Weitere Informationen"
