@@ -472,8 +472,51 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#erd-diagramm">
-    ERD Diagramm
+<a class="md-nav__link" href="#datenbank">
+    Datenbank
+  </a>
+<nav aria-label="Datenbank" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#warum-prisma">
+    Warum Prisma?
+  </a>
+<nav aria-label="Warum Prisma?" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#1-performance">
+    1. Performance
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#2-verwaltung-von-datenbeziehungen">
+    2. Verwaltung von Datenbeziehungen
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#3-datenmigration">
+    3. Datenmigration
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#4-sicherheit">
+    4. Sicherheit
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#erd-diagramme">
+    ERD Diagramme
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#konfigurationsdatei-fur-prisma">
+    Konfigurationsdatei für Prisma
   </a>
 </li>
 </ul>
@@ -670,8 +713,51 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#erd-diagramm">
-    ERD Diagramm
+<a class="md-nav__link" href="#datenbank">
+    Datenbank
+  </a>
+<nav aria-label="Datenbank" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#warum-prisma">
+    Warum Prisma?
+  </a>
+<nav aria-label="Warum Prisma?" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#1-performance">
+    1. Performance
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#2-verwaltung-von-datenbeziehungen">
+    2. Verwaltung von Datenbeziehungen
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#3-datenmigration">
+    3. Datenmigration
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#4-sicherheit">
+    4. Sicherheit
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#erd-diagramme">
+    ERD Diagramme
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#konfigurationsdatei-fur-prisma">
+    Konfigurationsdatei für Prisma
   </a>
 </li>
 </ul>
@@ -682,22 +768,104 @@
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
 <h1 id="backend">Backend<a class="headerlink" href="#backend" title="Permanent link">¶</a></h1>
-<h2 id="erd-diagramm">ERD Diagramm<a class="headerlink" href="#erd-diagramm" title="Permanent link">¶</a></h2>
-<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../../../assets/svg/ERDDatenbankPage_v2.svg"><img alt="Image title" src="../../../assets/svg/ERDDatenbankPage_v2.svg"/></a></p>
-<h1 id="version-2-final">Version 2 (Final)<a class="headerlink" href="#version-2-final" title="Permanent link">¶</a></h1>
-<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../../../assets/svg/prisma-erd.svg"><img alt="" src="../../../assets/svg/prisma-erd.svg"/></a></p>
-<h2 id="auswahl-der-programmiersprache-und-frameworks">Auswahl der Programmiersprache und Frameworks<a class="headerlink" href="#auswahl-der-programmiersprache-und-frameworks" title="Permanent link">¶</a></h2>
-<p>Zur Auswahl der Programmiersprache und den verendeten Frameworks haben wir zuerst eine Liste aller möglichen Optionen aufgestellt.
-Danach haben wir usere Fähigkeiten bezüglich der Programmiersprachen eingeschätzt und konnten daraus unsere Entscheidung ableiten.</p>
-<p>TODO: REST-API-Framework incl. Datenbank</p>
-<div class="footnote">
-<hr/>
-<ol>
-<li id="fn:1">
-<p><a href="https://github.com/gz-bad-erzland-p2/Dokumentation/raw/master/docs/assets/img/UseCase01.png">https://github.com/gz-bad-erzland-p2/Dokumentation/raw/master/docs/assets/img/UseCase01.png</a> (27.02.2023) <a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">↩</a></p>
-</li>
-</ol>
+<h2 id="datenbank">Datenbank<a class="headerlink" href="#datenbank" title="Permanent link">¶</a></h2>
+<p>Für die Datenbank haben wir uns für MySQL entschieden. Für die kommunikation mit der Datenbank verwenden wir <a href="https://www.prisma.io/">Prisma</a>.</p>
+<div class="admonition info">
+<p class="admonition-title">Information</p>
+<p><span class="biggerFont">Prisma ist ein Datenbank-ORM-Tool (Object-Relational Mapping), das es erleichtert, eine Datenbank mit einer Anwendung zu verbinden und Daten zwischen beiden auszutauschen. Es bietet eine typsichere und intuitive Schnittstelle, um auf Datenbanken zuzugreifen und diese zu manipulieren.</span></p>
 </div>
+<h3 id="warum-prisma">Warum Prisma?<a class="headerlink" href="#warum-prisma" title="Permanent link">¶</a></h3>
+<h4 id="1-performance">1. Performance<a class="headerlink" href="#1-performance" title="Permanent link">¶</a></h4>
+<p>Prisma verwendet einen Query-Builder, der effiziente SQL-Abfragen generiert und so die Leistung der Anwendung verbessert.</p>
+<h4 id="2-verwaltung-von-datenbeziehungen">2. Verwaltung von Datenbeziehungen<a class="headerlink" href="#2-verwaltung-von-datenbeziehungen" title="Permanent link">¶</a></h4>
+<p>Prisma kann komplexe Datenbeziehungen verwalten und bietet eine einfache Möglichkeit, Daten aus mehreren Tabellen abzurufen oder zu manipulieren.</p>
+<h4 id="3-datenmigration">3. Datenmigration<a class="headerlink" href="#3-datenmigration" title="Permanent link">¶</a></h4>
+<p>Prisma bietet eine einfache Möglichkeit, Datenbankmigrationen durchzuführen, um Änderungen an der Datenbankstruktur zu verwalten.</p>
+<h4 id="4-sicherheit">4. Sicherheit<a class="headerlink" href="#4-sicherheit" title="Permanent link">¶</a></h4>
+<p>Prisma ist gegen SQL-Injections geschützt, weil es eine Query-Syntax verwendet, die sich von herkömmlichen SQL-Abfragen unterscheidet und die Eingabevalidierung automatisch durchführt.</p>
+<h3 id="erd-diagramme">ERD Diagramme<a class="headerlink" href="#erd-diagramme" title="Permanent link">¶</a></h3>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../../../assets/svg/ERDDatenbankPage_v2.svg"><img alt="Image title" src="../../../assets/svg/ERDDatenbankPage_v2.svg"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../../../assets/svg/prisma-erd.svg"><img alt="" src="../../../assets/svg/prisma-erd.svg"/></a></p>
+<h2 id="konfigurationsdatei-fur-prisma">Konfigurationsdatei für Prisma<a class="headerlink" href="#konfigurationsdatei-fur-prisma" title="Permanent link">¶</a></h2>
+<p>In der Konfigurationsdatei für Prisma wird die Datenbankverbindung konfiguriert.
+Des Weiteren muss, basierend auf dem ERD Diagramm ein Schema zur Migration der Datenbank erstellt.</p>
+<div class="highlight"><pre><span></span><code><span class="o">//</span><span class="w"> </span><span class="n">This</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="n">your</span><span class="w"> </span><span class="n">Prisma</span><span class="w"> </span><span class="k">schema</span><span class="w"> </span><span class="k">file</span><span class="p">,</span>
+<span class="o">//</span><span class="w"> </span><span class="n">learn</span><span class="w"> </span><span class="n">more</span><span class="w"> </span><span class="n">about</span><span class="w"> </span><span class="n">it</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">docs</span><span class="o">:</span><span class="w"> </span><span class="n">https</span><span class="o">://</span><span class="n">pris</span><span class="p">.</span><span class="n">ly</span><span class="o">/</span><span class="n">d</span><span class="o">/</span><span class="n">prisma</span><span class="o">-</span><span class="k">schema</span>
+
+<span class="n">generator</span><span class="w"> </span><span class="k">client</span><span class="w"> </span><span class="err">{</span>
+<span class="w">  </span><span class="n">provider</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"prisma-client-js"</span>
+<span class="err">}</span>
+
+<span class="n">datasource</span><span class="w"> </span><span class="n">db</span><span class="w"> </span><span class="err">{</span>
+<span class="w">  </span><span class="n">provider</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"mysql"</span>
+<span class="w">  </span><span class="n">url</span><span class="w">      </span><span class="o">=</span><span class="w"> </span><span class="n">env</span><span class="p">(</span><span class="s2">"DATABASE_URL"</span><span class="p">)</span>
+<span class="err">}</span>
+
+<span class="n">model</span><span class="w"> </span><span class="n">Customer</span><span class="w"> </span><span class="err">{</span>
+<span class="w">  </span><span class="n">customerID</span><span class="w"> </span><span class="kt">Int</span><span class="w">       </span><span class="nv">@id</span><span class="w"> </span><span class="nv">@default</span><span class="p">(</span><span class="n">autoincrement</span><span class="p">())</span>
+<span class="w">  </span><span class="n">gender</span><span class="w">     </span><span class="n">Gender</span>
+<span class="w">  </span><span class="k">name</span><span class="w">       </span><span class="k">String</span><span class="w">    </span><span class="nv">@db.VarChar</span><span class="p">(</span><span class="mi">255</span><span class="p">)</span>
+<span class="w">  </span><span class="n">surname</span><span class="w">    </span><span class="k">String</span><span class="w">    </span><span class="nv">@db.VarChar</span><span class="p">(</span><span class="mi">255</span><span class="p">)</span>
+<span class="w">  </span><span class="n">email</span><span class="w">      </span><span class="k">String</span><span class="w">    </span><span class="nv">@db.VarChar</span><span class="p">(</span><span class="mi">255</span><span class="p">)</span>
+<span class="w">  </span><span class="k">password</span><span class="w">   </span><span class="k">String</span><span class="w">    </span><span class="nv">@db.VarChar</span><span class="p">(</span><span class="mi">255</span><span class="p">)</span>
+<span class="w">  </span><span class="n">address</span><span class="w">     </span><span class="n">Address</span><span class="nv">?</span>
+<span class="w">  </span><span class="n">booking</span><span class="w">    </span><span class="n">Booking</span><span class="err">[]</span>
+<span class="err">}</span>
+
+<span class="n">model</span><span class="w"> </span><span class="n">Address</span><span class="w"> </span><span class="err">{</span>
+<span class="w">  </span><span class="n">addressID</span><span class="w">     </span><span class="kt">Int</span><span class="w">      </span><span class="nv">@id</span><span class="w"> </span><span class="nv">@default</span><span class="p">(</span><span class="n">autoincrement</span><span class="p">())</span>
+<span class="w">  </span><span class="n">street</span><span class="w">       </span><span class="k">String</span><span class="w">   </span><span class="nv">@db.VarChar</span><span class="p">(</span><span class="mi">255</span><span class="p">)</span>
+<span class="w">  </span><span class="n">streetNumber</span><span class="w"> </span><span class="kt">Int</span>
+<span class="w">  </span><span class="n">zipCode</span><span class="w">      </span><span class="kt">Int</span>
+<span class="w">  </span><span class="n">city</span><span class="w">         </span><span class="k">String</span><span class="w">   </span><span class="nv">@db.VarChar</span><span class="p">(</span><span class="mi">255</span><span class="p">)</span>
+<span class="w">  </span><span class="n">customer</span><span class="w">     </span><span class="n">Customer</span><span class="w"> </span><span class="nv">@relation</span><span class="p">(</span><span class="k">fields</span><span class="o">:</span><span class="w"> </span><span class="err">[</span><span class="n">customerID</span><span class="err">]</span><span class="p">,</span><span class="w"> </span><span class="k">references</span><span class="o">:</span><span class="w"> </span><span class="err">[</span><span class="n">customerID</span><span class="err">]</span><span class="p">)</span>
+<span class="w">  </span><span class="n">customerID</span><span class="w">   </span><span class="kt">Int</span><span class="w">      </span><span class="nv">@unique</span>
+<span class="err">}</span>
+
+<span class="n">model</span><span class="w"> </span><span class="n">Booking</span><span class="w"> </span><span class="err">{</span>
+<span class="w">  </span><span class="n">bookingID</span><span class="w">     </span><span class="kt">Int</span><span class="w">        </span><span class="nv">@id</span><span class="w"> </span><span class="nv">@default</span><span class="p">(</span><span class="n">autoincrement</span><span class="p">())</span>
+<span class="w">  </span><span class="n">uuid</span><span class="w">          </span><span class="k">String</span><span class="w">     </span><span class="nv">@db.VarChar</span><span class="p">(</span><span class="mi">255</span><span class="p">)</span>
+<span class="w">  </span><span class="n">startDate</span><span class="w">     </span><span class="kt">DateTime</span>
+<span class="w">  </span><span class="n">endDate</span><span class="w">       </span><span class="kt">DateTime</span>
+<span class="w">  </span><span class="n">hardware</span><span class="w">      </span><span class="n">Hardware</span><span class="err">[]</span>
+<span class="w">  </span><span class="n">briefing</span><span class="w">      </span><span class="kt">Boolean</span><span class="w">    </span><span class="nv">@default</span><span class="p">(</span><span class="no">false</span><span class="p">)</span>
+<span class="w">  </span><span class="n">specification</span><span class="w"> </span><span class="k">String</span><span class="w">     </span><span class="nv">@db.VarChar</span><span class="p">(</span><span class="mi">255</span><span class="p">)</span>
+<span class="w">  </span><span class="n">bookingDate</span><span class="w">   </span><span class="kt">DateTime</span><span class="w">   </span><span class="nv">@default</span><span class="p">(</span><span class="nf">now</span><span class="p">())</span>
+<span class="w">  </span><span class="n">totalHours</span><span class="w">    </span><span class="kt">Int</span>
+<span class="w">  </span><span class="n">totalCosts</span><span class="w">    </span><span class="kt">Float</span>
+<span class="w">  </span><span class="n">customer</span><span class="w">      </span><span class="n">Customer</span><span class="w">   </span><span class="nv">@relation</span><span class="p">(</span><span class="k">fields</span><span class="o">:</span><span class="w"> </span><span class="err">[</span><span class="n">customerID</span><span class="err">]</span><span class="p">,</span><span class="w"> </span><span class="k">references</span><span class="o">:</span><span class="w"> </span><span class="err">[</span><span class="n">customerID</span><span class="err">]</span><span class="p">)</span>
+<span class="w">  </span><span class="n">customerID</span><span class="w">    </span><span class="kt">Int</span>
+<span class="err">}</span>
+
+<span class="n">model</span><span class="w"> </span><span class="n">Hardware</span><span class="w"> </span><span class="err">{</span>
+<span class="w">  </span><span class="n">hardwareID</span><span class="w">      </span><span class="kt">Int</span><span class="w">             </span><span class="nv">@id</span><span class="w"> </span><span class="nv">@default</span><span class="p">(</span><span class="n">autoincrement</span><span class="p">())</span>
+<span class="w">  </span><span class="n">typ</span><span class="w">             </span><span class="n">HardwareTyp</span><span class="w">     </span><span class="nv">@default</span><span class="p">(</span><span class="n">PC</span><span class="p">)</span>
+<span class="w">  </span><span class="n">operatingSystem</span><span class="w"> </span><span class="n">OperatingSystem</span><span class="w"> </span><span class="nv">@default</span><span class="p">(</span><span class="n">WINDOWS</span><span class="p">)</span>
+<span class="w">  </span><span class="n">bokking</span><span class="w">         </span><span class="n">Booking</span><span class="w">         </span><span class="nv">@relation</span><span class="p">(</span><span class="k">fields</span><span class="o">:</span><span class="w"> </span><span class="err">[</span><span class="n">bookingID</span><span class="err">]</span><span class="p">,</span><span class="w"> </span><span class="k">references</span><span class="o">:</span><span class="w"> </span><span class="err">[</span><span class="n">bookingID</span><span class="err">]</span><span class="p">)</span>
+<span class="w">  </span><span class="n">bookingID</span><span class="w">       </span><span class="kt">Int</span>
+<span class="err">}</span>
+
+<span class="kt">enum</span><span class="w"> </span><span class="n">OperatingSystem</span><span class="w"> </span><span class="err">{</span>
+<span class="w">  </span><span class="n">WINDOWS</span>
+<span class="w">  </span><span class="n">DEBIAN</span>
+<span class="w">  </span><span class="n">UBUNTU</span>
+<span class="w">  </span><span class="n">LINUX_MINT</span>
+<span class="err">}</span>
+
+<span class="kt">enum</span><span class="w"> </span><span class="n">HardwareTyp</span><span class="w"> </span><span class="err">{</span>
+<span class="w">  </span><span class="n">Laptop</span>
+<span class="w">  </span><span class="n">PC</span>
+<span class="w">  </span><span class="n">Barebone</span>
+<span class="w">  </span><span class="n">BYOD</span>
+<span class="err">}</span>
+
+<span class="kt">enum</span><span class="w"> </span><span class="n">Gender</span><span class="w"> </span><span class="err">{</span>
+<span class="w">  </span><span class="n">Herr</span>
+<span class="w">  </span><span class="n">Frau</span>
+<span class="w">  </span><span class="n">Divers</span>
+<span class="err">}</span>
+</code></pre></div>
+<p>TODO: REST-API-Framework</p>
 </article>
 </div>
 </div>
