@@ -6,7 +6,7 @@
 
 ----------------------------------------------------
 1 Einleitung
-	- Begrüßung & Projektauftrag (Cora -> erster Eindruck zählt, sorry Theo)
+	- Begrüßung & Projektauftrag (Cora)
 	- Mitarbeiteranteile & Gliederung (Theo)
 
 ----------------------------------------------------
@@ -20,9 +20,9 @@
 ----------------------------------------------------
 4 Projektdefinition
 	- Nutzerwertanalyse (Thomas)
-	- Ist-Soll Analyse
+	- Ist-Soll Analyse (Jannik)
 	- Einordnung ins Schichtenmodell (Theo)
-	- Architekturbeschreibung des Gesamtsystems (Wer kennt sich da aus)
+	- Architekturbeschreibung des Gesamtsystems (Jannik)
 	- Auswahl der Programmiersprache und Frameworks (basierend auf Nutzerwertanalyse) (Thomas)
 	- Projektstrukturplan (Theo)
 	- Entwicklungsvorgehen (Theo)
