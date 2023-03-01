@@ -34,12 +34,10 @@ Im Folgenden stellen wir euch die Softwarelösung von uns vor!
 
 ## Gliederung
 
-### 1. Projekteinordnung in die Prozesslandkarte
+### 1. Projektauftrag
 ### 2. Showcase User-Stories
-### 3. Entwicklungsvorgehen
+### 3. Projektdefinition
 ### 4. AE-Module
-### 5. Einordnung ins Schichtenmodell
-### 6. Architekturbeschreibung
-### 7. SI-Module
-### 8. Reflexion
+### 5. SI-Module
+### 6. Reflexion
 
