@@ -226,6 +226,11 @@
         Registrierung
       </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../Anleitungen%20%26%20Informationen/Bedinungsanleitungen/Support/">
+        Support
+      </a>
+</li>
 </ul>
 </nav>
 </li>
@@ -519,6 +524,11 @@
     Konfigurationsdatei für Prisma
   </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#rest-api">
+    REST-API
+  </a>
+</li>
 </ul>
 </nav>
 </li>
@@ -760,6 +770,11 @@
     Konfigurationsdatei für Prisma
   </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#rest-api">
+    REST-API
+  </a>
+</li>
 </ul>
 </nav>
 </div>
@@ -782,7 +797,8 @@
 <h4 id="3-datenmigration">3. Datenmigration<a class="headerlink" href="#3-datenmigration" title="Permanent link">¶</a></h4>
 <p>Prisma bietet eine einfache Möglichkeit, Datenbankmigrationen durchzuführen, um Änderungen an der Datenbankstruktur zu verwalten.</p>
 <h4 id="4-sicherheit">4. Sicherheit<a class="headerlink" href="#4-sicherheit" title="Permanent link">¶</a></h4>
-<p>Prisma ist gegen SQL-Injections geschützt, weil es eine Query-Syntax verwendet, die sich von herkömmlichen SQL-Abfragen unterscheidet und die Eingabevalidierung automatisch durchführt.</p>
+<p>Prisma ist gegen SQL-Injections geschützt, weil es eine Query-Syntax verwendet, die sich von herkömmlichen SQL-Abfragen unterscheidet und die Eingabevalidierung automatisch durchführt.
+Weitere Informationen werden im Punkt <a href="../03_sicherheit/#sichere-datenbankkommunikation">Sicherheit</a> genannt.</p>
 <h3 id="erd-diagramme">ERD Diagramme<a class="headerlink" href="#erd-diagramme" title="Permanent link">¶</a></h3>
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../../../assets/svg/ERDDatenbankPage_v2.svg"><img alt="Image title" src="../../../assets/svg/ERDDatenbankPage_v2.svg"/></a></p>
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../../../assets/svg/prisma-erd.svg"><img alt="" src="../../../assets/svg/prisma-erd.svg"/></a></p>
@@ -865,7 +881,8 @@ Des Weiteren muss, basierend auf dem ERD Diagramm ein Schema zur Migration der D
 <span class="w">  </span><span class="n">Divers</span>
 <span class="err">}</span>
 </code></pre></div>
-<p>TODO: REST-API-Framework</p>
+<h2 id="rest-api">REST-API<a class="headerlink" href="#rest-api" title="Permanent link">¶</a></h2>
+<p>Für die Kommunikation zwischen dem Frontend und dem Backend verwenden wir eine REST-API. Die REST-API wird mit dem Framework <a href="https://nestjs.com/">NestJS</a> erstellt.</p>
 </article>
 </div>
 </div>
