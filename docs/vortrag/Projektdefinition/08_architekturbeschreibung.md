@@ -25,5 +25,4 @@ Für den Fachbereich Systemintegration wurde ein Netzwerkplan erstellt, der die 
 ![Architekturbeschreibung](../../assets/svg/architektur.svg)
 
 ---
-![Architekturbeschreibung_v3 drawio](https://user-images.githubusercontent.com/57149152/222259135-47765a2d-ad16-49c8-ba56-9a93cf3abea7.svg)
-
+![Architekturbeschreibung_v3 drawio](https://user-images.githubusercontent.com/57149152/222259441-dd3a3e4b-6ad2-447a-a196-f38f3f3a2593.png)
