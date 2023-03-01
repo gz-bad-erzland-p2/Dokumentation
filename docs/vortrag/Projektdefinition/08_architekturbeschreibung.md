@@ -22,7 +22,7 @@ Für den Fachbereich Systemintegration wurde ein Netzwerkplan erstellt, der die 
 
 ## Architekturbeschreibung des Gesamtsystems
 
-![Architekturbeschreibung](/assets/svg/architektur.svg)
+![Architekturbeschreibung](../../assets/svg/architektur.svg)
 
 ---
 ![Architekturbeschreibung_v3](https://user-images.githubusercontent.com/57149152/212827598-1df0d62f-a4e6-47e4-a6cf-e80c02605744.PNG)
