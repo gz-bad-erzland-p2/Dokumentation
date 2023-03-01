@@ -16,10 +16,9 @@
 
 ### Fachbereich Systemintegration
 
+Für den Fachbereich Systemintegration wurde ein Netzwerkplan erstellt, der die Fachkonzeptmodellierung darstellt.
 
-
-TODO: Verlinkung: buchung.gz-bad-erzland-p2.de -> Netzwerkplan der SIs
-
+[Link zur SI Fachkonzeptmodellierung](../09_si-module/server/00_Allgemein.md){ .md-button }
 
 ## Architekturbeschreibung des Gesamtsystems
 
