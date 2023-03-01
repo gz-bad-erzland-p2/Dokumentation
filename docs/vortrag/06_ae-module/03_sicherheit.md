@@ -108,7 +108,7 @@ const reservation = await prisma.customer.create({
 });
 ```
 
-## Sicherheit Headers
+## Security Headers
 
 ### X-XSS-Protection
 
@@ -154,5 +154,25 @@ font-src 'self';
 
 Alle von [NextJS](https://nextjs.org/docs/advanced-features/security-headers) empfohlen Header wurden zum Schutz der Webseite implementiert.
 
+## Automatisierte Sicherheitsprüfung/ Aktualisierung von 3rd Party Bibliotheken
+
+Durch die Verwendung von Dependabot werden automatisch Sicherheitsupdates für 3rd Party Bibliotheken durchgeführt. Dependabot überprüft täglich die verwendeten Bibliotheken auf Sicherheitslücken und erstellt automatisch Pull Requests, wenn neue Versionen verfügbar sind. Dadurch wird die Sicherheit von 3rd Party Bibliotheken gewährleistet.
+
+Dependabot erstellt automatisch ein Rating für die Schwere der Sicherheitslücke. Je nach Priorität werden empfehlungen für die Sicherheitslücke gegeben.
+
+Beispiel für eine Meldung von Dependabot:
+
+![Dependabot](../../assets/img/select-multiple-alerts.webp)
+
+Quelle: Github[^5][^6]
+
+Dependabot ist ein Service von GitHub. Weitere Informationen finden Sie hier:
+
+[Dependabot :material-github:](https://docs.github.com/en/code-security/dependabot/dependabot-alerts/about-dependabot-alerts){ .md-button }
+
 [^1]: https://www.allianz-fuer-cybersicherheit.de/SharedDocs/Downloads/Webs/ACS/DE/BSI-CS/BSI-CS_069.pdf?__blob=publicationFile&v=1 (17.01.2023)
-[^2]: https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Publikationen/TechnischeRichtlinien/TR03116/BSI-TR-03116.pdf?__blob=publicationFile&v=1 (16.01.2023)
+[^2]: https://en.wikipedia.org/wiki/Bcrypt (17.01.2023)
+[^3]: https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Publikationen/TechnischeRichtlinien/TR03116/BSI-TR-03116.pdf?__blob=publicationFile&v=1 (16.01.2023)
+[^4]: https://nextjs.org/docs/advanced-features/security-headers (01.03.2023)
+[^5]: https://docs.github.com/assets/cb-41817/mw-1000/images/help/graphs/select-multiple-alerts.webp (17.01.2023)
+[^6]: https://docs.github.com/en/code-security/dependabot/dependabot-alerts/viewing-and-updating-dependabot-alerts (17.01.2023)

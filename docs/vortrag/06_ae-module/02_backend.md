@@ -111,5 +111,82 @@ enum Gender {
 
 ## REST-API
 
-Für die Kommunikation zwischen dem Frontend und dem Backend verwenden wir eine REST-API. Die REST-API wird mit dem Framework [NestJS](https://nestjs.com/) erstellt.
+Für die Kommunikation zwischen dem Frontend und dem Backend verwenden wir eine REST-API. Die REST-API wird ebenfalls durch das Framework [NestJS](https://nestjs.com/) erstellt.
 
+### Payload / Request Body
+
+Die Daten werden in einem JSON-Format übertragen. Das JSON-Format ist ein textbasiertes Format, das leicht von Menschen gelesen und geschrieben werden kann.
+
+#### Beispiel JSON
+
+```json
+{
+  "name": "Max",
+  "surname": "Mustermann",
+  "email": "test@test.de",
+  ...
+}
+```
+
+### HTTP-Methoden
+
+Die HTTP-Methoden werden verwendet, um die Aktionen zu beschreiben, die auf den Ressourcen ausgeführt werden sollen. 
+
+HTTP-Methoden:
+
+- GET
+- POST
+- PUT
+- PATCH
+- DELETE
+
+#### POST
+
+POST wird verwendet, um eine neue Ressource zu erstellen. Die Ressource wird in der Datenbank gespeichert.
+
+Endpunkt zum Speichern der Daten: `/api/reservation`
+
+
+```ts
+const response = await fetch('/api/reserveration', {
+    body: JSON.stringify({
+        name,
+        surname,
+        email,
+        password,
+        street,
+        streetNumber,
+        zipCode,
+        city,
+        startDate,
+        endDate,
+        operatingSystem,
+        operatingSystem2,
+        uuid,
+        hardware,
+        hardware2,
+        briefing,
+        gender,
+        specification,
+        totalHours: calculateTotalHours(startDate, endDate),
+        totalCosts: calculateTotalHours(startDate, endDate) * PRICE_PER_HOUR,
+    }),
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/json'
+    }
+});
+```
+
+### HTTP-Statuscodes
+
+Durch HTTP-Statuscodes kann der Client erkennen, ob die Anfrage erfolgreich war oder nicht.
+
+HTTP-Statuscodes:
+
+- 200: OK
+- 201: Created
+- 400: Bad Request
+- 500: Internal Server Error
+
+Wenn das Speichern der Daten in der Datenbank erfolgreich war, wird ein HTTP-Statuscode 201 zurückgegeben und das Frontend kann fortfahren.
