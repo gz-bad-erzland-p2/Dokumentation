@@ -8,46 +8,15 @@ Als Schnittstelle zwischen VMware und Ansible wird die Software Vagrant verwende
 ## Serveraufbau
 ### Aufbau der Vagrant / Ansible Ordner/Dateien
 
-Weiterhin wird jeder Server, der mittels Vagrant und Ansible gestartet wird, mit folgender Datei und Ordnerstruktur ausgerüstet.
+Weiterhin wird jeder Server, der mittels Vagrant und Ansible gestartet wird, mit folgenden Datei ausgerüstet.
 Diese liegen unter C:\Vagrant\CentOS9_xx (xx=Servername z. B. DB)
 
-![grafik](https://user-images.githubusercontent.com/44226321/214226433-1f3112a2-c841-43e8-9988-cfcbdb62851c.png)
-
-#### Datei ssh-config
-
-Die ssh-config enthält alle nötigen Informationen, um eine Verbindung mit dem Server mittels SSH herzustellen.
-```Nginx
-Host centosxx
-  HostName 192.168.xx.xx
-  User vagrant
-  Port 22
-  UserKnownHostsFile /dev/null
-  StrictHostKeyChecking no
-  PasswordAuthentication no
-  IdentityFile playbooks/sshkeys/centosxx-key
-  IdentityFile playbooks/sshkeys/insecure_private_key
-  IdentitiesOnly yes
-  LogLevel FATAL
-
-Host lnxhost-Internal
-  HostName 192.168.98.128
-  User vagrant
-  Port 22
-  UserKnownHostsFile /dev/null
-  StrictHostKeyChecking no
-  PasswordAuthentication no
-  IdentityFile c:/Vagrant/CentOS9-dns/.vagrant/machines/centos-dns/vmware_desktop/private_key
-  IdentityFile ~/vagrant/CentOS9-dns/.vagrant/machines/centos-dns/vmware_desktop/private_key
-  IdentityFile /CentOS9-dns/.vagrant/machines/centos-dns/vmware_desktop/private_key
-  IdentitiesOnly yes
-  LogLevel FATAL 
-```
-
+![image](https://user-images.githubusercontent.com/44226321/222233496-1e061936-f36f-45a5-b613-45c5669145c6.png)
 #### Datei vagrantfile
 
 Das vagrantfile enthält alle Informationen, die Vagrant benötigt, um den Server mit den entsprechenden Spezifikationen automatisiert aufzusetzen.
 --> die einzelnen vagrantfiles werden separat vorgestellt
-___
+
 ### Ordner vmware
 
 Jeder Server erhält eine feste IP-Adresse mittels DCHP Reservierung.
@@ -192,17 +161,16 @@ ___
 ### Ordner playbooks:
 
 
-![grafik](https://user-images.githubusercontent.com/44226321/214227756-7a79b81d-4ca0-4523-a590-6c7fa71c0ac2.png)
+![image](https://user-images.githubusercontent.com/44226321/222234540-9f5bbf6a-6485-4797-80d7-e88f843fd668.png)
 
+___
 
 Erläuterung der einzelnen Dateien: 
 ---
-#### ansible.cfg
-
-= Konfiguration die Ansible benötigt
-
-```Nginx
-# ansible configuration file.
+#### Datei ansible.cfg
+enthält die Konfiguration für Ansible (wird nicht von uns verändert)
+```
+# ansible configaration file.
 
 [defaults]
 inventory = hosts
@@ -216,35 +184,114 @@ module_rejectlist = [ "easy_install" ]
 ssh_args = -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o CheckHostIP=no -o UpdateHostKeys=no -o LogLevel=quiet
 scp_if_ssh = True
 ```
+#### Datei ssh-config
+
+Die ssh-config enthält alle nötigen Informationen, um eine Verbindung mit dem Server mittels SSH herzustellen.
+```
+Host centoswebserver
+  HostName 192.168.86.11
+  User vagrant
+  Port 22
+  UserKnownHostsFile /dev/null
+  StrictHostKeyChecking no
+  PasswordAuthentication no
+  IdentityFile sshkeys/centoswebserver-key
+  IdentityFile sshkeys/insecure_private_key
+  IdentitiesOnly yes
+  LogLevel FATAL
+ 
+Host centosdns
+  HostName 192.168.98.12
+  User vagrant
+  Port 22
+  UserKnownHostsFile /dev/null
+  StrictHostKeyChecking no
+  PasswordAuthentication no
+  IdentityFile sshkeys/centosdns-key
+  IdentityFile sshkeys/insecure_private_key
+  IdentitiesOnly yes
+  LogLevel FATAL
+  
+Host centosdhcp
+  HostName 192.168.91.11
+  User vagrant
+  Port 22
+  UserKnownHostsFile /dev/null
+  StrictHostKeyChecking no
+  PasswordAuthentication no
+  IdentityFile sshkeys/centosdhcp-key
+  IdentityFile sshkeys/insecure_private_key
+  IdentitiesOnly yes
+  LogLevel FATAL
+
+Host centosdb
+  HostName 192.168.98.11
+  User vagrant
+  Port 22
+  UserKnownHostsFile /dev/null
+  StrictHostKeyChecking no
+  PasswordAuthentication no
+  IdentityFile sshkeys/centosdb-key
+  IdentityFile sshkeys/insecure_private_key
+  IdentitiesOnly yes
+  LogLevel FATAL
+```
+#### Ordner ssh-keys
+
+enthält die einzelnen SSH-Key-Paare, um eine SSH Verbidnung mit dem Server aufzubauen
+
+![image](https://user-images.githubusercontent.com/44226321/222235244-d8f2ed6c-7c6f-4d7e-be7e-bbe563677f2e.png)
 
 #### hosts
 
 enthält die Hostnamen und IP-Adressen der jeweiligen Servers
 ```
-[centOS]
-centosdb			ansible_host=192.168.98.11
+[groupcentosdns]
+centosdns			ansible_host=192.168.98.12 
 
-[centOS:vars]
+[groupcentosdns:vars]
 ansible_port=22
 ansible_user=vagrant
-ansible_ssh_private_key_file=playbooks/sshkeys/centosdb-key
-ansible_ssh_common_args=-oIdentityFile=playbooks/sshkeys/insecure_private_key
+ansible_ssh_private_key_file=sshkeys/centosdns-key
+ansible_ssh_common_args=-oIdentityFile=sshkeys/insecure_private_key
+
+[groupcentosdb]
+centosdb			ansible_host=192.168.98.11
+
+[groupcentosdb:vars]
+ansible_port=22
+ansible_user=vagrant
+ansible_ssh_private_key_file=sshkeys/centosdb-key
+ansible_ssh_common_args=-oIdentityFile=sshkeys/insecure_private_key
+
+[groupcentosdhcp]
+centosdhcp			ansible_host=192.168.91.11 
+
+[groupcentosdhcp:vars]
+ansible_port=22
+ansible_user=vagrant
+ansible_ssh_private_key_file=sshkeys/centosdhcp-key
+ansible_ssh_common_args=-oIdentityFile=sshkeys/insecure_private_key
+
+[groupcentoswebserver]
+centoswebserver			ansible_host=192.168.86.11 
+
+[groupcentoswebserver:vars]
+ansible_port=22
+ansible_user=vagrant
+ansible_ssh_private_key_file=sshkeys/centoswebserver-key
+ansible_ssh_common_args=-oIdentityFile=sshkeys/insecure_private_key
 ```
 
 #### xx.yml
 
 enthält das jeweilige Playbook für den Server -> werden einzeln genauer vorgestellt
-___
-### Ordner ssh-keys
 
-enthält die einzelnen SSH-Keys, um eine SSH Verbidnung mit dem Server aufzubauen
-
-![grafik](https://user-images.githubusercontent.com/44226321/214228103-14840b9f-ae3d-43c1-b4c4-f801b753f831.png)
-
-___
-### Ordner files
+#### Ordner files
 
 Im Ordner _files_ liegen Dateien die in den playbooks verwendet und eingebunden werden.
+
+![image](https://user-images.githubusercontent.com/44226321/222235739-ce814a85-c8af-4667-80af-37600ccf66ae.png)
 
 Bei jedem Server liegt hier für die Proxy Konfiguration die _evironment_ Datei
 ```bash
