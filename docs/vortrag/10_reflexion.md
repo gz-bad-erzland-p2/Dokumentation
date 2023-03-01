@@ -47,6 +47,3 @@ Weitere Schwierigkeiten gab es bei der Implementierung der Registrierung (nur au
 - [ ] Anmeldevorgang innerhalb und außerhalb des Buchungsprozesses
 - [x] Stundengenaue Abrechnung der Mietzeit
 - [x] Bestätigung der Datenschutzrichtlinien
-
-Weitere Inhalte:
-- Mehr Maschinen konnten automatisiert werden als mindestens vorausgesetzt
