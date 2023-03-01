@@ -16,6 +16,7 @@ Prisma kann komplexe Datenbeziehungen verwalten und bietet eine einfache Möglic
 Prisma bietet eine einfache Möglichkeit, Datenbankmigrationen durchzuführen, um Änderungen an der Datenbankstruktur zu verwalten.
 #### 4. Sicherheit
 Prisma ist gegen SQL-Injections geschützt, weil es eine Query-Syntax verwendet, die sich von herkömmlichen SQL-Abfragen unterscheidet und die Eingabevalidierung automatisch durchführt.
+Weitere Informationen werden im Punkt [Sicherheit](03_sicherheit.md#sichere-datenbankkommunikation) genannt.
 
 ### ERD Diagramme
 
@@ -108,4 +109,7 @@ enum Gender {
 
 ```
 
-TODO: REST-API-Framework
+## REST-API
+
+Für die Kommunikation zwischen dem Frontend und dem Backend verwenden wir eine REST-API. Die REST-API wird mit dem Framework [NestJS](https://nestjs.com/) erstellt.
+

@@ -15,11 +15,11 @@ Gefährdungssituationen bestimmt sowie die Höhe des möglichen Schadens.
 
 
 !!! note "Schwachstellen in einem IT-System"
-``` mermaid
-graph LR
-A[Benuzter] --> B[Anwendungssystem];
-B <-->|Datenübertragung| C[Backend];
-```
+      ``` mermaid
+      graph LR
+      A[Benuzter] --> B[Anwendungssystem];
+      B <-->|Datenübertragung| C[Backend];
+      ```
 
 === "Eintrittswahrscheinlichkeit"
     `selten`
@@ -71,7 +71,7 @@ B <-->|Datenübertragung| C[Backend];
 | Fehlbedienung           | selten                          | begrenzt           | mittel     | Onlinehilfe, UI-Lock                                              |
 | Irrtum                  | selten                          | begrenzt           | gering     | Onlinehilfe, UI-Lock                                              |
 | unsachgemäße Behandlung | selten                          | begrenzt           | mittel     | Personal vor Ort, Protokollierung der Gerätenutzung               |
-| Einbruch, Diebstahl     | selten                          | Vernach-lässigbar  | gering     | Alarmanlage, Kontrolle auf Vollständigkeit                       |
+| Einbruch, Diebstahl     | selten                          | Vernach-lässigbar  | gering     | Alarmanlage, Kontrolle auf Vollständigkeit                        |
 | Hacking                 | mittel                          | beträchtlich       | sehr hoch  | verschlüsselte Passwortspeicherung, Kontrolle gegen SQL Injection |
 | Spionage                | mittel                          | begrenzt           | gering     | Rollenverwaltung                                                  |
 | Manipulation            | selten                          | beträchtlich       | hoch       | Kontrolle gegen SQL-Injection                                     |
@@ -97,13 +97,13 @@ Unter Betrachtung der Anforderungen des Gemeindezentrums Bad Erzland wurden folg
 
 1. Usability:
    Die Office-Sharing Website muss für die Bürger einfach nutzbar sein, damit das Angebot auch für technisch weniger affine Menschen zur Verfügung steht.
-   Dafür wurde die Oberfläche so designed das sie besonders intuitiv zu benutzen ist. Weiterhin steht für die Bürger eine Hilfefunktion zur Verfügung, die alle Schritte einer Arbeitsplatzbuchung erklärt. Diese Schritte konnten wir eine optimale Usability gewährleisten.
+   Dafür wurde die Oberfläche so designt das sie besonders intuitiv zu benutzen ist. Weiterhin steht für die Bürger eine Hilfefunktion zur Verfügung, die alle Schritte einer Arbeitsplatzbuchung erklärt. Diese Schritte konnten wir eine optimale Usability gewährleisten.
 
 2. Einfache Wartbarkeit:
    Um den Wartungsaufwand für die Software möglichst gering zu halten wurde die Software unter Beachtung des [Clean-Code-Prinzips](https://t2informatik.de/wissen-kompakt/clean-code/) entwickelt. Dadurch konnten wir eine gute Lesbarkeit des Codes gewährleisten. Durch eine Automatisierung der Server wurde die Wartbarkeit weiterhin verbessert. Zusammenfassend konnten wir die einfache Wartbarkeit voll umsetzen.
 
 3. Sicherheit
-   Da Gemeindezentren wie andere Öffentliche Einrichtungen für Hackerangriffe besonders gefährdete Ziele sind wurde auf Sicherheit besonders geachtet.
+   Da Gemeindezentren wie andere öffentliche Einrichtungen für Hackerangriffe besonders gefährdete Ziele sind, wurde auf Sicherheit besonders geachtet.
    Besonders vorgestellt wurden:
 - [AE Sicherheit](/vortrag/06_ae-module/03_sicherheit/)
 - [SI Sicherheit](/vortrag/09_si-module/03_sicherheit/)

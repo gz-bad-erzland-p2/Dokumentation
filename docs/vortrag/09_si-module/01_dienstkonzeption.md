@@ -1,9 +1,9 @@
 # Dienstkonzeption
 
-Um eine Buchungswebsite für das Officesharing Projekt bereitzustellen, hat die SecNetIT GmbH hat folgende Server aufgesetzt:
+Um eine Buchungswebsite für das Office-Sharing Projekt bereitzustellen, hat die SecNetIT GmbH hat folgende Server aufgesetzt:
 
 - Webserver
-- DNS Server
+- DNS-Server
 - Datenbankserver
 - Firewall
 - Zertifikatsserver
