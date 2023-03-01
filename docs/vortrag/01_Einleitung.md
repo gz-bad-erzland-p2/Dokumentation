@@ -1,4 +1,11 @@
 # Office-Sharing Projektpräsentation
+
+
+|         Logo von Bad Erzland          |                                             Logo der SecNetIT                                              |
+|:-------------------------------------:|:----------------------------------------------------------------------------------------------------------:|
+| ![](/assets/img/logo_bad_erzland.png) | ![](https://user-images.githubusercontent.com/57149152/212682516-d3574255-120f-4273-be8e-c3d01d829bc0.PNG) |
+
+
 ## Begrüßung
 
 :fontawesome-solid-circle-exclamation: Es wird Zeit für die Digitalisierung!
