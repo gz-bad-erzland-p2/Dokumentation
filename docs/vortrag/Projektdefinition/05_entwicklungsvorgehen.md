@@ -2,8 +2,6 @@
 
 Das Office-Sharing Buchungssystem der Profi-SecNetIT GmbH für das Gemeindezentrum Bad Erzland wurde agil nach der Scrum Methode entwickelt.
 
-** Hinweis vortragender das Scrum Vorgehen sehen sie hier auf der Abbildung.
-
 ![grafik](https://user-images.githubusercontent.com/57149152/212298004-c74b5c45-fc93-44e0-8af1-cada26e75c12.png)
 
 Abbildung 1: Scrum
@@ -41,6 +39,3 @@ Als Scrum Master fungierte unser Projektleiter Thomas. Am Ende jedes Tages haben
 
 [^1]: https://omr.com/de/wp-content/uploads/2022/11/Scrum-Schema-Kopie.jpg (27.02.2023)
 [^2]: https://github.com/orgs/gz-bad-erzland-p2/projects/1 (27.02.2023)
-
-TODO: 
-Links auf aktualität überprüfen
