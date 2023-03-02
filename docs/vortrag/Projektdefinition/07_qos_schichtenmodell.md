@@ -9,3 +9,4 @@ Die Mitarbeiter der Sec-Net-IT sowie die Bürger und Nutzer stellen die Menware 
 Zur Software zählt das entwickelte Programm selber und die digitale Infrastruktur der Server die es bereitstellen.
 Die Hardware ist die physische Elektronik im Gemeindezentrum z.B. die Übertragungsdienste oder das Endsystem.
 
+[^1]: Frau Riester: Skript Wissenschaft Informatik
