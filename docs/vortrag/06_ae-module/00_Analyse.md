@@ -97,14 +97,14 @@ Unter Betrachtung der Anforderungen des Gemeindezentrums Bad Erzland wurden folg
 
 1. Usability:
    Die Office-Sharing Website muss für die Bürger einfach nutzbar sein, damit das Angebot auch für technisch weniger affine Menschen zur Verfügung steht.
-   Dafür wurde die Oberfläche so designt das sie besonders intuitiv zu benutzen ist. Weiterhin steht für die Bürger eine Hilfefunktion zur Verfügung, die alle Schritte einer Arbeitsplatzbuchung erklärt. Diese Schritte konnten wir eine optimale Usability gewährleisten.
+   Dafür wurde die Oberfläche so designt das sie besonders intuitiv zu benutzen ist. Weiterhin steht für die Bürger eine Hilfefunktion zur Verfügung, die alle Schritte einer Arbeitsplatzbuchung erklärt. Durch diese Schritte konnten wir eine optimale Usability gewährleisten.
 
 2. Einfache Wartbarkeit:
    Um den Wartungsaufwand für die Software möglichst gering zu halten wurde die Software unter Beachtung des [Clean-Code-Prinzips](https://t2informatik.de/wissen-kompakt/clean-code/) entwickelt. Dadurch konnten wir eine gute Lesbarkeit des Codes gewährleisten. Durch eine Automatisierung der Server wurde die Wartbarkeit weiterhin verbessert. Zusammenfassend konnten wir die einfache Wartbarkeit voll umsetzen.
 
-3. Sicherheit
+3. Sicherheit:
    Da Gemeindezentren wie andere öffentliche Einrichtungen für Hackerangriffe besonders gefährdete Ziele sind, wurde auf Sicherheit besonders geachtet.
-   Besonders vorgestellt wurden:
+   Besonders vorgestellt werden:
 - [AE Sicherheit](/vortrag/06_ae-module/03_sicherheit/)
 - [SI Sicherheit](/vortrag/09_si-module/03_sicherheit/)
 
