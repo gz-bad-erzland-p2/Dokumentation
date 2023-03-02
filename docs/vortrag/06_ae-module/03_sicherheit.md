@@ -4,7 +4,7 @@
 
 Das [BSI](https://www.bsi.bund.de) hat eine [Empfehlung](https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Publikationen/TechnischeRichtlinien/TR03116/BSI-TR-03116.pdf?__blob=publicationFile&v=1) herausgegeben, die die Datenverschlüsselung in Deutschland regelt. Diese Empfehlung ist für alle Behörden und Unternehmen verbindlich. Sie ist in der [BSI-Grundschutz-Kataloge](https://www.bsi.bund.de/DE/Themen/Grundschutz/GrundschutzKataloge/GrundschutzKataloge_node.html) verankert.
 
-Eine dieser Empfehlung ist die Nutzung des Blowfish-Algorithmus. Die Nutzung des Blowfish-Algorithmus ist in einer Handhabung für Sichere Passwörter in Embedded Devices des BSI empfohlen.
+Eine dieser Empfehlung ist die Nutzung des Blowfish-Algorithmus. Die Nutzung des Blowfish-Algorithmus ist in einer Handhabung für sichere Passwörter in Embedded Devices des BSI empfohlen.
 
 > Weiterhin sollten Passwörter immer unter Verwendung hinreichend sicherer kryptografischer
 Mechanismen gespeichert und übertragen werden. Beispielsweise bietet es sich an, Password-
@@ -18,7 +18,7 @@ zu bewerten. Von einer Verwendung ist daher abzuraten.
 
 ## Blowfish
 
-Zur verschlüsselung des Passworts, wird der Blowfish Algorithmus verwendet. Durch das benutzten der Bibliothek [bcrypt](https://en.wikipedia.org/wiki/Bcrypt) wird das Passwort mit einem zufälligen Salt verschlüsselt. Das Verschlüsselte Passwort wird dann in Form eines Hashes in der Datenbank gespeichert.
+Zur Verschlüsselung des Passworts wird der Blowfish Algorithmus verwendet. Durch das benutzten der Bibliothek [bcrypt](https://en.wikipedia.org/wiki/Bcrypt) wird das Passwort mit einem zufälligen Salt verschlüsselt. Das verschlüsselte Passwort wird dann in Form eines Hashes in der Datenbank gespeichert.
 
 Somit ist eine Verschlüsselung des Passworts gegeben.
 
@@ -40,7 +40,7 @@ const hashedPassword: string = await new Promise((resolve, reject) => {
     | test | `$2b$10$dy6/Qz5aOk1q27qDSMVzh.fRrs9RLuYSwGhGTVmL9sJgzRp1GQM2S` |
 
 
-Weitere Informationen zur Funktionsweise und der Sicherheit des Algorithmus finden Sie ihr [Wikipedia](https://en.wikipedia.org/wiki/Blowfish_(cipher)).
+Weitere Informationen zur Funktionsweise und der Sicherheit des Algorithmus finden Sie hier [Wikipedia](https://en.wikipedia.org/wiki/Blowfish_(cipher)).
 
 
 Zur weiteren Einschätzung des Sicherheitsrisikos ist die Risikoanalyse zu beachten.
@@ -65,7 +65,7 @@ Es wird eine Datenverschlüsselung zwischen dem Client und dem Server gewährlei
 HTTPS verschlüsselt Daten zwischen dem Client und dem Server, um sicherzustellen, dass sie nur von autorisierten Personen gelesen werden können.
 
 #### 3. Schutz vor Man-in-the-Middle-Angriffen
-Es wird ein Schutz vor Man-in-the-Middle-Angriffen, bei denen ein Angreifer versucht, Daten während der Übertragung zu manipulieren gewährleistet.
+Es wird ein Schutz vor Man-in-the-Middle-Angriffen, bei denen ein Angreifer versucht, Daten während der Übertragung zu manipulieren, gewährleistet.
 
 #### 4. Vertrauenswürdigkeit
 HTTPS wird von vertrauenswürdigen Zertifizierungsstellen ausgegeben, um sicherzustellen, dass die Website, mit der der Benutzer kommuniziert, tatsächlich diejenige ist, für die sie sich ausgibt.
@@ -76,7 +76,7 @@ Google bevorzugt Websites mit HTTPS-Verschlüsselung und belohnt diese in den Su
 
 ## Sichere Datenbankkommunikation
 
-Durch die Verwendung von Prisma und der überprüfung der Request Payload ist eine sichere Datenbankverbindung gegeben.
+Durch die Verwendung von Prisma und der Überprüfung der Request Payload ist eine sichere Datenbankverbindung gegeben.
 
 ## Schutz vor SQL-Injection
 
@@ -158,7 +158,7 @@ Alle von [NextJS](https://nextjs.org/docs/advanced-features/security-headers) em
 
 Durch die Verwendung von Dependabot werden automatisch Sicherheitsupdates für 3rd Party Bibliotheken durchgeführt. Dependabot überprüft täglich die verwendeten Bibliotheken auf Sicherheitslücken und erstellt automatisch Pull Requests, wenn neue Versionen verfügbar sind. Dadurch wird die Sicherheit von 3rd Party Bibliotheken gewährleistet.
 
-Dependabot erstellt automatisch ein Rating für die Schwere der Sicherheitslücke. Je nach Priorität werden empfehlungen für die Sicherheitslücke gegeben.
+Dependabot erstellt automatisch ein Rating für die Schwere der Sicherheitslücke. Je nach Priorität werden Empfehlungen für die Sicherheitslücke gegeben.
 
 Beispiel für eine Meldung von Dependabot:
 
