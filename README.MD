@@ -8,7 +8,7 @@ Die Dokumentation beinhaltet neben der Bedingungsanleitung auch die Projektpräs
 
 > ❔ Bei Fragen oder Problemen, wenden Sie sich bitte an die Entsprechenden Kontaktpersonen **[Dokumentation](https://gz-bad-erzland-p2.github.io/Dokumentation/)**.
 
-![Bild](https://imgur.com/a/y4jTBxm)
+![Bild](https://i.imgur.com/fdfxK6c.png)
 
 ## Links
 
