@@ -2,7 +2,7 @@
 
 ## Datenbank
 
-Für die Datenbank haben wir uns für MySQL entschieden. Für die kommunikation mit der Datenbank verwenden wir [Prisma](https://www.prisma.io/).
+Für die Datenbank haben wir uns für MySQL entschieden. Für die Kommunikation mit der Datenbank verwenden wir [Prisma](https://www.prisma.io/).
 
 !!! info "Information"
     <span class="biggerFont">Prisma ist ein Datenbank-ORM-Tool (Object-Relational Mapping), das es erleichtert, eine Datenbank mit einer Anwendung zu verbinden und Daten zwischen beiden auszutauschen. Es bietet eine typsichere und intuitive Schnittstelle, um auf Datenbanken zuzugreifen und diese zu manipulieren.</span>
