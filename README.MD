@@ -6,7 +6,7 @@ Dieses Projekt dient als Dokumentation der SecNetIT des **Office-Sharing** Proje
 
 Die Dokumentation beinhaltet neben der Bedingungsanleitung auch die Projektpräsentation und verschiede interne Informationen.
 
-> ❔ Bei Fragen oder Problemen, wenden Sie sich bitte an die Entsprechenden Kontaktpersonen **[Dokumentation](https://gz-bad-erzland-p2.github.io/Dokumentation/)**.
+> ❔ Bei Fragen oder Problemen, wenden Sie sich bitte an die Entsprechenden Kontaktpersonen (**[Dokumentation](https://gz-bad-erzland-p2.github.io/Dokumentation/)**).
 
 ![Bild](https://i.imgur.com/fdfxK6c.png)
 
