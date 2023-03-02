@@ -863,7 +863,7 @@
 <h1 id="sicherheit">Sicherheit<a class="headerlink" href="#sicherheit" title="Permanent link">¶</a></h1>
 <h2 id="vom-bsi-definierte-datenverschlusselung">Vom BSI definierte Datenverschlüsselung<a class="headerlink" href="#vom-bsi-definierte-datenverschlusselung" title="Permanent link">¶</a></h2>
 <p>Das <a href="https://www.bsi.bund.de">BSI</a> hat eine <a href="https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Publikationen/TechnischeRichtlinien/TR03116/BSI-TR-03116.pdf?__blob=publicationFile&amp;v=1">Empfehlung</a> herausgegeben, die die Datenverschlüsselung in Deutschland regelt. Diese Empfehlung ist für alle Behörden und Unternehmen verbindlich. Sie ist in der <a href="https://www.bsi.bund.de/DE/Themen/Grundschutz/GrundschutzKataloge/GrundschutzKataloge_node.html">BSI-Grundschutz-Kataloge</a> verankert.</p>
-<p>Eine dieser Empfehlung ist die Nutzung des Blowfish-Algorithmus. Die Nutzung des Blowfish-Algorithmus ist in einer Handhabung für Sichere Passwörter in Embedded Devices des BSI empfohlen.</p>
+<p>Eine dieser Empfehlung ist die Nutzung des Blowfish-Algorithmus. Die Nutzung des Blowfish-Algorithmus ist in einer Handhabung für sichere Passwörter in Embedded Devices des BSI empfohlen.</p>
 <blockquote>
 <p>Weiterhin sollten Passwörter immer unter Verwendung hinreichend sicherer kryptografischer
 Mechanismen gespeichert und übertragen werden. Beispielsweise bietet es sich an, Password-
@@ -875,7 +875,7 @@ zu bewerten. Von einer Verwendung ist daher abzuraten.
 <a href="https://www.allianz-fuer-cybersicherheit.de/SharedDocs/Downloads/Webs/ACS/DE/BSI-CS/BSI-CS_069.pdf?__blob=publicationFile&amp;v=1">BSI-CS_069</a></p>
 </blockquote>
 <h2 id="blowfish">Blowfish<a class="headerlink" href="#blowfish" title="Permanent link">¶</a></h2>
-<p>Zur verschlüsselung des Passworts, wird der Blowfish Algorithmus verwendet. Durch das benutzten der Bibliothek <a href="https://en.wikipedia.org/wiki/Bcrypt">bcrypt</a> wird das Passwort mit einem zufälligen Salt verschlüsselt. Das Verschlüsselte Passwort wird dann in Form eines Hashes in der Datenbank gespeichert.</p>
+<p>Zur Verschlüsselung des Passworts wird der Blowfish Algorithmus verwendet. Durch das benutzten der Bibliothek <a href="https://en.wikipedia.org/wiki/Bcrypt">bcrypt</a> wird das Passwort mit einem zufälligen Salt verschlüsselt. Das verschlüsselte Passwort wird dann in Form eines Hashes in der Datenbank gespeichert.</p>
 <p>Somit ist eine Verschlüsselung des Passworts gegeben.</p>
 <div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="nx">hash</span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">'bcrypt'</span><span class="p">;</span>
 
@@ -903,7 +903,7 @@ zu bewerten. Von einer Verwendung ist daher abzuraten.
 </tbody>
 </table>
 </div>
-<p>Weitere Informationen zur Funktionsweise und der Sicherheit des Algorithmus finden Sie ihr <a href="https://en.wikipedia.org/wiki/Blowfish_(cipher)">Wikipedia</a>.</p>
+<p>Weitere Informationen zur Funktionsweise und der Sicherheit des Algorithmus finden Sie hier <a href="https://en.wikipedia.org/wiki/Blowfish_(cipher)">Wikipedia</a>.</p>
 <p>Zur weiteren Einschätzung des Sicherheitsrisikos ist die Risikoanalyse zu beachten.</p>
 <p><a class="md-button" href="../00_Analyse/#risikoanalyse">Risikoanalyse <span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6m4 18H6V4h7v5h5v11m-9-7v6H7v-6h2m6 2v4h2v-4h-2m-4-4v8h2v-8h-2Z"></path></svg></span></a></p>
 <h2 id="https-verbindung">HTTPS Verbindung<a class="headerlink" href="#https-verbindung" title="Permanent link">¶</a></h2>
@@ -916,13 +916,13 @@ zu bewerten. Von einer Verwendung ist daher abzuraten.
 <h4 id="2-schutz-der-datenvertraulichkeit">2. Schutz der Datenvertraulichkeit<a class="headerlink" href="#2-schutz-der-datenvertraulichkeit" title="Permanent link">¶</a></h4>
 <p>HTTPS verschlüsselt Daten zwischen dem Client und dem Server, um sicherzustellen, dass sie nur von autorisierten Personen gelesen werden können.</p>
 <h4 id="3-schutz-vor-man-in-the-middle-angriffen">3. Schutz vor Man-in-the-Middle-Angriffen<a class="headerlink" href="#3-schutz-vor-man-in-the-middle-angriffen" title="Permanent link">¶</a></h4>
-<p>Es wird ein Schutz vor Man-in-the-Middle-Angriffen, bei denen ein Angreifer versucht, Daten während der Übertragung zu manipulieren gewährleistet.</p>
+<p>Es wird ein Schutz vor Man-in-the-Middle-Angriffen, bei denen ein Angreifer versucht, Daten während der Übertragung zu manipulieren, gewährleistet.</p>
 <h4 id="4-vertrauenswurdigkeit">4. Vertrauenswürdigkeit<a class="headerlink" href="#4-vertrauenswurdigkeit" title="Permanent link">¶</a></h4>
 <p>HTTPS wird von vertrauenswürdigen Zertifizierungsstellen ausgegeben, um sicherzustellen, dass die Website, mit der der Benutzer kommuniziert, tatsächlich diejenige ist, für die sie sich ausgibt.</p>
 <h4 id="5-seo-vorteile">5. SEO-Vorteile<a class="headerlink" href="#5-seo-vorteile" title="Permanent link">¶</a></h4>
 <p>Google bevorzugt Websites mit HTTPS-Verschlüsselung und belohnt diese in den Suchergebnissen.</p>
 <h2 id="sichere-datenbankkommunikation">Sichere Datenbankkommunikation<a class="headerlink" href="#sichere-datenbankkommunikation" title="Permanent link">¶</a></h2>
-<p>Durch die Verwendung von Prisma und der überprüfung der Request Payload ist eine sichere Datenbankverbindung gegeben.</p>
+<p>Durch die Verwendung von Prisma und der Überprüfung der Request Payload ist eine sichere Datenbankverbindung gegeben.</p>
 <h2 id="schutz-vor-sql-injection">Schutz vor SQL-Injection<a class="headerlink" href="#schutz-vor-sql-injection" title="Permanent link">¶</a></h2>
 <p>Prisma verwendet einen Query-Builder, der es Benutzern ermöglicht, Abfragen zu erstellen, indem sie Methodenaufrufe anstelle von Strings verwenden. Dies minimiert das Risiko von Fehlern bei der Eingabe von SQL-Abfragen.
 Weiterhin werden Benutzereingaben zur Laufzeit validiert, bevor sie in Abfragen verwendet werden. Dadurch wird sichergestellt, dass Benutzer keine ungültigen Eingaben übergeben können, die SQL-Injections ermöglichen könnten.</p>
@@ -981,7 +981,7 @@ Weiterhin werden Benutzereingaben zur Laufzeit validiert, bevor sie in Abfragen 
 <p>Alle von <a href="https://nextjs.org/docs/advanced-features/security-headers">NextJS</a> empfohlen Header wurden zum Schutz der Webseite implementiert.</p>
 <h2 id="automatisierte-sicherheitsprufung-aktualisierung-von-3rd-party-bibliotheken">Automatisierte Sicherheitsprüfung/ Aktualisierung von 3<sup>rd</sup> Party Bibliotheken<a class="headerlink" href="#automatisierte-sicherheitsprufung-aktualisierung-von-3rd-party-bibliotheken" title="Permanent link">¶</a></h2>
 <p>Durch die Verwendung von Dependabot werden automatisch Sicherheitsupdates für 3<sup>rd</sup> Party Bibliotheken durchgeführt. Dependabot überprüft täglich die verwendeten Bibliotheken auf Sicherheitslücken und erstellt automatisch Pull Requests, wenn neue Versionen verfügbar sind. Dadurch wird die Sicherheit von 3<sup>rd</sup> Party Bibliotheken gewährleistet.</p>
-<p>Dependabot erstellt automatisch ein Rating für die Schwere der Sicherheitslücke. Je nach Priorität werden empfehlungen für die Sicherheitslücke gegeben.</p>
+<p>Dependabot erstellt automatisch ein Rating für die Schwere der Sicherheitslücke. Je nach Priorität werden Empfehlungen für die Sicherheitslücke gegeben.</p>
 <p>Beispiel für eine Meldung von Dependabot:</p>
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../../../assets/img/select-multiple-alerts.webp"><img alt="Dependabot" src="../../../assets/img/select-multiple-alerts.webp"/></a></p>
 <p>Quelle: Github<sup id="fnref:5"><a class="footnote-ref" href="#fn:5">5</a></sup><sup id="fnref:6"><a class="footnote-ref" href="#fn:6">6</a></sup></p>
